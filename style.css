@@ -196,3 +196,9 @@ h2 {
 #prev.disabled {
   opacity: 0.2;
 }
+
+#dates .year {
+  color: red;
+  font-size: 28px;
+
+}
