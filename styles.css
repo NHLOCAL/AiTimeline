@@ -140,7 +140,7 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -160,5 +160,78 @@ body {
         width: 6px;
         height: 6px;
     }
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    background-color: #f9f9f9; /* Subtle background color */
+    padding: 20px 0; /* Padding top and bottom */
+    border-top: 2px solid #007BFF; /* Top border */
+    border-bottom: 2px solid #007BFF; /* Bottom border */
+}
+
+.footer .content {
+    max-width: 1000px; /* Limit content width */
+    margin: 0 auto; *
+}
+
+.footer h3 {
+    font-size: 24px;
+    color: #333; /* Neutral text color */
+    margin-bottom: 15px; /* Increased margin for better spacing */
+	margin-top: 10px;
+    text-align: left; /* Left-align the headings */
+    padding-left: 20px; /* Add padding to align with list items */
+}
+
+.footer p {
+    font-size: 18px;
+    color: #555; /* Slightly darker text color */
+    margin-bottom: 20px;
+    text-align: left; /* Left-align the paragraph */
+    padding-left: 20px; /* Add padding to align with list items */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 30px; /* Add padding to align with headings and paragraphs */
+}
+
+.footer ul li {
+    font-size: 18px;
+    color: #555; /* Slightly darker text color */
+    margin-bottom: 10px;
+    padding-left: 20px; /* Indentation for better alignment */
+    text-align: left; /* Left-align the list items */
+    position: relative; /* Position for bullet points */
+}
+
+.footer ul li a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for link color */
+}
+
+.footer ul li a:hover {
+    color: #0056b3; /* Darker link color on hover */
+    text-decoration: underline;
+}
+
+
+.footer ul li:before  {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    counter-increment: dot-counter;
+    z-index: 1;
 }
 
