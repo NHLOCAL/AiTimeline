@@ -82,6 +82,7 @@ body {
     border-left: 2px solid #007BFF;
     padding-left: 30px;
     margin-bottom: 40px; /* Increased margin-bottom */
+	max-width: 500px;
     position: relative;
     padding-bottom: 20px;
     transition: all 0.3s ease;
