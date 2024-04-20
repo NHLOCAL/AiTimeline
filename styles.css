@@ -5,6 +5,54 @@ body {
     padding: 50px;
 }
 
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px 0; /* Padding top and bottom */
+    background-color: #f9f9f9; /* Subtle background color */
+    position: relative; /* Position for pseudo-elements */
+}
+
+.header::before,
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Line width */
+    background-color: #007BFF; /* Line color */
+}
+
+.header::before {
+    left: 0; /* Left vertical line */
+}
+
+.header::after {
+    right: 0; /* Right vertical line */
+}
+
+.header h1,
+.header h2 {
+    position: relative; /* Adjust z-index */
+    z-index: 1;
+    font-family: 'Arial', sans-serif; /* Font */
+}
+
+.header h1 {
+    font-size: 42px; /* Larger font size */
+    font-weight: bold;
+    color: #333; /* Neutral text color */
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 28px; /* Slightly larger font size */
+    font-weight: normal;
+    color: #555; /* Slightly darker text color */
+}
+
+
 /* Timeline Container */
 .timeline {
     max-width: 1000px;
@@ -16,7 +64,7 @@ body {
 .year {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin-bottom */
     color: #333;
     border-bottom: 2px solid #007BFF;
     padding-bottom: 10px;
@@ -33,11 +81,12 @@ body {
 .event {
     border-left: 2px solid #007BFF;
     padding-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin-bottom */
     position: relative;
     padding-bottom: 20px;
     transition: all 0.3s ease;
     counter-reset: dot-counter;
+    line-height: 1.5; /* Increased line-height */
 }
 
 /* Event Hover */
@@ -47,10 +96,10 @@ body {
 
 /* Event Date */
 .event .date {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Event Info */
@@ -70,7 +119,7 @@ body {
     height: 18px;
     border-radius: 50%;
     background-color: #007BFF;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 }
 
 /* Event Timeline Dot Responsive */
@@ -91,7 +140,7 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -112,3 +161,4 @@ body {
         height: 6px;
     }
 }
+
