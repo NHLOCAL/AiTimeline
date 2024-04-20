@@ -1,67 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Timeline</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="css/style.css" media="screen" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="js/jquery.timelinr-0.9.54.js"></script>
-  <script>
-    $(function(){
-      $().timelinr({
-        arrowKeys: 'true'
-      });
-    });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence Timeline</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="timeline">
-    <ul id="dates">
-	  <p class="year">2022</p>
-	  <li><a href="#February-2022">Feb.</a></li>
-      <li><a href="#April-2022">Apr.</a></li>
-      <li><a href="#July-2022">Jul.</a></li>
-      <li><a href="#August-2022">Aug.</a></li>
-      <li><a href="#October-2022">Oct.</a></li>
-      <li><a href="#November-2022">Nov.</a></li>
-      <li><a href="#December-2022">Dec.</a></li>
-	  <p class="year">2023</p>
-      <li><a href="#February-2023">Feb.</a></li>
-      <li><a href="#March-2023">Mar.</a></li>
-      <li><a href="#May-2023">May</a></li>
-      <li><a href="#June-2023">Jun.</a></li>
-      <li><a href="#July-2023">Jul.</a></li>
-      <li><a href="#October-2023">Oct.</a></li>
-      <li><a href="#November-2023">Nov.</a></li>
-      <li><a href="#December-2023">Dec.</a></li>
-	  <p class="year">2024</p>
-      <li><a href="#January-2024">Jan.</a></li>
-      <li><a href="#March-2024">Mar.</a></li>
-      <li><a href="#April-2024">Apr.</a></li>
-    </ul>
-    <ul id="issues">
-      <li id="February-2022">
 
-        <h1>February 2022</h1>
-        <p>Midjourney v1</p>
-      </li>
+<div class="timeline">
+    
+    <!-- 2022 -->
+    <div class="year">2022</div>
 
-      <li id="April-2022">
+    <div class="event" data-date="February 2022">
+        <div class="date">February</div>
+        <div class="info">Midjourney v1</div>
+    </div>
+    
+    <div class="event" data-date="April 2022">
+        <div class="date">April</div>
+        <div class="info">Midjourney v2</div>
+        <div class="info">Dalle 2 – announced for gradual release</div>
+    </div>
 
-        <h1>April 2022</h1>
-        <p>Midjourney v2</p>
-		<br>
-        <p>Dall-e 2 – announced for gradual release</p>
-      </li>
-	<!-- continue.... -->
-    </ul>
-    <div id="grad_left"></div>
-    <div id="grad_right"></div>
-    <a href="#" id="next">+</a>
-    <a href="#" id="prev">-</a>
-  </div>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="./script.js"></script>
+    <div class="event" data-date="July 2022">
+        <div class="date">July</div>
+        <div class="info">Midjourney v3</div>
+    </div>
+
+    <div class="event" data-date="August 2022">
+        <div class="date">August</div>
+        <div class="info">Stable Diffusion 1.4</div>
+    </div>
+
+    <div class="event" data-date="October 2022">
+        <div class="date">October</div>
+        <div class="info">Stable Diffusion 1.5</div>
+    </div>
+
+    <div class="event" data-date="November 2022">
+        <div class="date">November</div>
+        <div class="info">Midjourney v4</div>
+        <div class="info">Stable Diffusion 2</div>
+        <div class="info">Chat GPT 3.5 released to the public</div>
+    </div>
+
+    <div class="event" data-date="December 2022">
+        <div class="date">December</div>
+        <div class="info">Stable Diffusion 2.1</div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="year">2023</div>
+    
+    <div class="event" data-date="February 2023">
+        <div class="date">February</div>
+        <div class="info">Meta releases LLaMA (limited release)</div>
+        <div class="info">Microsoft announces Bing AI based on GPT 4</div>
+    </div>
+
+    <div class="event" data-date="March 2023">
+        <div class="date">March</div>
+        <div class="info">Midjourney v5</div>
+        <div class="info">GPT 4 partially released</div>
+        <div class="info">Google releases Bard based on LaMDA</div>
+    </div>
+
+    <div class="event" data-date="May 2023">
+        <div class="date">May</div>
+        <div class="info">Midjourney v5.1</div>
+        <div class="info">Google announces upgrade to Labard based on PaLM 2</div>
+    </div>
+
+    <div class="event" data-date="June 2023">
+        <div class="date">June</div>
+        <div class="info">Midjourney v5.2</div>
+    </div>
+
+    <div class="event" data-date="July 2023">
+        <div class="date">July</div>
+        <div class="info">Stable Diffusion XL 1.0</div>
+        <div class="info">Entropic announces Cloud 2</div>
+        <div class="info">Meta releases LLaMA 2 open source</div>
+    </div>
+
+    <div class="event" data-date="October 2023">
+        <div class="date">October</div>
+        <div class="info">Dalle 3</div>
+    </div>
+
+    <div class="event" data-date="November 2023">
+        <div class="date">November</div>
+        <div class="info">Stable Diffusion XL Turbo</div>
+    </div>
+
+    <div class="event" data-date="December 2023">
+        <div class="date">December</div>
+        <div class="info">Midjourney v6</div>
+        <div class="info">Google upgrades Bard to Gemini Pro</div>
+        <div class="info">X Corporation launches Grok AI</div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="year">2024</div>
+
+    <div class="event" data-date="February 2024">
+        <div class="date">February</div>
+        <div class="info">Stability AI announces Stable Diffusion 3</div>
+        <div class="info">Google upgrades Bard to Gemini in all languages</div>
+        <div class="info">OPENAI announces Sora model</div>
+    </div>
+
+    <div class="event" data-date="March 2024">
+        <div class="date">March</div>
+        <div class="info">X Corporation announces Grok 1.5</div>
+        <div class="info">Entropic announces Cloud 3</div>
+        <div class="info">Suno ai releases music model v3</div>
+    </div>
+
+    <div class="event" data-date="April 2024">
+        <div class="date">April</div>
+        <div class="info">Stability AI releases Stable Audio 2.0</div>
+        <div class="info">Corporation X releases Grok-1.5V</div>
+        <div class="info">Mistral releases Mixtral 8x22B</div>
+        <div class="info">Meta releases LLaMA 3</div>
+    </div>
+
+</div>
+
 </body>
 </html>

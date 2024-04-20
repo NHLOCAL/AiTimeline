@@ -1,0 +1,114 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+/* Timeline Container */
+.timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Year Label */
+.year {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+/* Year Label Responsive */
+@media (max-width: 768px) {
+    .year {
+        font-size: 24px;
+    }
+}
+
+/* Event Styles */
+.event {
+    border-left: 2px solid #007BFF;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+    counter-reset: dot-counter;
+}
+
+/* Event Hover */
+.event:hover {
+    background-color: #f4f4f4;
+}
+
+/* Event Date */
+.event .date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Event Info */
+.event .info {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px; /* Space for the dot */
+}
+
+/* Event Timeline Dot */
+.event::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    transform: translateY(-50%);
+}
+
+/* Event Timeline Dot Responsive */
+@media (max-width: 768px) {
+    .event {
+        padding-left: 20px;
+    }
+    .event::before {
+        left: -7px;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Info Dot */
+.info::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    counter-increment: dot-counter;
+    z-index: 1;
+}
+
+/* Reset Dot Counter */
+.event:not(:last-child) .info::before {
+    counter-reset: dot-counter 0;
+}
+
+/* Info Dot Responsive */
+@media (max-width: 768px) {
+    .info::before {
+        width: 6px;
+        height: 6px;
+    }
+}
