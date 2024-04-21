@@ -150,6 +150,30 @@ body {
     z-index: 1;
 }
 
+
+/* Special event points design */
+.info.special::before {
+    background-color: #b80003;
+	width: 9.5px;
+    height: 9.5px;
+}
+
+/* Show tooltip on hover */
+.info.special:hover::before {
+    content: 'game changer'; /* Display text on hover */
+    background-color: #8C2D2D; /* Special color */
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+
 /* Reset Dot Counter */
 .event:not(:last-child) .info::before {
     counter-reset: dot-counter 0;
@@ -161,6 +185,11 @@ body {
         width: 6px;
         height: 6px;
     }
+	
+	.info.special::before {
+	width: 7.5px;
+    height: 7.5px;
+}
 }
 
 /* Footer Styles */
