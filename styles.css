@@ -265,3 +265,20 @@ body {
     z-index: 1;
 }
 
+
+
+/* scrollbar design */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #e4ecfd;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:  #003b7287;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color:  #003b72f7;
+}
