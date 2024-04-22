@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     padding: 50px;
+	padding-bottom: 10px;
 }
 
 /* Header Styles */
@@ -281,4 +282,36 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color:  #003b72f7;
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #f9f9f9; /* Subtle background color */
+    padding: 20px 0; /* Padding top and bottom */
+    border-bottom: 2px solid #007BFF; /* Bottom border */
+}
+
+footer .content {
+    max-width: 1000px; /* Limit content width */
+    margin: 0 auto; 
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Gap between links */
+}
+
+footer .footer-links a {
+    font-size: 18px;
+    color: #333; /* Black shade for link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for link color */
+}
+
+footer .footer-links a:hover {
+    color: #555; /* Darker black shade on hover */
+    text-decoration: underline;
 }
