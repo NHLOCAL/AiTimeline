@@ -161,7 +161,7 @@ body {
 
 /* Show tooltip on hover */
 .info.special:hover::before {
-    content: 'game changer'; /* Display text on hover */
+    content: 'Significant event'; /* Display text on hover */
     background-color: #8C2D2D; /* Special color */
     color: white;
     font-size: 12px;
