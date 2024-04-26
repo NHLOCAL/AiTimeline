@@ -1,3 +1,2 @@
-
-- Microsoft releases the **Phi-3-mini** model in open source. The model comes in a reduced version of 3.8B parameters, which allows it to run on mobile devices as well, and it presents capabilities similar to gpt 3.5
-- Adobe announces its latest image creation model - **Firefly 3**
+- The startup **Reka AI** presented a series of multimodal language models in 3 sizes. The models are capable of processing video, audio and images. The large model featured similar capabilities to the GPT4
+- Apple releases as full open source a series of small language models under the name **OpenELM**. The models are available in four weights between 270 million and 3 billion parameters
