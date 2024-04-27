@@ -1,2 +1,3 @@
-- The startup **Reka AI** presented a series of multimodal language models in 3 sizes. The models are capable of processing video, audio and images. The large model featured similar capabilities to the GPT4
-- Apple releases as full open source a series of small language models under the name **OpenELM**. The models are available in four weights between 270 million and 3 billion parameters
+-- April 2023
+- Adobe releases the **Firefly** image creation model as a beta version to a waiting list. The model allowed a variety of capabilities including text formatting
+- Adobe releases **Firefly 2**
