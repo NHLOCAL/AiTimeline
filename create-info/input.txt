@@ -1,3 +1,2 @@
--- April 2023
-- Adobe releases the **Firefly** image creation model as a beta version to a waiting list. The model allowed a variety of capabilities including text formatting
-- Adobe releases **Firefly 2**
+-- May 2024
+- OPENAI announces a **gpt4-o model** that presents full multimodal capabilities, including receiving text, images, audio and video, and creating audio text and images, with all the features built into the model itself. The model shows twice the performance and speed of the gpt4-turbo model.
