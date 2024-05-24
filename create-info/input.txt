@@ -1,2 +1,9 @@
 -- May 2024
-- OPENAI announces a **gpt4-o model** that presents full multimodal capabilities, including receiving text, images, audio and video, and creating audio text and images, with all the features built into the model itself. The model shows twice the performance and speed of the gpt4-turbo model.
+- OPENAI announces the **gpt4-o model** that presents full multimodal capabilities, including receiving and creating text, images, and audio. The model presents an impressive ability to speak with a high response speed and in natural language.  The model is 2 times more efficient than the gpt4-turbo model, and has better capabilities for languages ​​other than English
+
+- Google has announced a large number of AI features in its products. The main ones: increasing the **token limit to 2 million** for Gemini 1.5 to the waiting list, releasing a smaller and faster **gemini flash 1.5 model**. Revealing the latest image creation model - **imagen 3**, music creation model - **Music Ai** and video creation model - **Veo**. and the announcement of the **Astra model** - with multimodal capabilities for real-time audio and video reception
+
+- Microsoft announced **copilt+** for dedicated computers, which will allow a full search of the user's history through screenshots of the user's activity. The company also released as open source the SLMs that display impressive capabilities in a minimal size: **Phi3 small**, **phi3 medium**, and **phi3 vision** which includes image recognition capability
+
+- Meta introduced **Chameleon**, a new multimodal model that seamlessly renders text and images
+
