@@ -1,3 +1,3 @@
-- Suno ai releases an updated music creation model - **suno v3.5**
-
-- Mistral AI releases a new language model designed for coding - **Codestral** in size 22B
+-- June
+- The company Stability AI releases its updated image creation model **Stable Diffusion 3** in a medium version in size 2B parameters
+- Apple announced **Apple Intelligence**, an AI system that will be integrated into the company's devices and will combine AI models of different sizes for different tasks
