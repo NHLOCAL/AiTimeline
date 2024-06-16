@@ -1,3 +1,3 @@
-- Mistral AI releases a new open source version of its language model - **Mistral-7B-Instruct-v0.3**
+- Suno ai releases an updated music creation model - **suno v3.5**
 
-- Google announces **AI Overviews** intended to give a summary of the relevant information in Google search
+- Mistral AI releases a new language model designed for coding - **Codestral** in size 22B
