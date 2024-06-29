@@ -1,3 +1,5 @@
--- June
-- The company Stability AI releases its updated image creation model **Stable Diffusion 3** in a medium version in size 2B parameters
-- Apple announced **Apple Intelligence**, an AI system that will be integrated into the company's devices and will combine AI models of different sizes for different tasks
+- DeepSeek-AI has published the **DeepSeek-Coder-V2** open source language model which presents similar coding capabilities to models such as gpt-4, claude 3 opus and more
+- **Runway** has introduced **Gen-3 Alpha**, a new AI model for video generation
+- Anthropic released the **Claude Sonnet 3.5** model, which presents better capabilities than other models with low resource usage
+- Microsoft released in open source a series of image recognition models called **Florence 2**
+- Google announced **Gemma 2** open source language models with 9B and 27B parameter sizes. Also, the company opened the context window capabilities to developers for up to **2 million tokens**
