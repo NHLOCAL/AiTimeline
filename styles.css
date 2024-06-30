@@ -3,16 +3,17 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     padding: 50px;
-	padding-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
 }
 
 /* Header Styles */
 .header {
     text-align: center;
     margin-bottom: 50px;
-    padding: 20px 0; /* Padding top and bottom */
-    background-color: #f9f9f9; /* Subtle background color */
-    position: relative; /* Position for pseudo-elements */
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    position: relative;
 }
 
 .header::before,
@@ -21,38 +22,37 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 2px; /* Line width */
-    background-color: #007BFF; /* Line color */
+    width: 2px;
+    background-color: #007BFF;
 }
 
 .header::before {
-    left: 0; /* Left vertical line */
+    left: 0;
 }
 
 .header::after {
-    right: 0; /* Right vertical line */
+    right: 0;
 }
 
 .header h1,
 .header h2 {
-    position: relative; /* Adjust z-index */
+    position: relative;
     z-index: 1;
-    font-family: 'Arial', sans-serif; /* Font */
+    font-family: 'Arial', sans-serif;
 }
 
 .header h1 {
-    font-size: 42px; /* Larger font size */
+    font-size: 42px;
     font-weight: bold;
-    color: #333; /* Neutral text color */
+    color: #333;
     margin-bottom: 10px;
 }
 
 .header h2 {
-    font-size: 28px; /* Slightly larger font size */
+    font-size: 28px;
     font-weight: normal;
-    color: #555; /* Slightly darker text color */
+    color: #555;
 }
-
 
 /* Timeline Container */
 .timeline {
@@ -62,41 +62,30 @@ body {
 }
 
 /* Year Label */
-.year {
+.year h2 {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 40px; /* Increased margin-bottom */
+    margin-bottom: 40px;
     color: #333;
     border-bottom: 2px solid #007BFF;
     padding-bottom: 10px;
-}
-
-/* Year Label Responsive */
-@media (max-width: 768px) {
-    .year {
-        font-size: 24px;
-    }
 }
 
 /* Event Styles */
 .event {
     border-left: 2px solid #007BFF;
     padding-left: 30px;
-    margin-bottom: 40px; /* Increased margin-bottom */
-	max-width: 500px;
+    margin-bottom: 40px;
+    max-width: 500px;
     position: relative;
     padding-bottom: 20px;
     transition: all 0.3s ease;
-    counter-reset: dot-counter;
-    line-height: 1.5; /* Increased line-height */
 }
 
-/* Event Hover */
 .event:hover {
     background-color: #f4f4f4;
 }
 
-/* Event Date */
 .event .date {
     font-size: 22px;
     font-weight: bold;
@@ -104,14 +93,12 @@ body {
     margin-bottom: 10px;
 }
 
-/* Event Info */
 .event .info {
     margin-bottom: 10px;
     position: relative;
-    padding-left: 20px; /* Space for the dot */
+    padding-left: 20px;
 }
 
-/* Event Timeline Dot */
 .event::before {
     content: '';
     position: absolute;
@@ -121,22 +108,8 @@ body {
     height: 18px;
     border-radius: 50%;
     background-color: #007BFF;
-    /* transform: translateY(-50%); */
 }
 
-/* Event Timeline Dot Responsive */
-@media (max-width: 768px) {
-    .event {
-        padding-left: 20px;
-    }
-    .event::before {
-        left: -7px;
-        width: 14px;
-        height: 14px;
-    }
-}
-
-/* Info Dot */
 .info::before {
     content: '';
     position: absolute;
@@ -147,22 +120,17 @@ body {
     height: 8px;
     border-radius: 50%;
     background-color: #007BFF;
-    counter-increment: dot-counter;
-    z-index: 1;
 }
 
-
-/* Special event points design */
 .info.special::before {
     background-color: #b80003;
-	width: 9.5px;
+    width: 9.5px;
     height: 9.5px;
 }
 
-/* Show tooltip on hover */
 .info.special:hover::before {
-    content: 'Significant event'; /* Display text on hover */
-    background-color: #8C2D2D; /* Special color */
+    content: 'Significant event';
+    background-color: #8C2D2D;
     color: white;
     font-size: 12px;
     padding: 5px;
@@ -173,86 +141,58 @@ body {
     white-space: nowrap;
 }
 
-
-
-/* Reset Dot Counter */
-.event:not(:last-child) .info::before {
-    counter-reset: dot-counter 0;
-}
-
-/* Info Dot Responsive */
-@media (max-width: 768px) {
-    .info::before {
-        width: 6px;
-        height: 6px;
-    }
-	
-	.info.special::before {
-	width: 7.5px;
-    height: 7.5px;
-}
-}
-
 /* Footer Styles */
 .footer {
     text-align: center;
-    background-color: #f9f9f9; /* Subtle background color */
-    padding: 20px 0; /* Padding top and bottom */
-    border-top: 2px solid #007BFF; /* Top border */
-    border-bottom: 2px solid #007BFF; /* Bottom border */
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    border-top: 2px solid #007BFF;
+    border-bottom: 2px solid #007BFF;
+    margin-top: 40px;
 }
 
 .footer .content {
-    max-width: 1000px; /* Limit content width */
-    margin: 0 auto; *
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .footer h3 {
     font-size: 24px;
-    color: #333; /* Neutral text color */
-    margin-bottom: 15px; /* Increased margin for better spacing */
-	margin-top: 10px;
-    text-align: left; /* Left-align the headings */
-    padding-left: 20px; /* Add padding to align with list items */
-}
-
-.footer p {
-    font-size: 18px;
-    color: #555; /* Slightly darker text color */
-    margin-bottom: 20px;
-    text-align: left; /* Left-align the paragraph */
-    padding-left: 20px; /* Add padding to align with list items */
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-left: 30px; /* Add padding to align with headings and paragraphs */
+    padding-left: 30px;
 }
 
 .footer ul li {
     font-size: 18px;
-    color: #555; /* Slightly darker text color */
+    color: #555;
     margin-bottom: 10px;
-    padding-left: 20px; /* Indentation for better alignment */
-    text-align: left; /* Left-align the list items */
-    position: relative; /* Position for bullet points */
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
 }
 
 .footer ul li a {
-    color: #007BFF; /* Link color */
+    color: #007BFF;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for link color */
+    transition: color 0.3s;
 }
 
 .footer ul li a:hover {
-    color: #0056b3; /* Darker link color on hover */
+    color: #0056b3;
     text-decoration: underline;
 }
 
-
-.footer ul li:before  {
+.footer ul li:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -262,56 +202,96 @@ body {
     height: 8px;
     border-radius: 50%;
     background-color: #007BFF;
-    counter-increment: dot-counter;
-    z-index: 1;
 }
 
-
-
-/* scrollbar design */
-
+/* Scrollbar design */
 ::-webkit-scrollbar {
     width: 12px;
     background-color: #e4ecfd;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color:  #003b7287;
-
+    background-color: #003b7287;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color:  #003b72f7;
+    background-color: #003b72f7;
 }
 
-
-/* Footer Styles */
+/* Bottom Footer Styles */
 footer {
     text-align: center;
-    background-color: #f9f9f9; /* Subtle background color */
-    padding: 20px 0; /* Padding top and bottom */
-    border-bottom: 2px solid #007BFF; /* Bottom border */
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    border-bottom: 2px solid #007BFF;
 }
 
 footer .content {
-    max-width: 1000px; /* Limit content width */
-    margin: 0 auto; 
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 footer .footer-links {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Gap between links */
+    gap: 20px;
 }
 
 footer .footer-links a {
     font-size: 18px;
-    color: #333; /* Black shade for link color */
+    color: #333;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for link color */
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
 }
 
 footer .footer-links a:hover {
-    color: #555; /* Darker black shade on hover */
+    color: #555;
     text-decoration: underline;
+}
+
+/* GitHub icon styles */
+.github-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .header h2 {
+        font-size: 24px;
+    }
+
+    .year h2 {
+        font-size: 24px;
+    }
+
+    .event {
+        padding-left: 20px;
+    }
+
+    .event::before {
+        left: -7px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .info::before {
+        width: 6px;
+        height: 6px;
+    }
+
+    .info.special::before {
+        width: 7.5px;
+        height: 7.5px;
+    }
 }
