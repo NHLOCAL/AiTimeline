@@ -3,31 +3,41 @@ def convert_to_html(input_file, output_file):
         lines = f.readlines()
 
     html = []
+    current_article = None
+
     for line in lines:
         line = line.strip()
         if line.startswith('--'):
-            # סגור את div הקודם אם קיים
-            if html and html[-1] != '</div>':
-                html.append('</div>')
+            # Close the previous article if exists
+            if current_article:
+                html.append('</article>')
+            
             month = line.replace('--', '').strip()
-            html.append(f'<div class="event" data-date="{month}">')
-            html.append(f'\t<div class="date">{month}</div>')
+            year = "2024"  # You may want to make this dynamic
+            current_article = f'<article class="event" data-date="{month} {year}">'
+            html.append(current_article)
+            html.append(f'\t<h3 class="date">{month}</h3>')
         elif line.startswith('-'):
             event = line.replace('-', '').strip()
-            # הדגש את כל הטקסט בין **
+            # Highlight all text between **
             while '**' in event:
-                event = event.replace('**', '<b>', 1)
-                event = event.replace('**', '</b>', 1)
-            html.append(f'\t<div class="info">{event}</div>')
+                event = event.replace('**', '<strong>', 1)
+                event = event.replace('**', '</strong>', 1)
+            
+            # Check if the event is special (you may want to define criteria for this)
+            if "special" in event.lower():
+                html.append(f'\t<p class="info special">{event}</p>')
+            else:
+                html.append(f'\t<p class="info">{event}</p>')
 
-    # סגור את div האחרון אם קיים
-    if html and html[-1] != '</div>':
-        html.append('</div>')
+    # Close the last article if exists
+    if current_article:
+        html.append('</article>')
 
     with open(output_file, 'w') as f:
         f.write('\n'.join(html))
 
-# שימוש
+# Usage
 input_file = 'input.txt'
 output_file = 'output.html'
 convert_to_html(input_file, output_file)

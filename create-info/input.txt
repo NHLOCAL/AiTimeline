@@ -1,5 +1,4 @@
-- DeepSeek-AI has published the **DeepSeek-Coder-V2** open source language model which presents similar coding capabilities to models such as gpt-4, claude 3 opus and more
-- **Runway** has introduced **Gen-3 Alpha**, a new AI model for video generation
-- Anthropic released the **Claude Sonnet 3.5** model, which presents better capabilities than other models with low resource usage
-- Microsoft released in open source a series of image recognition models called **Florence 2**
-- Google announced **Gemma 2** open source language models with 9B and 27B parameter sizes. Also, the company opened the context window capabilities to developers for up to **2 million tokens**
+-- July
+- OpenAI has released a miniaturized model called **gpt4o mini** that presents high capabilities at a low cost
+- Meta releases as open source the **llama 3.1 model** in sizes 8B 70B and 405B. The large model features the same capabilities as the best closed source models
+- mistral ai releases three new models: **Codestral Mamba**, **Mistral NeMo** and **Mathstral** designed for mathematics
