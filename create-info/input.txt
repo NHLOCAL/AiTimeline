@@ -1,4 +1,4 @@
--- July
-- OpenAI has released a miniaturized model called **gpt4o mini** that presents high capabilities at a low cost
-- Meta releases as open source the **llama 3.1 model** in sizes 8B 70B and 405B. The large model features the same capabilities as the best closed source models
-- mistral ai releases three new models: **Codestral Mamba**, **Mistral NeMo** and **Mathstral** designed for mathematics
+- Google DeepMind has unveiled two new AI systems that won silver medals at this year's International Mathematical Olympiad (IMO),  **AlphaProof** and **AlphaGeometry 2**.
+- OpenAI launched **SearchGPT**, an integrated web search
+- Startup Udio has released **Udio v1.5**, an updated version of its music creation model
+- mistral ai has released a large language model - **Mistral Large 2** in size 123B, which presents capabilities close to the closed SOTA models.
