@@ -1,4 +1,8 @@
-- Google DeepMind has unveiled two new AI systems that won silver medals at this year's International Mathematical Olympiad (IMO),  **AlphaProof** and **AlphaGeometry 2**.
-- OpenAI launched **SearchGPT**, an integrated web search
-- Startup Udio has released **Udio v1.5**, an updated version of its music creation model
-- mistral ai has released a large language model - **Mistral Large 2** in size 123B, which presents capabilities close to the closed SOTA models.
+- **Midjourney v6.1** is released
+- Google releases the **Gemma 2 2B** model as open source. The model demonstrates better capabilities than much larger models.
+
+-- August
+
+- "Black Forest Labs" releases weights for an image creation model named **Flux**, which shows better performance than similar closed-source models.
+- Google released a new version of its language model, **Gemini pro 1.5 0801**, featuring improved performance.
+- OpenAI released a new version of its model, **gpt4o 08-06**, achieving 100% success in generating valid JSON output.
