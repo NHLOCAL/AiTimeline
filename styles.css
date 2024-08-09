@@ -401,3 +401,52 @@ footer .content {
         margin-bottom: 30px;
     }
 }
+
+
+/* Year Navigation Bar */
+.year-nav {
+  text-align: center;
+  margin-bottom: 30px;
+  position: sticky;
+  /* Make the navigation bar sticky */
+  top: 0;
+  /* Stick it to the top of the viewport */
+  background-color: #f9f9f9;
+  /* Match the background color */
+  z-index: 100;
+  /* Ensure it stays on top of other elements */
+  padding: 10px 0;
+  /* Add some padding for better visual appearance */
+}
+
+.year-nav a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 8px 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #007BFF;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.year-nav a:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.year-nav a.active {
+  background-color: #007BFF;
+  color: #fff;
+}
+	
+.year {
+    scroll-margin-top: 80px;
+}
+
+.year-nav a:target {
+  background-color: #007BFF;
+  color: #fff;
+}
