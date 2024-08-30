@@ -1,5 +1,1 @@
-- אימייג'ן 3 שוחרר
-- GROK 2 - שוחרר על ידי xAI ומציג ביצועים מובילים במיוחד עבור מתמטיקה
-- Phi 3.5 ב-3 גרסאות המציגות ביצועים גבוהים ביחס לגודלם
-- ideogram 2.0
-- luma משחררת את מודל Dream Machine 1.5 ליצירת וידאו
+- Google has introduced three new experimental AI models: **Gemini 1.5 Flash-8B**, **Gemini 1.5 Pro** Enhanced, and **Gemini 1.5 Flash** Updated.
