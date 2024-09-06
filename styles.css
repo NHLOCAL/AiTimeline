@@ -452,12 +452,8 @@ footer .content {
 }
 
 body.dark-mode {
-    font-family: 'Roboto', sans-serif;
     background-color: #333;
     color: white;
-    padding: 50px;
-    padding-bottom: 10px;
-    line-height: 1.5;
 }
 
 body.dark-mode .header, body.dark-mode .footer,body.dark-mode footer, body.dark-mode .footer-section h3,body.dark-mode .footer-section,body.dark-mode .year-nav,body.dark-mode .year-nav a,body.dark-mode .year,body.dark-mode .event:hover{
