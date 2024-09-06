@@ -1,1 +1,1 @@
-- Google has introduced three new experimental AI models: **Gemini 1.5 Flash-8B**, **Gemini 1.5 Pro** Enhanced, and **Gemini 1.5 Flash** Updated.
+- **Reflection 70B** announced as the world's best open source model.
