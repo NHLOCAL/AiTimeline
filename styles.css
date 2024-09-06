@@ -306,7 +306,7 @@ footer .footer-links a:hover {
 
 .github-button {
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     border-radius: 0px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -449,4 +449,61 @@ footer .content {
 .year-nav a:target {
   background-color: #007BFF;
   color: #fff;
+}
+
+body.dark-mode {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+body.dark-mode .header, body.dark-mode .footer,body.dark-mode footer, body.dark-mode .footer-section h3,body.dark-mode .footer-section,body.dark-mode .year-nav,body.dark-mode .year-nav a,body.dark-mode .year,body.dark-mode .event:hover{
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .header h1,body.dark-mode h1,body.dark-mode h2,body.dark-mode h3{
+    color: white;
+}
+body.dark-mode .header h2, body.dark-mode .footer-section, body.dark-mode .event .date {
+    color: #919baa;
+}
+
+body.dark-mode .year-nav a:hover,body.dark-mode .year-nav a.active , body.dark-mode .year-nav a:target{
+    background-color: #007BFF;
+    color: #fff;
+  }
+
+.dark-mode-toggle-container {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    z-index: 1000;
+}
+
+.dark-mode-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background-color: #ddd;
 }
