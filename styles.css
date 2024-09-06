@@ -306,7 +306,7 @@ footer .footer-links a:hover {
 
 .github-button {
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     border-radius: 0px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -488,10 +488,10 @@ body.dark-mode .year-nav a:hover,body.dark-mode .year-nav a.active , body.dark-m
     background-color: #333;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 5px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     transition: background-color 0.3s, color 0.3s;
 }
 
