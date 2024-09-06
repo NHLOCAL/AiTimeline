@@ -1,3 +1,12 @@
+document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+      this.textContent = '☀️ Light Mode';
+  } else {
+      this.textContent = '🌙 Dark Mode';
+  }
+});
+
 const yearLinks = document.querySelectorAll('.year-nav a');
 const yearSections = document.querySelectorAll('.year');
 
