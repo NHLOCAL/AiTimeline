@@ -1,2 +1,2 @@
-- The French AI company Mistral has introduced **Pixtral-12B**, its first multi-modal model capable of processing both images and text.
-- OPENAI has released two next-generation AI models to its subscribers: **o1 preview** and **o1 mini**. These models show a significant improvement in performance, particularly in tasks requiring reasoning, including coding, mathematics, GPQA, and more.
+- QWEN 2.5
+- KLING 1.5
