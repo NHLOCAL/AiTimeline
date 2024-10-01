@@ -1,1 +1,2 @@
 - Google releases an update to the AI ​​tool **NotebookLM** that allows the creation of a podcast based on the user's content
+- Mistarl small
