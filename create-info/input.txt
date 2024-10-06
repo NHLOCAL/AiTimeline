@@ -1,2 +1,5 @@
 - Google releases an update to the AI ​​tool **NotebookLM** that allows the creation of a podcast based on the user's content
 - Mistarl small
+- Flux 1.1 Pro
+- Meta Movie Gen
+- Pika 1.5
