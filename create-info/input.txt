@@ -1,18 +1,3 @@
--- September
-
-- Google releases an update to its AI tool **NotebookLM** that enables users to create podcasts based on their own content.
-- Mistral AI launches a 22B model named **Mistral Small**.
-
--- October
-
-- **Flux 1.1 Pro** is released, showcasing advanced capabilities for image creation.
-- Meta unveils **Movie Gen**, a new AI model that generates videos, images, and audio from text input.
-- Pika introduces **Video Model 1.5** along with "Pika Effects."
-- Adobe announces its video creation model, **Firefly Video**.
-- Startup Rhymes AI releases **Aria**, an open-source, multimodal model exhibiting capabilities similar to comparably sized proprietary models.
-- Meta releases an open-source speech-to-speech language model named **Meta Spirit LM**.
-- Mistral AI introduces **Ministral**, a new model available in 3B and 8B parameter sizes.
-- **Janus AI**, a multimodal language model capable of recognizing and generating both text and images, is released as open source by DeepSeek-AI.
-- Google DeepMind and MIT unveil **Fluid**, a text-to-image generation model with industry-leading performance at a scale of 10.5B parameters.
-- **Stable Diffusion 3.5** is released in three sizes as open source.
-- Anthropic launches **Claude 3.5 Sonnet New**, demonstrating significant advancements in specific areas over its previous version, and announces **Claude 3.5 Haiku**.
+- The text-to-image model **Recraft v3** has been released to the public, ranking first in benchmarks compared to similar models.
+- OpenAI has launched **Search GPT**, allowing users to perform web searches directly within the platform.
+- Anthropic announces an experimental feature for computer use with a public beta API.
