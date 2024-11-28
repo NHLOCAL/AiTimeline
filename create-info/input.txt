@@ -1,3 +1,7 @@
-- The text-to-image model **Recraft v3** has been released to the public, ranking first in benchmarks compared to similar models.
-- OpenAI has launched **Search GPT**, allowing users to perform web searches directly within the platform.
-- Anthropic announces an experimental feature for computer use with a public beta API.
+-- November
+- **Alibaba** released its new model, **QwQ-32B-Preview**, which integrates reasoning capabilities before responding. The model competes with, and sometimes surpasses, OpenAI's **o1-preview** model.  
+- **Alibaba** open-sourced the model **Qwen2.5 Coder 32B**, which offers comparable capabilities to leading proprietary language models in the coding domain.  
+- **DeepSeek** unveiled its new AI model, **DeepSeek-R1-Lite-Preview**, which incorporates reasoning capabilities and delivers impressive performance on the **AIME** and **MATH** benchmarks, matching the level of OpenAI's **o1-preview**.  
+- **Suno** upgraded its AI-powered music generator to **v4**, introducing new features and performance improvements.  
+- **Mistral AI** launched the **Pixtral Large** model, a multimodal language model excelling in image recognition and advanced performance metrics.  
+- **Google** introduced two experimental models, **gemini-exp-1114** and **gemini-exp-1121**, currently leading the chatbot landscape with enhanced performance.
