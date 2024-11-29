@@ -5,8 +5,7 @@
     - text: <strong>Midjourney v1</strong>
 - date: March
     info:
-    - text: <strong>GPT-3.5</strong> is released over API access by OpenAI.
-      special: true
+    - text: OpenAI releases text-davinci with an API approach, later presented as GPT 3.5
   - date: April
     info:
     - text: <strong>Midjourney v2</strong>
@@ -23,8 +22,9 @@
     - text: <strong>Stable Diffusion 1.5</strong> becomes available.
   - date: November
     info:
-    - text: <strong>ChatGPT 3.5</strong>, a chatbot by OpenAI, is released
+    - text: <strong>ChatGPT</strong>, a chatbot by OpenAI using GPT-3.5, is released
         to the public and quickly becomes a viral sensation.
+      special: true
     - text: <strong>Midjourney v4</strong> is released.
     - text: <strong>Stable Diffusion 2.0</strong> is launched.
   - date: December
