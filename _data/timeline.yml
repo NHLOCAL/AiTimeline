@@ -1,8 +1,23 @@
+- year: 2019 
+  events:
+  - date: February 
+    info:
+    - text: <strong>GPT-2</strong>
+- year: 2020
+  events:
+  - date: June 
+    info:
+    - text: <strong>GPT-3</strong>
 - year: 2022
   events:
   - date: February
     info:
     - text: <strong>Midjourney v1</strong>
+- date: March
+    info:
+    - text: <strong>ChatGPT 3.5</strong>, a large language model by OpenAI, is released
+        to the public and quickly becomes a viral sensation.
+      special: true
   - date: April
     info:
     - text: <strong>Midjourney v2</strong>
@@ -21,9 +36,6 @@
     info:
     - text: <strong>Midjourney v4</strong> is released.
     - text: <strong>Stable Diffusion 2.0</strong> is launched.
-    - text: <strong>ChatGPT 3.5</strong>, a large language model by OpenAI, is released
-        to the public and quickly becomes a viral sensation.
-      special: true
   - date: December
     info:
     - text: <strong>Stable Diffusion 2.1</strong> is released.
@@ -132,7 +144,7 @@
         between 270 million and 3 billion parameters.
   - date: May
     info:
-    - text: OpenAI announces the <strong>GPT-4-O model</strong> that presents full
+    - text: OpenAI announces the <strong>GPT-4o model</strong> that presents full
         multimodal capabilities, including receiving and creating text, images, and
         audio. The model presents an impressive ability to speak with a high response
         speed and in natural language. The model is 2 times more efficient than the
@@ -182,10 +194,10 @@
         capabilities to developers for up to 2 million tokens.
   - date: July
     info:
-    - text: OpenAI has released a miniaturized model called <strong>gpt4o mini</strong>
+    - text: OpenAI has released a miniaturized model called <strong>GPT-4o mini</strong>
         that presents high capabilities at a low cost
     - text: Meta releases as open source the <strong>llama 3.1 model</strong> in sizes
-        8B 70B and 405B. The large model features the same capabilities as the best
+        8B, 70B and 405B. The large model features the same capabilities as the best
         closed source models
       special: true
     - text: 'mistral ai releases three new models: <strong>Codestral Mamba</strong>,
@@ -198,7 +210,7 @@
     - text: OpenAI launched <strong>SearchGPT</strong>, an integrated web search
     - text: Startup Udio has released <strong>Udio v1.5</strong>, an updated version
         of its music creation model
-    - text: mistral ai has released a large language model  <strong>Mistral Large
+    - text: Mistral AI has released a large language model <strong>Mistral Large
         2</strong> in size 123B, which presents capabilities close to the closed SOTA
         models.
       special: true
@@ -210,7 +222,7 @@
     - text: '"Black Forest Labs" releases weights for an image creation model named
         <strong>Flux</strong>, which shows better performance than similar closedsource
         models.'
-    - text: OpenAI released a new version of its model, <strong>gpt4o 0806</strong>,
+    - text: OpenAI released a new version of its model, <strong>GPT-4o 0806</strong>,
         achieving 100% success in generating valid JSON output.
     - text: Google's image generation model, <strong>Imagen 3</strong>, has been released.
     - text: xAI Corporation has launched the models <strong>Grok 2</strong> and <strong>Grok
@@ -242,7 +254,7 @@
     - text: <strong>OpenAI</strong> launches the <strong>advanced voice mode</strong>
         of GPT4o for all subscribers.
     - text: <strong>Meta</strong> releases <strong>Llama 3.2</strong> in sizes 1B,
-        3B, 11B, and 90B, featuring image recognition capabilities for the first time.
+        3B, 11B and 90B, featuring image recognition capabilities for the first time.
     - text: <strong>Google</strong> has rolled out new model updates ready for deployment,
         <strong>Gemini Pro 1.5 002</strong> and <strong>Gemini Flash 1.5 002</strong>,
         showcasing significantly improved longcontext processing.
@@ -296,7 +308,8 @@
         introducing new features and performance improvements.
     - text: <strong>Mistral AI</strong> launched the <strong>Pixtral Large</strong>
         model, a multimodal language model excelling in image recognition and advanced
-        performance metrics.
+        performance metrics, and an update to Mistral Large, 2411.
     - text: <strong>Google</strong> introduced two experimental models, <strong>gemini-exp-1114</strong>
         and <strong>gemini-exp-1121</strong>, currently leading the chatbot landscape
         with enhanced performance.
+    - text: Anthropic launches <strong>Claude 3.5 Haiku</strong> and Visual PDF Analysis in Claude.
