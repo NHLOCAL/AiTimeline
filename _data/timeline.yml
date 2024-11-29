@@ -3,9 +3,9 @@
   - date: February
     info:
     - text: <strong>Midjourney v1</strong>
-- date: March
+  - date: March
     info:
-    - text: OpenAI releases text-davinci with an API approach, later presented as GPT 3.5
+    - text: OpenAI releases <strong>text-davinci-002</strong> and <strong>code-davinci-002</strong> with an API approach.
   - date: April
     info:
     - text: <strong>Midjourney v2</strong>
