@@ -1,13 +1,3 @@
-- year: 2019 
-  events:
-  - date: February 
-    info:
-    - text: <strong>GPT-2</strong>
-- year: 2020
-  events:
-  - date: June 
-    info:
-    - text: <strong>GPT-3</strong>
 - year: 2022
   events:
   - date: February
@@ -15,8 +5,7 @@
     - text: <strong>Midjourney v1</strong>
 - date: March
     info:
-    - text: <strong>ChatGPT 3.5</strong>, a large language model by OpenAI, is released
-        to the public and quickly becomes a viral sensation.
+    - text: <strong>GPT-3.5</strong> is released over API access by OpenAI.
       special: true
   - date: April
     info:
@@ -34,6 +23,8 @@
     - text: <strong>Stable Diffusion 1.5</strong> becomes available.
   - date: November
     info:
+    - text: <strong>ChatGPT 3.5</strong>, a chatbot by OpenAI, is released
+        to the public and quickly becomes a viral sensation.
     - text: <strong>Midjourney v4</strong> is released.
     - text: <strong>Stable Diffusion 2.0</strong> is launched.
   - date: December
