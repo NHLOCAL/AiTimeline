@@ -285,22 +285,22 @@
         web searches directly within the platform.
   - date: November
     info:
-    - text: <strong>Alibaba</strong> released its new model, <strong>QwQ 32B Preview</strong>,
+    - text: Alibaba released its new model, <strong>QwQ 32B Preview</strong>,
         which integrates reasoning capabilities before responding. The model competes
-        with, and sometimes surpasses, OpenAI's <strong>o1-preview</strong> model.
-    - text: <strong>Alibaba</strong> opensourced the model <strong>Qwen2.5 Coder 32B</strong>,
+        with, and sometimes surpasses, OpenAI's o1-preview model.
+    - text: Alibaba opensourced the model <strong>Qwen2.5 Coder 32B</strong>,
         which offers comparable capabilities to leading proprietary language models
         in the coding domain.
-    - text: <strong>DeepSeek</strong> unveiled its new AI model, <strong>DeepSeek-R1-Lite-Preview</strong>,
+    - text: DeepSeek unveiled its new AI model, <strong>DeepSeek-R1-Lite-Preview</strong>,
         which incorporates reasoning capabilities and delivers impressive performance
-        on the <strong>AIME</strong> and <strong>MATH</strong> benchmarks, matching
-        the level of OpenAI's <strong>o1-preview</strong>.
+        on the AIME and MATH benchmarks, matching
+        the level of OpenAI's o1-preview.
     - text: <strong>Suno</strong> upgraded its AIpowered music generator to <strong>v4</strong>,
         introducing new features and performance improvements.
-    - text: <strong>Mistral AI</strong> launched the <strong>Pixtral Large</strong>
+    - text: Mistral AI launched the <strong>Pixtral Large</strong>
         model, a multimodal language model excelling in image recognition and advanced
         performance metrics, and an update to Mistral Large, 2411.
-    - text: <strong>Google</strong> introduced two experimental models, <strong>gemini-exp-1114</strong>
+    - text: Google introduced two experimental models, <strong>gemini-exp-1114</strong>
         and <strong>gemini-exp-1121</strong>, currently leading the arena chatbot
         with enhanced performance.
     - text: Anthropic launches <strong>Claude 3.5 Haiku</strong> and Visual PDF Analysis in Claude.
