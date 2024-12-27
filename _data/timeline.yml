@@ -304,3 +304,46 @@
         and <strong>gemini-exp-1121</strong>, currently leading the arena chatbot
         with enhanced performance.
     - text: Anthropic launches <strong>Claude 3.5 Haiku</strong> and Visual PDF Analysis in Claude.
+  - date: December
+    info:
+    - text: Amazon introduced a new series of models called <b>NOVA</b>, designed
+        for text, image, and video processing.
+    - text: OpenAI released <b>SORA</b>, a video generation model, along with the
+        full version of <b>O1</b> and <b>O1 Pro</b> for advanced subscribers. Additionally,
+        the company launched a live video mode for <b>GPT4o</b>.
+    - text: Google unveiled the experimental model <b>Gemini-Exp-1206</b>, which ranked
+        first in the chatbot leaderboard.
+    - text: Google launched <b>Gemini 2.0 Flash</b> in beta. This model leads benchmarks
+        and outperforms the previous version, <b>Gemini Pro 1.5</b>. Additionally,
+        Google introduced live speech and video mode and announced built-in image
+        generation capabilities within the model.
+    - text: Google revealed <b>Gemini-2.0-Flash-Thinking</b>, a thinking model based
+        on <b>Gemini 2.0 Flash</b>, which secured second place in the chatbot leaderboard.
+    - text: Google introduced <b>Veo 2</b>, a beta version video generation model
+        capable of producing 4K videos up to two minutes long. The model outperformed
+        <b>SORA</b> in human evaluations. Additionally, Google updated <b>Imagen 3</b>,
+        offering enhanced image quality and realism.
+    - text: xAI integrated <b>Aurora</b>, a new model for generating high-quality
+        and realistic images.
+    - text: Microsoft open-sourced the <b>Phi4</b> model, sized at 14B, showcasing
+        impressive capabilities for its size.
+    - text: Meta released <b>Llama 3.3 70B</b>, a model offering performance comparable
+        to <b>Llama 3.1 405B</b>.
+    - text: Google launched a multi-modal open-source model called <b>PaliGemma 2</b>,
+        integrated with existing <b>Gemma</b> models.
+    - text: Pika Labs released <b>2.0</b>, the latest version of its AI-powered video
+        generator.
+    - text: Meta introduced <b>Apollo</b>, a video generation model available in three
+        different sizes.
+    - text: Deepseek open-sourced <b>Deepseek V3</b>, a model with 671B parameters
+        that surpasses closed-source SOTA models across several benchmarks.
+    - text: Alibaba unveiled <b>QVQ-72B-Preview</b>, a cutting-edge thinking model
+        capable of analyzing images, featuring SOTA-level performance.
+    - text: OpenAI announced <b>O3</b>, a groundbreaking AI model achieving 87.5%
+        in the <b>ARC-AGI</b> benchmark, 25.2% in the <b>Frontier Math Benchmark</b>
+        (compared to under 2% in previous models), and 87.7% in Ph.D.-level science
+        questions. A cost-effective version, <b>O3 Mini</b>, is expected in January
+        2025, with performance similar to <b>O1</b>, alongside improved speed and
+        efficiency.
+    - text: The video generation model <b>Kling 1.6</b> was released, offering significant
+        performance enhancements.
