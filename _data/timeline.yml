@@ -2,140 +2,140 @@
   events:
   - date: February
     info:
-    - text: <b>Midjourney v1</b>
+    - text: <strong>Midjourney v1</strong>
   - date: March
     info:
-    - text: OpenAI releases <b>text-davinci-002</b> and <b>code-davinci-002</b> with an API approach.
+    - text: OpenAI releases <strong>text-davinci-002</strong> and <strong>code-davinci-002</strong> with an API approach.
   - date: April
     info:
-    - text: <b>Midjourney v2</b>
-    - text: <b>DALL-E 2</b> is announced for gradual release.
+    - text: <strong>Midjourney v2</strong>
+    - text: <strong>DALL-E 2</strong> is announced for gradual release.
       special: true
   - date: July
     info:
-    - text: <b>Midjourney v3</b> is launched.
+    - text: <strong>Midjourney v3</strong> is launched.
   - date: August
     info:
-    - text: <b>Stable Diffusion 1.4</b> is released.
+    - text: <strong>Stable Diffusion 1.4</strong> is released.
   - date: October
     info:
-    - text: <b>Stable Diffusion 1.5</b> becomes available.
+    - text: <strong>Stable Diffusion 1.5</strong> becomes available.
   - date: November
     info:
-    - text: <b>ChatGPT</b>, a chatbot by OpenAI using GPT-3.5, is released
+    - text: <strong>ChatGPT</strong>, a chatbot by OpenAI using GPT-3.5, is released
         to the public and quickly becomes a viral sensation.
       special: true
-    - text: <b>Midjourney v4</b> is released.
-    - text: <b>Stable Diffusion 2.0</b> is launched.
+    - text: <strong>Midjourney v4</strong> is released.
+    - text: <strong>Stable Diffusion 2.0</strong> is launched.
   - date: December
     info:
-    - text: <b>Stable Diffusion 2.1</b> is released.
+    - text: <strong>Stable Diffusion 2.1</strong> is released.
 - year: 2023
   events:
   - date: February
     info:
-    - text: Meta releases the <b>LLaMA</b> language model as open-source
+    - text: Meta releases the <strong>LLaMA</strong> language model as open-source
         for research purposes. The model is later leaked.
       special: true
-    - text: Microsoft gradually releases <b>Bing AI</b>, an AI chat based
+    - text: Microsoft gradually releases <strong>Bing AI</strong>, an AI chat based
         on an upgraded GPT model integrating internet search.
   - date: March
     info:
-    - text: <b>Midjourney v5</b> is launched.
-    - text: OpenAI's <b>GPT-4</b> model is partially released, featuring
+    - text: <strong>Midjourney v5</strong> is launched.
+    - text: OpenAI's <strong>GPT-4</strong> model is partially released, featuring
         multimodal image analysis and improved multi-language support.
-    - text: Google releases the AI chat <b>Bard</b> in a limited capacity,
+    - text: Google releases the AI chat <strong>Bard</strong> in a limited capacity,
         based on the LaMDA language model.
   - date: April
     info:
-    - text: Adobe releases the <b>Firefly</b> image creation model as a
+    - text: Adobe releases the <strong>Firefly</strong> image creation model as a
         beta version to a waiting list. The model allowed a variety of capabilities
         including text formatting.
   - date: May
     info:
-    - text: <b>Midjourney v5.1</b> is released.
-    - text: Google announces an upgrade to Bard, moving it to the upgraded <b>PaLM
-        2</b> language model. It will support 180 countries and many languages.
+    - text: <strong>Midjourney v5.1</strong> is released.
+    - text: Google announces an upgrade to Bard, moving it to the upgraded <strong>PaLM
+        2</strong> language model. It will support 180 countries and many languages.
   - date: June
     info:
-    - text: <b>Midjourney v5.2</b> is launched.
+    - text: <strong>Midjourney v5.2</strong> is launched.
   - date: July
     info:
-    - text: <b>Stable Diffusion XL 1.0</b> is released.
-    - text: Anthropic announces a new version of their large language model - <b>Claude
-        2</b>.
-    - text: Meta releases the <b>LLaMA 2</b> open source language model
+    - text: <strong>Stable Diffusion XL 1.0</strong> is released.
+    - text: Anthropic announces a new version of their large language model - <strong>Claude
+        2</strong>.
+    - text: Meta releases the <strong>LLaMA 2</strong> open source language model
         to the general public in a variety of sizes.
   - date: October
     info:
-    - text: <b>DALL-E 3</b> is released.
-    - text: Adobe releases <b>Firefly 2</b>.
+    - text: <strong>DALL-E 3</strong> is released.
+    - text: Adobe releases <strong>Firefly 2</strong>.
   - date: November
     info:
-    - text: <b>Stable Diffusion XL Turbo</b> is released - A fast model
+    - text: <strong>Stable Diffusion XL Turbo</strong> is released - A fast model
         that allows the creation of an image in one step in real time.
   - date: December
     info:
-    - text: <b>Midjourney v6</b> is launched.
+    - text: <strong>Midjourney v6</strong> is launched.
     - text: Google upgrades Bard in limited areas, moving it to be based on the upgraded
-        <b>Gemini Pro</b> language model.
-    - text: X Corporation launches <b>Grok AI</b> chatbot for paid subscribers
+        <strong>Gemini Pro</strong> language model.
+    - text: X Corporation launches <strong>Grok AI</strong> chatbot for paid subscribers
         in English language.
 - year: 2024
   events:
   - date: February
     info:
-    - text: Stability AI announces <b>Stable Diffusion 3</b> (gradually
+    - text: Stability AI announces <strong>Stable Diffusion 3</strong> (gradually
         released to waiting list).
     - text: Google upgrades the artificial intelligence chat in Bard, basing it on
-        the new <b>Gemini Pro</b> model, in all available languages. Google
+        the new <strong>Gemini Pro</strong> model, in all available languages. Google
         replaces "Bard" with "Gemini".
-    - text: Google announces the <b>Gemini Pro 1.5</b> multimodal language
+    - text: Google announces the <strong>Gemini Pro 1.5</strong> multimodal language
         model capable of parsing up to a million tokens, as well as parsing video
         and images. The model is gradually released to developers on a waiting list.
       special: true
-    - text: OpenAI announces the <b>Sora</b> model that produces videos
+    - text: OpenAI announces the <strong>Sora</strong> model that produces videos
         up to a minute long. The model is not released to the public at this time.
       special: true
   - date: March
     info:
-    - text: X Corporation announces the upcoming release of the <b>Grok 1.5</b>
+    - text: X Corporation announces the upcoming release of the <strong>Grok 1.5</strong>
         open source model.
-    - text: Anthropic announces <b>Claude 3</b>, a new version of their
+    - text: Anthropic announces <strong>Claude 3</strong>, a new version of their
         large language model. The version is deployed in 3 different sizes, with the
         largest model performing better than GPT-4.
-    - text: Suno AI, which develops a model for creating music, releases <b>Suno
-        v3</b> to the general public.
+    - text: Suno AI, which develops a model for creating music, releases <strong>Suno
+        v3</strong> to the general public.
   - date: April
     info:
-    - text: Stability AI releases a new update to the music creation model - <b>Stable
-        Audio 2.0</b>.
-    - text: X Corporation releases an upgrade to its language model, <b>Grok-1.5V</b>,
+    - text: Stability AI releases a new update to the music creation model - <strong>Stable
+        Audio 2.0</strong>.
+    - text: X Corporation releases an upgrade to its language model, <strong>Grok-1.5V</strong>,
         which integrates high-level image recognition. In the test presented by the
         company, the model is the best in identifying and analyzing images compared
         to other models.
-    - text: The Mistral company releases its new model <b>Mixtral 8x22B</b>
+    - text: The Mistral company releases its new model <strong>Mixtral 8x22B</strong>
         as open source. This is the most powerful model among the open source models
         and it contains 141 billion parameters but uses a method that allows more
         economical use.
-    - text: Meta releases the <b>LLaMA 3</b> model as open source in sizes
+    - text: Meta releases the <strong>LLaMA 3</strong> model as open source in sizes
         8B and 70B parameters. The large model shows better performance than Claude
         3 Sonnet and Gemini Pro 1.5 in several measures. Meta is expected to later
         release larger models with 400 billion parameters and more.
-    - text: Microsoft releases the <b>Phi-3-mini</b> model in open source.
+    - text: Microsoft releases the <strong>Phi-3-mini</strong> model in open source.
         The model comes in a reduced version of 3.8B parameters, which allows it to
         run on mobile devices as well, and it presents capabilities similar to GPT-3.5.
       special: true
-    - text: Adobe announces its new image creation model <b>Firefly 3</b>.
-    - text: The startup <b>Reka AI</b> presents a series of multimodal language
+    - text: Adobe announces its new image creation model <strong>Firefly 3</strong>.
+    - text: The startup <strong>Reka AI</strong> presents a series of multimodal language
         models in 3 sizes. The models are capable of processing video, audio and images.
         The large model featured similar capabilities to GPT-4.
     - text: Apple releases as full open source a series of small language models under
-        the name <b>OpenELM</b>. The models are available in four weights
+        the name <strong>OpenELM</strong>. The models are available in four weights
         between 270 million and 3 billion parameters.
   - date: May
     info:
-    - text: OpenAI announces the <b>GPT-4o model</b> that presents full
+    - text: OpenAI announces the <strong>GPT-4o model</strong> that presents full
         multimodal capabilities, including receiving and creating text, images, and
         audio. The model presents an impressive ability to speak with a high response
         speed and in natural language. The model is 2 times more efficient than the
@@ -143,164 +143,207 @@
       special: true
     - text: 'Google announces a large number of AI features in its products. The main
         ones: increasing the token limit to 2 million for Gemini 1.5 to waiting list,
-        releasing a smaller and faster <b>Gemini Flash 1.5 model</b>. Revealing
-        the latest image creation model <b>Imagen 3</b>, music creation
-        model <b>Music AI</b> and video creation model <b>Veo</b>.
-        And the announcement of the <b>Astra model</b> with multimodal capabilities
+        releasing a smaller and faster <strong>Gemini Flash 1.5 model</strong>. Revealing
+        the latest image creation model <strong>Imagen 3</strong>, music creation
+        model <strong>Music AI</strong> and video creation model <strong>Veo</strong>.
+        And the announcement of the <strong>Astra model</strong> with multimodal capabilities
         for realtime audio and video reception.'
-    - text: 'Microsoft announces <b>Copilot+</b> for dedicated computers,
+    - text: 'Microsoft announces <strong>Copilot+</strong> for dedicated computers,
         which will allow a full search of the user''s history through screenshots
         of the user''s activity. The company also released as open source the SLMs
-        that display impressive capabilities in a minimal size: <b>Phi-3 Small</b>,
-        <b>Phi-3 Medium</b>, and <b>Phi-3 Vision</b> which includes
+        that display impressive capabilities in a minimal size: <strong>Phi-3 Small</strong>,
+        <strong>Phi-3 Medium</strong>, and <strong>Phi-3 Vision</strong> which includes
         image recognition capability.'
-    - text: Meta introduces <b>Chameleon</b>, a new multimodal model that
+    - text: Meta introduces <strong>Chameleon</strong>, a new multimodal model that
         seamlessly renders text and images.
-    - text: Mistral AI releases a new open source version of its language model <b>Mistral-7B-Instruct-v0.3</b>.
-    - text: Google announces <b>AI Overviews</b> intended to give a summary
+    - text: Mistral AI releases a new open source version of its language model <strong>Mistral-7B-Instruct-v0.3</strong>.
+    - text: Google announces <strong>AI Overviews</strong> intended to give a summary
         of the relevant information in Google search.
       special: true
-    - text: Suno AI releases an updated music creation model <b>Suno v3.5</b>.
-    - text: Mistral AI releases a new language model designed for coding <b>Codestral</b>
+    - text: Suno AI releases an updated music creation model <strong>Suno v3.5</strong>.
+    - text: Mistral AI releases a new language model designed for coding <strong>Codestral</strong>
         in size 22B.
   - date: June
     info:
-    - text: Stability AI releases its updated image creation model <b>Stable
-        Diffusion 3</b> in a medium version in size 2B parameters.
-    - text: Apple announces <b>Apple Intelligence</b>, an AI system that
+    - text: Stability AI releases its updated image creation model <strong>Stable
+        Diffusion 3</strong> in a medium version in size 2B parameters.
+    - text: Apple announces <strong>Apple Intelligence</strong>, an AI system that
         will be integrated into the company's devices and will combine AI models of
         different sizes for different tasks.
-    - text: DeepSeekAI publishes the <b>DeepSeekCoderV2</b> open source
+    - text: DeepSeekAI publishes the <strong>DeepSeekCoderV2</strong> open source
         language model which presents similar coding capabilities to models such as
         GPT-4, Claude 3 Opus and more.
-    - text: <b>Runway</b> introduces <b>Gen3 Alpha</b>, a new
+    - text: <strong>Runway</strong> introduces <strong>Gen3 Alpha</strong>, a new
         AI model for video generation.
-    - text: Anthropic releases the <b>Claude Sonnet 3.5</b> model, which
+    - text: Anthropic releases the <strong>Claude Sonnet 3.5</strong> model, which
         presents better capabilities than other models with low resource usage.
       special: true
     - text: Microsoft releases in open source a series of image recognition models
-        called <b>Florence 2</b>.
-    - text: Google announces <b>Gemma 2</b> open source language models
+        called <strong>Florence 2</strong>.
+    - text: Google announces <strong>Gemma 2</strong> open source language models
         with 9B and 27B parameter sizes. Also, the company opens the context window
         capabilities to developers for up to 2 million tokens.
   - date: July
     info:
-    - text: OpenAI has released a miniaturized model called <b>GPT-4o mini</b>
+    - text: OpenAI has released a miniaturized model called <strong>GPT-4o mini</strong>
         that presents high capabilities at a low cost
-    - text: Meta releases as open source the <b>llama 3.1 model</b> in sizes
+    - text: Meta releases as open source the <strong>llama 3.1 model</strong> in sizes
         8B, 70B and 405B. The large model features the same capabilities as the best
         closed source models
       special: true
-    - text: 'mistral ai releases three new models: <b>Codestral Mamba</b>,
-        <b>Mistral NeMo</b> and <b>Mathstral</b> designed for
+    - text: 'mistral ai releases three new models: <strong>Codestral Mamba</strong>,
+        <strong>Mistral NeMo</strong> and <strong>Mathstral</strong> designed for
         mathematics'
     - text: Google DeepMind has unveiled two new AI systems that won silver medals
-        at this year's International Mathematical Olympiad (IMO),  <b>AlphaProof</b>
-        and <b>AlphaGeometry 2</b>.
+        at this year's International Mathematical Olympiad (IMO),  <strong>AlphaProof</strong>
+        and <strong>AlphaGeometry 2</strong>.
       special: true
-    - text: OpenAI launched <b>SearchGPT</b>, an integrated web search
-    - text: Startup Udio has released <b>Udio v1.5</b>, an updated version
+    - text: OpenAI launched <strong>SearchGPT</strong>, an integrated web search
+    - text: Startup Udio has released <strong>Udio v1.5</strong>, an updated version
         of its music creation model
-    - text: Mistral AI has released a large language model <b>Mistral Large
-        2</b> in size 123B, which presents capabilities close to the closed SOTA
+    - text: Mistral AI has released a large language model <strong>Mistral Large
+        2</strong> in size 123B, which presents capabilities close to the closed SOTA
         models.
       special: true
-    - text: <b>Midjourney v6.1</b> is released
-    - text: Google releases the <b>Gemma 2 2B</b> model as open source.
+    - text: <strong>Midjourney v6.1</strong> is released
+    - text: Google releases the <strong>Gemma 2 2B</strong> model as open source.
         The model demonstrates better capabilities than much larger models.
   - date: August
     info:
     - text: '"Black Forest Labs" releases weights for an image creation model named
-        <b>Flux</b>, which shows better performance than similar closedsource
+        <strong>Flux</strong>, which shows better performance than similar closedsource
         models.'
-    - text: OpenAI released a new version of its model, <b>GPT-4o 0806</b>,
+    - text: OpenAI released a new version of its model, <strong>GPT-4o 0806</strong>,
         achieving 100% success in generating valid JSON output.
-    - text: Google's image generation model, <b>Imagen 3</b>, has been released.
-    - text: xAI Corporation has launched the models <b>Grok 2</b> and <b>Grok
-        2 mini</b>, which demonstrate performance on par with leading SOTA models
+    - text: Google's image generation model, <strong>Imagen 3</strong>, has been released.
+    - text: xAI Corporation has launched the models <strong>Grok 2</strong> and <strong>Grok
+        2 mini</strong>, which demonstrate performance on par with leading SOTA models
         in the market.
-    - text: Microsoft has introduced its small language models, <b>Phi 3.5</b>,
+    - text: Microsoft has introduced its small language models, <strong>Phi 3.5</strong>,
         in three versions, each showcasing impressive performance relative to their
         size.
-    - text: 'Google has introduced three new experimental AI models: <b>Gemini
-        1.5 Flash8B</b>, <b>Gemini 1.5 Pro</b> Enhanced, and <b>Gemini
-        1.5 Flash</b> Updated.'
-    - text: <b>Ideogram 2.0</b> has been released, offering image generation
+    - text: 'Google has introduced three new experimental AI models: <strong>Gemini
+        1.5 Flash8B</strong>, <strong>Gemini 1.5 Pro</strong> Enhanced, and <strong>Gemini
+        1.5 Flash</strong> Updated.'
+    - text: <strong>Ideogram 2.0</strong> has been released, offering image generation
         capabilities that surpass those of other leading models.
-    - text: Luma has unveiled the <b>Dream Machine 1.5</b> model for video
+    - text: Luma has unveiled the <strong>Dream Machine 1.5</strong> model for video
         creation.
   - date: September
     info:
-    - text: The French AI company Mistral has introduced <b>Pixtral12B</b>,
+    - text: The French AI company Mistral has introduced <strong>Pixtral12B</strong>,
         its first multimodal model capable of processing both images and text.
     - text: 'OPENAI has released two nextgeneration AI models to its subscribers:
-        <b>o1 preview</b> and <b>o1 mini</b>. These models show
+        <strong>o1 preview</strong> and <strong>o1 mini</strong>. These models show
         a significant improvement in performance, particularly in tasks requiring
         reasoning, including coding, mathematics, GPQA, and more.'
       special: true
-    - text: Chinese company Alibaba releases the <b>Qwen 2.5</b> model in
+    - text: Chinese company Alibaba releases the <strong>Qwen 2.5</strong> model in
         various sizes, ranging from 0.5B to 72B. The models demonstrate capabilities
         comparable to much larger models.
-    - text: The video generation model <b>KLING 1.5</b> has been released.
-    - text: <b>OpenAI</b> launches the <b>advanced voice mode</b>
+    - text: The video generation model <strong>KLING 1.5</strong> has been released.
+    - text: <strong>OpenAI</strong> launches the <strong>advanced voice mode</strong>
         of GPT4o for all subscribers.
-    - text: <b>Meta</b> releases <b>Llama 3.2</b> in sizes 1B,
+    - text: <strong>Meta</strong> releases <strong>Llama 3.2</strong> in sizes 1B,
         3B, 11B and 90B, featuring image recognition capabilities for the first time.
-    - text: <b>Google</b> has rolled out new model updates ready for deployment,
-        <b>Gemini Pro 1.5 002</b> and <b>Gemini Flash 1.5 002</b>,
+    - text: <strong>Google</strong> has rolled out new model updates ready for deployment,
+        <strong>Gemini Pro 1.5 002</strong> and <strong>Gemini Flash 1.5 002</strong>,
         showcasing significantly improved longcontext processing.
-    - text: <b>Kyutai</b> releases two opensource versions of its voicetovoice
-        model, <b>Moshi</b>.
-    - text: Google releases an update to its AI tool <b>NotebookLM</b> that
+    - text: <strong>Kyutai</strong> releases two opensource versions of its voicetovoice
+        model, <strong>Moshi</strong>.
+    - text: Google releases an update to its AI tool <strong>NotebookLM</strong> that
         enables users to create podcasts based on their own content.
-    - text: Mistral AI launches a 22B model named <b>Mistral Small</b>.
+    - text: Mistral AI launches a 22B model named <strong>Mistral Small</strong>.
   - date: October
     info:
-    - text: <b>Flux 1.1 Pro</b> is released, showcasing advanced capabilities
+    - text: <strong>Flux 1.1 Pro</strong> is released, showcasing advanced capabilities
         for image creation.
-    - text: Meta unveils <b>Movie Gen</b>, a new AI model that generates
+    - text: Meta unveils <strong>Movie Gen</strong>, a new AI model that generates
         videos, images, and audio from text input.
-    - text: Pika introduces <b>Video Model 1.5</b> along with "Pika Effects."
-    - text: Adobe announces its video creation model, <b>Firefly Video</b>.
-    - text: Startup Rhymes AI releases <b>Aria</b>, an opensource, multimodal
+    - text: Pika introduces <strong>Video Model 1.5</strong> along with "Pika Effects."
+    - text: Adobe announces its video creation model, <strong>Firefly Video</strong>.
+    - text: Startup Rhymes AI releases <strong>Aria</strong>, an opensource, multimodal
         model exhibiting capabilities similar to comparably sized proprietary models.
-    - text: Meta releases an opensource speechtospeech language model named <b>Meta
-        Spirit LM</b>.
-    - text: Mistral AI introduces <b>Ministral</b>, a new model available
+    - text: Meta releases an opensource speechtospeech language model named <strong>Meta
+        Spirit LM</strong>.
+    - text: Mistral AI introduces <strong>Ministral</strong>, a new model available
         in 3B and 8B parameter sizes.
-    - text: <b>Janus AI</b>, a multimodal language model capable of recognizing
+    - text: <strong>Janus AI</strong>, a multimodal language model capable of recognizing
         and generating both text and images, is released as open source by DeepSeekAI.
-    - text: Google DeepMind and MIT unveil <b>Fluid</b>, a texttoimage generation
+    - text: Google DeepMind and MIT unveil <strong>Fluid</strong>, a texttoimage generation
         model with industryleading performance at a scale of 10.5B parameters.
-    - text: <b>Stable Diffusion 3.5</b> is released in three sizes as open
+    - text: <strong>Stable Diffusion 3.5</strong> is released in three sizes as open
         source.
-    - text: Anthropic launches <b>Claude 3.5 Sonnet New</b>, demonstrating
+    - text: Anthropic launches <strong>Claude 3.5 Sonnet New</strong>, demonstrating
         significant advancements in specific areas over its previous version, and
-        announces <b>Claude 3.5 Haiku</b>.
+        announces <strong>Claude 3.5 Haiku</strong>.
     - text: Anthropic announces an experimental feature for computer use with a public
         beta API.
-    - text: The texttoimage model <b>Recraft v3</b> has been released to
+    - text: The texttoimage model <strong>Recraft v3</strong> has been released to
         the public, ranking first in benchmarks compared to similar models.
-    - text: OpenAI has launched <b>Search GPT</b>, allowing users to perform
+    - text: OpenAI has launched <strong>Search GPT</strong>, allowing users to perform
         web searches directly within the platform.
   - date: November
     info:
-    - text: Alibaba released its new model, <b>QwQ 32B Preview</b>,
+    - text: Alibaba released its new model, <strong>QwQ 32B Preview</strong>,
         which integrates reasoning capabilities before responding. The model competes
         with, and sometimes surpasses, OpenAI's o1-preview model.
-    - text: Alibaba opensourced the model <b>Qwen2.5 Coder 32B</b>,
+    - text: Alibaba opensourced the model <strong>Qwen2.5 Coder 32B</strong>,
         which offers comparable capabilities to leading proprietary language models
         in the coding domain.
-    - text: DeepSeek unveiled its new AI model, <b>DeepSeek-R1-Lite-Preview</b>,
+    - text: DeepSeek unveiled its new AI model, <strong>DeepSeek-R1-Lite-Preview</strong>,
         which incorporates reasoning capabilities and delivers impressive performance
         on the AIME and MATH benchmarks, matching
         the level of OpenAI's o1-preview.
-    - text: <b>Suno</b> upgraded its AIpowered music generator to <b>v4</b>,
+    - text: <strong>Suno</strong> upgraded its AIpowered music generator to <strong>v4</strong>,
         introducing new features and performance improvements.
-    - text: Mistral AI launched the <b>Pixtral Large</b>
+    - text: Mistral AI launched the <strong>Pixtral Large</strong>
         model, a multimodal language model excelling in image recognition and advanced
         performance metrics, and an update to Mistral Large, 2411.
-    - text: Google introduced two experimental models, <b>gemini-exp-1114</b>
-        and <b>gemini-exp-1121</b>, currently leading the arena chatbot
+    - text: Google introduced two experimental models, <strong>gemini-exp-1114</strong>
+        and <strong>gemini-exp-1121</strong>, currently leading the arena chatbot
         with enhanced performance.
-    - text: Anthropic launches <b>Claude 3.5 Haiku</b> and Visual PDF Analysis in Claude.
+    - text: Anthropic launches <strong>Claude 3.5 Haiku</strong> and Visual PDF Analysis in Claude.
+  - date: December
+    info:
+    - text: Amazon introduced a new series of models called <b>NOVA</b>, designed
+        for text, image, and video processing.
+    - text: OpenAI released <b>SORA</b>, a video generation model, along with the
+        full version of <b>O1</b> and <b>O1 Pro</b> for advanced subscribers. Additionally,
+        the company launched a live video mode for <b>GPT4o</b>.
+    - text: Google unveiled the experimental model <b>Gemini-Exp-1206</b>, which ranked
+        first in the chatbot leaderboard.
+    - text: Google launched <b>Gemini 2.0 Flash</b> in beta. This model leads benchmarks
+        and outperforms the previous version, <b>Gemini Pro 1.5</b>. Additionally,
+        Google introduced live speech and video mode and announced built-in image
+        generation capabilities within the model.
+    - text: Google revealed <b>Gemini-2.0-Flash-Thinking</b>, a thinking model based
+        on <b>Gemini 2.0 Flash</b>, which secured second place in the chatbot leaderboard.
+    - text: Google introduced <b>Veo 2</b>, a beta version video generation model
+        capable of producing 4K videos up to two minutes long. The model outperformed
+        <b>SORA</b> in human evaluations. Additionally, Google updated <b>Imagen 3</b>,
+        offering enhanced image quality and realism.
+    - text: xAI integrated <b>Aurora</b>, a new model for generating high-quality
+        and realistic images.
+    - text: Microsoft open-sourced the <b>Phi4</b> model, sized at 14B, showcasing
+        impressive capabilities for its size.
+    - text: Meta released <b>Llama 3.3 70B</b>, a model offering performance comparable
+        to <b>Llama 3.1 405B</b>.
+    - text: Google launched a multi-modal open-source model called <b>PaliGemma 2</b>,
+        integrated with existing <b>Gemma</b> models.
+    - text: Pika Labs released <b>2.0</b>, the latest version of its AI-powered video
+        generator.
+    - text: Meta introduced <b>Apollo</b>, a video generation model available in three
+        different sizes.
+    - text: Deepseek open-sourced <b>Deepseek V3</b>, a model with 671B parameters
+        that surpasses closed-source SOTA models across several benchmarks.
+    - text: Alibaba unveiled <b>QVQ-72B-Preview</b>, a cutting-edge thinking model
+        capable of analyzing images, featuring SOTA-level performance.
+    - text: OpenAI announced <b>O3</b>, a groundbreaking AI model achieving 87.5%
+        in the <b>ARC-AGI</b> benchmark, 25.2% in the <b>Frontier Math Benchmark</b>
+        (compared to under 2% in previous models), and 87.7% in Ph.D.-level science
+        questions. A cost-effective version, <b>O3 Mini</b>, is expected in January
+        2025, with performance similar to <b>O1</b>, alongside improved speed and
+        efficiency.
+    - text: The video generation model <b>Kling 1.6</b> was released, offering significant
+        performance enhancements.
