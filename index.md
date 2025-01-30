@@ -23,6 +23,7 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
     <a href="#2022" class="active">2022</a>
     <a href="#2023">2023</a>
     <a href="#2024">2024</a>
+    <a href="#2025">2025</a>
 </nav>
 
 <main class="timeline">
