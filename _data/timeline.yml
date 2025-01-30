@@ -341,3 +341,30 @@
       special: true
     - text: The video generation model <b>Kling 1.6</b> was released, offering significant
         performance enhancements.
+        
+- year: 2025
+  events:
+  - date: January
+    info:
+    - text: OpenAI released <b>Operator</b> for Pro subscribers – an experimental
+        AI agent capable of browsing websites and performing actions.
+      special: true
+    - text: Google introduced <b>Gemini Flash Thinking 0121</b>, an enhanced reasoning
+        model that secured the top spot in the Arena Chatbots rankings.
+    - text: DeepSeek open-sourced the reasoning models <b>R1</b> and <b>R1-Zero</b>,
+        which demonstrated capabilities similar to <b>o1</b> across various domains
+        at a fraction of the cost. Additionally, smaller distilled models were released,
+        achieving high performance relative to their size.
+      special: true
+    - text: Google published a research paper on a new language model architecture
+        called <b>Titans</b>, designed to enable models to retain both short- and
+        long-term memory. This architecture significantly improves processing for
+        extended context windows.
+      special: true
+    - text: DeepSeek open-sourced a fully multimodal model, <b>Janus Pro 7B</b>, which
+        supports both text and image generation.
+    - text: Alibaba unveiled <b>Qwen2.5-Max</b>, a large language model that surpasses
+        several leading models, including <b>DeepSeek-V3</b>, <b>GPT-4o</b>, and <b>Claude
+        3.5</b>. Additionally, the <b>Qwen2.5-1M</b> series was open-sourced, capable
+        of processing up to one million tokens, along with the <b>Qwen2.5-VL</b> vision
+        model series in three different sizes.
