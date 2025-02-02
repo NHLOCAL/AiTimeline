@@ -368,3 +368,5 @@
         3.5</b>. Additionally, the <b>Qwen2.5-1M</b> series was open-sourced, capable
         of processing up to one million tokens, along with the <b>Qwen2.5-VL</b> vision
         model series in three different sizes.
+    - text: OpenAI made the <b>o3 mini</b> reasoning model available to all users, including the free tier, featuring three reasoning levels. The model matches or comes close to o1 in several benchmarks, significantly surpasses it in coding, and remains significantly faster and more cost-efficient.
+      special: true
