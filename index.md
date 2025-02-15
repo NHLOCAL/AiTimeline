@@ -11,7 +11,7 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
     </a>
   </div>
   <div class="dark-mode-toggle-container">
-    <button id="dark-mode-toggle" class="dark-mode-toggle">
+    <button id="dark-mode-toggle" class="dark-mode-toggle" title="Toggle dark/light mode">
       <i class="fas fa-moon"></i>
     </button>
   </div>
@@ -27,7 +27,7 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
 </nav>
 
 <div class="sort-toggle-container">
-  <button id="sort-toggle" class="sort-toggle" data-order="oldest">
+  <button id="sort-toggle" class="sort-toggle" data-order="oldest" title="Sort timeline">
     <i class="fas fa-sort-amount-down"></i> Sort: Newest First
   </button>
 </div>

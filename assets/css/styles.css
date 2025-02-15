@@ -34,46 +34,50 @@ body {
     left: 20px;
   }
   .github-button {
-    font-size: 32px;
-    opacity: 1;
+    font-size: 32px;           /* גודל גדול יותר */
+    opacity: 1;                /* תמיד גלוי */
     transition: transform 0.3s, color 0.3s;
   }
   /* במצב בהיר - GitHub יהיה תמיד שחור */
   body:not(.dark-mode) .github-button {
     color: #000;
   }
-  .github-button:hover {
-    transform: scale(1.1);
-  }
-  
-  
-/* Dark Mode Toggle Button */
-.dark-mode-toggle-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  .dark-mode-toggle {
-    padding: 8px 12px;
-    background-color: transparent;
-    border: 2px solid #007BFF;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  .dark-mode-toggle:hover {
-    background-color: #007BFF;
+  /* במצב אפל - GitHub יהיה לבן */
+  body.dark-mode .github-button {
     color: #fff;
   }
-  .dark-mode-toggle i {
-    font-size: 20px;
+  .github-button:hover {
+    transform: scale(1.1);     /* הגדלה קלה בעת ריחוף */
   }
-  /* במצב בהיר - הסמל (moon) יוצג בצבע צהוב */
-  body:not(.dark-mode) .dark-mode-toggle i {
-    color: #FFD700;
-  }
-  
-  
+
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.dark-mode-toggle {
+  padding: 10px 14px;        /* מעט גדול יותר */
+  background-color: transparent;
+  border: 2px solid #007BFF;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+.dark-mode-toggle:hover {
+  transform: scale(1.1);     /* הגדלה קלה בעת ריחוף */
+  background-color: #007BFF;
+  color: #fff;
+}
+.dark-mode-toggle i {
+  font-size: 22px;           /* גודל מעט גדול יותר לסמל */
+}
+/* במצב בהיר - הסמל (moon) יהיה בצבע צהוב */
+body:not(.dark-mode) .dark-mode-toggle i {
+  color: #FFD700;
+}
+
 /* Navigation Bar (Index Page) */
 .year-nav {
     text-align: center;
