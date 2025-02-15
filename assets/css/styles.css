@@ -53,32 +53,33 @@ body {
   }  
 
 
-/* Dark Mode Toggle Button */
+/* Dark Mode Toggle Button - Minimalist */
 .dark-mode-toggle-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-.dark-mode-toggle {
-  padding: 10px 14px;        /* מעט גדול יותר */
-  background-color: transparent;
-  border: 2px solid #007BFF;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s, color 0.3s;
-}
-.dark-mode-toggle:hover {
-  transform: scale(1.1);     /* הגדלה קלה בעת ריחוף */
-  background-color: #007BFF;
-  color: #fff;
-}
-.dark-mode-toggle i {
-  font-size: 22px;           /* גודל מעט גדול יותר לסמל */
-}
-/* במצב בהיר - הסמל (moon) יהיה בצבע צהוב */
-body:not(.dark-mode) .dark-mode-toggle i {
-  color: #FFD700;
-}
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .dark-mode-toggle {
+    padding: 10px 14px;
+    background-color: transparent; /* רקע שקוף */
+    border: none;                /* מסגרת מוסרת */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.1);       /* הגדלה קלה בעת ריחוף */
+  }
+  
+  .dark-mode-toggle i {
+    font-size: 22px;             /* גודל מעט גדול יותר לסמל */
+  }
+  
+  /* במצב בהיר - הסמל (moon) יהיה בצבע צהוב */
+  body:not(.dark-mode) .dark-mode-toggle i {
+    color: #FFD700;
+  }  
 
 /* Navigation Bar (Index Page) */
 .year-nav {
