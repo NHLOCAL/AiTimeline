@@ -32,38 +32,54 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-}
+  }
+  
+  .github-button {
+    display: inline-block; /* מאפשרת טרנספורמציה */
+    font-size: 32px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #000;
+    opacity: 1;
+  }
+  
+  
+  body.dark-mode .github-button {
+    /* במצב אפל - תמיד לבן */
+    color: #fff;
+  }
+  
+  .github-button:hover {
+    transform: scale(1.1); /* הגדלה קלה בעת ריחוף */
+  }  
 
-.github-button svg {
-    width: 30px;
-    height: 30px;
-    fill: #fff;
-    transition: transform 0.3s;
-}
 
-.github-button:hover svg {
-    transform: scale(1.1);
-}
-
-/* Dark Mode Toggle */
+/* Dark Mode Toggle Button - Minimalist */
 .dark-mode-toggle-container {
     position: absolute;
     top: 20px;
     right: 20px;
-}
-
-.dark-mode-toggle {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: #fff;
+  }
+  
+  .dark-mode-toggle {
+    padding: 10px 14px;
+    background-color: transparent; /* רקע שקוף */
+    border: none;                /* מסגרת מוסרת */
     cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.dark-mode-toggle:hover {
-    transform: scale(1.1);
-}
+    transition: transform 0.3s ease;
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.1);       /* הגדלה קלה בעת ריחוף */
+  }
+  
+  .dark-mode-toggle i {
+    font-size: 22px;             /* גודל מעט גדול יותר לסמל */
+  }
+  
+  /* במצב בהיר - הסמל (moon) יהיה בצבע צהוב */
+  body:not(.dark-mode) .dark-mode-toggle i {
+    color: #FFD700;
+  }  
 
 /* Navigation Bar (Index Page) */
 .year-nav {
@@ -528,3 +544,34 @@ body.dark-mode ::-webkit-scrollbar-thumb {
 body.dark-mode ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
+
+/* Sort Toggle Button - Minimalist */
+.sort-toggle-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .sort-toggle {
+    padding: 8px 15px;
+    background-color: transparent;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .sort-toggle:hover {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .sort-toggle i {
+    font-size: 16px;
+  }
+  
