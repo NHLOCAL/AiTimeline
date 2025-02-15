@@ -5,16 +5,16 @@ layout: none
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Timeline RSS Feed</title>
-    <link>{{ site.url | default: "/" | absolute_url }}</link>
+    <link>{{ site.url | default: "/" | absolute_url }}{{ site.baseurl }}</link>
     <description>A comprehensive timeline of Artificial Intelligence milestones from 2022 to present.</description>
-    <atom:link href="{{ site.url | default: "/" | absolute_url }}/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.url | default: "/" | absolute_url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
     {% for year in site.data.timeline reversed %}
       {% for event in year.events reversed %}
         {% assign date_str = "1 " | append: event.date | append: " " | append: year.year %}
         <item>
           <title>{{ event.date }} {{ year.year }}</title>
-          <link>{{ site.url | default: "/" | absolute_url }}/#{{ year.year }}-{{ event.date | replace: ' ', '-' }}</link>
-          <guid isPermaLink="false">{{ site.url | default: "/" | absolute_url }}/#{{ year.year }}-{{ event.date | replace: ' ', '-' }}</guid>
+          <link>{{ site.url | default: "/" | absolute_url }}{{ site.baseurl }}/#{{ year.year }}-{{ event.date | replace: ' ', '-' }}</link>
+          <guid isPermaLink="false">{{ site.url | default: "/" | absolute_url }}{{ site.baseurl }}/#{{ year.year }}-{{ event.date | replace: ' ', '-' }}</guid>
           <pubDate>{{ date_str | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
           <description><![CDATA[
             <ul>
