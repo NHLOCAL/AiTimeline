@@ -28,20 +28,19 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
 
 <main class="timeline">
 
-    {% for year in site.data.timeline %}
-    <section class="year" id="{{ year.year }}">
-        <h2>{{ year.year }}</h2>
-
-        {% for event in year.events %}
-        <article class="event" data-date="{{ event.date }}">
-            <h3 class="date">{{ event.date | date: "%B" }}</h3>
-            {% for info in event.info %}
-            <p class="info {% if info.special %}special{% endif %}">{{ info.text }}</p>
-            {% endfor %}
-        </article>
-        {% endfor %}
-    </section>
-    {% endfor %}
+	{% for year in site.data.timeline %}
+	<section class="year" id="{{ year.year }}">
+	  <h2>{{ year.year }}</h2>
+	  {% for event in year.events %}
+	  <article id="{{ year.year }}-{{ event.date | replace: ' ', '-' }}" class="event" data-date="{{ event.date }}">
+		<h3 class="date">{{ event.date | date: "%B" }}</h3>
+		{% for info in event.info %}
+		<p class="info {% if info.special %}special{% endif %}">{{ info.text }}</p>
+		{% endfor %}
+	  </article>
+	  {% endfor %}
+	</section>
+	{% endfor %}
 
 </main>
 
