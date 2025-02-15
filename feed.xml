@@ -1,0 +1,28 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AI Timeline RSS Feed</title>
+    <link>{{ site.url | default: "/" | absolute_url }}</link>
+    <description>A comprehensive timeline of Artificial Intelligence milestones from 2022 to present.</description>
+    {% for year in site.data.timeline reversed %}
+      {% for event in year.events reversed %}
+        {% assign date_str = "1 " | append: event.date | append: " " | append: year.year %}
+        <item>
+          <title>{{ event.date }} {{ year.year }}</title>
+          <link>{{ site.url | default: "/" | absolute_url }}</link>
+          <pubDate>{{ date_str | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+          <description><![CDATA[
+            <ul>
+              {% for info in event.info %}
+                <li>{{ info.text }}</li>
+              {% endfor %}
+            </ul>
+          ]]></description>
+        </item>
+      {% endfor %}
+    {% endfor %}
+  </channel>
+</rss>
