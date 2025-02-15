@@ -33,22 +33,24 @@ body {
     top: 20px;
     left: 20px;
   }
+  
   .github-button {
-    font-size: 32px;           /* גודל גדול יותר */
-    opacity: 1;                /* תמיד גלוי */
-    transition: transform 0.3s, color 0.3s;
-  }
-  /* במצב בהיר - GitHub יהיה תמיד שחור */
-  body:not(.dark-mode) .github-button {
+    display: inline-block; /* מאפשרת טרנספורמציה */
+    font-size: 32px;
+    transition: transform 0.3s ease, color 0.3s ease;
     color: #000;
+    opacity: 1;
   }
-  /* במצב אפל - GitHub יהיה לבן */
+  
+  
   body.dark-mode .github-button {
+    /* במצב אפל - תמיד לבן */
     color: #fff;
   }
+  
   .github-button:hover {
-    transform: scale(1.1);     /* הגדלה קלה בעת ריחוף */
-  }
+    transform: scale(1.1); /* הגדלה קלה בעת ריחוף */
+  }  
 
 
 /* Dark Mode Toggle Button */
