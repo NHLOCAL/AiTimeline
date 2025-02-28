@@ -385,6 +385,7 @@
     - text: OpenAI unveils <b>Deep Research</b>, a tool for autonomous research, enabling
         real-time web searches and comprehensive report generation.
       special: true
+    - text: Google releases <b>Gemini 2.0 Flash</b>, <b>Gemini 2.0 Flash-Lite Preview</b>, and <b>Gemini 2.0 Pro Experimental</b>. 
     - text: Alibaba launches <b>QwQ-Max</b> – a reasoning model based on Qwen2.5-Max,
         offering improved analytical and logical capabilities.
     - text: Microsoft presents <b>Phi4-mini</b> and <b>Phi4 Multimodal</b>, lightweight
