@@ -370,3 +370,26 @@
         model series in three different sizes.
     - text: OpenAI made the <b>o3 mini</b> reasoning model available to all users, including the free tier, featuring three reasoning levels. The model matches or comes close to o1 in several benchmarks, significantly surpasses it in coding, and remains significantly faster and more cost-efficient.
       special: true
+  - date: February 2025
+    info:
+    - text: xAI launches <b>Grok 3</b>, <b>Grok 3 Reasoning</b> and <b>Grok 3 mini</b>,
+        next-generation AI models trained with 10 times the computing power of Grok
+        2, significantly improving SOTA performance. They include "Think" and "Big
+        Brain" modes for advanced reasoning, as well as <b>DeepSearch</b> for autonomous
+        web searches.
+      special: true
+    - text: Anthropic introduces <b>Claude 3.7</b> and <b>Claude 3.7 Thinking</b>,
+        a new model with enhanced coding performance, support for "Extended Thinking"
+        mode, and the ability to analyze reasoning processes.
+      special: true
+    - text: OpenAI unveils <b>Deep Research</b>, a tool for autonomous research, enabling
+        real-time web searches and comprehensive report generation.
+      special: true
+    - text: Alibaba launches <b>QwQ-Max</b> – a reasoning model based on Qwen2.5-Max,
+        offering improved analytical and logical capabilities.
+    - text: Microsoft presents <b>Phi4-mini</b> and <b>Phi4 Multimodal</b>, lightweight
+        models (3.8B and 5.6B) with enhanced performance, including support for multimodal
+        inputs.
+    - text: OpenAI releases <b>GPT-4.5</b>, featuring advanced pattern recognition
+        and significantly reduced hallucinations, improving accuracy and reliability.
+      special: true
