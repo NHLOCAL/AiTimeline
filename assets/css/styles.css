@@ -356,6 +356,7 @@ footer .content {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px;
+    gap: 20px; /* מרווח בין מקטעי ה-footer */
 }
 
 .footer-section {
@@ -574,4 +575,29 @@ body.dark-mode ::-webkit-scrollbar-thumb:hover {
   .sort-toggle i {
     font-size: 16px;
   }
-  
+
+/* RSS Link Style */
+.footer-section .fa-rss {
+    margin-right: 5px;
+    color: #ffd700;
+}
+
+body.dark-mode .footer-section .fa-rss {
+    color: #ffd700;
+}
+
+/* Footer Icons Style */
+.footer-section .fa-balance-scale,
+.footer-section .fa-code-branch,
+.footer-section .fa-rss {
+    margin-right: 5px;
+    color: #ffd700;
+    width: 16px;
+    text-align: center;
+}
+
+body.dark-mode .footer-section .fa-balance-scale,
+body.dark-mode .footer-section .fa-code-branch,
+body.dark-mode .footer-section .fa-rss {
+    color: #ffd700;
+}
