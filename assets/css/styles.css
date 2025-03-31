@@ -4,158 +4,100 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    color: #333;
-    background-color: #f9f9f9;
+    /* Use var() with fallback */
+    color: var(--color-text-light, #333);
+    background-color: var(--color-bg-light, #f9f9f9);
 }
 
+/* Color Variables - CHECK THESE CAREFULLY */
+:root {
+    /* Basic Palette */
+    --color-text-light: #333;
+    --color-text-dark: #e0e0e0;
+    --color-bg-light: #f9f9f9;
+    --color-bg-dark: #121212;
+    --color-header-bg-light: #007BFF;
+    --color-header-bg-dark: #1f1f1f;
+    --color-nav-bg-light: #f9f9f9;
+    --color-nav-bg-dark: #1f1f1f;
+    --color-nav-text-light: #333;
+    --color-nav-text-dark: #e0e0e0;
+    --color-nav-border-light: #007BFF; /* Used for hover/active & links */
+    --color-nav-border-dark: #555;     /* Used for hover/active & links */
+    --color-nav-active-bg-light: #007BFF;
+    --color-nav-active-bg-dark: #333;
+    --color-nav-active-text-light: #fff;
+    --color-nav-active-text-dark: #ffd700; /* Gold color */
+    --color-event-border-light: #007BFF; /* Timeline main line */
+    --color-event-border-dark: #555;     /* Timeline main line dark */
+    --color-special-marker-border-light: #444; /* Darker border for light mode */
+    --color-special-marker-border-dark: #bbb; /* Lighter border for dark mode */
+
+    /* Event Type Colors (Light Mode) - CHECK SPELLING */
+    --color-type-general: #9b9b9b; /* Grey as default */
+    --color-type-language: #4a90e2;    /* Blue */
+    --color-type-image: #f5a623;       /* Orange */
+    --color-type-video: #bd10e0;       /* Purple */
+    --color-type-music: #50e3c2;       /* Teal */
+    --color-type-multimodal: #7ed321;  /* Green */
+    --color-type-agent: #d0021b;       /* Red */
+    --color-type-chatbot: #4a4a4a;     /* Dark Grey */
+    --color-type-opensource: #0d9488; /* Dark Teal */
+    --color-type-research: #6c757d;    /* Mid Grey */
+    --color-type-framework: #b8e986; /* Light Green */
+    --color-type-hardware: #f8e71c;  /* Yellow */
+    --color-type-general: #9b9b9b; /* Ensuring general is defined */
+
+    /* Event Type Colors (Dark Mode) - CHECK SPELLING */
+    --color-type-general-dark: #a0a0a0; /* Slightly lighter grey */
+    --color-type-language-dark: #6aaef7;
+    --color-type-image-dark: #f7b850;
+    --color-type-video-dark: #d355ef;
+    --color-type-music-dark: #75f5d8;
+    --color-type-multimodal-dark: #9bf04f;
+    --color-type-agent-dark: #e54c5f;
+    --color-type-chatbot-dark: #aaaaaa;
+    --color-type-opensource-dark: #14b8a6;
+    --color-type-research-dark: #adb5bd;
+    --color-type-framework-dark: #d3f2aa;
+    --color-type-hardware-dark: #f9ef6c;
+}
+
+/* Header, Buttons, Nav - Assuming these are correct from previous version */
+/* ... (Keep Header, GitHub Button, Dark Mode Toggle, Year Nav, Sort Toggle styles as they were in the last correct version) ... */
 /* Header Styles */
-.header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #007BFF;
-    color: #fff;
-    position: relative;
-}
-
-.header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.header h2 {
-    font-size: 28px;
-    font-weight: normal;
-}
-
+.header { text-align: center; padding: 20px 0; background-color: var(--color-header-bg-light); color: #fff; position: relative; }
+.header h1 { font-size: 42px; margin-bottom: 10px; }
+.header h2 { font-size: 28px; font-weight: normal; }
 /* GitHub Button */
-.github-button-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .github-button {
-    display: inline-block; /* מאפשרת טרנספורמציה */
-    font-size: 32px;
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: #000;
-    opacity: 1;
-  }
-  
-  
-  body.dark-mode .github-button {
-    /* במצב אפל - תמיד לבן */
-    color: #fff;
-  }
-  
-  .github-button:hover {
-    transform: scale(1.1); /* הגדלה קלה בעת ריחוף */
-  }  
+.github-button-container { position: absolute; top: 20px; left: 20px; }
+.github-button { display: inline-block; font-size: 32px; transition: transform 0.3s ease, color 0.3s ease; color: #000; opacity: 1; }
+body.dark-mode .github-button { color: #fff; }
+.github-button:hover { transform: scale(1.1); }
+/* Dark Mode Toggle Button */
+.dark-mode-toggle-container { position: absolute; top: 20px; right: 20px; }
+.dark-mode-toggle { padding: 8px 12px; background-color: transparent; border: none; cursor: pointer; transition: transform 0.3s ease; }
+.dark-mode-toggle:hover { transform: scale(1.1); }
+.dark-mode-toggle i { font-size: 20px; }
+body:not(.dark-mode) .dark-mode-toggle i { color: #FFD700; }
+/* Navigation Bar (Year Nav) */
+.year-nav { text-align: center; margin-bottom: 30px; position: sticky; top: 0; background-color: var(--color-nav-bg-light); z-index: 100; padding: 10px 0; border-bottom: 1px solid #eee; }
+.year-nav a { display: inline-block; margin: 0 8px; padding: 6px 12px; background-color: transparent; border: 2px solid transparent; border-radius: 18px; text-decoration: none; color: var(--color-nav-text-light); font-weight: bold; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+.year-nav a:hover { background-color: #eee; color: var(--color-nav-border-light); border-color: transparent; }
+.year-nav a.active { background-color: var(--color-nav-active-bg-light); color: var(--color-nav-active-text-light); border-color: var(--color-nav-active-bg-light); }
+/* Sort Toggle Button */
+.sort-toggle-container { text-align: center; margin: 20px 0 30px 0; }
+.sort-toggle { padding: 6px 12px; background-color: transparent; color: var(--color-text-light); border: 2px solid #ccc; border-radius: 18px; cursor: pointer; font-size: 13px; font-weight: bold; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; display: inline-flex; align-items: center; gap: 6px; }
+.sort-toggle:hover { background-color: var(--color-nav-active-bg-light); color: var(--color-nav-active-text-light); border-color: var(--color-nav-active-bg-light); }
+.sort-toggle i { font-size: 15px; }
 
 
-/* Dark Mode Toggle Button - Minimalist */
-.dark-mode-toggle-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
-  .dark-mode-toggle {
-    padding: 10px 14px;
-    background-color: transparent; /* רקע שקוף */
-    border: none;                /* מסגרת מוסרת */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .dark-mode-toggle:hover {
-    transform: scale(1.1);       /* הגדלה קלה בעת ריחוף */
-  }
-  
-  .dark-mode-toggle i {
-    font-size: 22px;             /* גודל מעט גדול יותר לסמל */
-  }
-  
-  /* במצב בהיר - הסמל (moon) יהיה בצבע צהוב */
-  body:not(.dark-mode) .dark-mode-toggle i {
-    color: #FFD700;
-  }  
-
-/* Navigation Bar (Index Page) */
-.year-nav {
-    text-align: center;
-    margin-bottom: 30px;
-    position: sticky;
-    top: 0;
-    background-color: #f9f9f9;
-    z-index: 100;
-    padding: 10px 0;
-}
-
-.year-nav a {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 8px 15px;
-    background-color: #f9f9f9;
-    border: 2px solid #007BFF;
-    border-radius: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.year-nav a:hover {
-    background-color: #007BFF;
-    color: #fff;
-}
-
-.year-nav a.active {
-    background-color: #007BFF;
-    color: #fff;
-}
-
-/* Timeline Styles (Index Page) */
-.timeline {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-    padding: 0 20px;
-}
-
-.year {
-    margin-bottom: 60px;
-}
-
-.year h2 {
-    font-size: 32px;
-    color: #007BFF;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.event {
-    border-left: 2px solid #007BFF;
-    padding-left: 30px;
-    margin-bottom: 40px;
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.event .date {
-    font-size: 22px;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.event .info {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
-}
-
+/* Timeline Styles */
+.timeline { max-width: 1000px; margin: 0 auto; position: relative; padding: 0 20px; }
+.year { margin-bottom: 60px; }
+.year h2 { font-size: 32px; color: var(--color-event-border-light); border-bottom: 2px solid var(--color-event-border-light); padding-bottom: 10px; margin-bottom: 30px; }
+.event { border-left: 2px solid var(--color-event-border-light); padding-left: 30px; margin-bottom: 40px; position: relative; padding-bottom: 10px; }
+/* Main Timeline Event Circle */
 .event::before {
     content: '';
     position: absolute;
@@ -166,438 +108,138 @@ body {
     border-radius: 50%;
     background-color: #007BFF;
 }
+.event .date { font-size: 22px; font-weight: bold; color: #555; margin-bottom: 10px; }
+.event .info { margin-bottom: 10px; position: relative; padding-left: 25px; color: var(--color-text-light); }
 
-.info::before {
+/* Event Marker Base Style - Targets the ::before of the p.info element */
+/* This rule ALWAYS applies */
+.event .info::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    top: 9px;
+    left: 5px;
+    transform: translateY(0);
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #007BFF;
+    /* Set default background using the --color-type-general variable */
+    background-color: var(--color-type-general);
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
 }
 
-.info.special::before {
-    background-color: #b80003;
-    width: 9.5px;
-    height: 9.5px;
+/* --- Event Marker Colors by Type --- */
+/* These rules ONLY apply if the parent p.info also has the specific event-type-* class */
+/* They override the background-color set by the base rule above due to higher specificity */
+/* Check Selectors and Variable Names Here Carefully! */
+.event .info.event-type-language::before { background-color: var(--color-type-language); }
+.event .info.event-type-image::before { background-color: var(--color-type-image); }
+.event .info.event-type-video::before { background-color: var(--color-type-video); }
+.event .info.event-type-music::before { background-color: var(--color-type-music); }
+.event .info.event-type-multimodal::before { background-color: var(--color-type-multimodal); }
+.event .info.event-type-agent::before { background-color: var(--color-type-agent); }
+.event .info.event-type-chatbot::before { background-color: var(--color-type-chatbot); }
+.event .info.event-type-opensource::before { background-color: var(--color-type-opensource); }
+.event .info.event-type-research::before { background-color: var(--color-type-research); }
+.event .info.event-type-framework::before { background-color: var(--color-type-framework); }
+.event .info.event-type-hardware::before { background-color: var(--color-type-hardware); }
+.event .info.event-type-general::before { background-color: var(--color-type-general); } /* Explicitly set general */
+
+
+/* Special Event Marker Style - Applied if p.info has class "special-event" */
+.event .info.special-event::before {
+    transform: scale(1.5); 
+    left: 4.5px;
+    top: 6px;
+    z-index: 2;
 }
 
-/* Hover Effects */
-.event:hover {
-    background-color: #f4f4f4;
-}
 
+/* Footer Styles - Assuming correct from previous version */
+/* ... (Keep Footer <aside> and <footer> styles as they were in the last correct version) ... */
 /* Footer Styles */
-.footer {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 20px 0;
-    border-top: 2px solid #007BFF;
-}
+.footer { text-align: center; background-color: var(--color-nav-bg-light); padding: 20px 0; border-top: 1px solid #eee; margin-top: 40px; }
+.footer .content { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.footer h3 { font-size: 20px; color: var(--color-text-light); margin-bottom: 15px; margin-top: 0; text-align: left; }
+.footer ul { list-style: none; padding: 0; margin: 0; }
+.footer ul li { font-size: 16px; color: #555; margin-bottom: 8px; padding-left: 20px; text-align: left; position: relative; }
+.footer ul li a { color: var(--color-nav-border-light); text-decoration: none; transition: color 0.3s; }
+.footer ul li a:hover { color: #0056b3; text-decoration: underline; }
+.footer ul li::before { content: '\2022'; position: absolute; top: 1px; left: 0; color: var(--color-nav-border-light); font-size: 18px; }
+/* Main Footer (<footer> tag) */
+footer { background-color: var(--color-header-bg-light); color: #e0e0e0; padding: 30px 0; }
+footer .content { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 20px; gap: 30px; }
+.footer-section { flex: 1 1 45%; min-width: 250px; margin-bottom: 20px; }
+.footer-section h3 { margin-bottom: 15px; font-size: 18px; color: #fff; }
+.footer-section p, .footer-section ul { margin-bottom: 15px; font-size: 14px; line-height: 1.6; }
+.footer-section ul { list-style: none; padding: 0; }
+.footer-section ul li { margin-bottom: 10px; }
+.footer-section a { color: var(--color-nav-active-text-dark); text-decoration: none; transition: color 0.3s; }
+.footer-section a:hover { color: #fff; }
+.github-link { display: inline-flex; align-items: center; font-weight: bold; }
+.github-link svg { margin-right: 8px; fill: var(--color-nav-active-text-dark); width: 20px; height: 20px; }
+.footer-section .fa-balance-scale, .footer-section .fa-code-branch, .footer-section .fa-rss { margin-right: 8px; color: var(--color-nav-active-text-dark); width: 18px; text-align: center; }
+.footer-section a:hover .fa-balance-scale, .footer-section a:hover .fa-code-branch, .footer-section a:hover .fa-rss { color: #fff; }
 
-.footer .content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
-.footer h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-left: 30px;
-}
-
-.footer ul li {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    text-align: left;
-    position: relative;
-}
-
-.footer ul li a {
-    color: #007BFF;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer ul li a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-.footer ul li::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #007BFF;
-}
-
-/* Topic Navigation Bar (Summary Page) */
-.topic-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #0056b3;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.topic-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 5px 15px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.topic-nav a:hover {
-    color: #ffd700;
-}
-
-.topic-nav a.active {
-    border-bottom: 2px solid #ffd700;
-    padding-bottom: 5px;
-}
-
-/* Summary Container (Summary Page) */
-.summary-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-/* Topic Section (Summary Page) */
-.topic-section {
-    margin-bottom: 60px;
-}
-
-.topic-section h2 {
-    font-size: 32px;
-    color: #007BFF;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-/* Card (Summary Page) */
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.card ul {
-    list-style: none;
-    padding: 0;
-    color: #555;
-}
-
-.card ul li {
-    margin-bottom: 10px;
-    padding-left: 25px;
-    position: relative;
-}
-
-.card ul li::before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    top: 12px;
-    width: 6px;
-    height: 6px;
-    background-color: #007BFF;
-    border-radius: 50%;
-}
-
-.card ul li strong {
-    color: #333;
-}
-
-/* Footer Styles (Shared) */
-footer {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 40px 0;
-}
-
-footer .content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 20px;
-    gap: 20px; /* מרווח בין מקטעי ה-footer */
-}
-
-.footer-section {
-    flex: 1 1 45%;
-    margin-bottom: 20px;
-}
-
-.footer-section h3 {
-    margin-bottom: 15px;
-}
-
-.footer-section p,
-.footer-section ul {
-    margin-bottom: 15px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section a {
-    color: #ffd700;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-section a:hover {
-    color: #fff;
-}
-
-.github-link {
-    display: inline-flex;
-    align-items: center;
-}
-
-.github-link svg {
-    margin-right: 8px;
-    fill: #ffd700;
-}
-
-/* Dark Mode Styles */
+/* --- Dark Mode Styles --- */
 body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-dark);
 }
+body.dark-mode .header { background-color: var(--color-header-bg-dark); color: #fff; }
+body.dark-mode .dark-mode-toggle i { color: #ffd700; } /* Sun color */
+body.dark-mode .year-nav { background-color: var(--color-nav-bg-dark); border-bottom-color: #333; }
+body.dark-mode .year-nav a { color: var(--color-nav-text-dark); border-color: transparent; }
+body.dark-mode .year-nav a:hover { background-color: #2a2a2a; color: var(--color-nav-active-text-dark); border-color: transparent; }
+body.dark-mode .year-nav a.active { background-color: var(--color-nav-active-bg-dark); color: var(--color-nav-active-text-dark); border-color: var(--color-nav-active-bg-dark); }
+body.dark-mode .sort-toggle { color: var(--color-text-dark); border-color: #555; }
+body.dark-mode .sort-toggle:hover { background-color: var(--color-nav-active-bg-dark); color: var(--color-nav-active-text-dark); border-color: var(--color-nav-active-bg-dark); }
+body.dark-mode .year h2 { color: var(--color-event-border-dark); border-bottom-color: var(--color-event-border-dark); }
+body.dark-mode .event { border-left-color: var(--color-event-border-dark); }
+body.dark-mode .event::before { background-color: var(--color-event-border-dark); border-color: var(--color-bg-dark); }
+body.dark-mode .event .date { color: #aaa; }
+body.dark-mode .event .info { color: var(--color-text-dark); }
 
-body.dark-mode .header {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
-}
+/* Dark Mode Event Markers - CHECK VARIABLES */
+body.dark-mode .event .info::before { background-color: var(--color-type-general-dark); }
+body.dark-mode .event .info.event-type-language::before { background-color: var(--color-type-language-dark); }
+body.dark-mode .event .info.event-type-image::before { background-color: var(--color-type-image-dark); }
+body.dark-mode .event .info.event-type-video::before { background-color: var(--color-type-video-dark); }
+body.dark-mode .event .info.event-type-music::before { background-color: var(--color-type-music-dark); }
+body.dark-mode .event .info.event-type-multimodal::before { background-color: var(--color-type-multimodal-dark); }
+body.dark-mode .event .info.event-type-agent::before { background-color: var(--color-type-agent-dark); }
+body.dark-mode .event .info.event-type-chatbot::before { background-color: var(--color-type-chatbot-dark); }
+body.dark-mode .event .info.event-type-opensource::before { background-color: var(--color-type-opensource-dark); }
+body.dark-mode .event .info.event-type-research::before { background-color: var(--color-type-research-dark); }
+body.dark-mode .event .info.event-type-framework::before { background-color: var(--color-type-framework-dark); }
+body.dark-mode .event .info.event-type-hardware::before { background-color: var(--color-type-hardware-dark); }
+body.dark-mode .event .info.event-type-general::before { background-color: var(--color-type-general-dark); }
 
-body.dark-mode .year-nav,
-body.dark-mode .topic-nav {
-    background-color: #1f1f1f;
-}
+/* Dark Mode Footers */
+body.dark-mode .footer { background-color: var(--color-nav-bg-dark); border-top-color: #333; }
+body.dark-mode .footer h3 { color: var(--color-text-dark); }
+body.dark-mode .footer ul li { color: #aaa; }
+body.dark-mode .footer ul li a { color: var(--color-nav-active-text-dark); }
+body.dark-mode .footer ul li a:hover { color: #fff; }
+body.dark-mode .footer ul li::before { color: var(--color-nav-active-text-dark); }
+body.dark-mode footer { background-color: var(--color-header-bg-dark); color: #ccc; }
+body.dark-mode .footer-section h3 { color: #fff; }
+body.dark-mode .footer-section a { color: var(--color-nav-active-text-dark); }
+body.dark-mode .footer-section a:hover { color: #fff; }
+body.dark-mode .github-link svg { fill: var(--color-nav-active-text-dark); }
+body.dark-mode .footer-section .fa-balance-scale, body.dark-mode .footer-section .fa-code-branch, body.dark-mode .footer-section .fa-rss { color: var(--color-nav-active-text-dark); }
+body.dark-mode .footer-section a:hover .fa-balance-scale, body.dark-mode .footer-section a:hover .fa-code-branch, body.dark-mode .footer-section a:hover .fa-rss { color: #fff; }
 
-body.dark-mode .year-nav a,
-body.dark-mode .topic-nav a {
-    color: #e0e0e0;
-    background-color: transparent;
-    border-color: #555;
-}
 
-body.dark-mode .year-nav a:hover,
-body.dark-mode .topic-nav a:hover {
-    color: #ffd700;
-    background-color: #333;
-}
-
-body.dark-mode .year-nav a.active,
-body.dark-mode .topic-nav a.active {
-    background-color: #333;
-    color: #ffd700;
-    border-color: #ffd700;
-}
-
-body.dark-mode .event {
-    background-color: #1c1c1c;
-    border-color: #333;
-}
-
-body.dark-mode .event .date {
-    color: #ffd700;
-}
-
-body.dark-mode .event .info {
-    color: #e0e0e0;
-}
-
-body.dark-mode .card {
-    background-color: #1c1c1c;
-    border-color: #333;
-}
-
-body.dark-mode .card h3 {
-    color: #ffd700;
-}
-
-body.dark-mode .card ul li {
-    color: #e0e0e0;
-}
-
-body.dark-mode .card ul li strong {
-    color: #ffffff;
-}
-
-body.dark-mode .footer,
-body.dark-mode footer {
-    background-color: #1f1f1f;
-    color: #e0e0e0;
-}
-
-body.dark-mode .footer-section a,
-body.dark-mode .github-link svg {
-    color: #ffd700;
-    fill: #ffd700;
-}
-
-body.dark-mode .dark-mode-toggle {
-    color: #ffd700;
-}
-
-/* Responsive Design */
+/* Responsive Design - Keep as is */
 @media (max-width: 768px) {
-    .header h1 {
-        font-size: 32px;
-    }
-
-    .header h2 {
-        font-size: 24px;
-    }
-
-    .github-button-container,
-    .dark-mode-toggle-container {
-        top: 10px;
-    }
-
-    .year-nav a,
-    .topic-nav a {
-        margin: 5px 10px;
-    }
-
-    .footer .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-
-    .timeline,
-    .summary-container {
-        padding: 0 15px;
-    }
+    .header h1 { font-size: 32px; } .header h2 { font-size: 24px; } .github-button-container, .dark-mode-toggle-container { top: 15px; } .github-button { font-size: 28px; } .dark-mode-toggle i { font-size: 18px; } .year-nav a { margin: 5px; padding: 5px 10px; font-size: 14px;} .sort-toggle { font-size: 12px; padding: 5px 10px; } .timeline, .summary-container { padding: 0 15px; } footer .content { flex-direction: column; align-items: center; text-align: center; } .footer-section { text-align: center; } .footer-section h3 { text-align: center; } .footer ul li, .footer h3 { padding-left: 0; text-align: center; } .footer ul li::before { display: none; }
 }
 
-/* Scrollbar Styles */
-::-webkit-scrollbar {
-    width: 12px;
-    background-color: #e4ecfd;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #003b7287;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #003b72f7;
-}
-
-body.dark-mode ::-webkit-scrollbar {
-    background-color: #1f1f1f;
-}
-
-body.dark-mode ::-webkit-scrollbar-thumb {
-    background-color: #444;
-}
-
-body.dark-mode ::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-/* Sort Toggle Button - Minimalist */
-.sort-toggle-container {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .sort-toggle {
-    padding: 8px 15px;
-    background-color: transparent;
-    color: #007BFF;
-    border: 2px solid #007BFF;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-  }
-  
-  .sort-toggle:hover {
-    background-color: #007BFF;
-    color: #fff;
-  }
-  
-  .sort-toggle i {
-    font-size: 16px;
-  }
-
-/* RSS Link Style */
-.footer-section .fa-rss {
-    margin-right: 5px;
-    color: #ffd700;
-}
-
-body.dark-mode .footer-section .fa-rss {
-    color: #ffd700;
-}
-
-/* Footer Icons Style */
-.footer-section .fa-balance-scale,
-.footer-section .fa-code-branch,
-.footer-section .fa-rss {
-    margin-right: 5px;
-    color: #ffd700;
-    width: 16px;
-    text-align: center;
-}
-
-body.dark-mode .footer-section .fa-balance-scale,
-body.dark-mode .footer-section .fa-code-branch,
-body.dark-mode .footer-section .fa-rss {
-    color: #ffd700;
-}
+/* Scrollbar Styles - Keep as is */
+::-webkit-scrollbar { width: 12px; background-color: #e4ecfd; }
+::-webkit-scrollbar-thumb { background-color: #003b7287; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background-color: #003b72f7; }
+body.dark-mode ::-webkit-scrollbar { background-color: #2a2a2a; }
+body.dark-mode ::-webkit-scrollbar-thumb { background-color: #555; }
+body.dark-mode ::-webkit-scrollbar-thumb:hover { background-color: #777; }

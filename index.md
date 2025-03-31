@@ -34,14 +34,23 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
 
 <main class="timeline">
 
-	{% for year in site.data.timeline %}
+	{% assign valid_years = site.data.timeline | where_exp: "item", "item.year != nil" %}
+	{% for year in valid_years %}
 	<section class="year" id="{{ year.year }}">
 	  <h2>{{ year.year }}</h2>
-	  {% for event in year.events %}
+	  {% assign events = year.events | default: empty %}
+	  {% for event in events %}
 	  <article id="{{ year.year }}-{{ event.date | replace: ' ', '-' }}" class="event" data-date="{{ event.date }}">
 		<h3 class="date">{{ event.date | date: "%B" }}</h3>
-		{% for info in event.info %}
-		<p class="info {% if info.special %}special{% endif %}">{{ info.text }}</p>
+        {% assign info_items = event.info | default: empty %}
+		{% for info in info_items %}
+        {% comment %} --- CHANGE HERE --- {% endcomment %}
+        <p class="info
+                  {% if info.type %}event-type-{{ info.type }}{% else %}event-type-general{% endif %}
+                  {% if info.special %}special-event{% endif %}">
+            {{ info.text }}
+        </p>
+        {% comment %} --- END CHANGE --- {% endcomment %}
 		{% endfor %}
 	  </article>
 	  {% endfor %}
