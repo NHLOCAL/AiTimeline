@@ -1,92 +1,108 @@
 # AI Timeline
 
-Welcome to the Artificial Intelligence Timeline, showcasing the evolution and advancements in artificial intelligence technologies from 2022 to 2024. This timeline highlights key milestones, releases, and developments from leading companies and projects in the AI field.
+An open-source timeline tracking the evolution and advancements in Artificial Intelligence from 2022 onwards.
 
 ## Overview
 
-This timeline is structured chronologically, organized by year, and includes significant events, releases, and updates in the artificial intelligence landscape. From the introduction of new models and updates to open-source releases and major announcements, this timeline provides a comprehensive overview of the dynamic AI industry's progress over the years.
+This project provides a chronological overview of significant milestones, model releases, and key developments in the AI field. It aims to be a clear and concise resource for tracking the industry's rapid progress.
 
 ## Features
 
-- **Year-wise Organization:** Events and releases are grouped by year for easy navigation and understanding.
-- **Detailed Descriptions:** Each event includes a brief description, providing context and details about the milestones.
-- **Multiple Events Handling:** For months with multiple events or updates, events are listed as bullet points under the respective month for clarity.
-- **Responsive Design:** The timeline is designed to be responsive and accessible on various devices, ensuring a seamless viewing experience.
+- **Yearly Sections:** Events organized by year.
+- **Monthly Events:** Clear breakdown of events within each month.
+- **Key Event Highlighting:** Important milestones are visually emphasized.
+- **Sortable View:** Toggle between newest-first and oldest-first chronological order.
+- **Dark Mode:** Switch between light and dark themes.
+- **Responsive Design:** Works well on desktop and mobile devices.
+- **Further Reading:** Links to related articles and resources.
 
 ## How to Use
 
-1. **View the Timeline:** Visit the [Artificial Intelligence Timeline](https://nhlocal.github.io/AiTimeline/) to explore the events and developments in the AI industry.
-2. **Navigate the Timeline:** Scroll through the timeline to view events chronologically, or use the year indicators to jump to specific years.
-3. **Explore Events:** Click on individual events to view detailed descriptions and learn more about each milestone.
+1.  **Visit the Timeline:** [https://nhlocal.github.io/AiTimeline/](https://nhlocal.github.io/AiTimeline/)
+2.  **Navigate:** Scroll or use the year links at the top.
+3.  **Sort:** Use the "Sort" button to change the timeline order.
+4.  **Theme:** Use the toggle button (moon/sun icon) to switch between dark and light modes.
 
-## How the Site Works (Technical Details)
+## How the Site Works
 
-The website is generated using Jekyll, a static site generator. Content is managed in YAML data files and Markdown, making it easy to update and maintain.
+This site is built using **Jekyll**, a static site generator.
 
-**Key Files and Directories:**
-
-* **`_data/`**: Contains the YAML files that store the timeline data (`timeline.yml`) and the external links (`links.yml`). **This is where you'll contribute new events and links!**
-* **`_includes/`**: Contains reusable HTML components, such as the footer (`footer.html`).
-* **`_layouts/`**: Contains the main site layout (`default.html`).
-* **`assets/`**: Contains your CSS, images, and the favicon.
-* **`index.md`**: The main content file for the homepage.
+-   **Timeline Content:** Managed in two files within the `_data` folder:
+    -   `timeline.md`: Human-readable Markdown format. **Edit this file to contribute events.**
+    -   `timeline.yml`: YAML format used by Jekyll. **This file is generated automatically.**
+-   **Conversion Script:** A Python script (`scripts/convert_timeline_events.py`) converts `timeline.md` to `timeline.yml`.
+-   **Other Key Files:**
+    -   `index.md`: Main page structure.
+    -   `_layouts/default.html`: Base HTML template.
+    -   `assets/`: CSS styles and JavaScript.
+    -   `_data/links.yml`: Links for the "Learn more" section.
 
 ## Contributing
 
-We welcome contributions to keep the timeline comprehensive and current. Here's how you can contribute:
+Contributions are welcome! Help keep the timeline accurate and up-to-date.
 
-1. **Fork the Repository:** Fork this repository to your GitHub account.
+1.  **Fork & Clone:** Fork the repository to your GitHub account and clone it locally.
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/AiTimeline.git
+    cd AiTimeline
+    ```
 
-2. **Add or Update Events:**
-    * Open the `_data/timeline.yml` file.
-    * Add new events following this structure. Use month names for the date:
+2.  **Edit `timeline.md`:**
+    *   Open `_data/timeline.md`.
+    *   Add or modify events using the existing format (`# Year:`, `## Month`, `- Event description`).
+    *   Use `**bold text**` for emphasis (e.g., model names).
+    *   **To highlight an event, add `(*special*)` at the end of its line** (with a space before it).
+        ```markdown
+        ## March
+        - An important event happened. (*special*)
+        - A regular event occurred.
+        ```
 
-       ```yaml
-       - year: 2024 # The year of the event
-         events:
-           - date: July # Date format: Month
-             info:
-               - text: "**New Amazing AI Model Released!**" # Event description (use **bold** for emphasis).
-               - text: "More details about the release."
-                 special: true # Add `special: true` to highlight events
-       ```
+3.  **Run the Conversion Script:**
+    *   Make sure you have Python 3 installed.
+    *   In your terminal (from the project root):
+        ```bash
+        python scripts/convert_timeline_events.py
+        ```
+    *   Enter `_data/timeline.md` when prompted for the input file. This will update `_data/timeline.yml`.
 
-    * You can also add new links in `_data/links.yml` using a similar structure.
+4.  **Commit Changes:**
+    *   **Important:** Stage and commit *both* the `.md` and the generated `.yml` file.
+        ```bash
+        git add _data/timeline.md _data/timeline.yml
+        git commit -m "Add [brief description of your change]"
+        ```
 
-3. **Commit and Push:** Commit your changes and push them to your forked repository.
+5.  **Push and Create Pull Request:**
+    *   Push your changes to your fork: `git push origin main` (or your branch name).
+    *   Go to your fork on GitHub and open a Pull Request to the `main` branch of `NHLOCAL/AiTimeline`.
 
-4. **Create a Pull Request:** Create a pull request from your forked repository to the main repository.
+## Feedback and Suggestions
 
-5. **Review and Merge:** Your pull request will be reviewed, and after approval, will be merged into the main timeline.
+Have feedback, found a bug, or want to suggest an addition? Please **[open an issue](https://github.com/NHLOCAL/AiTimeline/issues)** on GitHub. We appreciate your input!
 
-## Running the Site Locally (Optional)
+## Running Locally (Optional)
 
-If you'd like to preview changes before submitting a pull request, you can run the site locally:
+To preview your changes before creating a pull request:
 
-1. **Install Ruby:** Jekyll requires Ruby. Install it from [rubyinstaller.org](https://rubyinstaller.org/) or use your system's package manager.
-
-2. **Install Jekyll:**
-   ```bash
-   gem install jekyll bundler
-   ```
-
-3. **Navigate to Project Directory:** In your terminal, navigate to the project's root directory.
-
-4. **Build and Serve:**
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-5. **View Locally:** Open your web browser and go to `http://localhost:4000`.
-
-## About
-
-This timeline was created as a project to document and showcase the advancements in artificial intelligence technologies. It serves as a resource for researchers, enthusiasts, and anyone interested in tracking the progress and evolution of AI technologies over the years.
+1.  **Install Prerequisites:**
+    *   Ruby and Bundler (see [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/))
+    *   Python 3 (for the conversion script)
+2.  **Install Dependencies:**
+    ```bash
+    bundle install
+    ```
+3.  **(Optional) Run Conversion Script:** If you edited `timeline.md`:
+    ```bash
+    python scripts/convert_timeline_events.py
+    # Enter _data/timeline.md
+    ```
+4.  **Serve the Site:**
+    ```bash
+    bundle exec jekyll serve
+    ```
+5.  **View:** Open your browser to `http://localhost:4000/AiTimeline/` (or the address provided).
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Thank you for visiting the Artificial Intelligence Timeline! We hope you find this resource informative and useful. For any questions or inquiries, please [contact us](mailto:nh.local11@gmail.com).
