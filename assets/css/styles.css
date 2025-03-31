@@ -243,3 +243,90 @@ body.dark-mode .footer-section a:hover .fa-balance-scale, body.dark-mode .footer
 body.dark-mode ::-webkit-scrollbar { background-color: #2a2a2a; }
 body.dark-mode ::-webkit-scrollbar-thumb { background-color: #555; }
 body.dark-mode ::-webkit-scrollbar-thumb:hover { background-color: #777; }
+
+
+/* --- START: Color Legend Styles --- */
+.legend-container {
+    /* max-width: 1000px; */ /* שנה את זה */
+    max-width: 500px;    /* לערך החדש הרצוי */
+    margin: 0 auto 25px auto;
+    padding: 0 20px;
+}
+
+.legend-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Align items inline */
+    flex-wrap: wrap;       /* Allow wrapping on smaller screens */
+    justify-content: center;/* Center items horizontally */
+    gap: 10px 20px;        /* Vertical and horizontal gap between items */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center; /* Vertically align color swatch and text */
+}
+
+.legend-color {
+    display: inline-block;
+    width: 12px;           /* Size of the color swatch */
+    height: 12px;
+    border-radius: 50%;    /* Make it a circle */
+    margin-right: 6px;     /* Space between swatch and label */
+    background-color: var(--color-type-general); /* Default background */
+    flex-shrink: 0; /* Prevent shrinking on flex wrap */
+}
+
+/* Apply specific type colors to legend swatches */
+.legend-color.type-language { background-color: var(--color-type-language); }
+.legend-color.type-image { background-color: var(--color-type-image); }
+.legend-color.type-video { background-color: var(--color-type-video); }
+.legend-color.type-music { background-color: var(--color-type-music); }
+.legend-color.type-multimodal { background-color: var(--color-type-multimodal); }
+.legend-color.type-agent { background-color: var(--color-type-agent); }
+.legend-color.type-chatbot { background-color: var(--color-type-chatbot); }
+.legend-color.type-opensource { background-color: var(--color-type-opensource); }
+.legend-color.type-research { background-color: var(--color-type-research); }
+.legend-color.type-framework { background-color: var(--color-type-framework); }
+.legend-color.type-hardware { background-color: var(--color-type-hardware); }
+.legend-color.type-general { background-color: var(--color-type-general); }
+/* Add more rules if you have more types */
+
+/* Style for the special event marker in the legend */
+.special-marker-legend .legend-color.special-event {
+    transform: scale(1.5); /* Make it slightly larger, matching the timeline style */
+    /* No border or shadow needed here, just size and color */
+    /* Background color should ideally be consistent, maybe use 'general' or a neutral one? */
+    /* Let's use the agent color as an example for visibility */
+     background-color: var(--color-type-agent); /* Or choose a representative color */
+}
+
+
+.legend-label {
+    font-size: 12px;       /* Smaller font size for legend */
+    color: var(--color-text-light);
+}
+
+/* Dark Mode Legend Styles */
+body.dark-mode .legend-label {
+    color: var(--color-text-dark);
+}
+
+body.dark-mode .legend-color.type-language { background-color: var(--color-type-language-dark); }
+body.dark-mode .legend-color.type-image { background-color: var(--color-type-image-dark); }
+body.dark-mode .legend-color.type-video { background-color: var(--color-type-video-dark); }
+body.dark-mode .legend-color.type-music { background-color: var(--color-type-music-dark); }
+body.dark-mode .legend-color.type-multimodal { background-color: var(--color-type-multimodal-dark); }
+body.dark-mode .legend-color.type-agent { background-color: var(--color-type-agent-dark); }
+body.dark-mode .legend-color.type-chatbot { background-color: var(--color-type-chatbot-dark); }
+body.dark-mode .legend-color.type-opensource { background-color: var(--color-type-opensource-dark); }
+body.dark-mode .legend-color.type-research { background-color: var(--color-type-research-dark); }
+body.dark-mode .legend-color.type-framework { background-color: var(--color-type-framework-dark); }
+body.dark-mode .legend-color.type-hardware { background-color: var(--color-type-hardware-dark); }
+body.dark-mode .legend-color.type-general { background-color: var(--color-type-general-dark); }
+
+body.dark-mode .special-marker-legend .legend-color.special-event {
+    background-color: var(--color-type-agent-dark); /* Match the light mode choice */
+}
+/* --- END: Color Legend Styles --- */
