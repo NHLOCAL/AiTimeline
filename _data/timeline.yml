@@ -393,4 +393,32 @@
         inputs.
     - text: OpenAI releases <b>GPT-4.5</b>, featuring advanced pattern recognition
         and significantly reduced hallucinations, improving accuracy and reliability.
+      special: true     
+  - date: March 2025
+    info:
+    - text: Google introduced <b>Gemini 2.5 Pro</b>, an experimental "Thinking model"
+        with advanced reasoning and planning capabilities, a 1 million token context
+        window, achieving top rankings across several key benchmarks.
+      special: true 
+    - text: Google launched the Gemma 3 series, featuring open-source multimodal models
+        in various parameter sizes, a 128K context window, multi-language support,
+        and integrated image and video understanding capabilities.
+    - text: OpenAI integrated <b>GPT-4o Image Generation</b>, enabling high-fidelity
+        text-to-image creation, text rendering within images, and more.
+      special: true 
+    - text: Google expanded experimental image generation and editing within <b>Gemini
+        2.0 Flash Experimental</b>, enabling image generation and editing, including
+        enhanced text creation capabilities.
+      special: true 
+    - text: Alibaba released <b>QwQ-32B</b>, an open-source 32B parameter reasoning
+        model with exceptional math and coding performance, rivaling much larger models.
+    - text: Alibaba released the <b>Qwen2.5-VL 32B</b>, open-source vision-language
+        model with robust capabilities in visual analysis, text-in-image understanding,
+        and visual agent tasks.
+    - text: DeepSeek updated its open-source MoE model with <b>DeepSeek-V3-0324</b>,
+        featuring enhanced reasoning, coding, and math capabilities, positioning it
+        as a top-tier base model.
+    - text: Sesame AI unveiled its <b>Conversational Speech Model (CSM)</b>, enabling
+        remarkably human-like, real-time voice interaction, incorporating emotional
+        nuances, natural pauses, laughter, and contextual memory.
       special: true

@@ -152,3 +152,29 @@
 - Alibaba unveiled **QVQ-72B-Preview**, a cutting-edge thinking model capable of analyzing images, featuring SOTA-level performance.
 - OpenAI announced **O3**, a groundbreaking AI model achieving 87.5% in the **ARC-AGI** benchmark, 25.2% in the **Frontier Math Benchmark** (compared to under 2% in previous models), and 87.7% in Ph.D.-level science questions. A cost-effective version, **O3 Mini**, is expected in January 2025, with performance similar to **O1**, alongside improved speed and efficiency.
 - The video generation model **Kling 1.6** was released, offering significant performance enhancements.
+# Year: 2025
+## January
+- OpenAI released **Operator** for Pro subscribers – an experimental AI agent capable of browsing websites and performing actions.
+- Google introduced **Gemini Flash Thinking 0121**, an enhanced reasoning model that secured the top spot in the Arena Chatbots rankings.
+- DeepSeek open-sourced the reasoning models **R1** and **R1-Zero**, which demonstrated capabilities similar to **o1** across various domains at a fraction of the cost. Additionally, smaller distilled models were released, achieving high performance relative to their size.
+- Google published a research paper on a new language model architecture called **Titans**, designed to enable models to retain both short- and long-term memory. This architecture significantly improves processing for extended context windows.
+- DeepSeek open-sourced a fully multimodal model, **Janus Pro 7B**, which supports both text and image generation.
+- Alibaba unveiled **Qwen2.5-Max**, a large language model that surpasses several leading models, including **DeepSeek-V3**, **GPT-4o**, and **Claude 3.5**. Additionally, the **Qwen2.5-1M** series was open-sourced, capable of processing up to one million tokens, along with the **Qwen2.5-VL** vision model series in three different sizes.
+- OpenAI made the **o3 mini** reasoning model available to all users, including the free tier, featuring three reasoning levels. The model matches or comes close to o1 in several benchmarks, significantly surpasses it in coding, and remains significantly faster and more cost-efficient.
+## February 2025
+- xAI launches **Grok 3**, **Grok 3 Reasoning** and **Grok 3 mini**, next-generation AI models trained with 10 times the computing power of Grok 2, significantly improving SOTA performance. They include "Think" and "Big Brain" modes for advanced reasoning, as well as **DeepSearch** for autonomous web searches.
+- Anthropic introduces **Claude 3.7** and **Claude 3.7 Thinking**, a new model with enhanced coding performance, support for "Extended Thinking" mode, and the ability to analyze reasoning processes.
+- OpenAI unveils **Deep Research**, a tool for autonomous research, enabling real-time web searches and comprehensive report generation.
+- Google releases **Gemini 2.0 Flash**, **Gemini 2.0 Flash-Lite Preview**, and **Gemini 2.0 Pro Experimental**.
+- Alibaba launches **QwQ-Max** – a reasoning model based on Qwen2.5-Max, offering improved analytical and logical capabilities.
+- Microsoft presents **Phi4-mini** and **Phi4 Multimodal**, lightweight models (3.8B and 5.6B) with enhanced performance, including support for multimodal inputs.
+- OpenAI releases **GPT-4.5**, featuring advanced pattern recognition and significantly reduced hallucinations, improving accuracy and reliability.
+## March 2025
+- Google introduced **Gemini 2.5 Pro**, an experimental "Thinking model" with advanced reasoning and planning capabilities, a 1 million token context window, achieving top rankings across several key benchmarks.
+- Google launched the Gemma 3 series, featuring open-source multimodal models in various parameter sizes, a 128K context window, multi-language support, and integrated image and video understanding capabilities.
+- OpenAI integrated **GPT-4o Image Generation**, enabling high-fidelity text-to-image creation, text rendering within images, and more.
+- Google expanded experimental image generation and editing within **Gemini 2.0 Flash Experimental**, enabling image generation and editing, including enhanced text creation capabilities.
+- Alibaba released **QwQ-32B**, an open-source 32B parameter reasoning model with exceptional math and coding performance, rivaling much larger models.
+- Alibaba released the **Qwen2.5-VL 32B**, open-source vision-language model with robust capabilities in visual analysis, text-in-image understanding, and visual agent tasks.
+- DeepSeek updated its open-source MoE model with **DeepSeek-V3-0324**, featuring enhanced reasoning, coding, and math capabilities, positioning it as a top-tier base model.
+- Sesame AI unveiled its **Conversational Speech Model (CSM)**, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory.
