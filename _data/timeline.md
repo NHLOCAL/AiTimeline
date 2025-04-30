@@ -215,3 +215,6 @@
 - Alibaba released the **Qwen2.5-VL 32B**, open-source vision-language model with robust capabilities in visual analysis, text-in-image understanding, and visual agent tasks.
 - DeepSeek updated its open-source MoE model with **DeepSeek-V3-0324**, featuring enhanced reasoning, coding, and math capabilities, positioning it as a top-tier base model.
 - Sesame AI unveiled its **Conversational Speech Model (CSM)**, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory. (*special*)
+- 
+## March 2025
+- Nari Labs released **Dia-1.6B**, open source text to speech model that generates highly realistic dialogue with zero-shot voice conditioning and supports nonverbal communications like laughter, coughing, clearing throat, etc. 
