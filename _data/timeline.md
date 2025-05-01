@@ -215,3 +215,14 @@
 - Alibaba released the **Qwen2.5-VL 32B**, open-source vision-language model with robust capabilities in visual analysis, text-in-image understanding, and visual agent tasks.
 - DeepSeek updated its open-source MoE model with **DeepSeek-V3-0324**, featuring enhanced reasoning, coding, and math capabilities, positioning it as a top-tier base model.
 - Sesame AI unveiled its **Conversational Speech Model (CSM)**, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory. (*special*)
+
+## April 2025
+- Meta releases **Llama 4** in three sizes with a context window of 10 million tokens and medium performance.
+- Google launches **Gemini 2.5 Flash**, with a dynamic reasoning mode that allows tuning the reasoning level or disabling it as needed.
+- Amazon introduces **Nova Act**, a new framework for building multi-step autonomous agents.
+- OpenAI releases **GPT-4.1** in three sizes, with a context window of 1 million tokens.
+- OpenAI introduces **O3 full** and **O4 mini**, highly advanced models for reasoning, math, and coding.
+- Midjourney launches **v7**, with higher image quality and more precise control over style.
+- A series of video model updates - **Veo 2.0** (Google), **Runway Gen-4**, **Vidu Q1**, and **Kling 2.0** – a leap forward in high-quality video generation, with improvements in response times, realism, and style.
+- Alibaba releases **Qwen 3** as open source, in various sizes, with very impressive capabilities for their size. (*special*)
+- Microsoft launches the **Phi-4 reasoning** series as open source, small yet high-quality models that incorporate reasoning.

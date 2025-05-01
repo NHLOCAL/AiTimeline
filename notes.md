@@ -8,3 +8,15 @@
 - Alibaba released the **Qwen2.5-VL 32B**, open-source vision-language model with robust capabilities in visual analysis, text-in-image understanding, and visual agent tasks.
 - DeepSeek updated its open-source MoE model with **DeepSeek-V3-0324**, featuring enhanced reasoning, coding, and math capabilities, positioning it as a top-tier base model.
 - Sesame AI unveiled its **Conversational Speech Model (CSM)**, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory.
+
+## אפריל 2025
+
+- Meta משחררת את **Llama 4** בשלושה גדלים עם חלון הקשר של 10 מיליון טוקנים וביצועים בינוניים.
+- Google משיקה את **Gemini 2.5 Flash**, עם מצב חשיבה דינמ המאפשר לכוון את רמת החשיבה או להשבית אותה בהתאם לצורך. 
+- Amazon מציגה את **Nova Act**, מסגרת חדשה לבניית סוכנים אוטונומיים מרובי שלבים.
+- OpenAI משחררת את **GPT-4.1** בשלושה גדלים, עם חלון הקשר של מיליון טוקנים.
+- OpenAI מציגה את **O3 full** ו־**O4 mini**, מודלים מתקדמים במיוחד לחשיבה, מתמטיקה וקידוד.
+- Midjourney משיקה את **v7**, עם איכות תמונה גבוהה יותר ושליטה מדויקת יותר בסגנון.
+- סדרת עדכוני מודלי וידאו - **Veo 2.0** (Google), **Runway Gen-4**, **Vidu Q1** ו־**Kling 2.0** – קפיצת מדרגה ביצירת וידאו באיכות גבוהה, עם שיפור בזמני תגובה, ריאליזם וסגנון. 
+- Alibaba משחררת את **Qwen 3** כקוד פתוח, במגוון גדלים, עם יכולות מרשימות מאוד ביחס לגודל.
+- Microsoft משיקה את סדרת **Phi-4 reasoning** כקוד פתוח, מודלים קטנים אך באיכות גבוהה המשלבים חשיבה
