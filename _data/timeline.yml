@@ -245,3 +245,15 @@
     - text: DeepSeek updated its open-source MoE model with <b>DeepSeek-V3-0324</b>, featuring enhanced reasoning, coding, and math capabilities, positioning it as a top-tier base model.
     - text: Sesame AI unveiled its <b>Conversational Speech Model (CSM)</b>, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory.
       special: true
+  - date: April 2025
+    info:
+    - text: Meta releases <b>Llama 4</b> in three sizes with a context window of 10 million tokens and medium performance.
+    - text: Google launches <b>Gemini 2.5 Flash</b>, with a dynamic reasoning mode that allows tuning the reasoning level or disabling it as needed.
+    - text: Amazon introduces <b>Nova Act</b>, a new framework for building multi-step autonomous agents.
+    - text: OpenAI releases <b>GPT-4.1</b> in three sizes, with a context window of 1 million tokens.
+    - text: OpenAI introduces <b>O3 full</b> and <b>O4 mini</b>, highly advanced models for reasoning, math, and coding.
+    - text: Midjourney launches <b>v7</b>, with higher image quality and more precise control over style.
+    - text: A series of video model updates - <b>Veo 2.0</b> (Google), <b>Runway Gen-4</b>, <b>Vidu Q1</b>, and <b>Kling 2.0</b> – a leap forward in high-quality video generation, with improvements in response times, realism, and style.
+    - text: Alibaba releases <b>Qwen 3</b> as open source, in various sizes, with very impressive capabilities for their size.
+      special: true
+    - text: Microsoft launches the <b>Phi-4 reasoning</b> series as open source, small yet high-quality models that incorporate reasoning.
