@@ -1,34 +1,27 @@
-## March 2025
+## May 2025
 
-- Google introduced **Gemini 2.5 Pro**, an experimental "Thinking model" with advanced reasoning and planning capabilities, a 1 million token context window, achieving top rankings across several key benchmarks.
-- Google launched the Gemma 3 series, featuring open-source multimodal models in various parameter sizes, a 128K context window, multi-language support, and integrated image and video understanding capabilities.
-- OpenAI integrated **GPT-4o Image Generation**, enabling high-fidelity text-to-image creation, text rendering within images, and more.
-- Google expanded experimental image generation and editing within **Gemini 2.0 Flash Experimental**, enabling image generation and editing, including enhanced text creation capabilities.
-- Alibaba released **QwQ-32B**, an open-source 32B parameter reasoning model with exceptional math and coding performance, rivaling much larger models.
-- Alibaba released the **Qwen2.5-VL 32B**, open-source vision-language model with robust capabilities in visual analysis, text-in-image understanding, and visual agent tasks.
-- DeepSeek updated its open-source MoE model with **DeepSeek-V3-0324**, featuring enhanced reasoning, coding, and math capabilities, positioning it as a top-tier base model.
-- Sesame AI unveiled its **Conversational Speech Model (CSM)**, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory.
+- Suno releases **Suno 4.5**, fixing shimmer noise and improving audio decay stability in long tracks.
+- Anthropic releases **Claude 4 Opus** and **Claude Sonnet 4**: Opus 4 offers a Hybrid "Deep Thought" mode with enhanced long-term context and 7-hour autonomous operation; Sonnet 4 focuses on improved math and coding performance.
+- Google releases **Veo 3**, a video generation model for synchronized 4K video with natural audio integration, and **Imagen 4**, an advanced image model with deeper contextual understanding and artistic style support.
+- OpenAI releases **Codex**, an autonomous code agent in ChatGPT, powered by the o3 model, for writing code, debugging, testing, and creating GitHub Pull Requests.
+- Google releases **Jules**, an asynchronous autonomous coding agent on Gemini 2.5 Pro, analyzing repositories and creating GitHub Pull Requests.
+- Google releases **Gemini 2.5 Pro** (Deep Think Mode) and **Gemini 2.5 Flash**, featuring improved reasoning, native audio support, extended context, and high-frequency task handling.
+- OpenAI updates **Operator** to use the **o3** model, achieving SOTA on OSWorld benchmarks and enhancing autonomous browser capabilities.
+- DeepSeek open-sources **R1-0528**, a code-and-inference model with near–o4-mini performance and moderate computational needs.
+- Google DeepMind launches **AlphaEvolve**, an autonomous code-optimizer using evolutionary strategies with LLMs, achieving SOTA on 75% of math problems and discovering enhanced algorithms 20% of the time.
+- Google releases **Gemini Diffusion**, an experimental text diffusion model achieving high-speed text generation with enhanced control and creativity via noise refinement.
+- Google introduces **Gemma 3n**, an open-source generative AI model for on-device use, with an efficient architecture and multi-modal (audio, text, visual) capabilities.
 
-## אפריל 2025
+## מאי 2025
 
-- Meta משחררת את **Llama 4** בשלושה גדלים עם חלון הקשר של 10 מיליון טוקנים וביצועים בינוניים.
-- Google משיקה את **Gemini 2.5 Flash**, עם מצב חשיבה דינמ המאפשר לכוון את רמת החשיבה או להשבית אותה בהתאם לצורך. 
-- Amazon מציגה את **Nova Act**, מסגרת חדשה לבניית סוכנים אוטונומיים מרובי שלבים.
-- OpenAI משחררת את **GPT-4.1** בשלושה גדלים, עם חלון הקשר של מיליון טוקנים.
-- OpenAI מציגה את **O3 full** ו־**O4 mini**, מודלים מתקדמים במיוחד לחשיבה, מתמטיקה וקידוד.
-- Midjourney משיקה את **v7**, עם איכות תמונה גבוהה יותר ושליטה מדויקת יותר בסגנון.
-- סדרת עדכוני מודלי וידאו - **Veo 2.0** (Google), **Runway Gen-4**, **Vidu Q1** ו־**Kling 2.0** – קפיצת מדרגה ביצירת וידאו באיכות גבוהה, עם שיפור בזמני תגובה, ריאליזם וסגנון. 
-- Alibaba משחררת את **Qwen 3** כקוד פתוח, במגוון גדלים, עם יכולות מרשימות מאוד ביחס לגודל.
-- Microsoft משיקה את סדרת **Phi-4 reasoning** כקוד פתוח, מודלים קטנים אך באיכות גבוהה המשלבים חשיבה
-
-# מאי 2025
-
-- Suno 4.5
-- אנתרופיק שחררו את המודל קלוד 4 אופוס וקלוד 4 סונט
-- גוגל שחררו מודל וידאו מעודכן Veo 3 - המשלב אודיו באופן טבעי בתוך הוידאו, בנוסף שחררו את המודל IMAGEN 4 ליצירת תמונות
-- גוגל שחררור
-- OpenAI שחררו את codex - מערכת סוכן אוטונומי לטיפול בבעיות קוד בגיטהאב
-- גוגל שחרור את jules - מערכת סוכן אוטונמי לטיםול בבעיות קוד בגיטהאב
-- גוגל שחררו את ג'מינ י 2.5 עם מצב חשיבה עמוקה - עם מדדי SOTA מובילים
-- OpenAI עדכנה את operator - כלי הסוכן שלה, לשימוש במודל o3, מה שהפך אותו למודל SOTA במדד OSWorld
-- DeepSeek-R1-0528 שוחרר כקוד פתוח
+- Suno משיקה את **Suno 4.5**, עם תיקוני רעש "shimmer" ושיפור יציבות דעיכת שמע בקטעים ארוכים.
+- אנת'רופיק משיקה את **Claude 4 Opus** ואת **Claude Sonnet 4**: מודל Opus 4 מציע מצב "חשיבה עמוקה" היברידי עם הקשר ארוך-טווח משופר ופעולה אוטונומית עד 7 שעות; Sonnet 4 מתמקד בשיפור ביצועים במתמטיקה ובקידוד.
+- גוגל משיקה את **Veo 3**, מודל ליצירת וידאו 4K מסונכרן עם שילוב אודיו טבעי, ואת **Imagen 4**, מודל מתקדם ליצירת תמונות עם הבנת הקשר מעמיקה ותמיכה בסגנונות אמנותיים.
+- OpenAI משיקה את **Codex**, סוכן קוד אוטונומי ב-ChatGPT, מבוסס מודל o3, לכתיבת קוד, איתור באגים, הרצת בדיקות ויצירת Pull Requests ב-GitHub.
+- גוגל משיקה את **Jules**, סוכן קוד א-סינכרוני אוטונומי המבוסס על Gemini 2.5 Pro, לניתוח מאגרים ויצירת Pull Requests ב-GitHub.
+- גוגל משיקה את **Gemini 2.5 Pro** (מצב Deep Think) ואת **Gemini 2.5 Flash**, עם יכולות הסקה משופרות, תמיכת אודיו מובנית, הקשר מורחב וטיפול במשימות בתדירות גבוהה.
+- OpenAI מעדכנת את **Operator** לשימוש במודל **o3**, להשגת ביצועי SOTA במבחני OSWorld ושיפור יכולות אוטונומיות בדפדפן.
+- DeepSeek משחררת בקוד פתוח את **R1-0528**, מודל קוד והסקה עם ביצועים הקרובים ל-o4-mini ודרישות חישוב מתונות.
+- Google DeepMind משיקה את **AlphaEvolve**, סוכן אוטונומי לאופטימיזציית קוד באמצעות אסטרטגיות אבולוציוניות ו-LLMs, המשיג SOTA ב-75% מבעיות מתמטיות וחושף אלגוריתמים משופרים ב-20% מהמקרים.
+- גוגל משיקה את **Gemini Diffusion**, מודל דיפוזיית טקסט ניסיוני המשיג יצירת טקסט במהירות גבוהה עם שליטה ויצירתיות משופרות באמצעות עידון רעש.
+- גוגל מציגה את **Gemma 3n**, מודל AI גנרטיבי בקוד פתוח לשימוש במכשירי קצה, עם ארכיטקטורה יעילה ויכולות רב-מודליות (שמע, טקסט, ויזואלי).
