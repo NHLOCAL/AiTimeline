@@ -256,4 +256,21 @@
     - text: A series of video model updates - <b>Veo 2.0</b> (Google), <b>Runway Gen-4</b>, <b>Vidu Q1</b>, and <b>Kling 2.0</b> – a leap forward in high-quality video generation, with improvements in response times, realism, and style.
     - text: Alibaba releases <b>Qwen 3</b> as open source, in various sizes, with very impressive capabilities for their size.
       special: true
+  - date: May 2025
+    info:
     - text: Microsoft launches the <b>Phi-4 reasoning</b> series as open source, small yet high-quality models that incorporate reasoning.
+    - text: Suno releases <b>Suno 4.5</b>, fixing shimmer noise and improving audio decay stability in long tracks.
+    - text: 'Anthropic releases <b>Claude 4 Opus</b> and <b>Claude Sonnet 4</b>: Opus 4 offers a Hybrid "Deep Thought" mode with enhanced long-term context and 7-hour autonomous operation; Sonnet 4 focuses on improved math and coding performance.'
+      special: true
+    - text: Google releases <b>Veo 3</b>, a video generation model for synchronized 4K video with natural audio integration, and <b>Imagen 4</b>, an advanced image model with deeper contextual understanding and artistic style support.
+      special: true
+    - text: OpenAI releases <b>Codex</b>, an autonomous code agent in ChatGPT, powered by the o3 model, for writing code, debugging, testing, and creating GitHub Pull Requests.
+    - text: Google releases <b>Jules</b>, an asynchronous autonomous coding agent on Gemini 2.5 Pro, analyzing repositories and creating GitHub Pull Requests.
+    - text: Google releases <b>Gemini 2.5 Pro</b> (Deep Think Mode) and <b>Gemini 2.5 Flash</b>, featuring improved reasoning, native audio support, extended context, and high-frequency task handling.
+    - text: OpenAI updates <b>Operator</b> to use the <b>o3</b> model, achieving SOTA on OSWorld benchmarks and enhancing autonomous browser capabilities.
+    - text: DeepSeek open-sources <b>R1-0528</b>, a code-and-inference model with near–o4-mini performance and moderate computational needs.
+    - text: Google DeepMind launches <b>AlphaEvolve</b>, an autonomous code-optimizer using evolutionary strategies with LLMs, achieving SOTA on 75% of math problems and discovering enhanced algorithms 20% of the time.
+      special: true
+    - text: Google releases <b>Gemini Diffusion</b>, an experimental text diffusion model achieving high-speed text generation with enhanced control and creativity via noise refinement.
+      special: true
+    - text: Google introduces <b>Gemma 3n</b>, an open-source generative AI model for on-device use, with an efficient architecture and multi-modal (audio, text, visual) capabilities.
