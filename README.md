@@ -103,6 +103,10 @@ To preview your changes before creating a pull request:
     ```
 5.  **View:** Open your browser to `http://localhost:4000/AiTimeline/` (or the address provided).
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=NHLOCAL/AiTimeline&type=Date)](https://www.star-history.com/#NHLOCAL/AiTimeline&Date)
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
