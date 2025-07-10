@@ -1,0 +1,85 @@
+# .github/workflows/deploy.yml
+
+name: Build and Deploy Jekyll Site
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write # Needed to commit the converted yml file
+  pages: write      # Needed to deploy to GitHub Pages
+  id-token: write   # Needed for OIDC token
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build-and-deploy"
+  build-and-deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # 1. Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Python environment to run the conversion script
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 3. Run the conversion script
+      - name: Convert timeline.md to timeline.yml
+        run: python scripts/convert_timeline_events.py _data/timeline.md
+
+      # 4. Commit the generated timeline.yml file if it has changed
+      - name: Commit converted file
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add _data/timeline.yml
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            git commit -m "Automated: Convert timeline.md to timeline.yml"
+            git push
+          else
+            echo "No changes to commit in timeline.yml."
+          fi
+
+      # 5. Set up Ruby and Jekyll environment for GitHub Pages
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Or the version you prefer
+          bundler-cache: true # Runs 'bundle install' and caches gems
+
+      # 6. Configure GitHub Pages
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # 7. Build the Jekyll site
+      - name: Build with Jekyll
+        # Outputs the site to the './_site' directory
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+      
+      # 8. Upload the built site as an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload the '_site' directory
+          path: './_site'
+
+      # 9. Deploy the artifact to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
