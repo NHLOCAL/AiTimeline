@@ -41,7 +41,7 @@ Contributions are welcome and have been simplified! Help keep the timeline accur
 
 1.  **Fork & Clone:** Fork the repository to your GitHub account and clone it locally.
     ```bash
-    git clone https://github.com/YOUR_USERNAME/AiTimeline.git
+    git clone https://github.com/NHLOCAL/AiTimeline.git
     cd AiTimeline
     ```
 
