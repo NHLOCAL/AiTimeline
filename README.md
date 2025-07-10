@@ -8,13 +8,13 @@ This project provides a chronological overview of significant milestones, model 
 
 ## Features
 
-- **Yearly Sections:** Events organized by year.
-- **Monthly Events:** Clear breakdown of events within each month.
-- **Key Event Highlighting:** Important milestones are visually emphasized.
-- **Sortable View:** Toggle between newest-first and oldest-first chronological order.
-- **Dark Mode:** Switch between light and dark themes.
-- **Responsive Design:** Works well on desktop and mobile devices.
-- **Further Reading:** Links to related articles and resources.
+-   **Yearly Sections:** Events organized by year.
+-   **Monthly Events:** Clear breakdown of events within each month.
+-   **Key Event Highlighting:** Important milestones are visually emphasized.
+-   **Sortable View:** Toggle between newest-first and oldest-first chronological order.
+-   **Dark Mode:** Switch between light and dark themes.
+-   **Responsive Design:** Works well on desktop and mobile devices.
+-   **Further Reading:** Links to related articles and resources.
 
 ## How to Use
 
@@ -25,21 +25,19 @@ This project provides a chronological overview of significant milestones, model 
 
 ## How the Site Works
 
-This site is built using **Jekyll**, a static site generator.
+This site is built using **Jekyll**, a static site generator, and is automatically deployed using **GitHub Actions**.
 
--   **Timeline Content:** Managed in two files within the `_data` folder:
-    -   `timeline.md`: Human-readable Markdown format. **Edit this file to contribute events.**
-    -   `timeline.yml`: YAML format used by Jekyll. **This file is generated automatically.**
--   **Conversion Script:** A Python script (`scripts/convert_timeline_events.py`) converts `timeline.md` to `timeline.yml`.
--   **Other Key Files:**
-    -   `index.md`: Main page structure.
-    -   `_layouts/default.html`: Base HTML template.
-    -   `assets/`: CSS styles and JavaScript.
-    -   `_data/links.yml`: Links for the "Learn more" section.
+-   **Content Source:** The single source of truth for the timeline is `_data/timeline.md`. This is the only file you need to edit to add or change events.
+-   **Data File:** The `_data/timeline.yml` file is used by Jekyll to build the site. **This file is generated automatically** by a script. Do not edit it directly.
+-   **Automation:** When changes are pushed to the `main` branch, a GitHub Action automatically runs:
+    1.  Converts the `_data/timeline.md` file to `_data/timeline.yml`.
+    2.  Commits the updated `.yml` file back to the repository.
+    3.  Builds the Jekyll site.
+    4.  Deploys the site to GitHub Pages.
 
 ## Contributing
 
-Contributions are welcome! Help keep the timeline accurate and up-to-date.
+Contributions are welcome and have been simplified! Help keep the timeline accurate and up-to-date.
 
 1.  **Fork & Clone:** Fork the repository to your GitHub account and clone it locally.
     ```bash
@@ -47,35 +45,31 @@ Contributions are welcome! Help keep the timeline accurate and up-to-date.
     cd AiTimeline
     ```
 
-2.  **Edit `timeline.md`:**
-    *   Open `_data/timeline.md`.
+2.  **Edit `_data/timeline.md`:**
+    *   Open the `_data/timeline.md` file.
     *   Add or modify events using the existing format (`# Year:`, `## Month`, `- Event description`).
     *   Use `**bold text**` for emphasis (e.g., model names).
-    *   **To highlight an event, add `(*special*)` at the end of its line** (with a space before it).
+    *   To highlight an event as "special", add `(*special*)` at the end of its line, with a space before it.
         ```markdown
         ## March
         - An important event happened. (*special*)
         - A regular event occurred.
         ```
 
-3.  **Run the Conversion Script:**
-    *   Make sure you have Python 3 installed.
-    *   In your terminal (from the project root):
+3.  **Commit and Push Your Changes:**
+    *   Stage and commit **only the `timeline.md` file**. The `.yml` file will be updated automatically by the workflow.
         ```bash
-        python scripts/convert_timeline_events.py
+        git add _data/timeline.md
+        git commit -m "docs: Add [brief description of your change]"
         ```
-    *   Enter `_data/timeline.md` when prompted for the input file. This will update `_data/timeline.yml`.
-
-4.  **Commit Changes:**
-    *   **Important:** Stage and commit *both* the `.md` and the generated `.yml` file.
+    *   Push your changes to your forked repository:
         ```bash
-        git add _data/timeline.md _data/timeline.yml
-        git commit -m "Add [brief description of your change]"
+        git push origin main # or your branch name
         ```
 
-5.  **Push and Create Pull Request:**
-    *   Push your changes to your fork: `git push origin main` (or your branch name).
+4.  **Create a Pull Request:**
     *   Go to your fork on GitHub and open a Pull Request to the `main` branch of `NHLOCAL/AiTimeline`.
+    *   Once your Pull Request is merged, the automated workflow will handle the conversion and deployment.
 
 ## Feedback and Suggestions
 
@@ -83,24 +77,30 @@ Have feedback, found a bug, or want to suggest an addition? Please **[open an is
 
 ## Running Locally (Optional)
 
-To preview your changes before creating a pull request:
+To preview your changes on your local machine before creating a pull request:
 
 1.  **Install Prerequisites:**
     *   Ruby and Bundler (see [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/))
-    *   Python 3 (for the conversion script)
+    *   Python 3
+
 2.  **Install Dependencies:**
     ```bash
     bundle install
     ```
-3.  **(Optional) Run Conversion Script:** If you edited `timeline.md`:
-    ```bash
-    python scripts/convert_timeline_events.py
-    # Enter _data/timeline.md
-    ```
+
+3.  **Generate the `.yml` File for Local Preview:**
+    *   After editing `_data/timeline.md`, you must run the conversion script to see your changes locally.
+    *   This step is **only for local previewing**. The final conversion is handled automatically online.
+        ```bash
+        # Run from the project root
+        python scripts/convert_timeline_events.py _data/timeline.md
+        ```
+
 4.  **Serve the Site:**
     ```bash
     bundle exec jekyll serve
     ```
+
 5.  **View:** Open your browser to `http://localhost:4000/AiTimeline/` (or the address provided).
 
 ## License
