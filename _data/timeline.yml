@@ -274,3 +274,8 @@
     - text: Google releases <b>Gemini Diffusion</b>, an experimental text diffusion model achieving high-speed text generation with enhanced control and creativity via noise refinement.
       special: true
     - text: Google introduces <b>Gemma 3n</b>, an open-source generative AI model for on-device use, with an efficient architecture and multi-modal (audio, text, visual) capabilities.
+  - date: June 2025
+    info:
+    - text: Google releases <b>Gemini 2.5 Pro</b> (final production-ready version), which leads benchmarks across the board.
+    - text: ElevenLabs rolls out <b>Eleven v3 (alpha)</b> TTS with fine grained emotion control and support for 70+ languages.
+    - text: OpenAI debuts <b>o3‑pro</b>, an enhanced reasoning model offering extended context and real‑time tool integrations.
