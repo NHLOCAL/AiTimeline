@@ -277,5 +277,18 @@
   - date: June 2025
     info:
     - text: Google releases <b>Gemini 2.5 Pro</b> (final production-ready version), which leads benchmarks across the board.
-    - text: ElevenLabs rolls out <b>Eleven v3 (alpha)</b> TTS with fine grained emotion control and support for 70+ languages.
-    - text: OpenAI debuts <b>o3‑pro</b>, an enhanced reasoning model offering extended context and real‑time tool integrations.
+    - text: ElevenLabs rolls out <b>Eleven v3 (alpha)</b> TTS with fine grained emotion control and support for 70+ languages.
+    - text: OpenAI debuts <b>o3 pro</b>, an enhanced reasoning model offering extended context and real time tool integrations.
+  - date: July 2025
+    info:
+    - text: xAI releases <b>Grok 4</b>, achieving a new SOTA of 15.9% on ARC-AGI v2 and 25.4% on Humanity’s Last Exam.
+      special: true
+    - text: OpenAI unveils the <b>ChatGPT Agent</b>, embedding autonomous coding, web research and tool use directly within the chat interface.
+      special: true
+    - text: An experimental OpenAI model secures a <b>gold medal</b> at IMO 2025 without any external tools.
+      special: true
+    - text: Google introduces <b>Gemini Deep Think</b>, which also earns an IMO 2025 gold by solving five of six problems with parallel reasoning.
+      special: true
+    - text: Alibaba open-sources two variants, <b>Qwen3-235B-A22B-Instruct-2507</b> (instruction-tuned) and <b>Qwen3-Coder</b>, for general LLM use and automated code generation.
+    - text: Moonshot AI debuts <b>Kimi K2</b>, a Chinese LLM praised for its open-research focus and robust performance.
+    - text: Chinese startup Zhipu open-sources <b>GLM-4.5</b>, a 130 B-parameter model tailored for intelligent-agent applications.
