@@ -121,9 +121,19 @@ This means you are free to share and adapt the content for any purpose, even com
 
 ### How to Attribute
 
-If you use the data from this timeline, please attribute it as follows:
+If you use or reference the data from this timeline, please use one of the following standard citation formats.
 
-**Citation Format:**
+**APA Style:**
 ```
-NHLOCAL. (2024). *AI Timeline*. Retrieved from https://nhlocal.github.io/AiTimeline/
+NHLOCAL. (2025). *AI Timeline*. Retrieved from https://nhlocal.github.io/AiTimeline/
+```
+
+**BibTeX Entry:**
+```bibtex
+@misc{nhlocal_ai_timeline,
+  author       = {NHLOCAL},
+  title        = {AI Timeline},
+  year         = {2025},
+  howpublished = {\url{https://nhlocal.github.io/AiTimeline/}},
+}
 ```
