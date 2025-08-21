@@ -47,6 +47,9 @@ jobs:
           commit_message: "Automated: Convert timeline.md to timeline.yml"
           file_pattern: _data/timeline.yml
 
+      - name: Add linux platform to bundle
+        run: bundle lock --add-platform x86_64-linux
+        
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
