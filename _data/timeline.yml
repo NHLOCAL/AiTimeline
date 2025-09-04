@@ -62,7 +62,7 @@
     - text: Adobe releases <b>Firefly 2</b>.
   - date: November
     info:
-    - text: <b>Stable Diffusion XL Turbo</b> is released - A fast model that allows the creation of an image in one step in real time.
+    - text: <b>Stable Diffusion XL Turbo</b> is released - A fast model that allows the creation of an image in one step in real-time.
   - date: December
     info:
     - text: <b>Midjourney v6</b> is launched.
@@ -278,7 +278,7 @@
     info:
     - text: Google releases <b>Gemini 2.5 Pro</b> (final production-ready version), which leads benchmarks across the board.
     - text: ElevenLabs rolls out <b>Eleven v3 (alpha)</b> TTS with fine grained emotion control and support for 70+ languages.
-    - text: OpenAI debuts <b>o3 pro</b>, an enhanced reasoning model offering extended context and real time tool integrations.
+    - text: OpenAI debuts <b>o3 pro</b>, an enhanced reasoning model offering extended context and real-time tool integrations.
   - date: July 2025
     info:
     - text: xAI releases <b>Grok 4</b>, achieving a new SOTA of 15.9% on ARC-AGI v2 and 25.4% on Humanity’s Last Exam.
@@ -292,3 +292,15 @@
     - text: Alibaba open-sources two variants, <b>Qwen3-235B-A22B-Instruct-2507</b> (instruction-tuned) and <b>Qwen3-Coder</b>, for general LLM use and automated code generation.
     - text: Moonshot AI debuts <b>Kimi K2</b>, a Chinese LLM praised for its open-research focus and robust performance.
     - text: Chinese startup Zhipu open-sources <b>GLM-4.5</b>, a 130 B-parameter model tailored for intelligent-agent applications.
+  - date: August 2025
+    info:
+    - text: Google introduced <b>Gemini 2.5 Deep Think</b>, a special "extended thinking" mode for solving complex problems and exploring alternatives.
+      special: true
+    - text: Anthropic released <b>Claude Opus 4.1</b>, an upgrade focused on improving agentic capabilities and real-world coding.
+    - text: Google DeepMind announced <b>Genie 3.0</b>, a "world model" for creating interactive 3D environments from text, maintaining consistency for several minutes.
+      special: true
+    - text: OpenAI released <b>gpt-oss-120b</b> and <b>gpt-oss-20b</b>, a family of open-source models with high reasoning capabilities, optimized to run on accessible hardware.
+    - text: OpenAI launched <b>GPT-5</b>, the company's next-generation model, with significant improvements in coding and a dynamic "thinking" mode to reduce hallucinations.
+    - text: DeepSeek released <b>DeepSeek V3.1</b>, a hybrid model combining fast and slow "thinking" modes to improve performance in agentic tasks and tool use.
+    - text: Google launched a preview of <b>Gemini 2.5 Flash Image</b> (showcased as *nano-banana*), an advanced model for precise image editing, merging, and maintaining character consistency.
+      special: true
