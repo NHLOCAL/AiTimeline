@@ -10,3 +10,4 @@
 ## ספטמבר 2025
 - Seedream 4.0 של ByteDance הוא מודל דור חדש ליצירת ועריכת תמונות במהירות ובאיכות גבוהה (עד 4K), המשלב יצירה ועריכה במערכת אחת ומתחרה ישירות במובילי השוק כמו Google DeepMind.
 - Deep Think achieves Gold Medal at the ICPC 2025 Programming Contest
+- OpenAI Reasoning Model Solved ALL 12 Problems at ICPC 2025 Programming Contest
