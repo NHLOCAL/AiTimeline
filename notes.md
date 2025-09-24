@@ -13,3 +13,4 @@
 - OpenAI Reasoning Model Solved ALL 12 Problems at ICPC 2025 Programming Contest
 - suno V5 שוחרר
 - qwen 3 max
+- wan 2.2 - מודל וידאו גנרטיבי מתקדם המסוגל לערוך והלחליף דמות לאורך סרט שלם
