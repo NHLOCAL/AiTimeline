@@ -1,28 +1,3 @@
-## יוני 2025
-- גוגל שחררו עדכון חדש למודל Gemini 2.5 pro, שהפך למודל SOTA על כל רחבי הלוח
-- elevanlabs שחררה את גרסה v3 של מודל ה-tts שלה עם יכולות דיבור טבעיות במגוון שפות 
-- OpenAI o3 pro
-
-
-## יולי 2025
-- Grok 4 שוחרר במספר דגמים שונים, והוא מציג ביצועי SOTA בכל רחבי הלוח
-- openAI מציגה את Agent. סוכן המשולב בתוך ממשק צ'אט GPT, המשלב יכולות קידוד, מחקר מעמיק וסוכן, ומציג ביצועי SOTA במספר מדדים מורכבים
-- מודל נסיוני של openAI זוכה במדליית זהב ב-IMO, ללא שימוש בכלים
-- מודל מתקדם של gemini בשילוב חשיבה עמוקה, זוכה אף הוא במדליית זהב ב-IMO
-- qwen שחררה בקוד פתוח את Qwen3-235B-A22B-Instruct-2507 ואת qwen 3 coder
-- שוחרר מודל kimi K2 הסיני
-
-## July 2025
-
-* xAI releases **Grok 4** in Standard, Premium+ and SuperHeavy tiers, offering a 256K-token context window and always-on reasoning.
-* OpenAI unveils the **ChatGPT Agent**, embedding autonomous coding, web research and tool use directly within the chat interface.
-* An experimental OpenAI model secures a **gold medal** at IMO 2025 without any external tools.
-* Google introduces **Gemini Deep Think**, which also earns an IMO 2025 gold by solving five of six problems with parallel reasoning.
-* Alibaba open-sources two variants—**Qwen3-235B-A22B-Instruct-2507** (instruction-tuned) and **Qwen3-Coder**—for general LLM use and automated code generation.
-* Moonshot AI debuts **Kimi K2**, a Chinese LLM praised for its open-research focus and robust performance.
-* Chinese startup Zhipu open-sources **GLM-4.5**, a 130 B-parameter model tailored for intelligent-agent applications.
-
-
 ## August 2025
 - Google introduced **Gemini 2.5 Deep Think**, a special "extended thinking" mode for solving complex problems and exploring alternatives. (*special*)
 - Anthropic released **Claude Opus 4.1**, an upgrade focused on improving agentic capabilities and real-world coding.
@@ -31,3 +6,27 @@
 - OpenAI launched **GPT-5**, the company's next-generation model, with significant improvements in coding and a dynamic "thinking" mode to reduce hallucinations. (*special*)
 - DeepSeek released **DeepSeek V3.1**, a hybrid model combining fast and slow "thinking" modes to improve performance in agentic tasks and tool use.
 - Google launched a preview of **Gemini 2.5 Flash Image** (showcased as *nano-banana*), an advanced model for precise image editing, merging, and maintaining character consistency. (*special*)
+
+## ספטמבר 2025
+- Seedream 4.0 של ByteDance הוא מודל דור חדש ליצירת ועריכת תמונות במהירות ובאיכות גבוהה (עד 4K), המשלב יצירה ועריכה במערכת אחת ומתחרה ישירות במובילי השוק כמו Google DeepMind.
+- Deep Think achieves Gold Medal at the ICPC 2025 Programming Contest
+- OpenAI Reasoning Model Solved ALL 12 Problems at ICPC 2025 Programming Contest
+- suno V5 שוחרר
+- qwen 3 max
+- wan 2.2 - מודל וידאו גנרטיבי מתקדם המסוגל לערוך והלחליף דמות לאורך סרט שלם
+- אנתרופיק משחררת את מודל קלוד סונט 4.5
+- openAI משיקה את SORA 2
+
+
+## September 2025
+
+-   ByteDance released **Seedream 4.0**, a next-generation image model unifying high-quality text-to-image generation and natural-language image editing.
+-   An advanced Gemini variant, reported as **Gemini 2.5 - Deep Think**, achieved gold-medal-level performance at the ICPC World Finals programming contest.
+-   OpenAI reported a reasoning and code model achieved a **perfect score (12/12)** in ICPC testing.
+-   Suno released **Suno v5**, an upgrade in music generation with studio-grade fidelity and more natural-sounding vocals.
+-   Alibaba unveiled **Qwen-3-Max**, its flagship model with over a trillion parameters, focusing on long context and agent capabilities.
+-   **Wan 2.2** was released, a generative video model focused on multi-shot consistency and character animation.
+-   Anthropic announced **Claude Sonnet 4.5**, a model optimized for coding, agent construction, and improved reasoning.
+-   OpenAI released **Sora 2**, a flagship video and audio generation model with improved physical modeling and synchronized sound.
+-   DeepSeek released **DeepSeek-V3.2-Exp**
+-   OpenAI and NVIDIA announced a strategic partnership for NVIDIA to supply at least **10 gigawatts** of AI systems for OpenAI's infrastructure.
