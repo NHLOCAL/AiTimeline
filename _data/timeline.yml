@@ -304,3 +304,18 @@
     - text: DeepSeek released <b>DeepSeek V3.1</b>, a hybrid model combining fast and slow "thinking" modes to improve performance in agentic tasks and tool use.
     - text: Google launched a preview of <b>Gemini 2.5 Flash Image</b> (showcased as *nano-banana*), an advanced model for precise image editing, merging, and maintaining character consistency.
       special: true
+  - date: September 2025
+    info:
+    - text: ByteDance released <b>Seedream 4.0</b>, a next-generation image model unifying high-quality text-to-image generation and natural-language image editing.
+    - text: An advanced Gemini variant, reported as <b>Gemini 2.5 - Deep Think</b>, achieved gold-medal-level performance at the ICPC World Finals programming contest.
+      special: true
+    - text: OpenAI reported a reasoning and code model achieved a <b>perfect score (12/12)</b> in ICPC testing.
+      special: true
+    - text: Suno released <b>Suno v5</b>, an upgrade in music generation with studio-grade fidelity and more natural-sounding vocals.
+    - text: Alibaba unveiled <b>Qwen-3-Max</b>, its flagship model with over a trillion parameters, focusing on long context and agent capabilities.
+    - text: <b>Wan 2.2</b> was released, a generative video model focused on multi-shot consistency and character animation.
+    - text: Anthropic announced <b>Claude Sonnet 4.5</b>, a model optimized for coding, agent construction, and improved reasoning.
+    - text: OpenAI released <b>Sora 2</b>, a flagship video and audio generation model with improved physical modeling and synchronized sound.
+    - text: DeepSeek released <b>DeepSeek-V3.2-Exp</b>
+    - text: OpenAI and NVIDIA announced a strategic partnership for NVIDIA to supply at least <b>10 gigawatts</b> of AI systems for OpenAI's infrastructure.
+      special: true
