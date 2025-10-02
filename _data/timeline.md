@@ -269,7 +269,7 @@
 
 -   ByteDance released **Seedream 4.0**, a next-generation image model unifying high-quality text-to-image generation and natural-language image editing.
 -   An advanced Gemini variant, reported as **Gemini 2.5 - Deep Think**, achieved gold-medal-level performance at the ICPC World Finals programming contest. (*special*)
--   OpenAI reported a reasoning and code model achieved a **perfect score (12/12)** in ICPC testing. (*special*)
+-   OpenAI reported a reasoning and code model achieved a perfect score (12/12) in ICPC testing. (*special*)
 -   Suno released **Suno v5**, an upgrade in music generation with studio-grade fidelity and more natural-sounding vocals.
 -   Alibaba unveiled **Qwen-3-Max**, its flagship model with over a trillion parameters, focusing on long context and agent capabilities.
 -   **Wan 2.2** was released, a generative video model focused on multi-shot consistency and character animation.
