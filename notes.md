@@ -15,3 +15,18 @@
 - qwen 3 max
 - wan 2.2 - מודל וידאו גנרטיבי מתקדם המסוגל לערוך והלחליף דמות לאורך סרט שלם
 - אנתרופיק משחררת את מודל קלוד סונט 4.5
+- openAI משיקה את SORA 2
+
+
+## September 2025
+
+-   ByteDance released **Seedream 4.0**, a next-generation image model unifying high-quality text-to-image generation and natural-language image editing.
+-   An advanced Gemini variant, reported as **Gemini 2.5 - Deep Think**, achieved gold-medal-level performance at the ICPC World Finals programming contest.
+-   OpenAI reported a reasoning and code model achieved a **perfect score (12/12)** in ICPC testing.
+-   Suno released **Suno v5**, an upgrade in music generation with studio-grade fidelity and more natural-sounding vocals.
+-   Alibaba unveiled **Qwen-3-Max**, its flagship model with over a trillion parameters, focusing on long context and agent capabilities.
+-   **Wan 2.2** was released, a generative video model focused on multi-shot consistency and character animation.
+-   Anthropic announced **Claude Sonnet 4.5**, a model optimized for coding, agent construction, and improved reasoning.
+-   OpenAI released **Sora 2**, a flagship video and audio generation model with improved physical modeling and synchronized sound.
+-   DeepSeek released **DeepSeek-V3.2-Exp**
+-   OpenAI and NVIDIA announced a strategic partnership for NVIDIA to supply at least **10 gigawatts** of AI systems for OpenAI's infrastructure.
