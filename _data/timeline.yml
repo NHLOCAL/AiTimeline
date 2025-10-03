@@ -313,7 +313,7 @@
       special: true
     - text: Suno released <b>Suno v5</b>, an upgrade in music generation with studio-grade fidelity and more natural-sounding vocals.
     - text: Alibaba unveiled <b>Qwen-3-Max</b>, its flagship model with over a trillion parameters, focusing on long context and agent capabilities.
-    - text: <b>Wan 2.2</b> was released, a generative video model focused on multi-shot consistency and character animation.
+    - text: <b>Wan 2.5</b> was released, a generative video model focused on multi-shot consistency and character animation.
     - text: Anthropic announced <b>Claude Sonnet 4.5</b>, a model optimized for coding, agent construction, and improved reasoning.
     - text: OpenAI released <b>Sora 2</b>, a flagship video and audio generation model with improved physical modeling and synchronized sound.
     - text: DeepSeek released <b>DeepSeek-V3.2-Exp</b>
