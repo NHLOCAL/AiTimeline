@@ -272,7 +272,7 @@
 -   OpenAI reported a reasoning and code model achieved a perfect score (12/12) in ICPC testing. (*special*)
 -   Suno released **Suno v5**, an upgrade in music generation with studio-grade fidelity and more natural-sounding vocals.
 -   Alibaba unveiled **Qwen-3-Max**, its flagship model with over a trillion parameters, focusing on long context and agent capabilities.
--   **Wan 2.2** was released, a generative video model focused on multi-shot consistency and character animation.
+-   **Wan 2.5** was released, a generative video model focused on multi-shot consistency and character animation.
 -   Anthropic announced **Claude Sonnet 4.5**, a model optimized for coding, agent construction, and improved reasoning.
 -   OpenAI released **Sora 2**, a flagship video and audio generation model with improved physical modeling and synchronized sound.
 -   DeepSeek released **DeepSeek-V3.2-Exp**
