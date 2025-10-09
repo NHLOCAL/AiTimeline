@@ -30,3 +30,8 @@
 -   OpenAI released **Sora 2**, a flagship video and audio generation model with improved physical modeling and synchronized sound.
 -   DeepSeek released **DeepSeek-V3.2-Exp**
 -   OpenAI and NVIDIA announced a strategic partnership for NVIDIA to supply at least **10 gigawatts** of AI systems for OpenAI's infrastructure.
+
+
+## אוקטובר 2025
+- FIGURE 03
+- מודל SOTA לשליטה במחשב מבוסס ג'מיני שוחרר על ידי גוגל
