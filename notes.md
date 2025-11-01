@@ -30,3 +30,19 @@
 -   OpenAI released **Sora 2**, a flagship video and audio generation model with improved physical modeling and synchronized sound.
 -   DeepSeek released **DeepSeek-V3.2-Exp**
 -   OpenAI and NVIDIA announced a strategic partnership for NVIDIA to supply at least **10 gigawatts** of AI systems for OpenAI's infrastructure.
+
+
+## אוקטובר 2025
+- FIGURE 03
+- מודל SOTA לשליטה במחשב מבוסס ג'מיני שוחרר על ידי גוגל
+- הייקו 4.5 - ביצועים ואיכות גבוהה מאוד בעלות מינימלית
+- צ'אט GPT אטלס - דפדפן בינה מלאכותית
+- הרובוט ההומנואידי הראשון לשימוש ביתי מסחרי הושק - 1X Neo
+
+## October 2025
+
+-   Figure unveiled **Figure 03**, a humanoid robot designed for domestic and general-purpose tasks.
+-   Google released a **Gemini model for computer control**, achieving state-of-the-art (SOTA) performance in GUI automation.
+-   Anthropic released **Claude 4.5 Haiku**, a fast, cost-effective model for high-volume, low-latency applications.
+-   OpenAI announced **ChatGPT Atlas**, an AI-native web browser with a built-in "Agent Mode" for task automation.
+-   1X announced **Neo**, a humanoid robot marketed as the first consumer-ready model for home use.
