@@ -38,3 +38,11 @@
 - הייקו 4.5 - ביצועים ואיכות גבוהה מאוד בעלות מינימלית
 - צ'אט GPT אטלס - דפדפן בינה מלאכותית
 - הרובוט ההומנואידי הראשון לשימוש ביתי מסחרי הושק - 1X Neo
+
+## October 2025
+
+-   Figure unveiled **Figure 03**, a humanoid robot designed for domestic and general-purpose tasks.
+-   Google released a **Gemini model for computer control**, achieving state-of-the-art (SOTA) performance in GUI automation.
+-   Anthropic released **Claude 4.5 Haiku**, a fast, cost-effective model for high-volume, low-latency applications.
+-   OpenAI announced **ChatGPT Atlas**, an AI-native web browser with a built-in "Agent Mode" for task automation.
+-   1X announced **Neo**, a humanoid robot marketed as the first consumer-ready model for home use.
