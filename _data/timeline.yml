@@ -319,3 +319,11 @@
     - text: DeepSeek released <b>DeepSeek-V3.2-Exp</b>
     - text: OpenAI and NVIDIA announced a strategic partnership for NVIDIA to supply at least <b>10 gigawatts</b> of AI systems for OpenAI's infrastructure.
       special: true
+  - date: October 2025
+    info:
+    - text: Figure unveiled <b>Figure 03</b>, a humanoid robot designed for domestic and general-purpose tasks.
+    - text: Google released a <b>Gemini model for computer control</b>, achieving state-of-the-art (SOTA) performance in GUI automation.
+    - text: Anthropic released <b>Claude 4.5 Haiku</b>, a fast, cost-effective model for high-volume, low-latency applications.
+    - text: OpenAI announced <b>ChatGPT Atlas</b>, an AI-native web browser with a built-in "Agent Mode" for task automation.
+    - text: 1X announced <b>Neo</b>, a humanoid robot marketed as the first consumer-ready model for home use.
+      special: true
