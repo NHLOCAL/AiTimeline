@@ -46,3 +46,7 @@
 -   Anthropic released **Claude 4.5 Haiku**, a fast, cost-effective model for high-volume, low-latency applications.
 -   OpenAI announced **ChatGPT Atlas**, an AI-native web browser with a built-in "Agent Mode" for task automation.
 -   1X announced **Neo**, a humanoid robot marketed as the first consumer-ready model for home use.
+
+
+## נובמבר 2025
+- KINI K2 THINKING שוחרר והגיע לראש המדדים
