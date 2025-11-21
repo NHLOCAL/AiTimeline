@@ -53,3 +53,5 @@
 - GPT 5.1
 - GROK 4.1
 - GEMINI 3.0
+- GPT 5.1 CODEX MAX
+- ננו בננה פרו (2)
