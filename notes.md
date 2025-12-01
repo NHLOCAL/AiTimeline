@@ -46,3 +46,44 @@
 -   Anthropic released **Claude 4.5 Haiku**, a fast, cost-effective model for high-volume, low-latency applications.
 -   OpenAI announced **ChatGPT Atlas**, an AI-native web browser with a built-in "Agent Mode" for task automation.
 -   1X announced **Neo**, a humanoid robot marketed as the first consumer-ready model for home use.
+
+
+## נובמבר 2025
+- KINI K2 THINKING שוחרר והגיע לראש המדדים
+- GPT 5.1
+- GROK 4.1
+- GEMINI 3.0
+- GPT 5.1 CODEX MAX
+- ננו בננה פרו (2)
+- קלוד אופוס 4.5
+- FLUX 2 - מודל יצירת תמונת קוד פתוח
+- DeepseekMath-V2 מקבל את מדליית הזהב באולימפיאדת המתמטיקה
+- מיקרוסופט משחררת את Fara-7B כקוד פתוח - מודל שליטה במחשב
+
+
+## November 2025
+
+-   Moonshot AI released **Kimi K2 Thinking**, an open model setting new records in reasoning benchmarks.
+-   OpenAI launched **GPT 5.1**, featuring specialized "Thinking" and "Instant" modes with expanded context.
+-   xAI released **Grok 4.1**, combining high EQ with strong logic to top the LM Arena leaderboard.
+-   Google debuted **Gemini 3.0**, a flagship "thinking" model that claimed the top spot on major benchmarks.
+-   OpenAI introduced **GPT 5.1 Codex Max**, an agentic model built specifically for long-term coding tasks.
+-   Google released **Nano Banana Pro**, a superior image generation and editing model based on Gemini 3.
+-   Anthropic announced **Claude Opus 4.5**, delivering elite coding and agentic performance at a significantly reduced price.
+-   Black Forest Labs launched **FLUX 2**, a high-performance open-weight image generation model.
+-   DeepSeek released **DeepSeekMath-V2** as open source, achieving gold-medal performance in math olympiads.
+-   Microsoft open-sourced **Fara-7B**, a small model optimized for browser agents and computer control.
+
+
+## נובמבר 2025
+
+-   חברת Moonshot AI שחררה את **Kimi K2 Thinking**, מודל פתוח שקבע שיאים חדשים במדדי הסקה.
+-   חברת OpenAI השיקה את **GPT 5.1**, הכולל מצבי "Thinking" ו-"Instant" עם חלון הקשר מורחב.
+-   חברת xAI שחררה את **Grok 4.1**, המשלב EQ גבוה עם לוגיקה חזקה והוביל את טבלת ה-LM Arena.
+-   גוגל הציגה את **Gemini 3.0**, מודל חשיבה שתפס את המקום הראשון במדדים המובילים.
+-   חברת OpenAI הציגה את **GPT 5.1 Codex Max**, מודל סוכן שנבנה במיוחד למשימות קוד ארוכות.
+-   גוגל שחררה את **Nano Banana Pro**, מודל עריכה ויצירת תמונות מתקדם המבוסס על Gemini 3.
+-   חברת Anthropic הכריזה על **Claude Opus 4.5**, המציע יכולות קוד וסוכנים מובילות במחיר מופחת משמעותית.
+-   מעבדות Black Forest Labs שחררו את **FLUX 2**, מודל תמונה בקוד פתוח עם ביצועים גבוהים.
+-   חברת DeepSeek שחררה את **DeepSeekMath-V2** כקוד פתוח, שהשיג ביצועי מדליית זהב באולימפיאדות מתמטיקה.
+-   מיקרוסופט שחררה כקוד פתוח את **Fara-7B**, מודל קטן המותאם לסוכני דפדפן ושליטה במחשב.
