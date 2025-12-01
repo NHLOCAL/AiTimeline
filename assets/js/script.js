@@ -1,4 +1,9 @@
-// Cookie Helpers
+// --- Theme Logic ---
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+const icon = darkModeToggle ? darkModeToggle.querySelector('i') : null;
+
+// Improved Cookie Setter for persistence
 function setCookie(name, value, days) {
     let expires = "";
     if (days) {
@@ -6,7 +11,8 @@ function setCookie(name, value, days) {
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         expires = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    // Added path=/ and SameSite=Lax to ensure it works across the site and persists
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
 }
 
 function getCookie(name) {
@@ -20,11 +26,6 @@ function getCookie(name) {
     return null;
 }
 
-// Dark Mode Logic
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
-const icon = darkModeToggle ? darkModeToggle.querySelector('i') : null;
-
 function updateIcon(isDark) {
     if (!icon) return;
     icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
@@ -34,6 +35,7 @@ function initTheme() {
     const savedTheme = getCookie("darkMode");
     const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+    // Strict priority: Cookie > System > Default (Light)
     if (savedTheme === "true") {
         body.classList.add('dark-mode');
         updateIcon(true);
@@ -44,29 +46,33 @@ function initTheme() {
         body.classList.add('dark-mode');
         updateIcon(true);
     } else {
+        body.classList.remove('dark-mode');
         updateIcon(false);
     }
 }
 
 if (darkModeToggle) {
+    // Run immediately
     initTheme();
+    
     darkModeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         const isDark = body.classList.contains('dark-mode');
         updateIcon(isDark);
-        setCookie("darkMode", isDark, 30);
+        // Save as string "true"/"false"
+        setCookie("darkMode", isDark, 365); // Save for a year
     });
 }
 
-// Sticky Nav Highlighting
+// --- Navigation Highlighting ---
 const yearNavLinks = document.querySelectorAll('.year-nav a');
 const yearSections = document.querySelectorAll('.year');
 
 function highlightNav() {
     if (yearNavLinks.length === 0 || yearSections.length === 0) return;
     
-    const scrollPos = window.pageYOffset + 200; // Trigger point
     let currentYear = '';
+    const scrollPos = window.pageYOffset + 140; 
 
     yearSections.forEach(section => {
         if (scrollPos >= section.offsetTop) {
@@ -85,7 +91,7 @@ function highlightNav() {
 window.addEventListener('scroll', highlightNav);
 window.addEventListener('load', highlightNav);
 
-// Sorting Logic
+// --- Sorting ---
 const sortToggle = document.getElementById('sort-toggle');
 if (sortToggle) {
     sortToggle.addEventListener('click', () => {
@@ -114,24 +120,23 @@ if (sortToggle) {
                 section.appendChild(event);
             });
         });
-        
         highlightNav();
     });
 }
 
-// Back to Top Button
-const backToTopButton = document.getElementById('back-to-top');
+// --- Scroll To Top ---
+const scrollToTopBtn = document.getElementById('scroll-to-top');
 
-if (backToTopButton) {
+if (scrollToTopBtn) {
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 500) {
-            backToTopButton.classList.add('visible');
+            scrollToTopBtn.classList.add('visible');
         } else {
-            backToTopButton.classList.remove('visible');
+            scrollToTopBtn.classList.remove('visible');
         }
     });
 
-    backToTopButton.addEventListener('click', () => {
+    scrollToTopBtn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
