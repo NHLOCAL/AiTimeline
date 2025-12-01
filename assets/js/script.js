@@ -1,9 +1,8 @@
-// --- Theme Logic ---
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const body = document.body;
 const icon = darkModeToggle ? darkModeToggle.querySelector('i') : null;
 
-// Improved Cookie Setter for persistence
+
 function setCookie(name, value, days) {
     let expires = "";
     if (days) {
@@ -35,44 +34,47 @@ function initTheme() {
     const savedTheme = getCookie("darkMode");
     const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    // Strict priority: Cookie > System > Default (Light)
+    // Logic: Explicit user preference (cookie) always wins over system preference
     if (savedTheme === "true") {
         body.classList.add('dark-mode');
         updateIcon(true);
     } else if (savedTheme === "false") {
         body.classList.remove('dark-mode');
         updateIcon(false);
-    } else if (systemPrefersDark) {
-        body.classList.add('dark-mode');
-        updateIcon(true);
     } else {
-        body.classList.remove('dark-mode');
-        updateIcon(false);
+        // No cookie set, fallback to system
+        if (systemPrefersDark) {
+            body.classList.add('dark-mode');
+            updateIcon(true);
+        } else {
+            body.classList.remove('dark-mode');
+            updateIcon(false);
+        }
     }
 }
 
 if (darkModeToggle) {
-    // Run immediately
+
     initTheme();
-    
+
     darkModeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         const isDark = body.classList.contains('dark-mode');
         updateIcon(isDark);
-        // Save as string "true"/"false"
-        setCookie("darkMode", isDark, 365); // Save for a year
+
+        setCookie("darkMode", isDark, 365);
     });
 }
 
-// --- Navigation Highlighting ---
+
 const yearNavLinks = document.querySelectorAll('.year-nav a');
 const yearSections = document.querySelectorAll('.year');
 
 function highlightNav() {
     if (yearNavLinks.length === 0 || yearSections.length === 0) return;
-    
+
     let currentYear = '';
-    const scrollPos = window.pageYOffset + 140; 
+    const scrollPos = window.pageYOffset + 140;
 
     yearSections.forEach(section => {
         if (scrollPos >= section.offsetTop) {
@@ -91,16 +93,16 @@ function highlightNav() {
 window.addEventListener('scroll', highlightNav);
 window.addEventListener('load', highlightNav);
 
-// --- Sorting ---
+
 const sortToggle = document.getElementById('sort-toggle');
 if (sortToggle) {
     sortToggle.addEventListener('click', () => {
         const timelineContainer = document.querySelector('.timeline');
         const currentOrder = sortToggle.getAttribute('data-order') || 'oldest';
         const newOrder = currentOrder === 'oldest' ? 'newest' : 'oldest';
-        
+
         sortToggle.setAttribute('data-order', newOrder);
-        
+
         const icon = sortToggle.querySelector('i');
         const textSpan = sortToggle.querySelector('span');
 
@@ -124,7 +126,7 @@ if (sortToggle) {
     });
 }
 
-// --- Scroll To Top ---
+
 const scrollToTopBtn = document.getElementById('scroll-to-top');
 
 if (scrollToTopBtn) {
@@ -143,3 +145,31 @@ if (scrollToTopBtn) {
         });
     });
 }
+
+// Copy to Clipboard Functionality
+document.addEventListener('click', function(e) {
+    // Check if the clicked element is an anchor button or inside one
+    const btn = e.target.closest('.anchor-btn');
+    if (!btn) return;
+
+    const linkId = btn.getAttribute('data-link');
+    if (!linkId) return;
+
+    const fullUrl = window.location.origin + window.location.pathname + '#' + linkId;
+
+    navigator.clipboard.writeText(fullUrl).then(() => {
+        // Visual feedback
+        const icon = btn.querySelector('i');
+        const originalClass = icon.className;
+        
+        icon.className = 'fas fa-check';
+        icon.style.color = 'var(--milestone-color)'; // Green/Gold feedback
+        
+        setTimeout(() => {
+            icon.className = originalClass;
+            icon.style.color = '';
+        }, 1500);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+});

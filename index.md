@@ -34,10 +34,21 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
 
 	{% for year in site.data.timeline %}
 	<section class="year" id="{{ year.year }}">
-	  <h2>{{ year.year }}</h2>
+	  <h2>
+        {{ year.year }}
+        <button class="anchor-btn" data-link="{{ year.year }}" title="Copy link to year">
+            <i class="fas fa-link"></i>
+        </button>
+      </h2>
 	  {% for event in year.events %}
-	  <article id="{{ year.year }}-{{ event.date | replace: ' ', '-' }}" class="event" data-date="{{ event.date }}">
-		<div class="date">{{ event.date | date: "%B" }}</div>
+      {% assign event_id = year.year | append: '-' | append: event.date | replace: ' ', '-' %}
+	  <article id="{{ event_id }}" class="event" data-date="{{ event.date }}">
+		<div class="date">
+            {{ event.date | date: "%B" }}
+            <button class="anchor-btn" data-link="{{ event_id }}" title="Copy link to month">
+                <i class="fas fa-link"></i>
+            </button>
+        </div>
 		{% for info in event.info %}
             {% if info.special %}
              <div class="info special" title="Major Industry Milestone">
@@ -60,7 +71,12 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
     <h3>Enrichment Resources</h3>
     <ul class="resources-list">
         {% for link in site.data.links %}
-        <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.text }} <i class="fas fa-external-link-alt" style="font-size: 12px; margin-left: 5px; opacity: 0.5;"></i></a></li>
+        <li>
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                <span class="resource-text">{{ link.text }}</span>
+                <i class="fas fa-arrow-right resource-icon"></i>
+            </a>
+        </li>
         {% endfor %}
     </ul>
 </section>

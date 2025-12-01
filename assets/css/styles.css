@@ -9,8 +9,9 @@
     --card-bg: #fbfbfd;
     --sticky-bg: rgba(255, 255, 255, 0.9);
     --footer-bg: #f5f5f7;
-    
-    /* Measurements for precision alignment */
+    --hover-bg: #f5f5f7;
+
+
     --timeline-line-x: 29px;
     --timeline-width: 2px;
 }
@@ -26,6 +27,7 @@ body.dark-mode {
     --card-bg: #1c1c1e;
     --sticky-bg: rgba(18, 18, 18, 0.9);
     --footer-bg: #1c1c1e;
+    --hover-bg: #1f1f21;
 }
 
 body {
@@ -38,7 +40,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header & Intro */
+
 .header {
     text-align: center;
     padding: 60px 20px 40px;
@@ -79,7 +81,7 @@ body {
     color: var(--bg-color);
 }
 
-/* Sticky Utility Bar */
+
 .sticky-bar {
     position: sticky;
     top: 0;
@@ -147,7 +149,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Timeline Core */
+
 .timeline {
     max-width: 760px;
     margin: 0 auto;
@@ -155,7 +157,7 @@ body {
     position: relative;
 }
 
-/* Vertical Line */
+
 .timeline::before {
     content: '';
     position: absolute;
@@ -177,16 +179,45 @@ body {
     font-weight: 800;
     color: var(--accent-color);
     background-color: var(--bg-color);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     padding: 10px 20px 10px 0; /* Right padding covers line */
     margin-bottom: 30px;
     position: sticky;
     top: 60px;
     z-index: 10;
-    
+
     /* Subtle underline for Year */
     border-bottom: 2px solid var(--border-color);
     line-height: 1;
+}
+
+/* Anchor Button Styling */
+.anchor-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px;
+    opacity: 0;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year h2:hover .anchor-btn,
+.event .date:hover .anchor-btn,
+.anchor-btn:focus {
+    opacity: 0.5;
+}
+
+.anchor-btn:hover {
+    opacity: 1 !important;
+    color: var(--accent-color);
+    transform: scale(1.1);
 }
 
 .event {
@@ -202,11 +233,16 @@ body {
     font-weight: 700;
     color: var(--text-secondary);
     margin-bottom: 12px;
-    display: inline-block;
-    
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
     /* Subtle underline for Month */
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 4px;
+}
+.event .date .anchor-btn {
+    font-size: 12px;
 }
 
 /* Event Info Items */
@@ -222,10 +258,10 @@ body {
 .event .info::before {
     content: '';
     position: absolute;
-    top: 9px; 
-    left: calc(var(--timeline-line-x) - 60px + (var(--timeline-width) / 2)); 
+    top: 9px;
+    left: calc(var(--timeline-line-x) - 60px + (var(--timeline-width) / 2));
     transform: translateX(-50%);
-    
+
     width: 7px;
     height: 7px;
     background-color: var(--bg-color);
@@ -251,16 +287,16 @@ body {
     font-weight: 900;
     font-size: 12px;
     line-height: 1;
-    
+
     width: auto;
     height: auto;
     border: none;
     border-radius: 0;
-    
+
     top: 6px;
     left: calc(var(--timeline-line-x) - 60px + (var(--timeline-width) / 2));
     transform: translateX(-50%);
-    
+
     color: var(--milestone-color);
     background-color: var(--bg-color);
     padding: 2px 0;
@@ -271,7 +307,8 @@ body {
     transform: translateX(-50%) scale(1.2) rotate(15deg);
 }
 
-/* Resources / Learn More Section */
+
+/* RESOURCES SECTION - MINIMALIST REDESIGN */
 .resources-section {
     max-width: 760px;
     margin: 80px auto 40px;
@@ -281,40 +318,61 @@ body {
 .resources-section h3 {
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
 }
 
 .resources-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resources-list li {
+    border-bottom: 1px solid var(--border-color);
 }
 
 .resources-list li a {
-    display: block;
-    padding: 15px;
-    background-color: var(--card-bg);
-    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
     text-decoration: none;
     color: var(--text-color);
-    font-weight: 500;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: 1px solid transparent;
+    transition: color 0.2s, padding-left 0.2s;
+    font-weight: 400;
 }
 
 .resources-list li a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    border-color: var(--border-color);
+    color: var(--accent-color);
+    padding-left: 5px;
+    background-color: transparent; /* Explicitly remove bg */
+    box-shadow: none; /* Explicitly remove shadow */
+    border-color: transparent;
+}
+
+.resource-text {
+    font-size: 16px;
+}
+
+.resource-icon {
+    font-size: 12px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.2s ease;
     color: var(--accent-color);
 }
 
-/* Site Footer (Global) */
+.resources-list li a:hover .resource-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 footer {
     background-color: var(--footer-bg);
     border-top: 1px solid var(--border-color);
@@ -378,7 +436,7 @@ footer {
     color: var(--accent-color);
 }
 
-/* Scroll To Top Button */
+
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -414,7 +472,7 @@ footer {
 
 @media (max-width: 768px) {
     :root {
-        --timeline-line-x: 20px; 
+        --timeline-line-x: 20px;
     }
     .header h1 { font-size: 32px; }
     .sticky-bar { justify-content: space-between; padding: 10px 15px; }
@@ -425,4 +483,7 @@ footer {
     .event { padding-left: 45px; }
     .event .info::before, .event .info.special::before { left: calc(var(--timeline-line-x) - 45px + (var(--timeline-width) / 2)); }
     .footer-container { flex-direction: column; gap: 30px; }
+    
+    /* Ensure anchor buttons are visible on mobile */
+    .anchor-btn { opacity: 0.4; }
 }
