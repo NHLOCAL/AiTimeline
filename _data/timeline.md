@@ -285,3 +285,17 @@
 -   Anthropic released **Claude 4.5 Haiku**, a fast, cost-effective model for high-volume, low-latency applications.
 -   OpenAI announced **ChatGPT Atlas**, an AI-native web browser with a built-in "Agent Mode" for task automation.
 -   1X announced **Neo**, a humanoid robot marketed as the first consumer-ready model for home use. (*special*)
+
+
+## November 2025
+
+-   Moonshot AI released **Kimi K2 Thinking**, an open model setting new records in reasoning benchmarks.
+-   OpenAI launched **GPT 5.1**, featuring specialized "Thinking" and "Instant" modes with expanded context.
+-   xAI released **Grok 4.1**, combining high EQ with strong logic to top the LM Arena leaderboard.
+-   Google debuted **Gemini 3.0**, a flagship "thinking" model that claimed the top spot on major benchmarks.
+-   OpenAI introduced **GPT 5.1 Codex Max**, an agentic model built specifically for long-term coding tasks.
+-   Google released **Nano Banana Pro**, a superior image generation and editing model based on Gemini 3. (*special*)
+-   Anthropic announced **Claude Opus 4.5**, delivering elite coding and agentic performance at a significantly reduced price. (*special*)
+-   Black Forest Labs launched **FLUX 2**, a high-performance open-weight image generation model.
+-   DeepSeek released **DeepSeekMath-V2** as open source, achieving gold-medal performance in math olympiads. (*special*)
+-   Microsoft open-sourced **Fara-7B**, a small model optimized for browser agents and computer control.
