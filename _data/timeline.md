@@ -299,3 +299,4 @@
 -   Black Forest Labs launched **FLUX 2**, a high-performance open-weight image generation model.
 -   DeepSeek released **DeepSeekMath-V2** as open source, achieving gold-medal performance in math olympiads. (*special*)
 -   Microsoft open-sourced **Fara-7B**, a small model optimized for browser agents and computer control.
+-   **Poetiq** shatters the **ARC-AGI-2** benchmark with a score of over 60%, surpassing the human average.
