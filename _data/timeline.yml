@@ -342,3 +342,4 @@
     - text: DeepSeek released <b>DeepSeekMath-V2</b> as open source, achieving gold-medal performance in math olympiads.
       special: true
     - text: Microsoft open-sourced <b>Fara-7B</b>, a small model optimized for browser agents and computer control.
+    - text: <b>Poetiq</b> shatters the <b>ARC-AGI-2</b> benchmark with a score of over 60%, surpassing the human average.

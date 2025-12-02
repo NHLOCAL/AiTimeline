@@ -8,14 +8,35 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Global Button Style (Fix for Footer) */
+/* --- Header --- */
+.header {
+    text-align: center;
+    padding: 80px 20px 50px;
+    background-color: var(--bg-color);
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0 0 12px;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--text-secondary);
+        margin: 0 0 35px;
+    }
+}
+
 .github-cta {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 8px 20px;
+    padding: 10px 24px;
     border-radius: 99px;
     text-decoration: none;
     font-weight: 600;
@@ -24,34 +45,15 @@ body {
     border: 1px solid transparent;
 
     &:hover {
-        transform: scale(1.02);
+        transform: translateY(-2px);
         opacity: 0.9;
         text-decoration: none;
         color: var(--bg-color);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 }
 
-.header {
-    text-align: center;
-    padding: 60px 20px 40px;
-    background-color: var(--bg-color);
-
-    h1 {
-        font-size: 44px;
-        font-weight: 700;
-        margin: 0 0 10px;
-        letter-spacing: -0.01em;
-    }
-
-    h2 {
-        font-size: 22px;
-        font-weight: 400;
-        color: var(--text-secondary);
-        margin: 0 0 30px;
-    }
-}
-
-
+/* --- Sticky Bar (Navigation & Search) --- */
 .sticky-bar {
     position: sticky;
     top: 0;
@@ -65,17 +67,20 @@ body {
     flex-direction: column;
     gap: 15px;
     transition: padding 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
 
 .bar-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Search Bar Styling */
+/* Modern Search Bar */
 .search-container {
     width: 100%;
     max-width: 600px;
@@ -87,24 +92,30 @@ body {
     display: flex;
     align-items: center;
     color: var(--text-secondary);
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 0 15px;
+    background-color: var(--input-bg);
+    border: 1px solid transparent;
+    border-radius: 99px; /* Pill shape */
+    padding: 0 20px;
     transition: all 0.2s ease;
-    height: 44px;
+    height: 48px;
     width: 100%;
     box-sizing: border-box;
 
+    &:hover {
+        background-color: var(--hover-bg);
+    }
+
     &:focus-within {
+        background-color: var(--bg-color);
         border-color: var(--accent-color);
-        box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
         color: var(--text-color);
     }
 
     i {
         font-size: 16px;
         margin-right: 12px;
+        opacity: 0.7;
     }
 
     input {
@@ -124,46 +135,50 @@ body {
     }
 }
 
+/* Navigation Links */
 .year-nav {
     display: flex;
-    gap: 6px;
+    gap: 4px;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 
     a {
-        padding: 6px 16px;
-        border-radius: 20px;
+        padding: 6px 14px;
+        border-radius: 99px;
         text-decoration: none;
         color: var(--text-secondary);
         font-weight: 500;
         font-size: 14px;
         transition: all 0.2s ease;
-        background-color: rgba(128, 128, 128, 0.05);
+        background-color: transparent;
 
-        &:hover, &.active {
+        &:hover {
             color: var(--text-color);
-            background-color: rgba(128, 128, 128, 0.2);
+            background-color: var(--hover-bg);
         }
 
         &.active {
+            color: #fff;
+            background-color: var(--text-color); /* Strong contrast for active year */
             font-weight: 600;
         }
     }
 }
 
+/* Control Buttons (Right Side) */
 .controls-container {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
 
     .control-btn {
-        background: var(--card-bg);
-        border: 1px solid var(--border-color);
+        background: transparent;
+        border: none;
         cursor: pointer;
         color: var(--text-secondary);
         font-size: 14px;
         height: 36px;
-        padding: 0 16px;
+        padding: 0 12px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -171,28 +186,41 @@ body {
         font-family: inherit;
         font-weight: 500;
         transition: all 0.2s;
-        border-radius: 10px;
+        border-radius: 8px;
+
+        span {
+            display: none; /* Hide text on mobile, show on desktop via media query */
+        }
 
         &:hover {
-            border-color: var(--text-secondary);
+            background-color: var(--hover-bg);
             color: var(--text-color);
         }
 
         &.active {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-            color: #ffffff;
+            color: var(--accent-color);
+            background-color: rgba(0, 102, 204, 0.1);
+            font-weight: 600;
         }
         
-        /* Icon only on very small screens if needed, but text helps accessibility */
+        body.dark-mode &.active {
+            background-color: rgba(64, 156, 255, 0.15);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .controls-container .control-btn span {
+        display: inline;
     }
 }
 
 
+/* --- Timeline --- */
 .timeline {
     max-width: 760px;
     margin: 0 auto;
-    padding: 40px 20px 0;
+    padding: 60px 20px 0;
     position: relative;
 
     &::before {
@@ -208,7 +236,7 @@ body {
 }
 
 .year {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     position: relative;
 
     &.hidden {
@@ -216,19 +244,18 @@ body {
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 800;
-        color: var(--accent-color);
+        color: var(--text-color); /* Changed from accent to text color for consistency */
         background-color: var(--bg-color);
         display: inline-flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
         padding: 10px 20px 10px 0;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         position: sticky;
-        top: 130px; /* Adjusted for larger header */
+        top: 150px; 
         z-index: 10;
-        border-bottom: 2px solid var(--border-color);
         line-height: 1;
 
         &:hover .anchor-btn {
@@ -258,11 +285,10 @@ body {
 }
 
 .event {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding-left: 60px;
     position: relative;
 
-    /* If all items inside are hidden, hide the event (month) */
     &.hidden {
         display: none;
     }
@@ -270,18 +296,22 @@ body {
     .date {
         font-size: 13px;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         font-weight: 700;
-        color: var(--text-secondary);
-        margin-bottom: 12px;
+        color: var(--accent-color); /* Accent color for months */
+        margin-bottom: 16px;
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 4px;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
 
-        &:hover .anchor-btn {
-            opacity: 0.5;
+        &:hover {
+            border-bottom-color: var(--accent-color);
+            
+            .anchor-btn {
+                opacity: 0.5;
+            }
         }
 
         .anchor-btn {
@@ -291,26 +321,26 @@ body {
 
     .info {
         position: relative;
-        margin-bottom: 12px;
-        font-size: 16px;
+        margin-bottom: 16px;
+        font-size: 17px;
         color: var(--text-color);
-        line-height: 1.5;
+        line-height: 1.6;
 
         &.hidden {
             display: none;
         }
 
-        /* Markers */
+        /* Timeline Dot Markers */
         &::before {
             content: '';
             position: absolute;
             top: 9px;
             left: calc(var(--timeline-line-x) - 60px + (var(--timeline-width) / 2));
             transform: translateX(-50%);
-            width: 7px;
-            height: 7px;
+            width: 9px;
+            height: 9px;
             background-color: var(--bg-color);
-            border: 2px solid var(--text-secondary);
+            border: 2px solid var(--border-color); /* Subtle border by default */
             border-radius: 50%;
             z-index: 2;
             transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
@@ -329,26 +359,27 @@ body {
                 height: auto;
                 border: none;
                 border-radius: 0;
-                top: 6px;
+                top: 7px;
                 color: var(--milestone-color);
                 background-color: var(--bg-color);
                 padding: 2px 0;
-                text-shadow: 0 0 10px rgba(var(--milestone-color), 0.2);
+                text-shadow: 0 0 15px rgba(var(--milestone-color), 0.4);
             }
         }
     }
 
     &:hover .info::before {
         border-color: var(--accent-color);
-        transform: translateX(-50%) scale(1.3);
+        background-color: var(--accent-color);
+        transform: translateX(-50%) scale(1.2);
     }
 
     &:hover .info.special::before {
+        background-color: var(--bg-color);
         transform: translateX(-50%) scale(1.2) rotate(15deg);
     }
 }
 
-/* Highlight style for search results */
 .highlight-text {
     background-color: rgba(255, 212, 0, 0.3);
     color: var(--text-color);
@@ -361,18 +392,52 @@ body.dark-mode .highlight-text {
 }
 
 
+/* --- Enrichment Resources Section --- */
 .resources-section {
-    max-width: 760px;
-    margin: 80px auto 40px;
+    max-width: 800px;
+    margin: 100px auto 60px;
     padding: 0 20px;
+    position: relative;
+
+    /* Distinct separator */
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+        margin-bottom: 50px;
+    }
 
     h3 {
-        font-size: 20px;
+        font-size: 13px;
         font-weight: 700;
-        margin-bottom: 0;
-        padding-bottom: 15px;
-        border-bottom: 1px solid var(--border-color);
-        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--text-secondary);
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        /* Decorative lines around header */
+        &::after {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+         &::before {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
     }
 }
 
@@ -380,31 +445,37 @@ body.dark-mode .highlight-text {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
 
     li {
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: none;
+    }
 
-        a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 0;
-            text-decoration: none;
-            color: var(--text-color);
-            transition: color 0.2s, padding-left 0.2s;
-            font-weight: 400;
-            gap: 15px;
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 25px;
+        text-decoration: none;
+        color: var(--text-color);
+        background-color: var(--card-bg); /* Use card background */
+        border: 1px solid transparent;
+        border-radius: 12px;
+        transition: all 0.2s ease;
+        font-weight: 500;
+        
+        &:hover {
+            transform: translateY(-2px);
+            background-color: var(--bg-color);
+            border-color: var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            color: var(--accent-color);
 
-            &:hover {
-                color: var(--accent-color);
-                padding-left: 5px;
-
-                .resource-icon {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
+            .resource-icon {
+                opacity: 1;
+                transform: translateX(0);
             }
         }
     }
@@ -412,7 +483,6 @@ body.dark-mode .highlight-text {
 
 .resource-text {
     font-size: 16px;
-    line-height: 1.4;
 }
 
 .resource-icon {
@@ -421,15 +491,15 @@ body.dark-mode .highlight-text {
     transform: translateX(-10px);
     transition: all 0.2s ease;
     color: var(--accent-color);
-    flex-shrink: 0;
 }
 
 
+/* --- Footer --- */
 footer {
     background-color: var(--footer-bg);
     border-top: 1px solid var(--border-color);
-    padding: 60px 0 40px;
-    margin-top: 60px;
+    padding: 80px 0 60px;
+    margin-top: 0; /* Removed margin since resources section provides spacing */
     font-size: 14px;
 }
 
@@ -440,7 +510,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
 }
 
 .footer-col {
@@ -448,18 +518,19 @@ footer {
     min-width: 250px;
 
     h3 {
-        font-size: 14px;
+        font-size: 12px;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 1px;
         color: var(--text-secondary);
         margin-bottom: 20px;
         font-weight: 700;
     }
 
     p {
-        color: var(--text-color);
-        margin-bottom: 15px;
-        max-width: 300px;
+        color: var(--text-secondary);
+        margin-bottom: 20px;
+        max-width: 320px;
+        line-height: 1.6;
     }
 }
 
@@ -468,34 +539,38 @@ footer {
     padding: 0;
     margin: 0;
 
-    li { margin-bottom: 10px; }
+    li { margin-bottom: 12px; }
 
     a {
         color: var(--text-color);
         text-decoration: none;
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
         opacity: 0.8;
-        transition: opacity 0.2s, color 0.2s;
+        transition: all 0.2s;
+        font-weight: 500;
 
         &:hover {
             opacity: 1;
             color: var(--accent-color);
+            transform: translateX(3px);
         }
+        
+        i { width: 16px; text-align: center; }
     }
 }
 
-
+/* Scroll to Top */
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 44px;
-    height: 44px;
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    border: none;
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -506,7 +581,7 @@ footer {
     transform: translateY(20px);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 900;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 
     &.visible {
         opacity: 1;
@@ -517,31 +592,36 @@ footer {
     &:hover {
         transform: translateY(-3px);
         background-color: var(--accent-color);
+        color: #fff;
+        border-color: var(--accent-color);
     }
 }
 
-
+/* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     :root {
-        --timeline-line-x: 15px;
+        --timeline-line-x: 18px;
     }
 
     .header {
-        padding: 40px 20px 30px;
-        h1 { font-size: 32px; }
-        h2 { font-size: 18px; margin-bottom: 20px; }
+        padding: 50px 20px 30px;
+        h1 { font-size: 36px; }
+        h2 { font-size: 18px; margin-bottom: 25px; }
     }
 
     .sticky-bar {
-        padding: 15px;
-        gap: 15px;
-    }
-    
-    .bar-row {
-        flex-direction: column;
+        padding: 12px 15px;
         gap: 12px;
     }
 
+    .bar-row {
+        flex-direction: column-reverse; /* Controls on top of nav on mobile? No, let's keep separate */
+        gap: 12px;
+    }
+    
+    /* On mobile, maybe stacking the nav and controls is tight. 
+       Let's put Search on top (row 1), then Nav + Controls on Row 2 */
+    
     .year-nav {
         width: 100%;
         overflow-x: auto;
@@ -552,30 +632,29 @@ footer {
         &::-webkit-scrollbar { display: none; }
     }
 
-    .timeline { padding-top: 20px; }
+    .timeline { padding-top: 30px; }
 
     .year h2 {
-        top: 170px; /* Adjusted mobile sticky pos */
-        font-size: 24px;
-        padding-top: 20px;
-        background-color: rgba(var(--bg-color-rgb), 1);
+        top: 180px; /* Adjust for taller sticky header on mobile if needed */
+        font-size: 26px;
+        padding-top: 15px;
     }
 
     .event {
-        padding-left: 35px;
+        padding-left: 40px;
 
         .info::before, .info.special::before {
-            left: calc(var(--timeline-line-x) - 35px + (var(--timeline-width) / 2));
+            left: calc(var(--timeline-line-x) - 40px + (var(--timeline-width) / 2));
         }
     }
 
     .footer-container {
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
     }
-
-    .anchor-btn {
-        opacity: 0.6;
-        padding: 10px;
+    
+    .resources-section h3 {
+        gap: 10px;
+        &::before, &::after { width: 25px; }
     }
 }
