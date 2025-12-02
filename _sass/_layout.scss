@@ -13,7 +13,7 @@ body {
     transition: background-color var(--transition-base), color var(--transition-base);
 }
 
-/* --- Header --- */
+
 .header {
     text-align: center;
     padding: var(--space-20) var(--space-5) var(--space-12);
@@ -35,7 +35,7 @@ body {
     }
 }
 
-/* --- Buttons & Interactives --- */
+
 .github-cta {
     display: inline-flex;
     align-items: center;
@@ -46,7 +46,7 @@ body {
     border-radius: var(--radius-pill);
     text-decoration: none;
     font-weight: var(--font-weight-semibold);
-    font-size: 15px; /* Visual preference */
+    font-size: 15px;
     transition: all var(--transition-fast);
     border: 1px solid transparent;
 
@@ -57,15 +57,15 @@ body {
         color: var(--bg-color);
         box-shadow: var(--shadow-hover);
     }
-    
-    /* Variant for footer usage */
+
+
     &.small {
         font-size: var(--font-size-sm);
         padding: 6px 14px;
     }
 }
 
-/* --- Sticky Navigation Bar --- */
+
 .sticky-bar {
     position: sticky;
     top: 0;
@@ -92,7 +92,7 @@ body {
     margin: 0 auto;
 }
 
-/* --- Search --- */
+
 .search-container {
     width: 100%;
     max-width: 600px;
@@ -147,7 +147,7 @@ body {
     }
 }
 
-/* --- Year Navigation --- */
+
 .year-nav {
     display: flex;
     gap: var(--space-1);
@@ -177,7 +177,7 @@ body {
     }
 }
 
-/* --- Controls (Filter, Sort, Theme) --- */
+
 .controls-container {
     display: flex;
     gap: var(--space-2);
@@ -223,7 +223,7 @@ body {
     }
 }
 
-/* --- Timeline Main Layout --- */
+
 .timeline {
     max-width: var(--timeline-width-narrow);
     margin: 0 auto;
@@ -262,9 +262,8 @@ body {
         padding: 10px var(--space-5) 10px 0;
         margin-bottom: var(--space-10);
 
-        /* Sticky Year Header */
         position: sticky;
-        top: 135px; /* Just below sticky bar */
+        top: 135px;
         z-index: 10;
         line-height: 1;
 
@@ -274,7 +273,6 @@ body {
     }
 }
 
-/* --- Anchor Buttons --- */
 .anchor-btn {
     background: none;
     border: none;
@@ -295,7 +293,6 @@ body {
     }
 }
 
-/* --- Event Items --- */
 .event {
     margin-bottom: var(--space-12);
     padding-left: 60px;
@@ -304,7 +301,8 @@ body {
     position: relative;
     scroll-margin-top: var(--header-scroll-padding);
     border-radius: var(--radius-md);
-    transition: background-color var(--transition-base), box-shadow var(--transition-base);
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 
     &.hidden {
         display: none;
@@ -312,7 +310,8 @@ body {
 
     &:hover {
         background-color: var(--accent-bg-subtle);
-        box-shadow: var(--shadow-sm);
+        border-color: rgba(0, 102, 204, 0.15);
+        box-shadow: var(--shadow-hover);
     }
 
     .date {
@@ -366,6 +365,7 @@ body {
             border-radius: 50%;
             z-index: var(--z-content);
             transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            box-shadow: 0 0 0 2px var(--bg-color);
         }
 
         &.special {
@@ -382,26 +382,30 @@ body {
                 border-radius: 0;
                 top: 7px;
                 color: var(--milestone-color);
-                background-color: var(--bg-color);
+                background-color: transparent;
                 padding: 2px 0;
-                text-shadow: 0 0 15px rgba(var(--milestone-color), 0.4);
+                box-shadow: none;
+                text-shadow: 0 0 10px rgba(var(--milestone-color), 0.3);
             }
         }
     }
 
     &:hover .info::before {
-        border-color: var(--border-color);
+        border-color: var(--accent-color);
         background-color: var(--bg-color);
-        transform: translateX(-50%) scale(1.05);
+        transform: translateX(-50%) scale(1.15);
+        box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
     }
 
     &:hover .info.special::before {
-        background-color: var(--bg-color);
-        transform: translateX(-50%) scale(1.2) rotate(15deg);
+        background-color: transparent;
+        transform: translateX(-50%) scale(1.3) rotate(15deg);
+        box-shadow: none;
+        text-shadow: 0 0 15px rgba(var(--milestone-color), 0.6);
     }
 }
 
-/* --- Highlighting --- */
+
 .highlight-text {
     background-color: rgba(255, 212, 0, 0.3);
     color: var(--text-color);
@@ -413,7 +417,7 @@ body.dark-mode .highlight-text {
     color: #fff;
 }
 
-/* --- Resources Section --- */
+
 .resources-section {
     max-width: 800px;
     margin: 100px auto 60px;
@@ -506,7 +510,7 @@ body.dark-mode .highlight-text {
 }
 
 
-/* --- Footer --- */
+
 footer {
     background-color: var(--footer-bg);
     border-top: 1px solid var(--border-color);
@@ -573,7 +577,7 @@ footer {
     }
 }
 
-/* --- Scroll to Top --- */
+
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -609,7 +613,7 @@ footer {
     }
 }
 
-/* --- Mobile Responsiveness --- */
+
 @media (max-width: 768px) {
     :root {
         --timeline-line-x: 18px;
