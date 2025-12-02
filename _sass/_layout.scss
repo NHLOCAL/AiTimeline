@@ -1,52 +1,53 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 155px; /* Ensures hash links land correctly */
+    scroll-padding-top: var(--header-scroll-padding);
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: var(--font-family-base);
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color var(--transition-base), color var(--transition-base);
 }
 
 /* --- Header --- */
 .header {
     text-align: center;
-    padding: 80px 20px 50px;
+    padding: var(--space-20) var(--space-5) var(--space-12);
     background-color: var(--bg-color);
 
     h1 {
-        font-size: 48px;
-        font-weight: 700;
-        margin: 0 0 12px;
+        font-size: var(--font-size-3xl);
+        font-weight: var(--font-weight-bold);
+        margin: 0 0 var(--space-3);
         letter-spacing: -0.02em;
         line-height: 1.1;
     }
 
     h2 {
-        font-size: 24px;
-        font-weight: 400;
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-regular);
         color: var(--text-secondary);
         margin: 0 0 35px;
     }
 }
 
+/* --- Buttons & Interactives --- */
 .github-cta {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-2);
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 10px 24px;
-    border-radius: 99px;
+    padding: 10px var(--space-6);
+    border-radius: var(--radius-pill);
     text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: all 0.2s ease;
+    font-weight: var(--font-weight-semibold);
+    font-size: 15px; /* Visual preference */
+    transition: all var(--transition-fast);
     border: 1px solid transparent;
 
     &:hover {
@@ -54,39 +55,44 @@ body {
         opacity: 0.9;
         text-decoration: none;
         color: var(--bg-color);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        box-shadow: var(--shadow-hover);
+    }
+    
+    /* Variant for footer usage */
+    &.small {
+        font-size: var(--font-size-sm);
+        padding: 6px 14px;
     }
 }
 
-/* --- Sticky Bar (Navigation & Search) --- */
+/* --- Sticky Navigation Bar --- */
 .sticky-bar {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: var(--z-sticky);
     background-color: var(--sticky-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur));
     border-bottom: 1px solid var(--border-color);
-    padding: 15px 20px;
+    padding: var(--space-4) var(--space-5);
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    transition: padding 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-    /* Approx height: 15 + 48 + 15 + 36 + 15 = 129px + border ~ 130px */
+    gap: var(--space-4);
+    transition: padding var(--transition-base);
+    box-shadow: var(--shadow-sm);
 }
 
 .bar-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: var(--space-5);
     width: 100%;
-    max-width: 900px;
+    max-width: var(--container-width);
     margin: 0 auto;
 }
 
-/* Modern Search Bar */
+/* --- Search --- */
 .search-container {
     width: 100%;
     max-width: 600px;
@@ -100,9 +106,9 @@ body {
     color: var(--text-secondary);
     background-color: var(--input-bg);
     border: 1px solid transparent;
-    border-radius: 99px; /* Pill shape */
-    padding: 0 20px;
-    transition: all 0.2s ease;
+    border-radius: var(--radius-pill);
+    padding: 0 var(--space-5);
+    transition: all var(--transition-fast);
     height: 48px;
     width: 100%;
     box-sizing: border-box;
@@ -114,13 +120,13 @@ body {
     &:focus-within {
         background-color: var(--bg-color);
         border-color: var(--accent-color);
-        box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+        box-shadow: 0 0 0 4px var(--accent-bg-subtle);
         color: var(--text-color);
     }
 
     i {
-        font-size: 16px;
-        margin-right: 12px;
+        font-size: var(--font-size-base);
+        margin-right: var(--space-3);
         opacity: 0.7;
     }
 
@@ -129,8 +135,8 @@ body {
         border: none;
         color: var(--text-color);
         font-family: inherit;
-        font-size: 16px;
-        padding: 8px 0;
+        font-size: var(--font-size-base);
+        padding: var(--space-2) 0;
         width: 100%;
         outline: none;
 
@@ -141,21 +147,21 @@ body {
     }
 }
 
-/* Navigation Links */
+/* --- Year Navigation --- */
 .year-nav {
     display: flex;
-    gap: 4px;
+    gap: var(--space-1);
     flex-wrap: wrap;
     align-items: center;
 
     a {
         padding: 6px 14px;
-        border-radius: 99px;
+        border-radius: var(--radius-pill);
         text-decoration: none;
         color: var(--text-secondary);
-        font-weight: 500;
-        font-size: 14px;
-        transition: all 0.2s ease;
+        font-weight: var(--font-weight-medium);
+        font-size: var(--font-size-sm);
+        transition: all var(--transition-fast);
         background-color: transparent;
 
         &:hover {
@@ -164,17 +170,17 @@ body {
         }
 
         &.active {
-            color: var(--bg-color); /* Fix for Dark Mode: Text becomes background color (contrast) */
+            color: var(--bg-color);
             background-color: var(--text-color);
-            font-weight: 600;
+            font-weight: var(--font-weight-semibold);
         }
     }
 }
 
-/* Control Buttons (Right Side) */
+/* --- Controls (Filter, Sort, Theme) --- */
 .controls-container {
     display: flex;
-    gap: 8px;
+    gap: var(--space-2);
     align-items: center;
 
     .control-btn {
@@ -182,20 +188,20 @@ body {
         border: none;
         cursor: pointer;
         color: var(--text-secondary);
-        font-size: 14px;
+        font-size: var(--font-size-sm);
         height: 36px;
-        padding: 0 12px;
+        padding: 0 var(--space-3);
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
+        gap: var(--space-2);
         font-family: inherit;
-        font-weight: 500;
-        transition: all 0.2s;
-        border-radius: 8px;
+        font-weight: var(--font-weight-medium);
+        transition: all var(--transition-fast);
+        border-radius: var(--radius-sm);
 
         span {
-            display: none; /* Hide text on mobile, show on desktop via media query */
+            display: none;
         }
 
         &:hover {
@@ -205,12 +211,8 @@ body {
 
         &.active {
             color: var(--accent-color);
-            background-color: rgba(0, 102, 204, 0.1);
-            font-weight: 600;
-        }
-        
-        body.dark-mode &.active {
-            background-color: rgba(64, 156, 255, 0.15);
+            background-color: var(--accent-bg-subtle);
+            font-weight: var(--font-weight-semibold);
         }
     }
 }
@@ -221,12 +223,11 @@ body {
     }
 }
 
-
-/* --- Timeline --- */
+/* --- Timeline Main Layout --- */
 .timeline {
-    max-width: 760px;
+    max-width: var(--timeline-width-narrow);
     margin: 0 auto;
-    padding: 60px 20px 0;
+    padding: var(--space-15) var(--space-5) 0;
     position: relative;
 
     &::before {
@@ -235,38 +236,35 @@ body {
         top: 0;
         bottom: 0;
         left: var(--timeline-line-x);
-        width: var(--timeline-width);
+        width: var(--timeline-stroke-width);
         background-color: var(--border-color);
-        z-index: 0;
+        z-index: var(--z-back);
     }
 }
 
 .year {
-    margin-bottom: 80px;
+    margin-bottom: var(--space-20);
     position: relative;
-    
-    /* Ensure jump to anchor clears the sticky header */
-    scroll-margin-top: 155px; 
+    scroll-margin-top: var(--header-scroll-padding);
 
     &.hidden {
         display: none;
     }
 
     h2 {
-        font-size: 32px;
-        font-weight: 800;
+        font-size: var(--font-size-2xl);
+        font-weight: var(--font-weight-extra-bold);
         color: var(--text-color);
         background-color: var(--bg-color);
         display: inline-flex;
         align-items: center;
-        gap: 12px;
-        padding: 10px 20px 10px 0;
-        margin-bottom: 40px;
-        
-        /* Sticky behavior for Year Header */
+        gap: var(--space-3);
+        padding: 10px var(--space-5) 10px 0;
+        margin-bottom: var(--space-10);
+
+        /* Sticky Year Header */
         position: sticky;
-        /* Positioned just below the sticky bar (approx 130px) */
-        top: 135px; 
+        top: 135px; /* Just below sticky bar */
         z-index: 10;
         line-height: 1;
 
@@ -276,16 +274,16 @@ body {
     }
 }
 
-/* Improved Anchor Visibility */
+/* --- Anchor Buttons --- */
 .anchor-btn {
     background: none;
     border: none;
     color: var(--text-secondary);
     cursor: pointer;
-    font-size: 14px;
-    padding: 8px;
+    font-size: var(--font-size-sm);
+    padding: var(--space-2);
     opacity: 0.3;
-    transition: all 0.2s ease;
+    transition: all var(--transition-fast);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -297,13 +295,12 @@ body {
     }
 }
 
+/* --- Event Items --- */
 .event {
-    margin-bottom: 50px;
+    margin-bottom: var(--space-12);
     padding-left: 60px;
     position: relative;
-    
-    /* Ensure jump to month anchor clears the sticky header */
-    scroll-margin-top: 155px;
+    scroll-margin-top: var(--header-scroll-padding);
 
     &.hidden {
         display: none;
@@ -313,18 +310,18 @@ body {
         font-size: 13px;
         text-transform: uppercase;
         letter-spacing: 1.5px;
-        font-weight: 700;
+        font-weight: var(--font-weight-bold);
         color: var(--accent-color);
-        margin-bottom: 16px;
+        margin-bottom: var(--space-4);
         display: inline-flex;
         align-items: center;
-        gap: 8px;
+        gap: var(--space-2);
         border-bottom: 1px solid transparent;
-        transition: border-color 0.2s;
+        transition: border-color var(--transition-fast);
 
         &:hover {
             border-bottom-color: var(--accent-color);
-            
+
             .anchor-btn {
                 opacity: 1;
             }
@@ -337,7 +334,7 @@ body {
 
     .info {
         position: relative;
-        margin-bottom: 16px;
+        margin-bottom: var(--space-4);
         font-size: 17px;
         color: var(--text-color);
         line-height: 1.6;
@@ -346,30 +343,29 @@ body {
             display: none;
         }
 
-        /* Timeline Dot Markers */
+        /* Timeline Dots */
         &::before {
             content: '';
             position: absolute;
             top: 9px;
-            left: calc(var(--timeline-line-x) - 60px + (var(--timeline-width) / 2));
+            left: calc(var(--timeline-line-x) - 60px + (var(--timeline-stroke-width) / 2));
             transform: translateX(-50%);
             width: 9px;
             height: 9px;
             background-color: var(--bg-color);
             border: 2px solid var(--border-color);
             border-radius: 50%;
-            z-index: 2;
+            z-index: var(--z-content);
             transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         &.special {
-            font-weight: 500;
-
+            /* Star Icon */
             &::before {
                 content: '\f005';
                 font-family: "Font Awesome 6 Free";
                 font-weight: 900;
-                font-size: 12px;
+                font-size: var(--font-size-xs);
                 line-height: 1;
                 width: auto;
                 height: auto;
@@ -396,6 +392,7 @@ body {
     }
 }
 
+/* --- Highlighting --- */
 .highlight-text {
     background-color: rgba(255, 212, 0, 0.3);
     color: var(--text-color);
@@ -407,15 +404,13 @@ body.dark-mode .highlight-text {
     color: #fff;
 }
 
-
-/* --- Enrichment Resources Section --- */
+/* --- Resources Section --- */
 .resources-section {
     max-width: 800px;
     margin: 100px auto 60px;
-    padding: 0 20px;
+    padding: 0 var(--space-5);
     position: relative;
 
-    /* Distinct separator */
     &::before {
         content: '';
         display: block;
@@ -427,27 +422,19 @@ body.dark-mode .highlight-text {
 
     h3 {
         font-size: 13px;
-        font-weight: 700;
+        font-weight: var(--font-weight-bold);
         text-transform: uppercase;
         letter-spacing: 2px;
         color: var(--text-secondary);
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: var(--space-10);
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: var(--space-4);
 
-        /* Decorative lines around header */
-        &::after {
-            content: '';
-            width: 40px;
-            height: 2px;
-            background-color: var(--accent-color);
-            border-radius: 2px;
-        }
-         &::before {
+        &::after, &::before {
             content: '';
             width: 40px;
             height: 2px;
@@ -463,7 +450,7 @@ body.dark-mode .highlight-text {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: var(--space-4);
 
     li {
         border-bottom: none;
@@ -473,20 +460,20 @@ body.dark-mode .highlight-text {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 25px;
+        padding: var(--space-5) 25px;
         text-decoration: none;
         color: var(--text-color);
-        background-color: var(--card-bg); /* Use card background */
+        background-color: var(--card-bg);
         border: 1px solid transparent;
-        border-radius: 12px;
-        transition: all 0.2s ease;
-        font-weight: 500;
-        
+        border-radius: var(--radius-md);
+        transition: all var(--transition-fast);
+        font-weight: var(--font-weight-medium);
+
         &:hover {
             transform: translateY(-2px);
             background-color: var(--bg-color);
             border-color: var(--border-color);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: var(--shadow-hover);
             color: var(--accent-color);
 
             .resource-icon {
@@ -498,14 +485,14 @@ body.dark-mode .highlight-text {
 }
 
 .resource-text {
-    font-size: 16px;
+    font-size: var(--font-size-base);
 }
 
 .resource-icon {
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     opacity: 0;
     transform: translateX(-10px);
-    transition: all 0.2s ease;
+    transition: all var(--transition-fast);
     color: var(--accent-color);
 }
 
@@ -514,15 +501,15 @@ body.dark-mode .highlight-text {
 footer {
     background-color: var(--footer-bg);
     border-top: 1px solid var(--border-color);
-    padding: 80px 0 60px;
-    margin-top: 0; /* Removed margin since resources section provides spacing */
-    font-size: 14px;
+    padding: var(--space-20) 0 60px;
+    margin-top: 0;
+    font-size: var(--font-size-sm);
 }
 
 .footer-container {
-    max-width: 900px;
+    max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--space-5);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -538,13 +525,13 @@ footer {
         text-transform: uppercase;
         letter-spacing: 1px;
         color: var(--text-secondary);
-        margin-bottom: 20px;
-        font-weight: 700;
+        margin-bottom: var(--space-5);
+        font-weight: var(--font-weight-bold);
     }
 
     p {
         color: var(--text-secondary);
-        margin-bottom: 20px;
+        margin-bottom: var(--space-5);
         max-width: 320px;
         line-height: 1.6;
     }
@@ -555,7 +542,7 @@ footer {
     padding: 0;
     margin: 0;
 
-    li { margin-bottom: 12px; }
+    li { margin-bottom: var(--space-3); }
 
     a {
         color: var(--text-color);
@@ -564,20 +551,20 @@ footer {
         align-items: center;
         gap: 10px;
         opacity: 0.8;
-        transition: all 0.2s;
-        font-weight: 500;
+        transition: all var(--transition-fast);
+        font-weight: var(--font-weight-medium);
 
         &:hover {
             opacity: 1;
             color: var(--accent-color);
             transform: translateX(3px);
         }
-        
+
         i { width: 16px; text-align: center; }
     }
 }
 
-/* Scroll to Top */
+/* --- Scroll to Top --- */
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -595,9 +582,9 @@ footer {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 900;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all var(--transition-base);
+    z-index: var(--z-tooltip);
+    box-shadow: var(--shadow-md);
 
     &.visible {
         opacity: 1;
@@ -620,24 +607,21 @@ footer {
     }
 
     .header {
-        padding: 50px 20px 30px;
+        padding: 50px var(--space-5) 30px;
         h1 { font-size: 36px; }
         h2 { font-size: 18px; margin-bottom: 25px; }
     }
 
     .sticky-bar {
-        padding: 12px 15px;
-        gap: 12px;
+        padding: var(--space-3) 15px;
+        gap: var(--space-3);
     }
 
     .bar-row {
-        flex-direction: column-reverse; /* Controls on top of nav on mobile? No, let's keep separate */
-        gap: 12px;
+        flex-direction: column-reverse;
+        gap: var(--space-3);
     }
-    
-    /* On mobile, maybe stacking the nav and controls is tight. 
-       Let's put Search on top (row 1), then Nav + Controls on Row 2 */
-    
+
     .year-nav {
         width: 100%;
         overflow-x: auto;
@@ -651,7 +635,7 @@ footer {
     .timeline { padding-top: 30px; }
 
     .year h2 {
-        top: 170px; /* Mobile sticky header position */
+        top: 170px;
         font-size: 26px;
         padding-top: 15px;
     }
@@ -660,7 +644,7 @@ footer {
         padding-left: 40px;
 
         .info::before, .info.special::before {
-            left: calc(var(--timeline-line-x) - 40px + (var(--timeline-width) / 2));
+            left: calc(var(--timeline-line-x) - 40px + (var(--timeline-stroke-width) / 2));
         }
     }
 
@@ -668,7 +652,7 @@ footer {
         flex-direction: column;
         gap: 40px;
     }
-    
+
     .resources-section h3 {
         gap: 10px;
         &::before, &::after { width: 25px; }
