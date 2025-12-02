@@ -10,7 +10,6 @@ function setCookie(name, value, days) {
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         expires = "; expires=" + date.toUTCString();
     }
-    // Added path=/ and SameSite=Lax to ensure it works across the site and persists
     document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
 }
 
@@ -34,7 +33,6 @@ function initTheme() {
     const savedTheme = getCookie("darkMode");
     const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    // Logic: Explicit user preference (cookie) always wins over system preference
     if (savedTheme === "true") {
         body.classList.add('dark-mode');
         updateIcon(true);
@@ -42,7 +40,6 @@ function initTheme() {
         body.classList.remove('dark-mode');
         updateIcon(false);
     } else {
-        // No cookie set, fallback to system
         if (systemPrefersDark) {
             body.classList.add('dark-mode');
             updateIcon(true);
@@ -54,38 +51,51 @@ function initTheme() {
 }
 
 if (darkModeToggle) {
-
     initTheme();
-
     darkModeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         const isDark = body.classList.contains('dark-mode');
         updateIcon(isDark);
-
         setCookie("darkMode", isDark, 365);
     });
 }
 
 
+/* --- Scroll Spy / Active Year Logic --- */
 const yearNavLinks = document.querySelectorAll('.year-nav a');
 const yearSections = document.querySelectorAll('.year');
 
 function highlightNav() {
-    if (yearNavLinks.length === 0 || yearSections.length === 0) return;
+    if (yearNavLinks.length === 0) return;
 
+    // Get current visual order of sections (handling DOM reordering)
+    const currentSections = Array.from(document.querySelectorAll('.year'));
     let currentYear = '';
+    
+    // Offset for the sticky header
     const scrollPos = window.pageYOffset + 140;
 
-    yearSections.forEach(section => {
+    // Logic: Iterate through sections. Since they are in DOM order (top to bottom),
+    // the last section that has its top above the scrollPos is the active one.
+    currentSections.forEach(section => {
         if (scrollPos >= section.offsetTop) {
             currentYear = section.getAttribute('id');
         }
     });
 
+    // If we are at the very top and no section matches yet, highlight the first one
+    if (!currentYear && currentSections.length > 0) {
+        currentYear = currentSections[0].getAttribute('id');
+    }
+
     yearNavLinks.forEach(link => {
         link.classList.remove('active');
+        // Match href="#2025" with id="2025"
         if (link.getAttribute('href') === '#' + currentYear) {
             link.classList.add('active');
+            
+            // Optional: Auto-scroll the nav bar on mobile to keep active year in view
+            link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         }
     });
 }
@@ -94,11 +104,13 @@ window.addEventListener('scroll', highlightNav);
 window.addEventListener('load', highlightNav);
 
 
+/* --- Sort Toggle Logic --- */
 const sortToggle = document.getElementById('sort-toggle');
 if (sortToggle) {
     sortToggle.addEventListener('click', () => {
         const timelineContainer = document.querySelector('.timeline');
-        const currentOrder = sortToggle.getAttribute('data-order') || 'oldest';
+        // Get current state (default is now 'newest')
+        const currentOrder = sortToggle.getAttribute('data-order') || 'newest';
         const newOrder = currentOrder === 'oldest' ? 'newest' : 'oldest';
 
         sortToggle.setAttribute('data-order', newOrder);
@@ -107,21 +119,27 @@ if (sortToggle) {
         const textSpan = sortToggle.querySelector('span');
 
         if (newOrder === 'newest') {
-            icon.className = 'fas fa-sort-amount-up';
+            // If we switched TO Newest First, show option to go to Oldest
+            icon.className = 'fas fa-sort-amount-up'; // Icon showing Ascending option (or stack up)
             textSpan.textContent = 'Oldest First';
         } else {
-            icon.className = 'fas fa-sort-amount-down';
+            // If we switched TO Oldest First, show option to go to Newest
+            icon.className = 'fas fa-sort-amount-down'; // Icon showing Descending option
             textSpan.textContent = 'Newest First';
         }
 
-        const yearSections = Array.from(timelineContainer.querySelectorAll('.year'));
-        yearSections.reverse().forEach(section => {
+        const yearSectionsArray = Array.from(timelineContainer.querySelectorAll('.year'));
+        
+        // Simply reverse the current DOM array and re-append
+        yearSectionsArray.reverse().forEach(section => {
             timelineContainer.appendChild(section);
+            // We also reverse the events within the year for consistency
             const events = Array.from(section.querySelectorAll('.event'));
             events.reverse().forEach(event => {
                 section.appendChild(event);
             });
         });
+        
         highlightNav();
     });
 }
@@ -146,9 +164,8 @@ if (scrollToTopBtn) {
     });
 }
 
-// Copy to Clipboard Functionality
+
 document.addEventListener('click', function(e) {
-    // Check if the clicked element is an anchor button or inside one
     const btn = e.target.closest('.anchor-btn');
     if (!btn) return;
 
@@ -158,13 +175,12 @@ document.addEventListener('click', function(e) {
     const fullUrl = window.location.origin + window.location.pathname + '#' + linkId;
 
     navigator.clipboard.writeText(fullUrl).then(() => {
-        // Visual feedback
         const icon = btn.querySelector('i');
         const originalClass = icon.className;
-        
+
         icon.className = 'fas fa-check';
-        icon.style.color = 'var(--milestone-color)'; // Green/Gold feedback
-        
+        icon.style.color = 'var(--milestone-color)';
+
         setTimeout(() => {
             icon.className = originalClass;
             icon.style.color = '';

@@ -1,0 +1,31 @@
+/* Variables & Theme Configuration */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1d1d1f;
+    --text-secondary: #86868b;
+    --accent-color: #0066cc;
+    --accent-hover: #004499;
+    --milestone-color: #f5a623;
+    --border-color: #d2d2d7;
+    --card-bg: #fbfbfd;
+    --sticky-bg: rgba(255, 255, 255, 0.9);
+    --footer-bg: #f5f5f7;
+    --hover-bg: #f5f5f7;
+    
+    --timeline-line-x: 29px;
+    --timeline-width: 2px;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f5f5f7;
+    --text-secondary: #a1a1a6;
+    --accent-color: #2997ff;
+    --accent-hover: #0077ed;
+    --milestone-color: #ffd60a;
+    --border-color: #38383a;
+    --card-bg: #1c1c1e;
+    --sticky-bg: rgba(18, 18, 18, 0.9);
+    --footer-bg: #1c1c1e;
+    --hover-bg: #1f1f21;
+}

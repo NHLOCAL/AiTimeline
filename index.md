@@ -15,14 +15,15 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
 
 <div class="sticky-bar">
   <nav class="year-nav">
-    {% for year in site.data.timeline %}
+    {% for year in site.data.timeline reversed %}
     <a href="#{{ year.year }}">{{ year.year }}</a>
     {% endfor %}
   </nav>
 
   <div class="controls-container">
-    <button id="sort-toggle" class="control-btn" data-order="oldest" title="Change timeline order">
-      <i class="fas fa-sort-amount-down"></i> <span>Newest First</span>
+    <!-- Default state is now 'newest', so button offers sorting by 'oldest' -->
+    <button id="sort-toggle" class="control-btn" data-order="newest" title="Change timeline order">
+      <i class="fas fa-sort-amount-up"></i> <span>Oldest First</span>
     </button>
     <button id="dark-mode-toggle" class="control-btn" title="Toggle theme">
       <i class="fas fa-moon"></i>
@@ -32,7 +33,7 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
 
 <main class="timeline">
 
-	{% for year in site.data.timeline %}
+	{% for year in site.data.timeline reversed %}
 	<section class="year" id="{{ year.year }}">
 	  <h2>
         {{ year.year }}
@@ -40,7 +41,7 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
             <i class="fas fa-link"></i>
         </button>
       </h2>
-	  {% for event in year.events %}
+	  {% for event in year.events reversed %}
       {% assign event_id = year.year | append: '-' | append: event.date | replace: ' ', '-' %}
 	  <article id="{{ event_id }}" class="event" data-date="{{ event.date }}">
 		<div class="date">
