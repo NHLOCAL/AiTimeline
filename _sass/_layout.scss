@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 155px; /* Ensures hash links land correctly */
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -68,6 +73,7 @@ body {
     gap: 15px;
     transition: padding 0.3s ease;
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    /* Approx height: 15 + 48 + 15 + 36 + 15 = 129px + border ~ 130px */
 }
 
 .bar-row {
@@ -238,6 +244,9 @@ body {
 .year {
     margin-bottom: 80px;
     position: relative;
+    
+    /* Ensure jump to anchor clears the sticky header */
+    scroll-margin-top: 155px; 
 
     &.hidden {
         display: none;
@@ -253,8 +262,11 @@ body {
         gap: 12px;
         padding: 10px 20px 10px 0;
         margin-bottom: 40px;
+        
+        /* Sticky behavior for Year Header */
         position: sticky;
-        top: 150px; 
+        /* Positioned just below the sticky bar (approx 130px) */
+        top: 135px; 
         z-index: 10;
         line-height: 1;
 
@@ -268,11 +280,11 @@ body {
 .anchor-btn {
     background: none;
     border: none;
-    color: var(--text-secondary); /* Default visible color */
+    color: var(--text-secondary);
     cursor: pointer;
     font-size: 14px;
     padding: 8px;
-    opacity: 0.3; /* Visible but subtle by default */
+    opacity: 0.3;
     transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
@@ -289,6 +301,9 @@ body {
     margin-bottom: 50px;
     padding-left: 60px;
     position: relative;
+    
+    /* Ensure jump to month anchor clears the sticky header */
+    scroll-margin-top: 155px;
 
     &.hidden {
         display: none;
@@ -636,7 +651,7 @@ footer {
     .timeline { padding-top: 30px; }
 
     .year h2 {
-        top: 180px; /* Adjust for taller sticky header on mobile if needed */
+        top: 170px; /* Mobile sticky header position */
         font-size: 26px;
         padding-top: 15px;
     }

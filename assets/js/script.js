@@ -69,7 +69,9 @@ function highlightNav() {
     const currentSections = Array.from(document.querySelectorAll('.year:not(.hidden)'));
     let currentYear = '';
 
-    const scrollPos = window.pageYOffset + 220; // Increased offset due to larger header
+    // Adjust offset to match CSS scroll-margin-top (~155px)
+    // We add a bit more (e.g. 180) so highlighting happens when the year header is well into view
+    const scrollPos = window.pageYOffset + 180; 
 
     currentSections.forEach(section => {
         if (scrollPos >= section.offsetTop) {
@@ -152,7 +154,7 @@ function filterEvents() {
     const timeline = document.querySelector('.timeline');
     if (timeline && window.scrollY > timeline.offsetTop + 200 && activeFilters.search.length > 0) {
         window.scrollTo({
-            top: timeline.offsetTop - 180,
+            top: timeline.offsetTop - 150, // Match the scroll margin
             behavior: 'smooth'
         });
     }
