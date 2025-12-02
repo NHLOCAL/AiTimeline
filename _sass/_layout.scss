@@ -299,11 +299,20 @@ body {
 .event {
     margin-bottom: var(--space-12);
     padding-left: 60px;
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
     position: relative;
     scroll-margin-top: var(--header-scroll-padding);
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-base), box-shadow var(--transition-base);
 
     &.hidden {
         display: none;
+    }
+
+    &:hover {
+        background-color: var(--accent-bg-subtle);
+        box-shadow: var(--shadow-sm);
     }
 
     .date {
@@ -381,9 +390,9 @@ body {
     }
 
     &:hover .info::before {
-        border-color: var(--accent-color);
-        background-color: var(--accent-color);
-        transform: translateX(-50%) scale(1.2);
+        border-color: var(--border-color);
+        background-color: var(--bg-color);
+        transform: translateX(-50%) scale(1.05);
     }
 
     &:hover .info.special::before {
