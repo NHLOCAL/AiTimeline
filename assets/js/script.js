@@ -222,13 +222,12 @@ if (searchInput) {
         if (!isEraseKey) return;
 
         const value = searchInput.value;
-        const selectionAll = value.length > 0 && searchInput.selectionStart === 0 && searchInput.selectionEnd === value.length;
-        const empty = value.length === 0 || selectionAll;
+        const isEmpty = value.length === 0;
+        // Only block when there is truly nothing to delete; allow normal deletion when text exists (even if all selected)
+        if (!isEmpty) return;
 
-        if (empty) {
-            e.preventDefault();
-            e.stopPropagation();
-        }
+        e.preventDefault();
+        e.stopPropagation();
     });
 
     searchInput.addEventListener('input', (e) => {
