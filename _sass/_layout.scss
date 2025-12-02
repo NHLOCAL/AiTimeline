@@ -273,7 +273,7 @@ body {
         padding: var(--space-3) 0;
 
         position: sticky;
-        top: 135px;
+        top: calc(var(--header-scroll-padding) - 20px);
         z-index: 10;
         line-height: 1;
 
