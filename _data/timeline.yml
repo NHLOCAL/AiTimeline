@@ -20,6 +20,7 @@
   - date: October
     info:
     - text: <b>Stable Diffusion 1.5</b> becomes available.
+      special: true
   - date: November
     info:
     - text: <b>ChatGPT</b>, a chatbot by OpenAI using GPT-3.5, is released to the public and quickly becomes a viral sensation.
@@ -40,6 +41,7 @@
     info:
     - text: <b>Midjourney v5</b> is launched.
     - text: OpenAI's <b>GPT-4</b> model is partially released, featuring multimodal image analysis and improved multi-language support.
+      special: true
     - text: Google releases the AI chat <b>Bard</b> in a limited capacity, based on the LaMDA language model.
   - date: April
     info:
