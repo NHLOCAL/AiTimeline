@@ -1,0 +1,101 @@
+:root {
+    /* --- Colors --- */
+    --bg-color: #ffffff;
+    --text-color: #1d1d1f;
+    --text-secondary: #86868b;
+    --border-color: #e5e5ea;
+    
+    /* Interactive */
+    --accent-color: #0066cc;
+    --accent-hover: #004499;
+    --accent-bg-subtle: rgba(0, 102, 204, 0.1);
+    
+    /* Elements */
+    --milestone-color: #f5a623;
+    --card-bg: #f5f5f7;
+    --sticky-bg: rgba(255, 255, 255, 0.95);
+    --footer-bg: #f5f5f7;
+    --hover-bg: #f5f5f7;
+    --input-bg: #f5f5f7;
+    
+    /* --- Typography --- */
+    --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 48px;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+
+    /* --- Spacing --- */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 50px;
+    --space-15: 60px;
+    --space-20: 80px;
+
+    /* --- Layout --- */
+    --container-width: 900px;
+    --timeline-width-narrow: 760px;
+    --header-scroll-padding: 155px; /* Offset for sticky header */
+    --timeline-line-x: 29px;
+    --timeline-stroke-width: 2px;
+    
+    /* --- Borders & Radius --- */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-pill: 99px;
+    
+    /* --- Effects --- */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+    --shadow-hover: 0 4px 15px rgba(0,0,0,0.1);
+    
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --backdrop-blur: 20px;
+
+    /* --- Z-Index --- */
+    --z-back: 0;
+    --z-content: 2;
+    --z-sticky: 900;
+    --z-tooltip: 1000;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f5f5f7;
+    --text-secondary: #a1a1a6;
+    --border-color: #2c2c2e;
+
+    --accent-color: #409cff;
+    --accent-hover: #0077ed;
+    --accent-bg-subtle: rgba(64, 156, 255, 0.15);
+    
+    --milestone-color: #ffd60a;
+    
+    --card-bg: #1c1c1e;
+    --sticky-bg: rgba(18, 18, 18, 0.95);
+    --footer-bg: #1c1c1e;
+    --hover-bg: #2c2c2e;
+    --input-bg: #1c1c1e;
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.2);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-hover: 0 4px 15px rgba(0,0,0,0.4);
+}

@@ -17,7 +17,7 @@
 - **Stable Diffusion 1.4** is released.
 
 ## October
-- **Stable Diffusion 1.5** becomes available.
+- **Stable Diffusion 1.5** becomes available. (*special*)
 
 ## November
 - **ChatGPT**, a chatbot by OpenAI using GPT-3.5, is released to the public and quickly becomes a viral sensation. (*special*)
@@ -36,7 +36,7 @@
 
 ## March
 - **Midjourney v5** is launched.
-- OpenAI's **GPT-4** model is partially released, featuring multimodal image analysis and improved multi-language support.
+- OpenAI's **GPT-4** model is partially released, featuring multimodal image analysis and improved multi-language support. (*special*)
 - Google releases the AI chat **Bard** in a limited capacity, based on the LaMDA language model.
 
 ## April
@@ -299,3 +299,4 @@
 -   Black Forest Labs launched **FLUX 2**, a high-performance open-weight image generation model.
 -   DeepSeek released **DeepSeekMath-V2** as open source, achieving gold-medal performance in math olympiads. (*special*)
 -   Microsoft open-sourced **Fara-7B**, a small model optimized for browser agents and computer control.
+-   **Poetiq** shatters the **ARC-AGI-2** benchmark with a score of over 60%, surpassing the human average.
