@@ -71,7 +71,7 @@ function highlightNav() {
 
     // Adjust offset to match CSS scroll-margin-top (~155px)
     // We add a bit more (e.g. 180) so highlighting happens when the year header is well into view
-    const scrollPos = window.pageYOffset + 180; 
+    const scrollPos = window.pageYOffset + 180;
 
     currentSections.forEach(section => {
         if (scrollPos >= section.offsetTop) {
@@ -87,8 +87,8 @@ function highlightNav() {
         link.classList.remove('active');
         if (link.getAttribute('href') === '#' + currentYear) {
             link.classList.add('active');
-            // Auto-scroll the nav itself is annoying if user is scrolling page
-            // link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+
         }
     });
 }
@@ -149,15 +149,6 @@ function escapeRegExp(string) {
 
 function filterEvents() {
     const years = document.querySelectorAll('.year');
-    
-    // Check if we need to scroll to top (user is far down)
-    const timeline = document.querySelector('.timeline');
-    if (timeline && window.scrollY > timeline.offsetTop + 200 && activeFilters.search.length > 0) {
-        window.scrollTo({
-            top: timeline.offsetTop - 150, // Match the scroll margin
-            behavior: 'smooth'
-        });
-    }
 
     years.forEach(year => {
         let hasVisibleEventsInYear = false;
@@ -225,8 +216,25 @@ function filterEvents() {
 }
 
 if (searchInput) {
+    // Stop browser defaults (history back / page scroll) when user hits delete/backspace on an empty search box.
+    searchInput.addEventListener('keydown', (e) => {
+        const isEraseKey = e.key === 'Backspace' || e.key === 'Delete';
+        if (!isEraseKey) return;
+
+        const value = searchInput.value;
+        const selectionAll = value.length > 0 && searchInput.selectionStart === 0 && searchInput.selectionEnd === value.length;
+        const empty = value.length === 0 || selectionAll;
+
+        if (empty) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    });
+
     searchInput.addEventListener('input', (e) => {
-        activeFilters.search = e.target.value.toLowerCase().trim();
+        const next = e.target.value.toLowerCase().trim();
+        if (next === activeFilters.search) return; // no content change -> avoid unnecessary reflow
+        activeFilters.search = next;
         filterEvents();
     });
 }

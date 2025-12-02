@@ -1,6 +1,9 @@
 html {
-    scroll-behavior: smooth;
+    /* Smooth scrolling caused visible jumps when the layout changed; disable globally */
+    scroll-behavior: auto;
     scroll-padding-top: var(--header-scroll-padding);
+    /* Stop root scroll anchoring from jumping when timeline length changes */
+    overflow-anchor: none;
 }
 
 body {
@@ -11,6 +14,8 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     transition: background-color var(--transition-base), color var(--transition-base);
+    /* Prevent browser scroll anchoring jumps when search hides/shows items */
+    overflow-anchor: none;
 }
 
 
@@ -229,6 +234,8 @@ body {
     margin: 0 auto;
     padding: var(--space-15) var(--space-5) 0;
     position: relative;
+    /* Avoid scroll-anchoring jumps when search hides/shows content */
+    overflow-anchor: none;
 
     &::before {
         content: '';
@@ -246,6 +253,7 @@ body {
     margin-bottom: var(--space-20);
     position: relative;
     scroll-margin-top: var(--header-scroll-padding);
+    overflow-anchor: none;
 
     &.hidden {
         display: none;
@@ -306,6 +314,7 @@ body {
     padding-bottom: var(--space-4);
     position: relative;
     scroll-margin-top: var(--header-scroll-padding);
+    overflow-anchor: none;
     border-radius: var(--radius-md);
     
     border: 1px solid transparent;
