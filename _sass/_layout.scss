@@ -1,4 +1,3 @@
-/* Global Layout & Reset */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -9,7 +8,29 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Header */
+/* Global Button Style (Fix for Footer) */
+.github-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 8px 20px;
+    border-radius: 99px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+        text-decoration: none;
+        color: var(--bg-color);
+    }
+}
+
 .header {
     text-align: center;
     padding: 60px 20px 40px;
@@ -28,29 +49,9 @@ body {
         color: var(--text-secondary);
         margin: 0 0 30px;
     }
-
-    .github-cta {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background-color: var(--text-color);
-        color: var(--bg-color);
-        padding: 8px 20px;
-        border-radius: 99px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 15px;
-        transition: all 0.2s ease;
-
-        &:hover {
-            transform: scale(1.02);
-            opacity: 0.9;
-            color: var(--bg-color);
-        }
-    }
 }
 
-/* Sticky Navigation Bar */
+
 .sticky-bar {
     position: sticky;
     top: 0;
@@ -59,31 +60,89 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
-    padding: 12px 20px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: padding 0.3s ease;
+}
+
+.bar-row {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    transition: padding 0.3s ease;
+    width: 100%;
+}
+
+/* Search Bar Styling */
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0 15px;
+    transition: all 0.2s ease;
+    height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus-within {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        color: var(--text-color);
+    }
+
+    i {
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    input {
+        background: transparent;
+        border: none;
+        color: var(--text-color);
+        font-family: inherit;
+        font-size: 16px;
+        padding: 8px 0;
+        width: 100%;
+        outline: none;
+
+        &::placeholder {
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+    }
 }
 
 .year-nav {
     display: flex;
-    gap: 8px;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
 
     a {
-        padding: 5px 14px;
-        border-radius: 18px;
+        padding: 6px 16px;
+        border-radius: 20px;
         text-decoration: none;
         color: var(--text-secondary);
         font-weight: 500;
         font-size: 14px;
         transition: all 0.2s ease;
-        white-space: nowrap;
+        background-color: rgba(128, 128, 128, 0.05);
 
         &:hover, &.active {
             color: var(--text-color);
-            background-color: rgba(128, 128, 128, 0.15);
+            background-color: rgba(128, 128, 128, 0.2);
         }
 
         &.active {
@@ -94,33 +153,42 @@ body {
 
 .controls-container {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
-    padding-left: 20px;
-    border-left: 1px solid var(--border-color);
-    flex-shrink: 0;
 
     .control-btn {
-        background: none;
-        border: none;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
         cursor: pointer;
         color: var(--text-secondary);
-        font-size: 15px;
-        padding: 8px;
-        display: flex;
+        font-size: 14px;
+        height: 36px;
+        padding: 0 16px;
+        display: inline-flex;
         align-items: center;
-        gap: 6px;
+        justify-content: center;
+        gap: 8px;
         font-family: inherit;
         font-weight: 500;
-        transition: color 0.2s;
+        transition: all 0.2s;
+        border-radius: 10px;
 
         &:hover {
-            color: var(--accent-color);
+            border-color: var(--text-secondary);
+            color: var(--text-color);
         }
+
+        &.active {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: #ffffff;
+        }
+        
+        /* Icon only on very small screens if needed, but text helps accessibility */
     }
 }
 
-/* Timeline Component */
+
 .timeline {
     max-width: 760px;
     margin: 0 auto;
@@ -143,6 +211,10 @@ body {
     margin-bottom: 60px;
     position: relative;
 
+    &.hidden {
+        display: none;
+    }
+
     h2 {
         font-size: 28px;
         font-weight: 800;
@@ -154,7 +226,7 @@ body {
         padding: 10px 20px 10px 0;
         margin-bottom: 30px;
         position: sticky;
-        top: 60px;
+        top: 130px; /* Adjusted for larger header */
         z-index: 10;
         border-bottom: 2px solid var(--border-color);
         line-height: 1;
@@ -190,6 +262,11 @@ body {
     padding-left: 60px;
     position: relative;
 
+    /* If all items inside are hidden, hide the event (month) */
+    &.hidden {
+        display: none;
+    }
+
     .date {
         font-size: 13px;
         text-transform: uppercase;
@@ -218,6 +295,10 @@ body {
         font-size: 16px;
         color: var(--text-color);
         line-height: 1.5;
+
+        &.hidden {
+            display: none;
+        }
 
         /* Markers */
         &::before {
@@ -267,7 +348,19 @@ body {
     }
 }
 
-/* Resources Section */
+/* Highlight style for search results */
+.highlight-text {
+    background-color: rgba(255, 212, 0, 0.3);
+    color: var(--text-color);
+    border-radius: 2px;
+    padding: 0 2px;
+}
+body.dark-mode .highlight-text {
+    background-color: rgba(255, 212, 0, 0.25);
+    color: #fff;
+}
+
+
 .resources-section {
     max-width: 760px;
     margin: 80px auto 40px;
@@ -307,7 +400,7 @@ body {
             &:hover {
                 color: var(--accent-color);
                 padding-left: 5px;
-                
+
                 .resource-icon {
                     opacity: 1;
                     transform: translateX(0);
@@ -331,7 +424,7 @@ body {
     flex-shrink: 0;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--footer-bg);
     border-top: 1px solid var(--border-color);
@@ -393,7 +486,7 @@ footer {
     }
 }
 
-/* Scroll To Top */
+
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
@@ -427,7 +520,7 @@ footer {
     }
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     :root {
         --timeline-line-x: 15px;
@@ -440,38 +533,29 @@ footer {
     }
 
     .sticky-bar {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px 0;
-        gap: 10px;
+        padding: 15px;
+        gap: 15px;
     }
-
-    .controls-container {
-        width: 100%;
-        justify-content: flex-end;
-        padding: 0 20px;
-        border-left: none;
-        margin-bottom: 0;
-        box-sizing: border-box;
+    
+    .bar-row {
+        flex-direction: column;
+        gap: 12px;
     }
 
     .year-nav {
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
-        padding: 0 20px 10px;
-        -webkit-overflow-scrolling: touch;
-        box-sizing: border-box;
+        justify-content: flex-start;
+        padding-bottom: 5px;
         scrollbar-width: none;
-        -ms-overflow-style: none;
-
         &::-webkit-scrollbar { display: none; }
     }
 
     .timeline { padding-top: 20px; }
 
     .year h2 {
-        top: 100px;
+        top: 170px; /* Adjusted mobile sticky pos */
         font-size: 24px;
         padding-top: 20px;
         background-color: rgba(var(--bg-color-rgb), 1);
@@ -479,7 +563,7 @@ footer {
 
     .event {
         padding-left: 35px;
-        
+
         .info::before, .info.special::before {
             left: calc(var(--timeline-line-x) - 35px + (var(--timeline-width) / 2));
         }
@@ -494,26 +578,4 @@ footer {
         opacity: 0.6;
         padding: 10px;
     }
-
-    .resource-icon {
-        opacity: 1;
-        transform: translateX(0);
-        color: var(--text-secondary);
-    }
-
-    .resources-list li a { padding: 20px 0; }
-}
-
-@media (max-width: 480px) {
-    #sort-toggle {
-        span { display: none; }
-        i { font-size: 18px; }
-    }
-
-    .controls-container {
-        gap: 20px;
-        justify-content: space-between;
-    }
-
-    .control-btn { padding: 10px; }
 }

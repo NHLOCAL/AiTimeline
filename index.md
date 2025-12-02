@@ -14,20 +14,35 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
 </header>
 
 <div class="sticky-bar">
-  <nav class="year-nav">
-    {% for year in site.data.timeline reversed %}
-    <a href="#{{ year.year }}">{{ year.year }}</a>
-    {% endfor %}
-  </nav>
+  <!-- Top Row: Search (Full Width / Prominent) -->
+  <div class="search-container">
+    <div class="search-wrapper">
+        <i class="fas fa-search"></i>
+        <input type="text" id="event-search" placeholder="Search events..." aria-label="Search events">
+    </div>
+  </div>
 
-  <div class="controls-container">
-    <!-- Default state is now 'newest', so button offers sorting by 'oldest' -->
-    <button id="sort-toggle" class="control-btn" data-order="newest" title="Change timeline order">
-      <i class="fas fa-sort-amount-up"></i> <span>Oldest First</span>
-    </button>
-    <button id="dark-mode-toggle" class="control-btn" title="Toggle theme">
-      <i class="fas fa-moon"></i>
-    </button>
+  <!-- Bottom Row: Navigation and Filters -->
+  <div class="bar-row">
+    <nav class="year-nav">
+        {% for year in site.data.timeline reversed %}
+        <a href="#{{ year.year }}">{{ year.year }}</a>
+        {% endfor %}
+    </nav>
+
+    <div class="controls-container">
+        <button id="filter-significant" class="control-btn" title="Show significant events only">
+            <i class="far fa-star"></i> <span>Significant</span>
+        </button>
+
+        <button id="sort-toggle" class="control-btn" data-order="newest" title="Change timeline order">
+            <i class="fas fa-sort-amount-up"></i> <span>Sort</span>
+        </button>
+        
+        <button id="dark-mode-toggle" class="control-btn" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
   </div>
 </div>
 
@@ -50,13 +65,14 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
                 <i class="fas fa-link"></i>
             </button>
         </div>
+        <!-- Individual Items -->
 		{% for info in event.info %}
             {% if info.special %}
-             <div class="info special" title="Major Industry Milestone">
+             <div class="info special" data-special="true">
                 {{ info.text }}
              </div>
             {% else %}
-             <div class="info">
+             <div class="info" data-special="false">
                 {{ info.text }}
              </div>
             {% endif %}

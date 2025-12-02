@@ -61,40 +61,30 @@ if (darkModeToggle) {
 }
 
 
-/* --- Scroll Spy / Active Year Logic --- */
 const yearNavLinks = document.querySelectorAll('.year-nav a');
-const yearSections = document.querySelectorAll('.year');
 
 function highlightNav() {
     if (yearNavLinks.length === 0) return;
 
-    // Get current visual order of sections (handling DOM reordering)
-    const currentSections = Array.from(document.querySelectorAll('.year'));
+    const currentSections = Array.from(document.querySelectorAll('.year:not(.hidden)'));
     let currentYear = '';
-    
-    // Offset for the sticky header
-    const scrollPos = window.pageYOffset + 140;
 
-    // Logic: Iterate through sections. Since they are in DOM order (top to bottom),
-    // the last section that has its top above the scrollPos is the active one.
+    const scrollPos = window.pageYOffset + 220; // Increased offset due to larger header
+
     currentSections.forEach(section => {
         if (scrollPos >= section.offsetTop) {
             currentYear = section.getAttribute('id');
         }
     });
 
-    // If we are at the very top and no section matches yet, highlight the first one
     if (!currentYear && currentSections.length > 0) {
         currentYear = currentSections[0].getAttribute('id');
     }
 
     yearNavLinks.forEach(link => {
         link.classList.remove('active');
-        // Match href="#2025" with id="2025"
         if (link.getAttribute('href') === '#' + currentYear) {
             link.classList.add('active');
-            
-            // Optional: Auto-scroll the nav bar on mobile to keep active year in view
             link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         }
     });
@@ -104,43 +94,145 @@ window.addEventListener('scroll', highlightNav);
 window.addEventListener('load', highlightNav);
 
 
-/* --- Sort Toggle Logic --- */
 const sortToggle = document.getElementById('sort-toggle');
 if (sortToggle) {
     sortToggle.addEventListener('click', () => {
         const timelineContainer = document.querySelector('.timeline');
-        // Get current state (default is now 'newest')
         const currentOrder = sortToggle.getAttribute('data-order') || 'newest';
         const newOrder = currentOrder === 'oldest' ? 'newest' : 'oldest';
 
         sortToggle.setAttribute('data-order', newOrder);
-
         const icon = sortToggle.querySelector('i');
-        const textSpan = sortToggle.querySelector('span');
 
         if (newOrder === 'newest') {
-            // If we switched TO Newest First, show option to go to Oldest
-            icon.className = 'fas fa-sort-amount-up'; // Icon showing Ascending option (or stack up)
-            textSpan.textContent = 'Oldest First';
+            icon.className = 'fas fa-sort-amount-up';
         } else {
-            // If we switched TO Oldest First, show option to go to Newest
-            icon.className = 'fas fa-sort-amount-down'; // Icon showing Descending option
-            textSpan.textContent = 'Newest First';
+            icon.className = 'fas fa-sort-amount-down';
         }
 
         const yearSectionsArray = Array.from(timelineContainer.querySelectorAll('.year'));
-        
-        // Simply reverse the current DOM array and re-append
         yearSectionsArray.reverse().forEach(section => {
             timelineContainer.appendChild(section);
-            // We also reverse the events within the year for consistency
             const events = Array.from(section.querySelectorAll('.event'));
             events.reverse().forEach(event => {
                 section.appendChild(event);
             });
         });
-        
+
         highlightNav();
+    });
+}
+
+
+/* --- Filter & Search Logic --- */
+const searchInput = document.getElementById('event-search');
+const significantFilter = document.getElementById('filter-significant');
+
+// Store active states
+let activeFilters = {
+    search: '',
+    special: false
+};
+
+// Initialize: Cache original HTML content for each info item to allow safe highlight reset
+const allInfoItems = document.querySelectorAll('.info');
+allInfoItems.forEach(item => {
+    item.setAttribute('data-original-html', item.innerHTML);
+});
+
+function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function filterEvents() {
+    const years = document.querySelectorAll('.year');
+    
+    years.forEach(year => {
+        let hasVisibleEventsInYear = false;
+        const events = year.querySelectorAll('.event');
+
+        events.forEach(event => {
+            let hasVisibleItemsInEvent = false;
+            const items = event.querySelectorAll('.info');
+
+            items.forEach(item => {
+                // 1. Reset content from backup to remove old highlights
+                const originalHTML = item.getAttribute('data-original-html');
+                
+                // 2. Determine match
+                const isSpecial = item.getAttribute('data-special') === 'true';
+                const textContent = item.innerText.toLowerCase();
+                const searchMatch = activeFilters.search === '' || textContent.includes(activeFilters.search);
+                const specialMatch = !activeFilters.special || isSpecial;
+
+                if (searchMatch && specialMatch) {
+                    item.classList.remove('hidden');
+                    hasVisibleItemsInEvent = true;
+
+                    // 3. Apply Highlighting if searching
+                    if (activeFilters.search !== '') {
+                        // Safe highlight: Match text not inside HTML tags
+                        try {
+                            const term = escapeRegExp(activeFilters.search);
+                            // Regex looks for the term, ensuring it's not followed by `>` without a `<` first (rudimentary tag avoidance)
+                            // Ideally, we highlight text nodes, but for this structure:
+                            const regex = new RegExp(`(${term})(?![^<]*>)`, 'gi');
+                            item.innerHTML = originalHTML.replace(regex, '<span class="highlight-text">$1</span>');
+                        } catch (e) {
+                            item.innerHTML = originalHTML; // Fallback
+                        }
+                    } else {
+                        item.innerHTML = originalHTML;
+                    }
+
+                } else {
+                    item.classList.add('hidden');
+                    // Reset html even if hidden to be clean
+                    item.innerHTML = originalHTML;
+                }
+            });
+
+            // Toggle Event (Month) visibility
+            if (hasVisibleItemsInEvent) {
+                event.classList.remove('hidden');
+                hasVisibleEventsInYear = true;
+            } else {
+                event.classList.add('hidden');
+            }
+        });
+
+        // Toggle Year visibility
+        if (hasVisibleEventsInYear) {
+            year.classList.remove('hidden');
+        } else {
+            year.classList.add('hidden');
+        }
+    });
+
+    highlightNav();
+}
+
+if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+        activeFilters.search = e.target.value.toLowerCase().trim();
+        filterEvents();
+    });
+}
+
+if (significantFilter) {
+    significantFilter.addEventListener('click', () => {
+        activeFilters.special = !activeFilters.special;
+        
+        const icon = significantFilter.querySelector('i');
+        if (activeFilters.special) {
+            significantFilter.classList.add('active');
+            icon.className = 'fas fa-star'; 
+        } else {
+            significantFilter.classList.remove('active');
+            icon.className = 'far fa-star';
+        }
+        
+        filterEvents();
     });
 }
 
