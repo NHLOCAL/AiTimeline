@@ -85,7 +85,8 @@ function highlightNav() {
         link.classList.remove('active');
         if (link.getAttribute('href') === '#' + currentYear) {
             link.classList.add('active');
-            link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            // Auto-scroll the nav itself is annoying if user is scrolling page
+            // link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         }
     });
 }
@@ -124,11 +125,11 @@ if (sortToggle) {
 }
 
 
-/* --- Filter & Search Logic --- */
+
 const searchInput = document.getElementById('event-search');
 const significantFilter = document.getElementById('filter-significant');
 
-// Store active states
+
 let activeFilters = {
     search: '',
     special: false
@@ -147,6 +148,15 @@ function escapeRegExp(string) {
 function filterEvents() {
     const years = document.querySelectorAll('.year');
     
+    // Check if we need to scroll to top (user is far down)
+    const timeline = document.querySelector('.timeline');
+    if (timeline && window.scrollY > timeline.offsetTop + 200 && activeFilters.search.length > 0) {
+        window.scrollTo({
+            top: timeline.offsetTop - 180,
+            behavior: 'smooth'
+        });
+    }
+
     years.forEach(year => {
         let hasVisibleEventsInYear = false;
         const events = year.querySelectorAll('.event');
@@ -156,10 +166,10 @@ function filterEvents() {
             const items = event.querySelectorAll('.info');
 
             items.forEach(item => {
-                // 1. Reset content from backup to remove old highlights
+
                 const originalHTML = item.getAttribute('data-original-html');
-                
-                // 2. Determine match
+
+
                 const isSpecial = item.getAttribute('data-special') === 'true';
                 const textContent = item.innerText.toLowerCase();
                 const searchMatch = activeFilters.search === '' || textContent.includes(activeFilters.search);
@@ -169,17 +179,17 @@ function filterEvents() {
                     item.classList.remove('hidden');
                     hasVisibleItemsInEvent = true;
 
-                    // 3. Apply Highlighting if searching
+
                     if (activeFilters.search !== '') {
                         // Safe highlight: Match text not inside HTML tags
                         try {
                             const term = escapeRegExp(activeFilters.search);
                             // Regex looks for the term, ensuring it's not followed by `>` without a `<` first (rudimentary tag avoidance)
-                            // Ideally, we highlight text nodes, but for this structure:
+
                             const regex = new RegExp(`(${term})(?![^<]*>)`, 'gi');
                             item.innerHTML = originalHTML.replace(regex, '<span class="highlight-text">$1</span>');
                         } catch (e) {
-                            item.innerHTML = originalHTML; // Fallback
+                            item.innerHTML = originalHTML;
                         }
                     } else {
                         item.innerHTML = originalHTML;
@@ -187,12 +197,12 @@ function filterEvents() {
 
                 } else {
                     item.classList.add('hidden');
-                    // Reset html even if hidden to be clean
+
                     item.innerHTML = originalHTML;
                 }
             });
 
-            // Toggle Event (Month) visibility
+
             if (hasVisibleItemsInEvent) {
                 event.classList.remove('hidden');
                 hasVisibleEventsInYear = true;
@@ -201,7 +211,7 @@ function filterEvents() {
             }
         });
 
-        // Toggle Year visibility
+
         if (hasVisibleEventsInYear) {
             year.classList.remove('hidden');
         } else {
@@ -222,16 +232,16 @@ if (searchInput) {
 if (significantFilter) {
     significantFilter.addEventListener('click', () => {
         activeFilters.special = !activeFilters.special;
-        
+
         const icon = significantFilter.querySelector('i');
         if (activeFilters.special) {
             significantFilter.classList.add('active');
-            icon.className = 'fas fa-star'; 
+            icon.className = 'fas fa-star';
         } else {
             significantFilter.classList.remove('active');
             icon.className = 'far fa-star';
         }
-        
+
         filterEvents();
     });
 }
