@@ -71,7 +71,8 @@ function highlightNav() {
 
     // Adjust offset to match CSS scroll-margin-top (~155px)
     // We add a bit more (e.g. 180) so highlighting happens when the year header is well into view
-    const scrollPos = window.pageYOffset + 180;
+    const scrollPaddingTop = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-scroll-padding'), 10) || 155;
+    const scrollPos = window.pageYOffset + scrollPaddingTop + 25;
 
     currentSections.forEach(section => {
         if (scrollPos >= section.offsetTop) {
