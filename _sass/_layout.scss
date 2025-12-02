@@ -255,17 +255,23 @@ body {
         font-size: var(--font-size-2xl);
         font-weight: var(--font-weight-extra-bold);
         color: var(--text-color);
-        background-color: var(--bg-color);
-        display: inline-flex;
-        align-items: center;
-        gap: var(--space-3);
-        padding: 10px var(--space-5) 10px 0;
-        margin-bottom: var(--space-10);
+        
+        background-color: var(--sticky-bg);
+        backdrop-filter: blur(var(--backdrop-blur));
+        -webkit-backdrop-filter: blur(var(--backdrop-blur));
+        border-bottom: 1px solid var(--border-color);
+        width: 100%;
+        margin: 0 0 var(--space-10) 0;
+        padding: var(--space-3) 0;
 
         position: sticky;
         top: 135px;
         z-index: 10;
         line-height: 1;
+
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
 
         &:hover .anchor-btn {
             opacity: 1;
@@ -301,17 +307,20 @@ body {
     position: relative;
     scroll-margin-top: var(--header-scroll-padding);
     border-radius: var(--radius-md);
+    
     border: 1px solid transparent;
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    border-left: 4px solid transparent;
+    transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 
     &.hidden {
         display: none;
     }
 
     &:hover {
-        background-color: var(--accent-bg-subtle);
-        border-color: rgba(0, 102, 204, 0.15);
-        box-shadow: var(--shadow-hover);
+        background-color: var(--card-bg);
+        border-color: var(--border-color);
+        border-left-color: var(--accent-color);
+        transform: translateX(5px);
     }
 
     .date {
@@ -364,7 +373,7 @@ body {
             border: 2px solid var(--border-color);
             border-radius: 50%;
             z-index: var(--z-content);
-            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1);
             box-shadow: 0 0 0 2px var(--bg-color);
         }
 
@@ -393,8 +402,7 @@ body {
     &:hover .info::before {
         border-color: var(--accent-color);
         background-color: var(--bg-color);
-        transform: translateX(-50%) scale(1.15);
-        box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+        transform: translateX(-50%) scale(1.2);
     }
 
     &:hover .info.special::before {
