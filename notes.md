@@ -97,3 +97,5 @@
 - שוחרר Z-Image-Turbo - מודל 6B בקוד פתוח על ידי עליבאבא, מתחרה במודלים סגורים מתקדמים
 - GPT 5.2
 - Gemini Deep Research Agent
+- מודל gemini 2.5 flash audio 12-25
+- GPT IMAGE 1.5
