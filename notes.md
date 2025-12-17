@@ -99,3 +99,4 @@
 - Gemini Deep Research Agent
 - מודל gemini 2.5 flash audio 12-25
 - GPT IMAGE 1.5
+- ג'מיני 3.0 פלאש
