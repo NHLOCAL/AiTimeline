@@ -98,7 +98,8 @@
 - GPT 5.2
 - Gemini Deep Research Agent
 - מודל gemini 2.5 flash audio 12-25
-- GPT IMAGE 1.5
+- GPT IMAGE 1.5 - מוביל בכל המדדים על ננו בננה פרו
 - ג'מיני 3.0 פלאש
 - מיסטראל OCR 3
 - GPT 5.2 CODEX
+- GROK VOICE AGENT
