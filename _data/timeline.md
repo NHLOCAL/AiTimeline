@@ -135,7 +135,7 @@
 - OPENAI has released two nextgeneration AI models to its subscribers: **o1 preview** and **o1 mini**. These models show a significant improvement in performance, particularly in tasks requiring reasoning, including coding, mathematics, GPQA, and more. (*special*)
 - Chinese company Alibaba releases the **Qwen 2.5** model in various sizes, ranging from 0.5B to 72B. The models demonstrate capabilities comparable to much larger models.
 - The video generation model **KLING 1.5** has been released.
-- **OpenAI** launches the **advanced voice mode** of GPT4o for all subscribers.
+- **OpenAI** launches the **advanced voice mode** of GPT 4o for all subscribers.
 - **Meta** releases **Llama 3.2** in sizes 1B, 3B, 11B and 90B, featuring image recognition capabilities for the first time.
 - **Google** has rolled out new model updates ready for deployment, **Gemini Pro 1.5 002** and **Gemini Flash 1.5 002**, showcasing significantly improved longcontext processing.
 - **Kyutai** releases two opensource versions of its voicetovoice model, **Moshi**.
@@ -169,7 +169,7 @@
 
 ## December
 - Amazon introduced a new series of models called **NOVA**, designed for text, image, and video processing.
-- OpenAI released **SORA**, a video generation model, along with the full version of **O1** and **O1 Pro** for advanced subscribers. Additionally, the company launched a live video mode for **GPT4o**. (*special*)
+- OpenAI released **SORA**, a video generation model, along with the full version of **o1** and **o1 Pro** for advanced subscribers. Additionally, the company launched a live video mode for **GPT 4o**. (*special*)
 - Google unveiled the experimental model **Gemini-Exp-1206**, which ranked first in the chatbot leaderboard.
 - Google launched **Gemini 2.0 Flash** in beta. This model leads benchmarks and outperforms the previous version, **Gemini Pro 1.5**. Additionally, Google introduced live speech and video mode and announced built-in image generation capabilities within the model. (*special*)
 - Google revealed **Gemini-2.0-Flash-Thinking**, a thinking model based on **Gemini 2.0 Flash**, which secured second place in the chatbot leaderboard. (*special*)
@@ -182,7 +182,7 @@
 - Meta introduced **Apollo**, a video generation model available in three different sizes.
 - Deepseek open-sourced **Deepseek V3**, a model with 671B parameters that surpasses closed-source SOTA models across several benchmarks. (*special*)
 - Alibaba unveiled **QVQ-72B-Preview**, a cutting-edge thinking model capable of analyzing images, featuring SOTA-level performance. (*special*)
-- OpenAI announced **O3**, a groundbreaking AI model achieving 87.5% in the **ARC-AGI** benchmark, 25.2% in the **Frontier Math Benchmark** (compared to under 2% in previous models), and 87.7% in Ph.D.-level science questions. A cost-effective version, **O3 Mini**, is expected in January 2025, with performance similar to **O1**, alongside improved speed and efficiency. (*special*)
+- OpenAI announced **o3**, a groundbreaking AI model achieving 87.5% in the **ARC-AGI** benchmark, 25.2% in the **Frontier Math Benchmark** (compared to under 2% in previous models), and 87.7% in Ph.D.-level science questions. A cost-effective version, **o3 Mini**, is expected in January 2025, with performance similar to **o1**, alongside improved speed and efficiency. (*special*)
 - The video generation model **Kling 1.6** was released, offering significant performance enhancements.
 
 
@@ -221,7 +221,7 @@
 - Google launches **Gemini 2.5 Flash**, with a dynamic reasoning mode that allows tuning the reasoning level or disabling it as needed.
 - Amazon introduces **Nova Act**, a new framework for building multi-step autonomous agents.
 - OpenAI releases **GPT-4.1** in three sizes, with a context window of 1 million tokens.
-- OpenAI introduces **O3 full** and **O4 mini**, highly advanced models for reasoning, math, and coding.
+- OpenAI introduces **o3 full** and **o4 mini**, highly advanced models for reasoning, math, and coding.
 - Midjourney launches **v7**, with higher image quality and more precise control over style.
 - A series of video model updates - **Veo 2.0** (Google), **Runway Gen-4**, **Vidu Q1**, and **Kling 2.0** – a leap forward in high-quality video generation, with improvements in response times, realism, and style.
 - Alibaba releases **Qwen 3** as open source, in various sizes, with very impressive capabilities for their size. (*special*)
