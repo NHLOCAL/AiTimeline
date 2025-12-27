@@ -103,3 +103,5 @@
 - מיסטראל OCR 3
 - GPT 5.2 CODEX
 - GROK VOICE AGENT
+- GLM-4.7 מודל קוד פתוח שמגיע לראש המדדים
+- מדד ARC-2 נפתר על ידי poetiq משולב GPT 5.2
