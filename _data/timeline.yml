@@ -149,7 +149,7 @@
       special: true
     - text: Chinese company Alibaba releases the <b>Qwen 2.5</b> model in various sizes, ranging from 0.5B to 72B. The models demonstrate capabilities comparable to much larger models.
     - text: The video generation model <b>KLING 1.5</b> has been released.
-    - text: <b>OpenAI</b> launches the <b>advanced voice mode</b> of GPT4o for all subscribers.
+    - text: <b>OpenAI</b> launches the <b>advanced voice mode</b> of GPT 4o for all subscribers.
     - text: <b>Meta</b> releases <b>Llama 3.2</b> in sizes 1B, 3B, 11B and 90B, featuring image recognition capabilities for the first time.
     - text: <b>Google</b> has rolled out new model updates ready for deployment, <b>Gemini Pro 1.5 002</b> and <b>Gemini Flash 1.5 002</b>, showcasing significantly improved longcontext processing.
     - text: <b>Kyutai</b> releases two opensource versions of its voicetovoice model, <b>Moshi</b>.
@@ -183,7 +183,7 @@
   - date: December
     info:
     - text: Amazon introduced a new series of models called <b>NOVA</b>, designed for text, image, and video processing.
-    - text: OpenAI released <b>SORA</b>, a video generation model, along with the full version of <b>O1</b> and <b>O1 Pro</b> for advanced subscribers. Additionally, the company launched a live video mode for <b>GPT4o</b>.
+    - text: OpenAI released <b>SORA</b>, a video generation model, along with the full version of <b>o1</b> and <b>o1 Pro</b> for advanced subscribers. Additionally, the company launched a live video mode for <b>GPT 4o</b>.
       special: true
     - text: Google unveiled the experimental model <b>Gemini-Exp-1206</b>, which ranked first in the chatbot leaderboard.
     - text: Google launched <b>Gemini 2.0 Flash</b> in beta. This model leads benchmarks and outperforms the previous version, <b>Gemini Pro 1.5</b>. Additionally, Google introduced live speech and video mode and announced built-in image generation capabilities within the model.
@@ -202,7 +202,7 @@
       special: true
     - text: Alibaba unveiled <b>QVQ-72B-Preview</b>, a cutting-edge thinking model capable of analyzing images, featuring SOTA-level performance.
       special: true
-    - text: OpenAI announced <b>O3</b>, a groundbreaking AI model achieving 87.5% in the <b>ARC-AGI</b> benchmark, 25.2% in the <b>Frontier Math Benchmark</b> (compared to under 2% in previous models), and 87.7% in Ph.D.-level science questions. A cost-effective version, <b>O3 Mini</b>, is expected in January 2025, with performance similar to <b>O1</b>, alongside improved speed and efficiency.
+    - text: OpenAI announced <b>o3</b>, a groundbreaking AI model achieving 87.5% in the <b>ARC-AGI</b> benchmark, 25.2% in the <b>Frontier Math Benchmark</b> (compared to under 2% in previous models), and 87.7% in Ph.D.-level science questions. A cost-effective version, <b>o3 Mini</b>, is expected in January 2025, with performance similar to <b>o1</b>, alongside improved speed and efficiency.
       special: true
     - text: The video generation model <b>Kling 1.6</b> was released, offering significant performance enhancements.
 - year: 2025
@@ -253,7 +253,7 @@
     - text: Google launches <b>Gemini 2.5 Flash</b>, with a dynamic reasoning mode that allows tuning the reasoning level or disabling it as needed.
     - text: Amazon introduces <b>Nova Act</b>, a new framework for building multi-step autonomous agents.
     - text: OpenAI releases <b>GPT-4.1</b> in three sizes, with a context window of 1 million tokens.
-    - text: OpenAI introduces <b>O3 full</b> and <b>O4 mini</b>, highly advanced models for reasoning, math, and coding.
+    - text: OpenAI introduces <b>o3 full</b> and <b>o4 mini</b>, highly advanced models for reasoning, math, and coding.
     - text: Midjourney launches <b>v7</b>, with higher image quality and more precise control over style.
     - text: A series of video model updates - <b>Veo 2.0</b> (Google), <b>Runway Gen-4</b>, <b>Vidu Q1</b>, and <b>Kling 2.0</b> – a leap forward in high-quality video generation, with improvements in response times, realism, and style.
     - text: Alibaba releases <b>Qwen 3</b> as open source, in various sizes, with very impressive capabilities for their size.
@@ -345,3 +345,17 @@
       special: true
     - text: Microsoft open-sourced <b>Fara-7B</b>, a small model optimized for browser agents and computer control.
     - text: <b>Poetiq</b> shatters the <b>ARC-AGI-2</b> benchmark with a score of over 60%, surpassing the human average.
+  - date: December 2025
+    info:
+    - text: Mistral AI launches the <b>Mistral 3</b> family (Large & Ministral) alongside <b>Mistral OCR 3</b> and the <b>Devstral 2</b> coding series, reinforcing its open-weight leadership with advanced agentic workflows and Vibe CLI integration.
+    - text: 'OpenAI releases <b>GPT-5.2</b>, featuring the autonomous <b>Codex</b> agent for complex engineering tasks, and <b>GPT-Image 1.5</b>, which claims the #1 spot on vision benchmarks, outperforming Nano Banana Pro.'
+    - text: Google introduces <b>Gemini 3.0 Flash</b>, setting a new standard for price-performance, and deploys <b>Deep Research</b>, an autonomous agent capable of multi-step synthesis, alongside <b>Gemini 2.5 Flash Audio</b>.
+      special: true
+    - text: Amazon unveils the <b>Nova 2</b> series, highlighted by <b>Nova 2 Sonic</b>, a native speech-to-speech model delivering ultra-low latency and natural conversation flow.
+    - text: Runway releases <b>Gen-4.5</b>, a video generation model that rises to the top of industry leaderboards for motion consistency and prompt adherence.
+    - text: xAI launches the <b>Grok Voice Agent API</b>, enabling native, real-time bidirectional audio streaming for developers.
+    - text: Zhipu AI releases <b>GLM-4.7</b>, an open-weights model that reaches the top of global coding and reasoning leaderboards.
+    - text: Alibaba open-sources <b>Z-Image-Turbo</b>, a highly efficient 6B model, and releases <b>Qwen-Image-2512</b>, which specializes in high-fidelity typography and complex visual compositions.
+    - text: MiniMax releases <b>MiniMax-M2.1</b>, a 200k-context MoE model that rises to the top of web development and coding leaderboards, establishing itself as a leading open model for developers.
+    - text: A specialized system by <b>Poetiq</b>, powered by GPT-5.2, reportedly solves the <b>ARC-2</b> benchmark, marking a major breakthrough in abstract reasoning.
+      special: true
