@@ -300,3 +300,16 @@
 -   DeepSeek released **DeepSeekMath-V2** as open source, achieving gold-medal performance in math olympiads. (*special*)
 -   Microsoft open-sourced **Fara-7B**, a small model optimized for browser agents and computer control.
 -   **Poetiq** shatters the **ARC-AGI-2** benchmark with a score of over 60%, surpassing the human average.
+
+
+## December 2025
+- Mistral AI launches the **Mistral 3** family (Large & Ministral) alongside **Mistral OCR 3** and the **Devstral 2** coding series, reinforcing its open-weight leadership with advanced agentic workflows and Vibe CLI integration.
+- OpenAI releases **GPT-5.2**, featuring the autonomous **Codex** agent for complex engineering tasks, and **GPT-Image 1.5**, which claims the #1 spot on vision benchmarks, outperforming Nano Banana Pro.
+- Google introduces **Gemini 3.0 Flash**, setting a new standard for price-performance, and deploys **Deep Research**, an autonomous agent capable of multi-step synthesis, alongside **Gemini 2.5 Flash Audio**. (*special*)
+- Amazon unveils the **Nova 2** series, highlighted by **Nova 2 Sonic**, a native speech-to-speech model delivering ultra-low latency and natural conversation flow.
+- Runway releases **Gen-4.5**, a video generation model that rises to the top of industry leaderboards for motion consistency and prompt adherence.
+- xAI launches the **Grok Voice Agent API**, enabling native, real-time bidirectional audio streaming for developers.
+- Zhipu AI releases **GLM-4.7**, an open-weights model that reaches the top of global coding and reasoning leaderboards.
+- Alibaba open-sources **Z-Image-Turbo**, a highly efficient 6B model, and releases **Qwen-Image-2512**, which specializes in high-fidelity typography and complex visual compositions.
+- MiniMax releases **MiniMax-M2.1**, a 200k-context MoE model that rises to the top of web development and coding leaderboards, establishing itself as a leading open model for developers.
+- A specialized system by **Poetiq**, powered by GPT-5.2, reportedly solves the **ARC-2** benchmark, marking a major breakthrough in abstract reasoning. (*special*)

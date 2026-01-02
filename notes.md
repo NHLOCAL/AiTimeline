@@ -88,20 +88,29 @@
 -   חברת DeepSeek שחררה את **DeepSeekMath-V2** כקוד פתוח, שהשיג ביצועי מדליית זהב באולימפיאדות מתמטיקה.
 -   מיקרוסופט שחררה כקוד פתוח את **Fara-7B**, מודל קטן המותאם לסוכני דפדפן ושליטה במחשב.
 
+
+## December 2025
+- Mistral AI launches the **Mistral 3** family (Large & Ministral) alongside **Mistral OCR 3** and the **Devstral 2** coding series, reinforcing its open-weight leadership with advanced agentic workflows and Vibe CLI integration.
+- OpenAI releases **GPT-5.2**, featuring the autonomous **Codex** agent for complex engineering tasks, and **GPT-Image 1.5**, which claims the #1 spot on vision benchmarks, outperforming Nano Banana Pro.
+- Google introduces **Gemini 3.0 Flash**, setting a new standard for price-performance, and deploys **Deep Research**, an autonomous agent capable of multi-step synthesis, alongside **Gemini 2.5 Flash Audio**.
+- Amazon unveils the **Nova 2** series, highlighted by **Nova 2 Sonic**, a native speech-to-speech model delivering ultra-low latency and natural conversation flow.
+- Runway releases **Gen-4.5**, a video generation model that rises to the top of industry leaderboards for motion consistency and prompt adherence.
+- xAI launches the **Grok Voice Agent API**, enabling native, real-time bidirectional audio streaming for developers.
+- Zhipu AI releases **GLM-4.7**, an open-weights model that reaches the top of global coding and reasoning leaderboards.
+- Alibaba open-sources **Z-Image-Turbo**, a highly efficient 6B model, and releases **Qwen-Image-2512**, which specializes in high-fidelity typography and complex visual compositions.
+- MiniMax releases **MiniMax-M2.1**, a 200k-context MoE model that rises to the top of web development and coding leaderboards, establishing itself as a leading open model for developers.
+- A specialized system by **Poetiq**, powered by GPT-5.2, reportedly solves the **ARC-2** benchmark, marking a major breakthrough in abstract reasoning. (*special*)
+
+---
+
 ## דצמבר 2025
-- מיסטרל 3 - משפחת דגמים פתוחים חדשה
-- Runway introduces Gen-4.5, מגיע לראש המדדים
-- דיפסיק V3.2
-- אמזון הציגה את סדרת NOVA 2 - מודלי שפה משופרים. כולל מודלי דיבור לדיבור ועוד
-- שוחרר seedream 4.5 - מודל יצירת תמונות מתקדם?
-- שוחרר Z-Image-Turbo - מודל 6B בקוד פתוח על ידי עליבאבא, מתחרה במודלים סגורים מתקדמים
-- GPT 5.2
-- Gemini Deep Research Agent
-- מודל gemini 2.5 flash audio 12-25
-- GPT IMAGE 1.5 - מוביל בכל המדדים על ננו בננה פרו
-- ג'מיני 3.0 פלאש
-- מיסטראל OCR 3
-- GPT 5.2 CODEX
-- GROK VOICE AGENT
-- GLM-4.7 מודל קוד פתוח שמגיע לראש המדדים
-- מדד ARC-2 נפתר על ידי poetiq משולב GPT 5.2
+- Mistral AI משיקה את משפחת **Mistral 3** (כולל Large ו-Ministral), את **Mistral OCR 3** ואת סדרת **Devstral 2**, מהלך המחזק את מעמדה בתחום המודלים הפתוחים עם יכולות סוכן (Agentic) מתקדמות וכלי פיתוח חדשים.
+- OpenAI משחררת את **GPT-5.2**, הכולל את **Codex** לפיתוח תוכנה אוטונומי, ואת **GPT-Image 1.5** התופס את המקום הראשון במדדי הראייה (Vision) מול מודלים מובילים.
+- Google מציגה את **Gemini 3.0 Flash** המציב רף חדש ביחס עלות-ביצועים, את סוכן ה-**Deep Research** למחקר עומק וסינתזת מידע, ואת **Gemini 2.5 Flash Audio** לאינטראקציה קולית מהירה.
+- Amazon חושפת את סדרת **Nova 2**, ובראשה **Nova 2 Sonic**, מודל Native Speech-to-Speech המאפשר שיחות טבעיות ומלאות הבעה בשיהוי אפסי.
+- Runway משיקה את **Gen-4.5**, מודל וידאו חדש המטפס לראש הטבלאות בזכות עקביות תנועה ודיוק גבוה בהבנת הפרומפט.
+- xAI משחררת את **Grok Voice Agent API**, המאפשר למפתחים להטמיע שיחות קוליות דו-כיווניות בזמן אמת (Real-time).
+- Zhipu AI משחררת את **GLM-4.7**, מודל במשקלים פתוחים המגיע למקום הראשון בלוחות הדירוג העולמיים למשימות קוד והיגיון.
+- Alibaba משיקה את **Z-Image-Turbo**, מודל 6B מהיר ויעיל בקוד פתוח, ואת **Qwen-Image-2512** המציג יכולות מתקדמות בטיפוגרפיה וקומפוזיציה ויזואלית מורכבת.
+- MiniMax משחררת את **MiniMax-M2.1**, מודל MoE עם חלון הקשר של 200k, המטפס לראש הטבלאות במשימות פיתוח ו-Web וממצב את עצמו ככלי מוביל למפתחים.
+- מערכת ייעודית של **Poetiq**, המבוססת על GPT-5.2, מדווחת על פתרון מלא של מדד ה-**ARC-2**, הישג חסר תקדים בהסקה מופשטת. (*special*)
