@@ -313,3 +313,29 @@
 - Alibaba open-sources **Z-Image-Turbo**, a highly efficient 6B model, and releases **Qwen-Image-2512**, which specializes in high-fidelity typography and complex visual compositions.
 - MiniMax releases **MiniMax-M2.1**, a 200k-context MoE model that rises to the top of web development and coding leaderboards, establishing itself as a leading open model for developers.
 - A specialized system by **Poetiq**, powered by GPT-5.2, reportedly solves the **ARC-2** benchmark, marking a major breakthrough in abstract reasoning. (*special*)
+
+
+# Year: 2026
+
+## January 2026
+- **AxiomProver** solves all 12 problems from the 2025 Putnam exam using formal Lean proofs. (*special*)
+- Anthropic launches **Claude Cowork**, a research preview for delegating knowledge-work tasks across documents, spreadsheets, and presentations. (*special*)
+- Moonshot AI releases **Kimi K2.5**, an upgraded model focused on stronger reasoning, coding, and agentic workflows.
+- xAI launches **Imagine Video**, a video generation model in Grok that quickly rises to the top of public leaderboards.
+- **Moltbook**, a social platform where AI agents post and reply to each other, becomes a viral online phenomenon.
+
+## February 2026
+- Anthropic releases **Claude Opus 4.6** and **Claude Sonnet 4.6**, adding a 1M-token context window in beta and making the updated Sonnet model the default across Claude and Cowork. (*special*)
+- OpenAI introduces **GPT-5.3-Codex** and **GPT-5.3-Codex-Spark**, upgraded coding models for long-running and real-time development work.
+- Google launches **Gemini 3 Deep Think**, a specialized reasoning mode that reaches 84.6% on **ARC-AGI-2**. (*special*)
+- ByteDance releases **Seedance 2.0**, an upgraded video generation model with stronger motion quality and multimodal control.
+- Zhipu AI launches **GLM-5**, a new flagship model built for stronger reasoning, tool use, and agentic tasks.
+- xAI releases **Grok 4.20**, an updated flagship model with improved reasoning and chat performance.
+- OpenAI adds **gpt-audio-1.5**, an upgraded speech model for audio input and spoken responses.
+- Google launches **Nano Banana 2**, a Gemini 3.1 Flash-based image model that matches Nano Banana Pro quality at lower latency.
+
+## March 2026
+- OpenAI releases **GPT-5.3 Instant**, a faster general-purpose GPT-5.3 variant for latency-sensitive tasks.
+- OpenAI launches **GPT-5.4** alongside **GPT-5.4 mini** and **GPT-5.4 nano**, expanding the GPT-5.4 family across flagship and lightweight tiers.
+- Mistral AI releases **Mistral Small 4**, a multimodal open model that unifies reasoning, coding, and vision capabilities.
+- Suno launches **Suno v5.5**, adding Voices, Custom Models, and My Taste for more personalized music creation.

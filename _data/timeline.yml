@@ -359,3 +359,32 @@
     - text: MiniMax releases <b>MiniMax-M2.1</b>, a 200k-context MoE model that rises to the top of web development and coding leaderboards, establishing itself as a leading open model for developers.
     - text: A specialized system by <b>Poetiq</b>, powered by GPT-5.2, reportedly solves the <b>ARC-2</b> benchmark, marking a major breakthrough in abstract reasoning.
       special: true
+- year: 2026
+  events:
+  - date: January 2026
+    info:
+    - text: <b>AxiomProver</b> solves all 12 problems from the 2025 Putnam exam using formal Lean proofs.
+      special: true
+    - text: Anthropic launches <b>Claude Cowork</b>, a research preview for delegating knowledge-work tasks across documents, spreadsheets, and presentations.
+      special: true
+    - text: Moonshot AI releases <b>Kimi K2.5</b>, an upgraded model focused on stronger reasoning, coding, and agentic workflows.
+    - text: xAI launches <b>Imagine Video</b>, a video generation model in Grok that quickly rises to the top of public leaderboards.
+    - text: <b>Moltbook</b>, a social platform where AI agents post and reply to each other, becomes a viral online phenomenon.
+  - date: February 2026
+    info:
+    - text: Anthropic releases <b>Claude Opus 4.6</b> and <b>Claude Sonnet 4.6</b>, adding a 1M-token context window in beta and making the updated Sonnet model the default across Claude and Cowork.
+      special: true
+    - text: OpenAI introduces <b>GPT-5.3-Codex</b> and <b>GPT-5.3-Codex-Spark</b>, upgraded coding models for long-running and real-time development work.
+    - text: Google launches <b>Gemini 3 Deep Think</b>, a specialized reasoning mode that reaches 84.6% on <b>ARC-AGI-2</b>.
+      special: true
+    - text: ByteDance releases <b>Seedance 2.0</b>, an upgraded video generation model with stronger motion quality and multimodal control.
+    - text: Zhipu AI launches <b>GLM-5</b>, a new flagship model built for stronger reasoning, tool use, and agentic tasks.
+    - text: xAI releases <b>Grok 4.20</b>, an updated flagship model with improved reasoning and chat performance.
+    - text: OpenAI adds <b>gpt-audio-1.5</b>, an upgraded speech model for audio input and spoken responses.
+    - text: Google launches <b>Nano Banana 2</b>, a Gemini 3.1 Flash-based image model that matches Nano Banana Pro quality at lower latency.
+  - date: March 2026
+    info:
+    - text: OpenAI releases <b>GPT-5.3 Instant</b>, a faster general-purpose GPT-5.3 variant for latency-sensitive tasks.
+    - text: OpenAI launches <b>GPT-5.4</b> alongside <b>GPT-5.4 mini</b> and <b>GPT-5.4 nano</b>, expanding the GPT-5.4 family across flagship and lightweight tiers.
+    - text: Mistral AI releases <b>Mistral Small 4</b>, a multimodal open model that unifies reasoning, coding, and vision capabilities.
+    - text: Suno launches <b>Suno v5.5</b>, adding Voices, Custom Models, and My Taste for more personalized music creation.
