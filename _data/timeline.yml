@@ -1811,10 +1811,6 @@
         url: https://arxiv.org/abs/2607.20210
         publisher: T. Shaska / arXiv
         date: '2026-07-22'
-      - title: Discovering cryptographic weaknesses with Claude
-        url: https://www.anthropic.com/research/discovering-cryptographic-weaknesses
-        publisher: Anthropic
-        date: '2026-07-28'
     - text: <b>Grok 4.5</b> and <b>Gemini 3.6 Flash</b> improve coding agents; Google also introduces <b>3.5 Flash-Lite</b> and <b>3.5 Flash Cyber</b>.
       sources:
       - title: Introducing Grok 4.5
