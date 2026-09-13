@@ -38,6 +38,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
+      - name: Validate timeline conversion and sources
+        run: python -m unittest discover -s tests
+
       - name: Convert timeline.md to timeline.yml
         run: python scripts/convert_timeline_events.py _data/timeline.md
         

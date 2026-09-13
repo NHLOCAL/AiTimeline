@@ -19,7 +19,15 @@ layout: none
           <description><![CDATA[
             <ul>
               {% for info in event.info %}
-                <li>{{ info.text }}</li>
+                <li>{{ info.text }}
+                  {% if info.sources.size > 0 %}
+                  <ul>
+                    {% for source in info.sources %}
+                    <li>Source: <a href="{{ source.url | escape }}">{{ source.title | escape }}</a> ({{ source.publisher | escape }}, {{ source.date | escape }})</li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </li>
               {% endfor %}
             </ul>
           ]]></description>

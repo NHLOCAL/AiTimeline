@@ -15,6 +15,7 @@ This project provides a chronological overview of significant milestones, model 
 -   **Dark Mode:** Switch between light and dark themes.
 -   **Responsive Design:** Works well on desktop and mobile devices.
 -   **Further Reading:** Links to related articles and resources.
+-   **Event Sources:** Expand sources beneath an event to see linked publications, publishers, and publication dates.
 
 ## How to Use
 
@@ -55,6 +56,13 @@ Contributions are welcome and have been simplified! Help keep the timeline accur
         - An important event happened. (*special*)
         - A regular event occurred.
         ```
+    *   Add sources directly beneath the event, using two spaces of indentation. Each source needs its exact title, HTTPS URL, publisher, and publication date:
+        ```markdown
+        - A significant model is released in a limited preview. (*special*)
+          - Source: [Introducing the model](https://example.com/model-launch) | Example Lab | 2026-04-02
+        ```
+        Sources are optional for older entries and appear in both the site and RSS feed. Multiple sources can follow one event. Keep the `(*special*)` marker on the event line, not on a source line.
+    *   Prefer original announcements and research papers. Distinguish announcements, previews, and general availability; use the month of the event rather than a later article update. Group related minor releases, and reserve special highlighting for major capability changes or scientific milestones. Attribute benchmark results and preliminary findings instead of treating them as established consensus.
 
 3.  **Commit and Push Your Changes:**
     *   Stage and commit **only the `timeline.md` file**. The `.yml` file will be updated automatically by the workflow.
@@ -102,6 +110,10 @@ To preview your changes on your local machine before creating a pull request:
     ```
 
 5.  **View:** Open your browser to `http://localhost:4000/AiTimeline/` (or the address provided).
+
+## Validation
+
+Run `python -m unittest discover -s tests` to check conversion, source validation, and Markdown/YAML round trips. Before previewing, regenerate the YAML and run `bundle exec jekyll build`. The generated YAML remains workflow-managed and should not be included in manual content commits.
 
 ## Star History
 

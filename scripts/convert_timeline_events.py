@@ -2,6 +2,25 @@ import yaml
 import re
 import os
 import sys
+from datetime import date
+from urllib.parse import urlsplit
+
+
+SOURCE_PATTERN = re.compile(
+    r"  - Source: \[([^\]\n]+)\]\((\S+)\) \| ([^|\n]+) \| (\d{4}-\d{2}-\d{2})"
+)
+
+
+def parse_source(line, line_number):
+    match = SOURCE_PATTERN.fullmatch(line.rstrip())
+    if not match:
+        raise ValueError(f"Line {line_number}: expected '  - Source: [Title](https://...) | Publisher | YYYY-MM-DD'.")
+    title, url, publisher, published = match.groups()
+    parsed_url = urlsplit(url)
+    if parsed_url.scheme != "https" or not parsed_url.hostname or parsed_url.username or parsed_url.password:
+        raise ValueError(f"Line {line_number}: sources must use a public HTTPS URL.")
+    date.fromisoformat(published)
+    return {"title": title.strip(), "url": url, "publisher": publisher.strip(), "date": published}
 
 def md_to_yaml(md_content):
     all_years_data = []  # <--- List to store structures for ALL years
@@ -10,7 +29,15 @@ def md_to_yaml(md_content):
 
     lines = md_content.splitlines()
 
-    for line in lines:
+    for line_number, raw_line in enumerate(lines, start=1):
+        if raw_line.lstrip().startswith("- Source:"):
+            if not current_event or not current_event["info"]:
+                raise ValueError(f"Line {line_number}: source must follow an event.")
+            source = parse_source(raw_line, line_number)
+            current_event["info"][-1].setdefault("sources", []).append(source)
+            continue
+
+        line = raw_line
         line = line.strip()
         if not line:
             continue # Skip empty lines
@@ -109,6 +136,11 @@ def yaml_to_md(yaml_content):
                     md_lines.append(f"- {text} (*special*)")
                 else:
                     md_lines.append(f"- {text}")
+                for source in info.get("sources", []):
+                    md_lines.append(
+                        f"  - Source: [{source['title']}]({source['url']}) | "
+                        f"{source['publisher']} | {source['date']}"
+                    )
             md_lines.append("")
         md_lines.append("")
 
@@ -160,7 +192,7 @@ def main():
             converted_content = yaml_to_md(content)
     except Exception as e:
         print(f"Error during conversion: {e}")
-        return
+        sys.exit(1)
 
     if not converted_content or converted_content.startswith("Error:"):
          print(f"Conversion failed. No output written.")
