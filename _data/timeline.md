@@ -318,24 +318,44 @@
 # Year: 2026
 
 ## January 2026
-- **AxiomProver** solves all 12 problems from the 2025 Putnam exam using formal Lean proofs. (*special*)
-- Anthropic launches **Claude Cowork**, a research preview for delegating knowledge-work tasks across documents, spreadsheets, and presentations. (*special*)
-- Moonshot AI releases **Kimi K2.5**, an upgraded model focused on stronger reasoning, coding, and agentic workflows.
-- xAI launches **Imagine Video**, a video generation model in Grok that quickly rises to the top of public leaderboards.
-- **Moltbook**, a social platform where AI agents post and reply to each other, becomes a viral online phenomenon.
+- Axiom publishes **AxiomProver**'s formally verified Lean solutions to all 12 problems from the 2025 Putnam exam. Eight were solved within the exam window; the remaining four were completed afterward. (*special*)
+  - Source: [From Seeing Why to Checking Everything](https://axiommath.ai/research/from-seeing-why-to-checking-everything/) | Axiom | 2026-01-08
+- Anthropic introduces **Cowork**, bringing Claude Code's ability to work with local files to everyday knowledge work. The research preview initially launches for Max subscribers on macOS. (*special*)
+  - Source: [Release notes: Cowork research preview](https://support.claude.com/en/articles/12138966-release-notes) | Anthropic | 2026-01-12
+- Moonshot AI releases **Kimi K2.5**, an open-weight model with native image and video understanding, visual coding, and a research preview that coordinates up to 100 agents on complex tasks.
+  - Source: [Kimi K2.5: Visual Agentic Intelligence](https://www.kimi.ai/blog/kimi-k2-5) | Moonshot AI | 2026-01-27
+- xAI launches the **Grok Imagine API**, combining video generation, synchronized audio, and video editing from text, image, and video inputs.
+  - Source: [Grok Imagine API](https://x.ai/news/grok-imagine-api) | xAI | 2026-01-28
+- Google DeepMind publishes **AlphaGenome** in Nature and releases its research code and model weights. The model predicts how DNA variants affect gene regulation, extending AI's role in interpreting the non-coding genome. (*special*)
+  - Source: [Advancing regulatory variant effect prediction with AlphaGenome](https://www.nature.com/articles/s41586-025-10014-0) | Google DeepMind / Nature | 2026-01-28
 
 ## February 2026
-- Anthropic releases **Claude Opus 4.6** and **Claude Sonnet 4.6**, adding a 1M-token context window in beta and making the updated Sonnet model the default across Claude and Cowork. (*special*)
-- OpenAI introduces **GPT-5.3-Codex** and **GPT-5.3-Codex-Spark**, upgraded coding models for long-running and real-time development work.
-- Google launches **Gemini 3 Deep Think**, a specialized reasoning mode that reaches 84.6% on **ARC-AGI-2**. (*special*)
-- ByteDance releases **Seedance 2.0**, an upgraded video generation model with stronger motion quality and multimodal control.
-- Zhipu AI launches **GLM-5**, a new flagship model built for stronger reasoning, tool use, and agentic tasks.
-- xAI releases **Grok 4.20**, an updated flagship model with improved reasoning and chat performance.
-- OpenAI adds **gpt-audio-1.5**, an upgraded speech model for audio input and spoken responses.
-- Google launches **Nano Banana 2**, a Gemini 3.1 Flash-based image model that matches Nano Banana Pro quality at lower latency.
+- Anthropic releases **Claude Opus 4.6** and **Sonnet 4.6**, improving coding, computer use, and sustained work across large projects. Both offer a 1M-token context window in beta; Sonnet becomes the default for Free and Pro users in Claude and Cowork. (*special*)
+  - Source: [Introducing Claude Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6) | Anthropic | 2026-02-05
+  - Source: [Introducing Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6) | Anthropic | 2026-02-17
+- OpenAI releases **GPT-5.3-Codex** for extended software engineering tasks and previews **GPT-5.3-Codex-Spark**, a smaller model optimized for real-time coding on Cerebras hardware.
+  - Source: [Introducing GPT-5.3-Codex](https://openai.com/index/introducing-gpt-5-3-codex/) | OpenAI | 2026-02-05
+  - Source: [Introducing GPT-5.3-Codex-Spark](https://openai.com/index/introducing-gpt-5-3-codex-spark/) | OpenAI | 2026-02-12
+- Google upgrades **Gemini 3 Deep Think** for scientific and engineering work, reporting an ARC Prize-verified **84.6% on ARC-AGI-2**. Access expands to Ultra subscribers and selected API users. (*special*)
+  - Source: [Gemini 3 Deep Think: Advancing science, research and engineering](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/) | Google DeepMind | 2026-02-12
+- ByteDance launches **Seedance 2.0**, a video and audio generation model that accepts text, image, audio, and video references, with improved control over motion, editing, and multi-subject scenes.
+  - Source: [Seedance 2.0 Official Launch](https://seed.bytedance.com/en/blog/seedance-2-0-official-launch) | ByteDance Seed | 2026-02-12
+- Z.ai's **GLM-5** and Alibaba's **Qwen3.5** advance open-weight alternatives for coding and agent workflows. GLM-5 targets long-running engineering tasks, while Qwen3.5 adds native vision-language capabilities with an efficient hybrid architecture.
+  - Source: [GLM-5: from Vibe Coding to Agentic Engineering](https://arxiv.org/abs/2602.15763) | GLM-5 Team / arXiv | 2026-02-17
+  - Source: [Qwen3.5: Towards Native Multimodal Agents](https://qwen.ai/blog?id=qwen3.5) | Qwen Team | 2026-02-15
+- Google previews **Gemini 3.1 Pro**, bringing stronger reasoning to its general-purpose flagship and reporting a verified 77.1% on ARC-AGI-2, more than double Gemini 3 Pro's score.
+  - Source: [Gemini 3.1 Pro: A smarter model for your most complex tasks](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/) | Google | 2026-02-19
+- Google releases **Nano Banana 2 (Gemini 3.1 Flash Image)**, bringing advanced image generation and editing to Flash speeds, with improved text rendering, subject consistency, and search grounding.
+  - Source: [Nano Banana 2: Combining Pro capabilities with lightning-fast speed](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/) | Google DeepMind | 2026-02-26
 
 ## March 2026
-- OpenAI releases **GPT-5.3 Instant**, a faster general-purpose GPT-5.3 variant for latency-sensitive tasks.
-- OpenAI launches **GPT-5.4** alongside **GPT-5.4 mini** and **GPT-5.4 nano**, expanding the GPT-5.4 family across flagship and lightweight tiers.
-- Mistral AI releases **Mistral Small 4**, a multimodal open model that unifies reasoning, coding, and vision capabilities.
-- Suno launches **Suno v5.5**, adding Voices, Custom Models, and My Taste for more personalized music creation.
+- OpenAI releases **GPT-5.4**, combining its mainline reasoning and Codex coding capabilities with native computer use and a context window of up to 1M tokens. **GPT-5.4 mini and nano** follow later in the month for faster, lower-cost workloads. (*special*)
+  - Source: [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/) | OpenAI | 2026-03-05
+  - Source: [Introducing GPT-5.4 mini and nano](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/) | OpenAI | 2026-03-17
+- Mistral AI releases **Mistral Small 4** under Apache 2.0, unifying reasoning, image understanding, and agentic coding in one model with configurable reasoning effort.
+  - Source: [Introducing Mistral Small 4](https://mistral.ai/news/mistral-small-4/) | Mistral AI | 2026-03-16
+- The ARC Prize Foundation launches **ARC-AGI-3**, an interactive benchmark in which agents must discover rules and goals through exploration. Its launch evaluations report frontier AI scores below 1%, highlighting a gap in learning unfamiliar tasks despite progress on static reasoning tests.
+  - Source: [Announcing ARC-AGI-3](https://arcprize.org/blog/arc-agi-3-launch) | ARC Prize Foundation | 2026-03-25
+- Music generation gains more control: Google's **Lyria 3 Pro** supports tracks up to three minutes with explicit song structure, while **Suno v5.5** introduces personal Voices, Custom Models, and My Taste.
+  - Source: [Lyria 3 Pro: Create longer tracks in more Google products](https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/) | Google DeepMind | 2026-03-25
+  - Source: [What's New in v5.5](https://help.suno.com/en/articles/11362305) | Suno | 2026-03-26
