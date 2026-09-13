@@ -321,37 +321,64 @@
 # Year: 2025
 
 ## January
-- OpenAI released **Operator** for Pro subscribers – an experimental AI agent capable of browsing websites and performing actions. (*special*)
-- Google introduced **Gemini Flash Thinking 0121**, an enhanced reasoning model that secured the top spot in the Arena Chatbots rankings.
+- OpenAI releases **Operator** for Pro subscribers in the U.S., an experimental AI agent capable of browsing websites and performing actions. (*special*)
+  - Source: [Introducing Operator](https://openai.com/index/introducing-operator/) | OpenAI | 2025-01-23
+- Google introduces **Gemini Flash Thinking 0121**, an updated experimental reasoning model.
+  - Source: [Release notes: January 21, 2025](https://ai.google.dev/gemini-api/docs/changelog#01-21-2025) | Google | 2025-01-21
 - DeepSeek open-sourced the reasoning models **R1** and **R1-Zero**, which demonstrated capabilities similar to **o1** across various domains at a fraction of the cost. Additionally, smaller distilled models were released, achieving high performance relative to their size. (*special*)
+  - Source: [DeepSeek-R1 Release](https://api-docs.deepseek.com/news/news250120/) | DeepSeek | 2025-01-20
 - Google published a research paper on a new language model architecture called **Titans**, designed to enable models to retain both short- and long-term memory. This architecture significantly improves processing for extended context windows. (*special*)
+  - Source: [Titans: Learning to Memorize at Test Time](https://arxiv.org/abs/2501.00663) | Google Research / arXiv | 2024-12-31
 - DeepSeek open-sourced a fully multimodal model, **Janus Pro 7B**, which supports both text and image generation.
+  - Source: [Janus-Pro: Unified Multimodal Understanding and Generation with Data and Model Scaling](https://arxiv.org/abs/2501.17811) | DeepSeek-AI / arXiv | 2025-01-29
 - Alibaba unveiled **Qwen2.5-Max**, a large language model that surpasses several leading models, including **DeepSeek-V3**, **GPT-4o**, and **Claude 3.5**. Additionally, the **Qwen2.5-1M** series was open-sourced, capable of processing up to one million tokens, along with the **Qwen2.5-VL** vision model series in three different sizes.
+  - Source: [Qwen2.5-Max: Exploring the Intelligence of Large-scale MoE Model](https://qwenlm.github.io/blog/qwen2.5-max/) | Qwen Team | 2025-01-28
+  - Source: [Qwen2.5-1M: Deploy Your Own Qwen with Context Length up to 1M Tokens](https://qwenlm.github.io/blog/qwen2.5-1m/) | Qwen Team | 2025-01-27
+  - Source: [Qwen2.5 VL! Qwen2.5 VL! Qwen2.5 VL!](https://qwenlm.github.io/blog/qwen2.5-vl/) | Qwen Team | 2025-01-26
 - OpenAI made the **o3 mini** reasoning model available to all users, including the free tier, featuring three reasoning levels. The model matches or comes close to o1 in several benchmarks, significantly surpasses it in coding, and remains significantly faster and more cost-efficient. (*special*)
+  - Source: [OpenAI o3-mini](https://openai.com/index/openai-o3-mini/) | OpenAI | 2025-01-31
 
 ## February 2025
 - xAI launches **Grok 3**, **Grok 3 Reasoning** and **Grok 3 mini**, next-generation AI models trained with 10 times the computing power of Grok 2, significantly improving SOTA performance. They include "Think" and "Big Brain" modes for advanced reasoning, as well as **DeepSearch** for autonomous web searches. (*special*)
-- Anthropic introduces **Claude 3.7** and **Claude 3.7 Thinking**, a new model with enhanced coding performance, support for "Extended Thinking" mode, and the ability to analyze reasoning processes. (*special*)
+  - Source: [Grok 3 Beta: The Age of Reasoning Agents](https://x.ai/news/grok-3) | xAI | 2025-02-19
+- Anthropic introduces **Claude 3.7 Sonnet**, a hybrid reasoning model with improved coding performance and an optional Extended Thinking mode that exposes its reasoning process. (*special*)
+  - Source: [Claude 3.7 Sonnet and Claude Code](https://www.anthropic.com/news/claude-3-7-sonnet) | Anthropic | 2025-02-24
 - OpenAI unveils **Deep Research**, a tool for autonomous research, enabling real-time web searches and comprehensive report generation. (*special*)
+  - Source: [Introducing deep research](https://openai.com/index/introducing-deep-research/) | OpenAI | 2025-02-02
 - Google releases **Gemini 2.0 Flash**, **Gemini 2.0 Flash-Lite Preview**, and **Gemini 2.0 Pro Experimental**.
-- Alibaba launches **QwQ-Max** – a reasoning model based on Qwen2.5-Max, offering improved analytical and logical capabilities.
+  - Source: [Gemini 2.0 is now available to everyone](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/) | Google DeepMind | 2025-02-05
+- Alibaba launches **QwQ-Max-Preview**, a preview reasoning model based on Qwen2.5-Max, with a focus on math, coding, and agent tasks.
+  - Source: [QwQ-Max-Preview](https://qwenlm.github.io/blog/qwq-max-preview/) | Qwen Team | 2025-02-25
 - Microsoft presents **Phi4-mini** and **Phi4 Multimodal**, lightweight models (3.8B and 5.6B) with enhanced performance, including support for multimodal inputs.
+  - Source: [Welcome to the new Phi-4 models - Microsoft Phi-4-mini & Phi-4-multimodal](https://techcommunity.microsoft.com/blog/educatordeveloperblog/welcome-to-the-new-phi-4-models---microsoft-phi-4-mini--phi-4-multimodal/4386037) | Microsoft | 2025-02-26
 - OpenAI releases **GPT-4.5**, featuring advanced pattern recognition and significantly reduced hallucinations, improving accuracy and reliability. (*special*)
+  - Source: [Introducing GPT-4.5](https://openai.com/index/introducing-gpt-4-5/) | OpenAI | 2025-02-27
+
+- Sesame AI unveiled its **Conversational Speech Model (CSM)**, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory. (*special*)
+  - Source: [Crossing the uncanny valley of conversational voice](https://www.sesame.com/blog/crossing-the-uncanny-valley-of-voice) | Sesame | 2025-02-27
 
 ## March 2025
 - Google introduced **Gemini 2.5 Pro**, an experimental "Thinking model" with advanced reasoning and planning capabilities, a 1 million token context window, achieving top rankings across several key benchmarks. (*special*)
-- Google launched the Gemma 3 series, featuring open-source multimodal models in various parameter sizes, a 128K context window, multi-language support, and integrated image and video understanding capabilities.
+  - Source: [Gemini 2.5: Our most intelligent AI model](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/) | Google DeepMind | 2025-03-25
+- Google releases **Gemma 3** in 1B, 4B, 12B, and 27B sizes. The 4B and larger models support image understanding and a 128K context window, alongside multilingual text generation.
+  - Source: [Introducing Gemma 3: The Developer Guide](https://developers.googleblog.com/introducing-gemma3/) | Google | 2025-03-12
 - OpenAI integrated **GPT-4o Image Generation**, enabling high-fidelity text-to-image creation, text rendering within images, and more. (*special*)
+  - Source: [Introducing 4o Image Generation](https://openai.com/index/introducing-4o-image-generation/) | OpenAI | 2025-03-25
 - Google expanded experimental image generation and editing within **Gemini 2.0 Flash Experimental**, enabling image generation and editing, including enhanced text creation capabilities. (*special*)
+  - Source: [Experiment with Gemini 2.0 Flash native image generation](https://developers.googleblog.com/en/experiment-with-gemini-20-flash-native-image-generation/) | Google | 2025-03-12
 - Alibaba released **QwQ-32B**, an open-source 32B parameter reasoning model with exceptional math and coding performance, rivaling much larger models.
+  - Source: [QwQ-32B: Embracing the Power of Reinforcement Learning](https://qwenlm.github.io/blog/qwq-32b/) | Qwen Team | 2025-03-06
 - Alibaba released the **Qwen2.5-VL 32B**, open-source vision-language model with robust capabilities in visual analysis, text-in-image understanding, and visual agent tasks.
+  - Source: [Qwen2.5-VL-32B: Smarter and Lighter](https://qwenlm.github.io/blog/qwen2.5-vl-32b/) | Qwen Team | 2025-03-24
 - DeepSeek updated its open-source MoE model with **DeepSeek-V3-0324**, featuring enhanced reasoning, coding, and math capabilities, positioning it as a top-tier base model.
-- Sesame AI unveiled its **Conversational Speech Model (CSM)**, enabling remarkably human-like, real-time voice interaction, incorporating emotional nuances, natural pauses, laughter, and contextual memory. (*special*)
+  - Source: [DeepSeek-V3-0324 Release](https://api-docs.deepseek.com/news/news250325/) | DeepSeek | 2025-03-25
+
+- Amazon introduces **Nova Act**, a research preview of a browser-action model and an SDK for building agents that perform multi-step tasks.
+  - Source: [Amazon makes it easier for developers and tech enthusiasts to explore Amazon Nova, its advanced Gen AI models](https://www.aboutamazon.com/news/innovation-at-amazon/amazon-nova-website-sdk) | Amazon | 2025-03-31
 
 ## April 2025
 - Meta releases **Llama 4** in three sizes with a context window of 10 million tokens and medium performance.
 - Google launches **Gemini 2.5 Flash**, with a dynamic reasoning mode that allows tuning the reasoning level or disabling it as needed.
-- Amazon introduces **Nova Act**, a new framework for building multi-step autonomous agents.
 - OpenAI releases **GPT-4.1** in three sizes, with a context window of 1 million tokens.
 - OpenAI introduces **o3 full** and **o4 mini**, highly advanced models for reasoning, math, and coding.
 - Midjourney launches **v7**, with higher image quality and more precise control over style.
