@@ -204,7 +204,7 @@
 - Microsoft has introduced its small language models, **Phi 3.5**, in three versions, each showcasing impressive performance relative to their size.
   - Source: [Discover the New Multi-Lingual, High-Quality Phi-3.5 SLMs](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/discover-the-new-multi-lingual-high-quality-phi-3-5-slms/4225280) | Microsoft | 2024-08-22
 - Google has introduced three new experimental AI models: **Gemini 1.5 Flash8B**, **Gemini 1.5 Pro** Enhanced, and **Gemini 1.5 Flash** Updated.
-  - Source: [Release notes](https://ai.google.dev/gemini-api/docs/changelog#08-27-2024) | Google | 2024-08-27
+  - Source: [Release notes](https://ai.google.dev/gemini-api/docs/changelog#08-27-24) | Google | 2024-08-27
 - **Ideogram 2.0** has been released, offering image generation capabilities that surpass those of other leading models.
   - Source: [Ideogram 2.0](https://about.ideogram.ai/2.0) | Ideogram | 2024-08-21
 - Luma has unveiled the **Dream Machine 1.5** model for video creation.
@@ -235,46 +235,87 @@
 
 ## October
 - **Flux 1.1 Pro** is released, showcasing advanced capabilities for image creation.
+  - Source: [Announcing FLUX1.1 (pro) and the BFL API](https://bfl.ai/blog/24-10-02-flux) | Black Forest Labs | 2024-10-02
 - Meta unveils **Movie Gen**, a new AI model that generates videos, images, and audio from text input.
+  - Source: [How Meta Movie Gen could usher in a new AI-enabled era for content creators](https://ai.meta.com/blog/movie-gen-media-foundation-models-generative-ai-video/) | Meta | 2024-10-04
 - Pika introduces **Video Model 1.5** along with "Pika Effects."
+  - Source: [PIKA 1.5 IS HERE](https://x.com/pika_labs/status/1841143349576941863) | Pika | 2024-10-01
 - Adobe announces its video creation model, **Firefly Video**.
+  - Source: [Adobe Launches Firefly Video Model and Enhances Image, Vector and Design Models](https://news.adobe.com/news/2024/10/101424-adobe-launches-firefly-video-model) | Adobe | 2024-10-14
 - Startup Rhymes AI releases **Aria**, an opensource, multimodal model exhibiting capabilities similar to comparably sized proprietary models.
+  - Source: [Aria: First Open Multimodal Native MoE Model](https://huggingface.co/blog/RhymesAI/aria) | Rhymes AI / Hugging Face | 2024-10-22
 - Meta releases an opensource speechtospeech language model named **Meta Spirit LM**.
+  - Source: [Sharing new research, models, and datasets from Meta FAIR](https://ai.meta.com/blog/fair-news-segment-anything-2-1-meta-spirit-lm-layer-skip-salsa-lingua/) | Meta | 2024-10-18
 - Mistral AI introduces **Ministral**, a new model available in 3B and 8B parameter sizes.
+  - Source: [Un Ministral, des Ministraux](https://mistral.ai/news/ministraux/) | Mistral AI | 2024-10-16
 - **Janus AI**, a multimodal language model capable of recognizing and generating both text and images, is released as open source by DeepSeekAI.
+  - Source: [Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation](https://arxiv.org/abs/2410.13848) | DeepSeek-AI / arXiv | 2024-10-17
 - Google DeepMind and MIT unveil **Fluid**, a texttoimage generation model with industryleading performance at a scale of 10.5B parameters.
+  - Source: [Fluid: Scaling Autoregressive Text-to-image Generative Models with Continuous Tokens](https://arxiv.org/abs/2410.13863) | Google DeepMind and MIT / arXiv | 2024-10-17
 - **Stable Diffusion 3.5** is released in three sizes as open source.
+  - Source: [Introducing Stable Diffusion 3.5](https://stability.ai/news/introducing-stable-diffusion-3-5) | Stability AI | 2024-10-22
 - Anthropic launches **Claude 3.5 Sonnet New**, demonstrating significant advancements in specific areas over its previous version, and announces **Claude 3.5 Haiku**.
+  - Source: [Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku](https://www.anthropic.com/news/3-5-models-and-computer-use) | Anthropic | 2024-10-22
 - Anthropic announces an experimental feature for computer use with a public beta API.
+  - Source: [Developing a computer use model](https://www.anthropic.com/news/developing-computer-use) | Anthropic | 2024-10-22
 - The texttoimage model **Recraft v3** has been released to the public, ranking first in benchmarks compared to similar models.
-- OpenAI has launched **Search GPT**, allowing users to perform web searches directly within the platform.
+  - Source: [Recraft introduces a revolutionary AI model that thinks in design language](https://www.recraft.ai/blog/recraft-introduces-a-revolutionary-ai-model-that-thinks-in-design-language) | Recraft | 2024-10-30
+- OpenAI launches **ChatGPT search**, allowing users to search the web directly within ChatGPT.
+  - Source: [Introducing ChatGPT search](https://openai.com/index/introducing-chatgpt-search/) | OpenAI | 2024-10-31
 
 ## November
 - Alibaba released its new model, **QwQ 32B Preview**, which integrates reasoning capabilities before responding. The model competes with, and sometimes surpasses, OpenAI's o1-preview model.
+  - Source: [QwQ: Reflect Deeply on the Boundaries of the Unknown](https://qwenlm.github.io/blog/qwq-32b-preview/) | Qwen Team | 2024-11-28
 - Alibaba opensourced the model **Qwen2.5 Coder 32B**, which offers comparable capabilities to leading proprietary language models in the coding domain.
+  - Source: [Qwen2.5-Coder Series: Powerful, Diverse, Practical.](https://qwenlm.github.io/blog/qwen2.5-coder-family/) | Qwen Team | 2024-11-12
 - DeepSeek unveiled its new AI model, **DeepSeek-R1-Lite-Preview**, which incorporates reasoning capabilities and delivers impressive performance on the AIME and MATH benchmarks, matching the level of OpenAI's o1-preview.
+  - Source: [DeepSeek-R1-Lite-Preview is now live: unleashing supercharged reasoning power!](https://api-docs.deepseek.com/news/news1120/) | DeepSeek | 2024-11-20
 - **Suno** upgraded its AIpowered music generator to **v4**, introducing new features and performance improvements.
+  - Source: [Introducing v4](https://suno.com/blog/v4) | Suno | 2024-11-19
 - Mistral AI launched the **Pixtral Large** model, a multimodal language model excelling in image recognition and advanced performance metrics, and an update to Mistral Large, 2411.
-- Google introduced two experimental models, **gemini-exp-1114** and **gemini-exp-1121**, currently leading the arena chatbot with enhanced performance.
+  - Source: [Pixtral Large](https://mistral.ai/news/pixtral-large/) | Mistral AI | 2024-11-18
+- Google introduces two experimental models, **gemini-exp-1114** and **gemini-exp-1121**, in Google AI Studio and the Gemini API.
+  - Source: [Release notes: November 14, 2024](https://ai.google.dev/gemini-api/docs/changelog#11-14-24) | Google | 2024-11-14
+  - Source: [Release notes: November 21, 2024](https://ai.google.dev/gemini-api/docs/changelog#11-21-24) | Google | 2024-11-21
 - Anthropic launches **Claude 3.5 Haiku** and Visual PDF Analysis in Claude.
+  - Source: [Claude Platform release notes: November 13, 2024](https://platform.claude.com/docs/en/release-notes/overview) | Anthropic | 2024-11-13
 
 ## December
 - Amazon introduced a new series of models called **NOVA**, designed for text, image, and video processing.
+  - Source: [Introducing Amazon Nova: A New Generation of Foundation Models](https://press.aboutamazon.com/2024/12/introducing-amazon-nova-a-new-generation-of-foundation-models) | Amazon | 2024-12-03
 - OpenAI released **SORA**, a video generation model, along with the full version of **o1** and **o1 Pro** for advanced subscribers. Additionally, the company launched a live video mode for **GPT 4o**. (*special*)
-- Google unveiled the experimental model **Gemini-Exp-1206**, which ranked first in the chatbot leaderboard.
+  - Source: [Sora is here](https://openai.com/index/sora-is-here/) | OpenAI | 2024-12-09
+  - Source: [Introducing ChatGPT Pro](https://openai.com/index/introducing-chatgpt-pro/) | OpenAI | 2024-12-05
+  - Source: [ChatGPT release notes: December 12, 2024](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) | OpenAI | 2024-12-12
+- Google introduces the experimental model **Gemini-Exp-1206** in AI Studio and Gemini Advanced.
+  - Source: [The latest AI news we announced in December](https://blog.google/innovation-and-ai/products/google-ai-updates-december-2024/) | Google | 2024-12-20
 - Google launched **Gemini 2.0 Flash** in beta. This model leads benchmarks and outperforms the previous version, **Gemini Pro 1.5**. Additionally, Google introduced live speech and video mode and announced built-in image generation capabilities within the model. (*special*)
-- Google revealed **Gemini-2.0-Flash-Thinking**, a thinking model based on **Gemini 2.0 Flash**, which secured second place in the chatbot leaderboard. (*special*)
-- Google introduced **Veo 2**, a beta version video generation model capable of producing 4K videos up to two minutes long. The model outperformed **SORA** in human evaluations. Additionally, Google updated **Imagen 3**, offering enhanced image quality and realism. (*special*)
+  - Source: [Introducing Gemini 2.0: our new AI model for the agentic era](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-ai-update-december-2024/) | Google DeepMind | 2024-12-11
+- Google releases **Gemini-2.0-Flash-Thinking**, an experimental reasoning model based on **Gemini 2.0 Flash**. (*special*)
+  - Source: [Release notes: December 19, 2024](https://ai.google.dev/gemini-api/docs/changelog#12-19-2024) | Google | 2024-12-19
+- Google introduces **Veo 2** through a VideoFX waitlist, reporting improved video generation and model capabilities up to 4K and several minutes. It also updates **Imagen 3**, improving image quality and prompt adherence. (*special*)
+  - Source: [State-of-the-art video and image generation with Veo 2 and Imagen 3](https://blog.google/innovation-and-ai/models-and-research/google-labs/video-image-generation-update-december-2024/) | Google DeepMind | 2024-12-16
 - xAI integrated **Aurora**, a new model for generating high-quality and realistic images.
-- Microsoft open-sourced the **Phi4** model, sized at 14B, showcasing impressive capabilities for its size.
+  - Source: [Grok Image Generation Release](https://x.ai/news/grok-image-generation-release) | xAI | 2024-12-09
+- Microsoft introduces **Phi-4**, a 14B language model focused on complex reasoning, through Azure AI Foundry, with a Hugging Face release planned.
+  - Source: [Introducing Phi-4: Microsoft’s Newest Small Language Model Specializing in Complex Reasoning](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090) | Microsoft | 2024-12-12
 - Meta released **Llama 3.3 70B**, a model offering performance comparable to **Llama 3.1 405B**.
+  - Source: [Llama 3.3 Model Card](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) | Meta / Hugging Face | 2024-12-06
 - Google launched a multi-modal open-source model called **PaliGemma 2**, integrated with existing **Gemma** models.
+  - Source: [Introducing PaliGemma 2: Powerful Vision-Language Models, Simple Fine-Tuning](https://developers.googleblog.com/introducing-paligemma-2-powerful-vision-language-models-simple-fine-tuning/) | Google | 2024-12-05
 - Pika Labs released **2.0**, the latest version of its AI-powered video generator.
-- Meta introduced **Apollo**, a video generation model available in three different sizes.
+  - Source: [Today we launched our Pika 2.0 model](https://www.linkedin.com/posts/pika-labs_today-we-launched-our-pika-20-model-superior-activity-7273465246919380994-8R40) | Pika | 2024-12-13
+- Meta and Stanford researchers introduce **Apollo**, a family of video-understanding models in 1.5B, 3B, and 7B sizes.
+  - Source: [Apollo: An Exploration of Video Understanding in Large Multimodal Models](https://arxiv.org/abs/2412.10360) | Meta and Stanford University / arXiv | 2024-12-13
 - Deepseek open-sourced **Deepseek V3**, a model with 671B parameters that surpasses closed-source SOTA models across several benchmarks. (*special*)
+  - Source: [Introducing DeepSeek-V3](https://api-docs.deepseek.com/news/news1226/) | DeepSeek | 2024-12-26
 - Alibaba unveiled **QVQ-72B-Preview**, a cutting-edge thinking model capable of analyzing images, featuring SOTA-level performance. (*special*)
-- OpenAI announced **o3**, a groundbreaking AI model achieving 87.5% in the **ARC-AGI** benchmark, 25.2% in the **Frontier Math Benchmark** (compared to under 2% in previous models), and 87.7% in Ph.D.-level science questions. A cost-effective version, **o3 Mini**, is expected in January 2025, with performance similar to **o1**, alongside improved speed and efficiency. (*special*)
+  - Source: [QVQ: To See the World with Wisdom](https://qwenlm.github.io/blog/qvq-72b-preview/) | Qwen Team | 2024-12-25
+- OpenAI previews **o3** and **o3-mini** ahead of release. ARC Prize reports that o3 scores 75.7% on ARC-AGI's semi-private evaluation at lower compute and 87.5% at higher compute. (*special*)
+  - Source: [OpenAI o3 Breakthrough High Score on ARC-AGI-Pub](https://arcprize.org/blog/oai-o3-pub-breakthrough) | ARC Prize | 2024-12-20
+  - Source: [Early access for safety testing](https://openai.com/index/early-access-for-safety-testing/) | OpenAI | 2024-12-20
 - The video generation model **Kling 1.6** was released, offering significant performance enhancements.
+  - Source: [Kuaishou Kling AI Integrates DeepSeek, Lowering the Entry Barrier for AI-Powered Creative Content](https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-kling-ai-integrates-deepseek-lowering-entry-barrier-ai) | Kuaishou | 2025-03-17
 
 
 # Year: 2025
