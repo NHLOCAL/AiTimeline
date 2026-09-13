@@ -16,11 +16,15 @@ def parse_source(line, line_number):
     if not match:
         raise ValueError(f"Line {line_number}: expected '  - Source: [Title](https://...) | Publisher | YYYY-MM-DD'.")
     title, url, publisher, published = match.groups()
+    title = title.strip()
+    publisher = publisher.strip()
+    if not title or not publisher:
+        raise ValueError(f"Line {line_number}: source title and publisher must not be empty.")
     parsed_url = urlsplit(url)
     if parsed_url.scheme != "https" or not parsed_url.hostname or parsed_url.username or parsed_url.password:
         raise ValueError(f"Line {line_number}: sources must use a public HTTPS URL.")
     date.fromisoformat(published)
-    return {"title": title.strip(), "url": url, "publisher": publisher.strip(), "date": published}
+    return {"title": title, "url": url, "publisher": publisher, "date": published}
 
 def md_to_yaml(md_content):
     all_years_data = []  # <--- List to store structures for ALL years

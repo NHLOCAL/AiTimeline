@@ -63,16 +63,38 @@ class TimelineSourcesTests(unittest.TestCase):
         content = Path('_data/timeline.md').read_text(encoding='utf-8')
         self.assertEqual(self.parse(yaml_to_md(md_to_yaml(content))), self.parse(content))
 
+    def test_source_metadata_cannot_be_blank_after_trimming(self):
+        for title, publisher in [(' ', 'Lab'), ('Title', '   '), ('\t', '\u00a0')]:
+            source = f'  - Source: [{title}](https://example.com) | {publisher} | 2026-01-12'
+            with self.subTest(title=title, publisher=publisher), self.assertRaisesRegex(ValueError, 'Line 4:'):
+                self.parse('# Year: 2026\n## January\n- Event.\n' + source)
+
+    def test_source_metadata_is_trimmed(self):
+        data = self.parse('''# Year: 2026
+## January
+- Event.
+  - Source: [  Research  ](https://example.com) |   A Lab   | 2026-01-12
+''')
+        source = data[0]['events'][0]['info'][0]['sources'][0]
+        self.assertEqual(source['title'], 'Research')
+        self.assertEqual(source['publisher'], 'A Lab')
+
     def test_cli_does_not_overwrite_output_when_a_source_is_invalid(self):
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / 'timeline.md'
             output = source.with_suffix('.yml')
-            source.write_text('# Year: 2026\n## January\n- Event.\n  - Source: invalid', encoding='utf-8')
-            output.write_text('previous valid output', encoding='utf-8')
-            result = subprocess.run([sys.executable, 'scripts/convert_timeline_events.py', str(source)],
-                                    capture_output=True, text=True)
-            self.assertNotEqual(result.returncode, 0)
-            self.assertEqual(output.read_text(encoding='utf-8'), 'previous valid output')
+            for invalid_source in [
+                '  - Source: invalid',
+                '  - Source: [ ](https://example.com) | Lab | 2026-01-12',
+                '  - Source: [Title](https://example.com) |   | 2026-01-12',
+            ]:
+                with self.subTest(source=invalid_source):
+                    source.write_text('# Year: 2026\n## January\n- Event.\n' + invalid_source, encoding='utf-8')
+                    output.write_text('previous valid output', encoding='utf-8')
+                    result = subprocess.run([sys.executable, 'scripts/convert_timeline_events.py', str(source)],
+                                            capture_output=True, text=True)
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertEqual(output.read_text(encoding='utf-8'), 'previous valid output')
 
 
 if __name__ == '__main__':

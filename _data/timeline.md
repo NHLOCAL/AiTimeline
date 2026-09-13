@@ -650,7 +650,6 @@
   - Source: [Kimi K3: Open Frontier Intelligence](https://www.kimi.ai/blog/kimi-k3) | Moonshot AI | 2026-07-16
 - **Claude Fable 5** helps mathematician Levent Alpöge disprove the **Jacobian conjecture** in dimension three, overturning a problem posed in 1939. (*special*)
   - Source: [Graded Keller maps and the Jacobian Conjecture](https://arxiv.org/abs/2607.20210) | T. Shaska / arXiv | 2026-07-22
-  - Source: [Discovering cryptographic weaknesses with Claude](https://www.anthropic.com/research/discovering-cryptographic-weaknesses) | Anthropic | 2026-07-28
 - **Grok 4.5** and **Gemini 3.6 Flash** improve coding agents; Google also introduces **3.5 Flash-Lite** and **3.5 Flash Cyber**.
   - Source: [Introducing Grok 4.5](https://x.ai/news/grok-4-5) | xAI | 2026-07-08
   - Source: [Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/) | Google DeepMind | 2026-07-21
