@@ -379,7 +379,7 @@
   - Source: [Gemini 3.5: frontier intelligence with action](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/) | Google DeepMind | 2026-05-19
 - Google introduces **Gemini Omni Flash**, combining multimodal reasoning with video generation and conversational editing. (*special*)
   - Source: [Introducing Gemini Omni](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/) | Google DeepMind | 2026-05-19
-- An internal OpenAI model disproves **Erdos's unit-distance conjecture**, open since 1946; external mathematicians check the proof. (*special*)
+- An internal OpenAI model disproves **Erdős's unit-distance conjecture**, open since 1946; external mathematicians check the proof. (*special*)
   - Source: [An OpenAI model has disproved a central conjecture in discrete geometry](https://openai.com/index/model-disproves-discrete-geometry-conjecture/) | OpenAI | 2026-05-20
 - Anthropic releases **Claude Opus 4.8** alongside dynamic workflows that coordinate hundreds of Claude Code agents.
   - Source: [Introducing Claude Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8) | Anthropic | 2026-05-28
@@ -397,3 +397,58 @@
   - Source: [Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) | Anthropic | 2026-06-30
 - Google launches the faster **Nano Banana 2 Lite** and opens **Gemini Omni Flash** video generation to API developers.
   - Source: [Start building with Nano Banana 2 Lite and Gemini Omni Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/) | Google DeepMind | 2026-06-30
+
+## July 2026
+- OpenAI introduces **GPT-Live**, bringing simultaneous listening and speaking to ChatGPT Voice.
+  - Source: [Introducing GPT-Live](https://openai.com/index/introducing-gpt-live/) | OpenAI | 2026-07-08
+- OpenAI releases **GPT-5.6 Sol, Terra, and Luna** broadly, improving performance per token and introducing parallel agents for demanding tasks. (*special*)
+  - Source: [GPT-5.6: Frontier intelligence that scales with your ambition](https://openai.com/index/gpt-5-6/) | OpenAI | 2026-07-09
+- Moonshot AI launches **Kimi K3**, a 2.8-trillion-parameter multimodal model with million-token context, expanding the frontier of open models. (*special*)
+  - Source: [Kimi K3: Open Frontier Intelligence](https://www.kimi.ai/blog/kimi-k3) | Moonshot AI | 2026-07-16
+- **Claude Fable 5** helps mathematician Levent Alpöge disprove the **Jacobian conjecture** in dimension three, overturning a problem posed in 1939. (*special*)
+  - Source: [Graded Keller maps and the Jacobian Conjecture](https://arxiv.org/abs/2607.20210) | T. Shaska / arXiv | 2026-07-22
+  - Source: [Discovering cryptographic weaknesses with Claude](https://www.anthropic.com/research/discovering-cryptographic-weaknesses) | Anthropic | 2026-07-28
+- **Grok 4.5** and **Gemini 3.6 Flash** improve coding agents; Google also introduces **3.5 Flash-Lite** and **3.5 Flash Cyber**.
+  - Source: [Introducing Grok 4.5](https://x.ai/news/grok-4-5) | xAI | 2026-07-08
+  - Source: [Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/) | Google DeepMind | 2026-07-21
+- Anthropic releases **Claude Opus 5**, approaching Fable 5's coding performance at half the token price.
+  - Source: [Introducing Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) | Anthropic | 2026-07-24
+- **Claude Mythos Preview** helps discover stronger attacks on HAWK signatures and reduced-round AES, advancing cryptanalysis without breaking production encryption.
+  - Source: [Discovering cryptographic weaknesses with Claude](https://www.anthropic.com/research/discovering-cryptographic-weaknesses) | Anthropic | 2026-07-28
+- Google introduces **Gemini Robotics 2 and ER 2**, enabling whole-body control, adaptation to new robot bodies, and collaboration between robots. (*special*)
+  - Source: [Gemini Robotics 2 brings whole body intelligence to robots](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) | Google DeepMind | 2026-07-30
+  - Source: [Introducing Gemini Robotics ER 2](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/) | Google DeepMind | 2026-07-30
+
+## August 2026
+- Google publishes **WeatherNext** cyclone research in Nature, achieving three-day forecasts as accurate as previous two-day forecasts, and releases the model. (*special*)
+  - Source: [WeatherNext: AI model achieves breakthrough in forecasting cyclones](https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/) | Google DeepMind | 2026-08-06
+  - Source: [Operational tropical cyclone forecasting with AI](https://www.nature.com/articles/s41586-026-10953-2) | Google DeepMind and collaborators / Nature | 2026-08-06
+- Meta releases **Muse Glimmer**, an Apache-licensed 30B model for local agents on consumer hardware.
+  - Source: [Introducing Muse Glimmer: An Open Agentic Model That Runs on Your Device](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model) | Meta | 2026-08-10
+- **Grok 4.6** and **Gemini 3.7 Flash** improve autonomous coding and professional work at competitive costs.
+  - Source: [Introducing Grok 4.6](https://x.ai/news/grok-4-6) | xAI | 2026-08-12
+  - Source: [Introducing Gemini 3.7 Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/) | Google DeepMind | 2026-08-13
+- Alibaba releases **Qwen3.8-Max** weights, while Z.ai's **GLM-5.3** advances open-model coding and cybersecurity capabilities.
+  - Source: [Qwen3.8-2.4T-A95B model card](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B) | Qwen Team | 2026-08-12
+  - Source: [GLM-5.3 model card](https://huggingface.co/zai-org/GLM-5.3) | Z.ai | 2026-08-28
+
+## September 2026
+- Anthropic releases **Claude Fable 5.1** and restricted **Mythos 5.1**, improving scientific research, coding, and safeguards.
+  - Source: [Introducing Claude Fable 5.1 and Claude Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1) | Anthropic | 2026-09-01
+- Google launches **Gemini 3.8 Flash** for coding agents and **3.8 Flash Cyber** for trusted security defenders.
+  - Source: [Introducing Gemini 3.8 Flash and 3.8 Flash Cyber](https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/) | Google DeepMind | 2026-09-02
+- OpenAI begins rolling out **GPT-6 Astra**, advancing autonomous computer use and scientific reasoning, with reported near-perfect ARC-AGI-3 and FrontierMath Tier 4 scores. (*special*)
+  - Source: [GPT-6 Astra: A new generation of intelligence](https://openai.com/index/gpt-6-astra/) | OpenAI | 2026-09-03
+- Google launches **WeatherNext 3**, using live satellite observations for hourly, higher-resolution forecasts across Search, Maps, and Gemini.
+  - Source: [Introducing WeatherNext 3, our most advanced and accurate global weather AI model](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/) | Google DeepMind | 2026-09-03
+- Anthropic publishes the first complete **Lean proof of Fermat's Last Theorem**, formalized largely autonomously by Claude in 11 days. (*special*)
+  - Source: [Formalizing Fermat's Last Theorem](https://www.anthropic.com/research/formalizing-fermats-last-theorem) | Anthropic | 2026-09-04
+- OpenAI publishes a proposed **Navier-Stokes Millennium Problem** solution from an internal model, including a Lean proof of finite-time singularities in forced fluid flow. (*special*)
+  - Source: [On the Navier-Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/) | OpenAI | 2026-09-08
+- Google releases **AlphaGenome Atlas**, mapping predicted molecular effects of all nine billion possible single-letter human DNA variants for researchers. (*special*)
+  - Source: [AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome](https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/) | Google DeepMind | 2026-09-08
+- Meta introduces **Muse**, a personal agent that works across apps from a dedicated virtual computer, accessible through WhatsApp.
+  - Source: [Introducing Muse: The World's First Personal AI Agent Built for Everyone](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/) | Meta | 2026-09-08
+- OpenAI releases **ChatGPT Images 2.5** for precise image editing and opens its full-duplex **GPT-Live-1** voice model to API developers.
+  - Source: [Introducing ChatGPT Images 2.5](https://openai.com/index/introducing-chatgpt-images-2-5/) | OpenAI | 2026-09-08
+  - Source: [Build more natural voice experiences with GPT-Live-1 in the API](https://openai.com/index/introducing-gpt-live-1-in-the-api/) | OpenAI | 2026-09-10
