@@ -99,43 +99,76 @@
 
 ## February
 - Stability AI announces **Stable Diffusion 3** (gradually released to waiting list).
+  - Source: [Stable Diffusion 3](https://stability.ai/news-updates/stable-diffusion-3) | Stability AI | 2024-02-22
 - Google upgrades the artificial intelligence chat in Bard, basing it on the new **Gemini Pro** model, in all available languages. Google replaces "Bard" with "Gemini".
+  - Source: [Bard’s latest updates: Access Gemini Pro globally and generate images](https://blog.google/products-and-platforms/products/gemini/google-bard-gemini-pro-image-generation/) | Google | 2024-02-01
+  - Source: [Bard becomes Gemini: Try Ultra 1.0 and a new mobile app today](https://blog.google/products-and-platforms/products/gemini/bard-gemini-advanced-app/) | Google | 2024-02-08
 - Google announces the **Gemini Pro 1.5** multimodal language model capable of parsing up to a million tokens, as well as parsing video and images. The model is gradually released to developers on a waiting list. (*special*)
+  - Source: [Our next-generation model: Gemini 1.5](https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/) | Google DeepMind | 2024-02-15
 - OpenAI announces the **Sora** model that produces videos up to a minute long. The model is not released to the public at this time. (*special*)
+  - Source: [Video generation models as world simulators](https://openai.com/index/video-generation-models-as-world-simulators/) | OpenAI | 2024-02-15
 
 ## March
-- X Corporation announces the upcoming release of the **Grok 1.5** open source model.
+- xAI announces **Grok 1.5**, with improved reasoning and a 128K context window, for early testers and existing Grok users.
+  - Source: [Announcing Grok-1.5](https://x.ai/news/grok-1.5) | xAI | 2024-03-28
 - Anthropic announces **Claude 3**, a new version of their large language model. The version is deployed in 3 different sizes, with the largest model performing better than GPT-4.
+  - Source: [Introducing the next generation of Claude](https://www.anthropic.com/news/claude-3-family) | Anthropic | 2024-03-04
 - Suno AI, which develops a model for creating music, releases **Suno v3** to the general public.
+  - Source: [Introducing v3](https://about.suno.com/blog/v3) | Suno | 2024-03-21
 
 ## April
 - Stability AI releases a new update to the music creation model - **Stable Audio 2.0**.
-- X Corporation releases an upgrade to its language model, **Grok-1.5V**, which integrates high-level image recognition. In the test presented by the company, the model is the best in identifying and analyzing images compared to other models.
+  - Source: [Introducing Stable Audio 2.0](https://stability.ai/news/stable-audio-2-0) | Stability AI | 2024-04-03
+- xAI previews **Grok-1.5V**, its first model with image understanding. The company reports leading results on its RealWorldQA benchmark and plans access for early testers.
+  - Source: [Grok-1.5 Vision Preview](https://x.ai/news/grok-1.5v) | xAI | 2024-04-12
 - The Mistral company releases its new model **Mixtral 8x22B** as open source. This is the most powerful model among the open source models and it contains 141 billion parameters but uses a method that allows more economical use.
+  - Source: [Cheaper, Better, Faster, Stronger](https://mistral.ai/news/mixtral-8x22b/) | Mistral AI | 2024-04-17
 - Meta releases the **LLaMA 3** model as open source in sizes 8B and 70B parameters. The large model shows better performance than Claude 3 Sonnet and Gemini Pro 1.5 in several measures. Meta is expected to later release larger models with 400 billion parameters and more.
+  - Source: [Introducing Meta Llama 3: The most capable openly available LLM to date](https://ai.meta.com/blog/meta-llama-3/) | Meta | 2024-04-18
 - Microsoft releases the **Phi-3-mini** model in open source. The model comes in a reduced version of 3.8B parameters, which allows it to run on mobile devices as well, and it presents capabilities similar to GPT-3.5. (*special*)
+  - Source: [Introducing Phi-3: Redefining what’s possible with SLMs](https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/) | Microsoft | 2024-04-23
 - Adobe announces its new image creation model **Firefly 3**.
-- The startup **Reka AI** presents a series of multimodal language models in 3 sizes. The models are capable of processing video, audio and images. The large model featured similar capabilities to GPT-4.
-- Apple releases as full open source a series of small language models under the name **OpenELM**. The models are available in four weights between 270 million and 3 billion parameters.
+  - Source: [Adobe Introduces Firefly Image 3 Foundation Model to Take Creative Exploration and Ideation to New Heights](https://news.adobe.com/news/news-details/2024/adobe-introduces-firefly-image-3-foundation-model-to-take-creative-exploration-and-ideation-to-new-heights) | Adobe | 2024-04-23
+- **Reka AI** introduces **Reka Core**, joining its smaller Flash and Edge models. Core processes video, audio, and images, with benchmark results the company reports as competitive with GPT-4V.
+  - Source: [Reka Core: Our Frontier Class Multimodal Language Model](https://reka.ai/labs/research/reka-core-our-frontier-class-multimodal-language-model) | Reka AI | 2024-04-15
+- Apple releases **OpenELM**, a family of language models with weights, training code, and inference tools. The models range from 270 million to 3 billion parameters.
+  - Source: [OpenELM: An Efficient Language Model Family with Open Training and Inference Framework](https://arxiv.org/abs/2404.14619) | Apple / arXiv | 2024-04-22
 
 ## May
 - OpenAI announces the **GPT-4o model** that presents full multimodal capabilities, including receiving and creating text, images, and audio. The model presents an impressive ability to speak with a high response speed and in natural language. The model is 2 times more efficient than the GPT-4 Turbo model, and has better capabilities for languages other than English. (*special*)
-- Google announces a large number of AI features in its products. The main ones: increasing the token limit to 2 million for Gemini 1.5 to waiting list, releasing a smaller and faster **Gemini Flash 1.5 model**. Revealing the latest image creation model **Imagen 3**, music creation model **Music AI** and video creation model **Veo**. And the announcement of the **Astra model** with multimodal capabilities for realtime audio and video reception.
+  - Source: [Hello GPT-4o](https://openai.com/index/hello-gpt-4o/) | OpenAI | 2024-05-13
+- Google announces **Gemini 1.5 Flash** and a 2-million-token preview for Gemini 1.5 Pro. It also introduces **Imagen 3**, the **Music AI Sandbox**, the video model **Veo**, and **Project Astra**, a prototype assistant that understands live audio and video.
+  - Source: [Gemini breaks new ground with a faster model, longer context, AI agents and more](https://blog.google/innovation-and-ai/products/google-gemini-update-flash-ai-assistant-io-2024/) | Google DeepMind | 2024-05-14
+  - Source: [New generative media models and tools, built with and for creators](https://blog.google/innovation-and-ai/products/google-generative-ai-veo-imagen-3/) | Google DeepMind | 2024-05-14
 - Microsoft announces **Copilot+** for dedicated computers, which will allow a full search of the user's history through screenshots of the user's activity. The company also released as open source the SLMs that display impressive capabilities in a minimal size: **Phi-3 Small**, **Phi-3 Medium**, and **Phi-3 Vision** which includes image recognition capability.
+  - Source: [Introducing Copilot+ PCs](https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/) | Microsoft | 2024-05-20
+  - Source: [New models added to the Phi-3 family, available on Microsoft Azure](https://azure.microsoft.com/en-us/blog/new-models-added-to-the-phi-3-family-available-on-microsoft-azure/) | Microsoft | 2024-05-21
 - Meta introduces **Chameleon**, a new multimodal model that seamlessly renders text and images.
+  - Source: [Chameleon: Mixed-Modal Early-Fusion Foundation Models](https://arxiv.org/abs/2405.09818) | Meta / arXiv | 2024-05-16
 - Mistral AI releases a new open source version of its language model **Mistral-7B-Instruct-v0.3**.
+  - Source: [Model Card for Mistral-7B-Instruct-v0.3](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3) | Mistral AI / Hugging Face | 2024-05-22
 - Google announces **AI Overviews** intended to give a summary of the relevant information in Google search. (*special*)
+  - Source: [Generative AI in Search: Let Google do the searching for you](https://blog.google/products-and-platforms/products/search/generative-ai-google-search-may-2024/) | Google | 2024-05-14
 - Suno AI releases an updated music creation model **Suno v3.5**.
+  - Source: [v3.5 is Available to Everyone](https://about.suno.com/release-notes/v3-5-is-available-to-everyone) | Suno | 2024-05-30
 - Mistral AI releases a new language model designed for coding **Codestral** in size 22B.
+  - Source: [Codestral](https://mistral.ai/news/codestral/) | Mistral AI | 2024-05-29
 
 ## June
 - Stability AI releases its updated image creation model **Stable Diffusion 3** in a medium version in size 2B parameters.
+  - Source: [Announcing the Open Release of Stable Diffusion 3 Medium, Our Most Sophisticated Image Generation Model to Date](https://stability.ai/news-updates/stable-diffusion-3-medium) | Stability AI | 2024-06-12
 - Apple announces **Apple Intelligence**, an AI system that will be integrated into the company's devices and will combine AI models of different sizes for different tasks.
+  - Source: [Introducing Apple’s On-Device and Server Foundation Models](https://machinelearning.apple.com/research/introducing-apple-foundation-models) | Apple | 2024-06-10
 - DeepSeekAI publishes the **DeepSeekCoderV2** open source language model which presents similar coding capabilities to models such as GPT-4, Claude 3 Opus and more.
+  - Source: [DeepSeek-Coder-V2: Breaking the Barrier of Closed-Source Models in Code Intelligence](https://arxiv.org/abs/2406.11931) | DeepSeek-AI / arXiv | 2024-06-17
 - **Runway** introduces **Gen3 Alpha**, a new AI model for video generation.
+  - Source: [Runway Gen-3 Alpha: AI Video Generation with Temporal Control](https://runway.com/research/introducing-gen-3-alpha) | Runway | 2024-06-17
 - Anthropic releases the **Claude Sonnet 3.5** model, which presents better capabilities than other models with low resource usage. (*special*)
+  - Source: [Claude 3.5 Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet) | Anthropic | 2024-06-21
 - Microsoft releases in open source a series of image recognition models called **Florence 2**.
+  - Source: [Florence-2](https://huggingface.co/microsoft/Florence-2-large) | Microsoft / Hugging Face | 2024-06-15
 - Google announces **Gemma 2** open source language models with 9B and 27B parameter sizes. Also, the company opens the context window capabilities to developers for up to 2 million tokens.
+  - Source: [Gemini 1.5 Pro 2M context window, code execution capabilities, and Gemma 2 are available today](https://developers.googleblog.com/en/new-features-for-the-gemini-api-and-google-ai-studio/) | Google | 2024-06-27
 
 ## July
 - OpenAI has released a miniaturized model called **GPT-4o mini** that presents high capabilities at a low cost
