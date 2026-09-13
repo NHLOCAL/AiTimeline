@@ -138,14 +138,38 @@ let activeFilters = {
     special: false
 };
 
-// Initialize: Cache original HTML content for each info item to allow safe highlight reset
+// Only replace event text when searching, preserving source links and disclosure state.
 const allInfoItems = document.querySelectorAll('.info');
 allInfoItems.forEach(item => {
-    item.setAttribute('data-original-html', item.innerHTML);
+    const text = item.querySelector('.event-text');
+    text.setAttribute('data-original-html', text.innerHTML);
 });
 
-function escapeRegExp(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function highlightText(element, search) {
+    const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(node => {
+        const text = node.textContent;
+        const lower = text.toLowerCase();
+        let start = 0;
+        let match = lower.indexOf(search);
+        if (match === -1) return;
+
+        const fragment = document.createDocumentFragment();
+        while (match !== -1) {
+            fragment.append(document.createTextNode(text.slice(start, match)));
+            const mark = document.createElement('mark');
+            mark.className = 'highlight-text';
+            mark.textContent = text.slice(match, match + search.length);
+            fragment.append(mark);
+            start = match + search.length;
+            match = lower.indexOf(search, start);
+        }
+        fragment.append(document.createTextNode(text.slice(start)));
+        node.replaceWith(fragment);
+    });
 }
 
 function filterEvents() {
@@ -161,11 +185,12 @@ function filterEvents() {
 
             items.forEach(item => {
 
-                const originalHTML = item.getAttribute('data-original-html');
+                const eventText = item.querySelector('.event-text');
+                eventText.innerHTML = eventText.getAttribute('data-original-html');
 
 
                 const isSpecial = item.getAttribute('data-special') === 'true';
-                const textContent = item.innerText.toLowerCase();
+                const textContent = eventText.textContent.toLowerCase();
                 const searchMatch = activeFilters.search === '' || textContent.includes(activeFilters.search);
                 const specialMatch = !activeFilters.special || isSpecial;
 
@@ -175,24 +200,12 @@ function filterEvents() {
 
 
                     if (activeFilters.search !== '') {
-                        // Safe highlight: Match text not inside HTML tags
-                        try {
-                            const term = escapeRegExp(activeFilters.search);
-                            // Regex looks for the term, ensuring it's not followed by `>` without a `<` first (rudimentary tag avoidance)
-
-                            const regex = new RegExp(`(${term})(?![^<]*>)`, 'gi');
-                            item.innerHTML = originalHTML.replace(regex, '<span class="highlight-text">$1</span>');
-                        } catch (e) {
-                            item.innerHTML = originalHTML;
-                        }
-                    } else {
-                        item.innerHTML = originalHTML;
+                        highlightText(eventText, activeFilters.search);
                     }
 
                 } else {
                     item.classList.add('hidden');
 
-                    item.innerHTML = originalHTML;
                 }
             });
 

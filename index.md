@@ -66,16 +66,23 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
             </button>
         </div>
         <!-- Individual Items -->
-		{% for info in event.info %}
-            {% if info.special %}
-             <div class="info special" data-special="true">
-                {{ info.text }}
-             </div>
-            {% else %}
-             <div class="info" data-special="false">
-                {{ info.text }}
-             </div>
-            {% endif %}
+        {% for info in event.info %}
+            <div class="info{% if info.special %} special{% endif %}" data-special="{% if info.special %}true{% else %}false{% endif %}">
+                <div class="event-text">{{ info.text }}</div>
+                {% if info.sources.size > 0 %}
+                <details class="event-sources">
+                    <summary>Sources <span class="source-count">({{ info.sources.size }})</span></summary>
+                    <ol class="source-list">
+                        {% for source in info.sources %}
+                        <li>
+                            <a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.title | escape }}&nbsp;<span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+                            <div class="source-meta">{{ source.publisher | escape }} <span aria-hidden="true">·</span> <time datetime="{{ source.date | escape }}">{{ source.date | date: "%b %-d, %Y" }}</time></div>
+                        </li>
+                        {% endfor %}
+                    </ol>
+                </details>
+                {% endif %}
+            </div>
 		{% endfor %}
 	  </article>
 	  {% endfor %}
