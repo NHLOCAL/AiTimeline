@@ -2,69 +2,97 @@
 
 ## February
 - **Midjourney v1**
+  - Source: [Legacy Features](https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features) | Midjourney | 2025-01-09
 
 ## March
 - OpenAI releases **text-davinci-002** and **code-davinci-002** with an API approach.
+  - Source: [Introducing Insert and Edits Capabilities](https://community.openai.com/t/introducing-insert-and-edits-capabilities/15993) | OpenAI | 2022-03-15
 
 ## April
 - **Midjourney v2**
+  - Source: [Legacy Features](https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features) | Midjourney | 2025-01-09
 - **DALL-E 2** is announced for gradual release. (*special*)
+  - Source: [DALL·E 2](https://openai.com/index/dall-e-2/) | OpenAI | 2022-04-06
 
 ## July
 - **Midjourney v3** is launched.
+  - Source: [Legacy Features](https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features) | Midjourney | 2025-01-09
 
 ## August
 - **Stable Diffusion 1.4** is released.
+  - Source: [Stable Diffusion Public Release](https://stability.ai/news-updates/stable-diffusion-public-release) | Stability AI | 2022-08-22
 
 ## October
 - **Stable Diffusion 1.5** becomes available. (*special*)
+  - Source: [Stable Diffusion v1-5 Model Card](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) | Runway / Hugging Face (model card mirror) | 2022-10-20
 
 ## November
 - **ChatGPT**, a chatbot by OpenAI using GPT-3.5, is released to the public and quickly becomes a viral sensation. (*special*)
+  - Source: [Introducing ChatGPT](https://openai.com/index/chatgpt/) | OpenAI | 2022-11-30
 - **Midjourney v4** is released.
+  - Source: [Legacy Features](https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features) | Midjourney | 2025-01-09
 - **Stable Diffusion 2.0** is launched.
+  - Source: [Stable Diffusion 2.0 Release](https://stability.ai/news-updates/stable-diffusion-v2-release) | Stability AI | 2022-11-24
 
 ## December
 - **Stable Diffusion 2.1** is released.
+  - Source: [Stable Diffusion v2.1 and DreamStudio Updates 7-Dec 22](https://stability.ai/news-updates/stablediffusion2-1-release7-dec-2022) | Stability AI | 2022-12-07
 
 
 # Year: 2023
 
 ## February
-- Meta releases the **LLaMA** language model as open-source for research purposes. The model is later leaked. (*special*)
+- Meta releases the **LLaMA** language model to approved researchers under a noncommercial research license. (*special*)
+  - Source: [Introducing LLaMA: A foundational, 65-billion-parameter large language model](https://ai.meta.com/blog/large-language-model-llama-meta-ai/) | Meta | 2023-02-24
 - Microsoft gradually releases **Bing AI**, an AI chat based on an upgraded GPT model integrating internet search.
+  - Source: [Reinventing search with a new AI-powered Microsoft Bing and Edge, your copilot for the web](https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/) | Microsoft | 2023-02-07
 
 ## March
 - **Midjourney v5** is launched.
+  - Source: [Legacy Features](https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features) | Midjourney | 2025-01-09
 - OpenAI's **GPT-4** model is partially released, featuring multimodal image analysis and improved multi-language support. (*special*)
+  - Source: [GPT-4](https://openai.com/index/gpt-4/) | OpenAI | 2023-03-14
 - Google releases the AI chat **Bard** in a limited capacity, based on the LaMDA language model.
+  - Source: [Try Bard and share your feedback](https://blog.google/innovation-and-ai/products/try-bard/) | Google | 2023-03-21
 
-## April
 - Adobe releases the **Firefly** image creation model as a beta version to a waiting list. The model allowed a variety of capabilities including text formatting.
+  - Source: [Adobe Unveils Firefly, a Family of new Creative Generative AI](https://news.adobe.com/news/news-details/2023/adobe-unveils-firefly-a-family-of-new-creative-generative-ai) | Adobe | 2023-03-21
 
 ## May
 - **Midjourney v5.1** is released.
+  - Source: [Legacy Features](https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features) | Midjourney | 2025-01-09
 - Google announces an upgrade to Bard, moving it to the upgraded **PaLM 2** language model. It will support 180 countries and many languages.
+  - Source: [What’s ahead for Bard: More global, more visual, more integrated](https://blog.google/intl/en-in/google-bard-updates-io-2023/) | Google | 2023-05-10
 
 ## June
 - **Midjourney v5.2** is launched.
+  - Source: [Legacy Features](https://docs.midjourney.com/hc/en-us/articles/33329788681101-Legacy-Features) | Midjourney | 2025-01-09
 
 ## July
 - **Stable Diffusion XL 1.0** is released.
+  - Source: [Announcing SDXL 1.0](https://stability.ai/news-updates/stable-diffusion-sdxl-1-announcement) | Stability AI | 2023-07-26
 - Anthropic announces a new version of their large language model - **Claude 2**.
+  - Source: [Claude 2](https://www.anthropic.com/news/claude-2) | Anthropic | 2023-07-11
 - Meta releases the **LLaMA 2** open source language model to the general public in a variety of sizes.
+  - Source: [Meta and Microsoft Introduce the Next Generation of Llama](https://about.fb.com/news/2023/07/llama-2/) | Meta | 2023-07-18
 
 ## October
 - **DALL-E 3** is released.
+  - Source: [DALL·E 3 is now available in ChatGPT Plus and Enterprise](https://openai.com/index/dall-e-3-is-now-available-in-chatgpt-plus-and-enterprise/) | OpenAI | 2023-10-19
 - Adobe releases **Firefly 2**.
+  - Source: [Adobe MAX 2023: Introducing the next generation of creativity, powered by AI](https://blog.adobe.com/en/publish/2023/10/10/next-gen-of-creativity-powered-by-ai) | Adobe | 2023-10-10
 
 ## November
 - **Stable Diffusion XL Turbo** is released - A fast model that allows the creation of an image in one step in real-time.
+  - Source: [Introducing SDXL Turbo: A Real-Time Text-to-Image Generation Model](https://stability.ai/news-updates/stability-ai-sdxl-turbo) | Stability AI | 2023-11-28
 
 ## December
 - **Midjourney v6** is launched.
+  - Source: [Version](https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version) | Midjourney | 2024-11-26
 - Google upgrades Bard in limited areas, moving it to be based on the upgraded **Gemini Pro** language model.
-- X Corporation launches **Grok AI** chatbot for paid subscribers in English language.
+  - Source: [Bard gets its biggest upgrade yet with Gemini](https://blog.google/products-and-platforms/products/gemini/google-bard-try-gemini-ai/) | Google | 2023-12-06
+- xAI begins rolling out the **Grok AI** chatbot to X Premium+ subscribers.
+  - Source: [Musk says his AI firm xAI is rolling out chatbot Grok to X Premium+ subscribers](https://kfgo.com/2023/12/07/musk-says-his-ai-firm-xai-is-rolling-out-chatbot-grok-to-x-premium-subscribers/) | Reuters / KFGO | 2023-12-07
 
 
 # Year: 2024
