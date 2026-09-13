@@ -491,38 +491,71 @@
 ## October 2025
 
 -   Figure unveiled **Figure 03**, a humanoid robot designed for domestic and general-purpose tasks.
+  - Source: [Introducing Figure 03](https://www.figure.ai/news/introducing-figure-03) | Figure | 2025-10-09
 -   Google released a **Gemini model for computer control**, achieving state-of-the-art (SOTA) performance in GUI automation.
+  - Source: [Introducing the Gemini 2.5 Computer Use model](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/) | Google DeepMind | 2025-10-07
 -   Anthropic released **Claude 4.5 Haiku**, a fast, cost-effective model for high-volume, low-latency applications.
+  - Source: [Introducing Claude Haiku 4.5](https://www.anthropic.com/news/claude-haiku-4-5) | Anthropic | 2025-10-15
 -   OpenAI announced **ChatGPT Atlas**, an AI-native web browser with a built-in "Agent Mode" for task automation.
+  - Source: [Introducing ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/) | OpenAI | 2025-10-21
 -   1X announced **Neo**, a humanoid robot marketed as the first consumer-ready model for home use. (*special*)
+  - Source: [NEO Home Robot | Order Today](https://www.1x.tech/discover/neo-home-robot) | 1X | 2025-10-28
 
 
 ## November 2025
 
 -   Moonshot AI released **Kimi K2 Thinking**, an open model setting new records in reasoning benchmarks.
--   OpenAI launched **GPT 5.1**, featuring specialized "Thinking" and "Instant" modes with expanded context.
+  - Source: [Kimi K2 Thinking 模型发布并开源，全面提升 Agent 和推理能力](https://platform.kimi.com/blog/posts/k2-think) | Moonshot AI | 2025-11-06
+- OpenAI launches **GPT-5.1 Instant** and **GPT-5.1 Thinking**, improving conversational responses, instruction following, and adaptive reasoning.
+  - Source: [GPT-5.1: A smarter, more conversational ChatGPT](https://openai.com/index/gpt-5-1/) | OpenAI | 2025-11-12
 -   xAI released **Grok 4.1**, combining high EQ with strong logic to top the LM Arena leaderboard.
+  - Source: [Grok 4.1](https://x.ai/news/grok-4-1) | xAI | 2025-11-17
 -   Google debuted **Gemini 3.0**, a flagship "thinking" model that claimed the top spot on major benchmarks.
+  - Source: [A new era of intelligence with Gemini 3](https://blog.google/products-and-platforms/products/gemini/gemini-3/) | Google | 2025-11-18
 -   OpenAI introduced **GPT 5.1 Codex Max**, an agentic model built specifically for long-term coding tasks.
+  - Source: [Building more with GPT-5.1-Codex-Max](https://openai.com/index/gpt-5-1-codex-max/) | OpenAI | 2025-11-19
 -   Google released **Nano Banana Pro**, a superior image generation and editing model based on Gemini 3. (*special*)
+  - Source: [Introducing Nano Banana Pro](https://blog.google/innovation-and-ai/products/nano-banana-pro/) | Google DeepMind | 2025-11-20
 -   Anthropic announced **Claude Opus 4.5**, delivering elite coding and agentic performance at a significantly reduced price. (*special*)
--   Black Forest Labs launched **FLUX 2**, a high-performance open-weight image generation model.
+  - Source: [Introducing Claude Opus 4.5](https://www.anthropic.com/news/claude-opus-4-5) | Anthropic | 2025-11-24
+- Black Forest Labs launches **FLUX.2**, an image-generation and editing model family, with open weights for **FLUX.2 dev**.
+  - Source: [FLUX.2: Frontier Visual Intelligence](https://bfl.ai/blog/flux-2) | Black Forest Labs | 2025-11-25
 -   DeepSeek released **DeepSeekMath-V2** as open source, achieving gold-medal performance in math olympiads. (*special*)
+  - Source: [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](https://arxiv.org/abs/2511.22570) | DeepSeek-AI / arXiv | 2025-11-27
 -   Microsoft open-sourced **Fara-7B**, a small model optimized for browser agents and computer control.
--   **Poetiq** shatters the **ARC-AGI-2** benchmark with a score of over 60%, surpassing the human average.
+  - Source: [Fara-7B: An Efficient Agentic Model for Computer Use](https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/) | Microsoft Research | 2025-11-24
+- **Poetiq** reports preliminary results above 60% on the **ARC-AGI-2 public evaluation set**, using a reasoning system built on frontier language models.
+  - Source: [Traversing the Frontier of Superintelligence](https://poetiq.ai/posts/arcagi_announcement/) | Poetiq | 2025-11-20
 
 
 ## December 2025
 - Mistral AI launches the **Mistral 3** family (Large & Ministral) alongside **Mistral OCR 3** and the **Devstral 2** coding series, reinforcing its open-weight leadership with advanced agentic workflows and Vibe CLI integration.
-- OpenAI releases **GPT-5.2**, featuring the autonomous **Codex** agent for complex engineering tasks, and **GPT-Image 1.5**, which claims the #1 spot on vision benchmarks, outperforming Nano Banana Pro.
-- Google introduces **Gemini 3.0 Flash**, setting a new standard for price-performance, and deploys **Deep Research**, an autonomous agent capable of multi-step synthesis, alongside **Gemini 2.5 Flash Audio**. (*special*)
+  - Source: [Introducing Mistral 3](https://mistral.ai/news/mistral-3/) | Mistral AI | 2025-12-02
+  - Source: [Introducing Mistral OCR 3](https://mistral.ai/news/mistral-ocr-3/) | Mistral AI | 2025-12-17
+  - Source: [Introducing: Devstral 2 and Mistral Vibe CLI.](https://mistral.ai/news/devstral-2-vibe-cli/) | Mistral AI | 2025-12-09
+- OpenAI releases **GPT-5.2** for complex knowledge work, **GPT-5.2-Codex** for autonomous software engineering, and **GPT Image 1.5** for improved image generation and precise editing.
+  - Source: [Introducing GPT-5.2](https://openai.com/index/introducing-gpt-5-2/) | OpenAI | 2025-12-11
+  - Source: [Introducing GPT-5.2-Codex](https://openai.com/index/introducing-gpt-5-2-codex/) | OpenAI | 2025-12-18
+  - Source: [The new ChatGPT Images is here](https://openai.com/index/new-chatgpt-images-is-here/) | OpenAI | 2025-12-16
+- Google introduces **Gemini 3 Flash**, opens the upgraded **Gemini Deep Research** agent to developers through the Interactions API, and updates **Gemini 2.5 Flash Native Audio**. (*special*)
+  - Source: [Gemini 3 Flash: frontier intelligence built for speed](https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/) | Google | 2025-12-17
+  - Source: [Build with Gemini Deep Research](https://blog.google/innovation-and-ai/technology/developers-tools/deep-research-agent-gemini-api/) | Google | 2025-12-11
+  - Source: [Improved Gemini audio models for powerful voice interactions](https://blog.google/products-and-platforms/products/gemini/gemini-audio-model-updates/) | Google | 2025-12-12
 - Amazon unveils the **Nova 2** series, highlighted by **Nova 2 Sonic**, a native speech-to-speech model delivering ultra-low latency and natural conversation flow.
+  - Source: [Amazon introduces four new frontier Nova models](https://press.aboutamazon.com/2025/12/amazon-introduces-four-new-frontier-nova-models-a-pioneering-nova-forge-service-for-organizations-to-build-their-own-models-and-nova-act-for-building-reliable-browser-agents) | Amazon | 2025-12-02
 - Runway releases **Gen-4.5**, a video generation model that rises to the top of industry leaderboards for motion consistency and prompt adherence.
+  - Source: [Runway Gen-4.5: State-of-the-Art AI Video Generation](https://runway.com/research/introducing-runway-gen-4.5) | Runway | 2025-12-01
 - xAI launches the **Grok Voice Agent API**, enabling native, real-time bidirectional audio streaming for developers.
-- Zhipu AI releases **GLM-4.7**, an open-weights model that reaches the top of global coding and reasoning leaderboards.
-- Alibaba open-sources **Z-Image-Turbo**, a highly efficient 6B model, and releases **Qwen-Image-2512**, which specializes in high-fidelity typography and complex visual compositions.
-- MiniMax releases **MiniMax-M2.1**, a 200k-context MoE model that rises to the top of web development and coding leaderboards, establishing itself as a leading open model for developers.
-- A specialized system by **Poetiq**, powered by GPT-5.2, reportedly solves the **ARC-2** benchmark, marking a major breakthrough in abstract reasoning. (*special*)
+  - Source: [Grok Voice Agent API](https://x.ai/news/grok-voice-agent-api) | xAI | 2025-12-17
+- Zhipu AI releases **GLM-4.7**, improving coding, reasoning, long-context understanding, and agent task execution.
+  - Source: [New Released: December 22, 2025](https://docs.z.ai/release-notes/new-released) | Z.ai | 2025-12-22
+- Alibaba releases **Qwen-Image-2512**, improving image realism, fine detail, and typography, following the November release of the efficient 6B **Z-Image-Turbo** model.
+  - Source: [Qwen-Image-2512: Finer Details, Greater Realism](https://qwen.ai/blog?id=qwen-image-2512) | Qwen Team | 2025-12-30
+  - Source: [Z-Image: An Efficient Image Generation Foundation Model with Single-Stream Diffusion Transformer](https://arxiv.org/abs/2511.22699) | Alibaba Tongyi / arXiv | 2025-11-27
+- MiniMax releases **MiniMax-M2.1**, an open model with improved programming across multiple languages, web and app development, and tool use.
+  - Source: [MiniMax M2.1: Significantly Enhanced Multi-Language Programming, Built for Real-World Complex Tasks](https://www.minimax.io/blog/minimax-m21) | MiniMax | 2025-12-23
+- **Poetiq** reports results up to 75% on the **ARC-AGI-2 public evaluation set** using GPT-5.2 X-High with its reasoning system. (*special*)
+  - Source: [Update: Poetiq+GPT-5.2 = SOTA](https://poetiq.ai/posts/update_arcagi_gpt52/) | Poetiq | 2025-12-23
 
 
 # Year: 2026
