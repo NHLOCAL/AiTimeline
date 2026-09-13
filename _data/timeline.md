@@ -433,35 +433,60 @@
 
 ## July 2025
 - xAI releases **Grok 4**, achieving a new SOTA of 15.9% on ARC-AGI v2 and 25.4% on Humanity’s Last Exam. (*special*)
+  - Source: [Grok 4](https://x.ai/news/grok-4) | xAI | 2025-07-09
 - OpenAI unveils the **ChatGPT Agent**, embedding autonomous coding, web research and tool use directly within the chat interface. (*special*)
-- An experimental OpenAI model secures a **gold medal** at IMO 2025 without any external tools. (*special*)
-- Google introduces **Gemini Deep Think**, which also earns an IMO 2025 gold by solving five of six problems with parallel reasoning. (*special*)
+  - Source: [ChatGPT agent System Card](https://openai.com/index/chatgpt-agent-system-card/) | OpenAI | 2025-07-17
+- OpenAI reports that an experimental reasoning model reaches **gold-medal-level performance** on IMO 2025, scoring 35/42 without external tools or internet access. (*special*)
+  - Source: [Gold-medal-level performance on the International Mathematical Olympiad](https://x.com/alexwei_/status/1946477742855532918) | Alexander Wei, OpenAI / X | 2025-07-19
+- An advanced version of **Gemini Deep Think** achieves **gold-medal-level performance** on IMO 2025, solving five of six problems and scoring 35/42 in an evaluation graded by the IMO. (*special*)
+  - Source: [Advanced version of Gemini with Deep Think officially achieves gold-medal standard at the International Mathematical Olympiad](https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/) | Google DeepMind | 2025-07-21
 - Alibaba open-sources two variants, **Qwen3-235B-A22B-Instruct-2507** (instruction-tuned) and **Qwen3-Coder**, for general LLM use and automated code generation.
+  - Source: [Qwen3-235B-A22B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507) | Qwen Team / Hugging Face | 2025-07-21
+  - Source: [Qwen3-Coder: Agentic Coding in the World](https://qwenlm.github.io/blog/qwen3-coder/) | Qwen Team | 2025-07-22
 - Moonshot AI debuts **Kimi K2**, a Chinese LLM praised for its open-research focus and robust performance.
-- Chinese startup Zhipu open-sources **GLM-4.5**, a 130 B-parameter model tailored for intelligent-agent applications.
+  - Source: [Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534) | Moonshot AI / arXiv | 2025-07-28
+- Zhipu AI releases **GLM-4.5**, a 355B-parameter mixture-of-experts model with 32B active parameters, designed for reasoning, coding, and agent tasks.
+  - Source: [GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models](https://arxiv.org/abs/2508.06471) | Z.ai / arXiv | 2025-08-08
 
 ## August 2025
 - Google introduced **Gemini 2.5 Deep Think**, a special "extended thinking" mode for solving complex problems and exploring alternatives. (*special*)
+  - Source: [Try Deep Think in the Gemini app](https://blog.google/products-and-platforms/products/gemini/gemini-2-5-deep-think/) | Google | 2025-08-01
 - Anthropic released **Claude Opus 4.1**, an upgrade focused on improving agentic capabilities and real-world coding.
+  - Source: [Claude Opus 4.1](https://www.anthropic.com/news/claude-opus-4-1) | Anthropic | 2025-08-05
 - Google DeepMind announced **Genie 3.0**, a "world model" for creating interactive 3D environments from text, maintaining consistency for several minutes. (*special*)
+  - Source: [Genie 3: A new frontier for world models](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) | Google DeepMind | 2025-08-05
 - OpenAI released **gpt-oss-120b** and **gpt-oss-20b**, a family of open-source models with high reasoning capabilities, optimized to run on accessible hardware.
+  - Source: [Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss/) | OpenAI | 2025-08-05
 - OpenAI launched **GPT-5**, the company's next-generation model, with significant improvements in coding and a dynamic "thinking" mode to reduce hallucinations.
+  - Source: [Introducing GPT-5](https://openai.com/index/introducing-gpt-5/) | OpenAI | 2025-08-07
 - DeepSeek released **DeepSeek V3.1**, a hybrid model combining fast and slow "thinking" modes to improve performance in agentic tasks and tool use.
+  - Source: [DeepSeek-V3.1 Release](https://api-docs.deepseek.com/news/news250821/) | DeepSeek | 2025-08-21
 - Google launched a preview of **Gemini 2.5 Flash Image** (showcased as *nano-banana*), an advanced model for precise image editing, merging, and maintaining character consistency. (*special*)
+  - Source: [Introducing Gemini 2.5 Flash Image, our state-of-the-art image model](https://developers.googleblog.com/introducing-gemini-2-5-flash-image/) | Google | 2025-08-26
 
 
 ## September 2025
 
 -   ByteDance released **Seedream 4.0**, a next-generation image model unifying high-quality text-to-image generation and natural-language image editing.
+  - Source: [Seedream 4.0 Officially Released: Beyond Drawing, Into Imagination](https://seed.bytedance.com/en/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination) | ByteDance Seed | 2025-09-09
 -   An advanced Gemini variant, reported as **Gemini 2.5 - Deep Think**, achieved gold-medal-level performance at the ICPC World Finals programming contest. (*special*)
+  - Source: [Gemini achieves gold-medal level at the International Collegiate Programming Contest World Finals](https://deepmind.google/blog/gemini-achieves-gold-medal-level-at-the-international-collegiate-programming-contest-world-finals/) | Google DeepMind | 2025-09-17
 -   OpenAI reported a reasoning and code model achieved a perfect score (12/12) in ICPC testing. (*special*)
+  - Source: [OpenAI reasoning system scores 12/12 at the 2025 ICPC World Finals](https://x.com/MostafaRohani/status/1968360976379703569) | Mostafa Rohaninejad, OpenAI / X | 2025-09-17
 -   Suno released **Suno v5**, an upgrade in music generation with studio-grade fidelity and more natural-sounding vocals.
+  - Source: [Introducing v5 - the world's best music model](https://suno.com/release-notes/introducing-v5-the-world-s-best-music-model) | Suno | 2025-09-23
 -   Alibaba unveiled **Qwen-3-Max**, its flagship model with over a trillion parameters, focusing on long context and agent capabilities.
--   **Wan 2.5** was released, a generative video model focused on multi-shot consistency and character animation.
+  - Source: [Qwen3-Max: Just Scale it](https://qwen.ai/blog?id=qwen3-max) | Qwen Team | 2025-09-24
+- Alibaba releases **Wan 2.5 Preview**, a video-generation model with synchronized audio, clips up to 10 seconds, and improved prompt adherence and motion.
+  - Source: [Newly released models: September 23, 2025](https://www.alibabacloud.com/help/en/model-studio/newly-released-models) | Alibaba Cloud | 2025-09-23
 -   Anthropic announced **Claude Sonnet 4.5**, a model optimized for coding, agent construction, and improved reasoning.
+  - Source: [Introducing Claude Sonnet 4.5](https://www.anthropic.com/news/claude-sonnet-4-5) | Anthropic | 2025-09-29
 -   OpenAI released **Sora 2**, a flagship video and audio generation model with improved physical modeling and synchronized sound.
+  - Source: [Sora 2 is here](https://openai.com/index/sora-2/) | OpenAI | 2025-09-30
 -   DeepSeek released **DeepSeek-V3.2-Exp**
--   OpenAI and NVIDIA announced a strategic partnership for NVIDIA to supply at least **10 gigawatts** of AI systems for OpenAI's infrastructure. (*special*)
+  - Source: [Introducing DeepSeek-V3.2-Exp](https://api-docs.deepseek.com/news/news250929/) | DeepSeek | 2025-09-29
+- OpenAI and NVIDIA announce a letter of intent for a strategic partnership to deploy at least **10 gigawatts** of NVIDIA systems for OpenAI's AI infrastructure. (*special*)
+  - Source: [OpenAI and NVIDIA announce strategic partnership to deploy 10 gigawatts of NVIDIA systems](https://openai.com/index/openai-nvidia-systems-partnership/) | OpenAI and NVIDIA | 2025-09-22
 
 ## October 2025
 
