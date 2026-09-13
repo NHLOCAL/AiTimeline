@@ -172,36 +172,66 @@
 
 ## July
 - OpenAI has released a miniaturized model called **GPT-4o mini** that presents high capabilities at a low cost
+  - Source: [GPT-4o mini: advancing cost-efficient intelligence](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) | OpenAI | 2024-07-18
 - Meta releases as open source the **llama 3.1 model** in sizes 8B, 70B and 405B. The large model features the same capabilities as the best closed source models (*special*)
+  - Source: [Introducing Llama 3.1: Our most capable models to date](https://ai.meta.com/blog/meta-llama-3-1/) | Meta | 2024-07-23
 - mistral ai releases three new models: **Codestral Mamba**, **Mistral NeMo** and **Mathstral** designed for mathematics
-- Google DeepMind has unveiled two new AI systems that won silver medals at this year's International Mathematical Olympiad (IMO),  **AlphaProof** and **AlphaGeometry 2**. (*special*)
-- OpenAI launched **SearchGPT**, an integrated web search
+  - Source: [Codestral Mamba](https://mistral.ai/news/codestral-mamba/) | Mistral AI | 2024-07-16
+  - Source: [MathΣtral](https://mistral.ai/news/mathstral/) | Mistral AI | 2024-07-16
+  - Source: [Mistral NeMo](https://mistral.ai/news/mistral-nemo/) | Mistral AI | 2024-07-18
+- Google DeepMind unveils **AlphaProof** and **AlphaGeometry 2**, which together solve four of six IMO 2024 problems at silver-medal level in a research evaluation. (*special*)
+  - Source: [AI achieves silver-medal standard solving International Mathematical Olympiad problems](https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/) | Google DeepMind | 2024-07-25
+- OpenAI launches **SearchGPT**, a web-search prototype for a limited group of users and publishers.
+  - Source: [SearchGPT Prototype](https://openai.com/index/searchgpt-prototype/) | OpenAI | 2024-07-25
 - Startup Udio has released **Udio v1.5**, an updated version of its music creation model
+  - Source: [Introducing v1.5](https://www.udio.com/blog/introducing-v1-5) | Udio | 2024-07-23
 - Mistral AI has released a large language model **Mistral Large 2** in size 123B, which presents capabilities close to the closed SOTA models. (*special*)
+  - Source: [Large Enough](https://mistral.ai/news/mistral-large-2407/) | Mistral AI | 2024-07-24
 - **Midjourney v6.1** is released
+  - Source: [Version 6.1](https://updates.midjourney.com/version-6-1/) | Midjourney | 2024-07-30
 - Google releases the **Gemma 2 2B** model as open source. The model demonstrates better capabilities than much larger models.
+  - Source: [Smaller, Safer, More Transparent: Advancing Responsible AI with Gemma](https://developers.googleblog.com/en/smaller-safer-more-transparent-advancing-responsible-ai-with-gemma/) | Google | 2024-07-31
 
 ## August
 - "Black Forest Labs" releases weights for an image creation model named **Flux**, which shows better performance than similar closedsource models.
-- OpenAI released a new version of its model, **GPT-4o 0806**, achieving 100% success in generating valid JSON output.
+  - Source: [Announcing Black Forest Labs](https://bfl.ai/blog/24-08-01-bfl) | Black Forest Labs | 2024-08-01
+- OpenAI releases **GPT-4o 0806** with Structured Outputs, reporting 100% adherence to supplied JSON schemas in its evaluation.
+  - Source: [Introducing Structured Outputs in the API](https://openai.com/index/introducing-structured-outputs-in-the-api/) | OpenAI | 2024-08-06
 - Google's image generation model, **Imagen 3**, has been released.
+  - Source: [Imagen 3](https://arxiv.org/abs/2408.07009) | Google DeepMind / arXiv | 2024-08-13
 - xAI Corporation has launched the models **Grok 2** and **Grok 2 mini**, which demonstrate performance on par with leading SOTA models in the market.
+  - Source: [Grok-2 Beta Release](https://x.ai/news/grok-2) | xAI | 2024-08-13
 - Microsoft has introduced its small language models, **Phi 3.5**, in three versions, each showcasing impressive performance relative to their size.
+  - Source: [Discover the New Multi-Lingual, High-Quality Phi-3.5 SLMs](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/discover-the-new-multi-lingual-high-quality-phi-3-5-slms/4225280) | Microsoft | 2024-08-22
 - Google has introduced three new experimental AI models: **Gemini 1.5 Flash8B**, **Gemini 1.5 Pro** Enhanced, and **Gemini 1.5 Flash** Updated.
+  - Source: [Release notes](https://ai.google.dev/gemini-api/docs/changelog#08-27-2024) | Google | 2024-08-27
 - **Ideogram 2.0** has been released, offering image generation capabilities that surpass those of other leading models.
+  - Source: [Ideogram 2.0](https://about.ideogram.ai/2.0) | Ideogram | 2024-08-21
 - Luma has unveiled the **Dream Machine 1.5** model for video creation.
+  - Source: [Dream Machine 1.5 is here](https://twitter.com/LumaLabsAI/status/1825639918539817101) | Luma AI / X | 2024-08-19
+  - Source: [Dream Machine 1.5 catches Sora and other rival AI video makers napping](https://www.techradar.com/computing/artificial-intelligence/dream-machine-15-catches-sora-and-other-rival-ai-video-makers-napping) | TechRadar | 2024-08-22
 
 ## September
 - The French AI company Mistral has introduced **Pixtral12B**, its first multimodal model capable of processing both images and text.
+  - Source: [Announcing Pixtral 12B](https://mistral.ai/news/pixtral-12b/) | Mistral AI | 2024-09-17
 - OPENAI has released two nextgeneration AI models to its subscribers: **o1 preview** and **o1 mini**. These models show a significant improvement in performance, particularly in tasks requiring reasoning, including coding, mathematics, GPQA, and more. (*special*)
+  - Source: [Introducing OpenAI o1-preview](https://openai.com/index/introducing-openai-o1-preview/) | OpenAI | 2024-09-12
 - Chinese company Alibaba releases the **Qwen 2.5** model in various sizes, ranging from 0.5B to 72B. The models demonstrate capabilities comparable to much larger models.
+  - Source: [Qwen2.5: A Party of Foundation Models!](https://qwenlm.github.io/blog/qwen2.5/) | Qwen Team | 2024-09-19
 - The video generation model **KLING 1.5** has been released.
-- **OpenAI** launches the **advanced voice mode** of GPT 4o for all subscribers.
-- **Meta** releases **Llama 3.2** in sizes 1B, 3B, 11B and 90B, featuring image recognition capabilities for the first time.
+  - Source: [Kuaishou Technology Announces Third Quarter 2024 Unaudited Financial Results](https://www.prnewswire.com/news-releases/kuaishou-technology-announces-third-quarter-2024-unaudited-financial-results-302311164.html) | Kuaishou Technology / PR Newswire | 2024-11-20
+- **OpenAI** begins rolling out GPT-4o **advanced voice mode** to ChatGPT Plus and Team users, with regional restrictions.
+  - Source: [Advanced Voice is rolling out](https://x.com/OpenAI/status/1838642444365369814) | OpenAI / X | 2024-09-24
+- **Meta** releases **Llama 3.2** with 1B and 3B text models and 11B and 90B models that support image understanding.
+  - Source: [Llama 3.2: Revolutionizing edge AI and vision with open, customizable models](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/) | Meta | 2024-09-25
 - **Google** has rolled out new model updates ready for deployment, **Gemini Pro 1.5 002** and **Gemini Flash 1.5 002**, showcasing significantly improved longcontext processing.
+  - Source: [Updated production-ready Gemini models, reduced 1.5 Pro pricing, increased rate limits, and more](https://developers.googleblog.com/en/updated-production-ready-gemini-models-reduced-15-pro-pricing-increased-rate-limits-and-more/) | Google | 2024-09-24
 - **Kyutai** releases two opensource versions of its voicetovoice model, **Moshi**.
+  - Source: [Moshi open-source release: run Moshi locally!](https://kyutai.org/blog/2024-09-18-moshi-release) | Kyutai | 2024-09-18
 - Google releases an update to its AI tool **NotebookLM** that enables users to create podcasts based on their own content.
+  - Source: [NotebookLM now lets you listen to a conversation about your sources](https://blog.google/innovation-and-ai/products/notebooklm-audio-overviews/) | Google | 2024-09-11
 - Mistral AI launches a 22B model named **Mistral Small**.
+  - Source: [AI in abundance](https://mistral.ai/news/september-24-release/) | Mistral AI | 2024-09-17
 
 ## October
 - **Flux 1.1 Pro** is released, showcasing advanced capabilities for image creation.
