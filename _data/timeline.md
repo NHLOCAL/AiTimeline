@@ -357,3 +357,43 @@
 - Google's **Lyria 3 Pro** adds three-minute tracks, while **Suno v5.5** introduces personalized voices and music models.
   - Source: [Lyria 3 Pro: Create longer tracks in more Google products](https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/) | Google DeepMind | 2026-03-25
   - Source: [What's New in v5.5](https://help.suno.com/en/articles/11362305) | Suno | 2026-03-26
+
+## April 2026
+- Google releases **Gemma 4**, an Apache-licensed family of multimodal reasoning models for servers, laptops, and phones.
+  - Source: [Gemma 4: Byte for byte, the most capable open models](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/) | Google DeepMind | 2026-04-02
+- Anthropic unveils **Claude Mythos Preview** through **Project Glasswing**, restricting access to selected defenders after demonstrating major advances in software vulnerability discovery. (*special*)
+  - Source: [Project Glasswing: Securing critical software for the AI era](https://www.anthropic.com/glasswing) | Anthropic | 2026-04-07
+- Meta introduces **Muse Spark**, a multimodal reasoning model powering Meta AI, with parallel agents and a private API preview.
+  - Source: [Introducing Muse Spark: Scaling Towards Personal Superintelligence](https://ai.meta.com/blog/introducing-muse-spark-msl/) | Meta | 2026-04-08
+- OpenAI's **GPT-5.5** and Anthropic's **Claude Opus 4.7** advance autonomous coding and complex knowledge work.
+  - Source: [Introducing Claude Opus 4.7](https://www.anthropic.com/news/claude-opus-4-7) | Anthropic | 2026-04-16
+  - Source: [Introducing GPT-5.5](https://openai.com/index/introducing-gpt-5-5/) | OpenAI | 2026-04-23
+- OpenAI launches **ChatGPT Images 2.0**, adding image generation with reasoning, web search, and improved text rendering. (*special*)
+  - Source: [ChatGPT Images 2.0 System Card](https://deploymentsafety.openai.com/chatgpt-images-2-0) | OpenAI | 2026-04-21
+- DeepSeek releases **V4 Pro and Flash**, open-weight models that sharply reduce the memory and compute costs of million-token contexts. (*special*)
+  - Source: [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) | DeepSeek | 2026-04-24
+  - Source: [DeepSeek-V4: a million-token context that agents can actually use](https://huggingface.co/blog/deepseekv4) | Hugging Face | 2026-04-24
+
+## May 2026
+- Google launches **Gemini 3.5 Flash**, surpassing Gemini 3.1 Pro on coding and agent benchmarks while retaining Flash speeds. (*special*)
+  - Source: [Gemini 3.5: frontier intelligence with action](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/) | Google DeepMind | 2026-05-19
+- Google introduces **Gemini Omni Flash**, combining multimodal reasoning with video generation and conversational editing. (*special*)
+  - Source: [Introducing Gemini Omni](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/) | Google DeepMind | 2026-05-19
+- An internal OpenAI model disproves **Erdos's unit-distance conjecture**, open since 1946; external mathematicians check the proof. (*special*)
+  - Source: [An OpenAI model has disproved a central conjecture in discrete geometry](https://openai.com/index/model-disproves-discrete-geometry-conjecture/) | OpenAI | 2026-05-20
+- Anthropic releases **Claude Opus 4.8** alongside dynamic workflows that coordinate hundreds of Claude Code agents.
+  - Source: [Introducing Claude Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8) | Anthropic | 2026-05-28
+
+## June 2026
+- Anthropic launches **Fable 5** for general use and restricted **Mythos 5**; US export controls suspend both three days later, until July 1. (*special*)
+  - Source: [Claude Fable 5 and Claude Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) | Anthropic | 2026-06-09
+  - Source: [Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access) | Anthropic | 2026-06-12
+  - Source: [Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5) | Anthropic | 2026-07-01
+- Google releases **DiffusionGemma**, an experimental open model that generates text in parallel blocks for faster inference.
+  - Source: [DiffusionGemma: 4x faster text generation](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/) | Google DeepMind | 2026-06-10
+- OpenAI begins a limited preview of **GPT-5.6 Sol, Terra, and Luna**, ahead of July's general release.
+  - Source: [Previewing GPT-5.6 Sol: a next-generation model](https://openai.com/index/previewing-gpt-5-6-sol/) | OpenAI | 2026-06-26
+- Anthropic releases **Claude Sonnet 5**, bringing stronger coding and agent capabilities to its midrange model.
+  - Source: [Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) | Anthropic | 2026-06-30
+- Google launches the faster **Nano Banana 2 Lite** and opens **Gemini Omni Flash** video generation to API developers.
+  - Source: [Start building with Nano Banana 2 Lite and Gemini Omni Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/) | Google DeepMind | 2026-06-30
