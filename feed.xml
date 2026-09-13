@@ -10,9 +10,11 @@ layout: none
     <atom:link href="{{ site.url | default: "/" | absolute_url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
     {% for year in site.data.timeline reversed %}
       {% for event in year.events reversed %}
-        {% assign date_str = "1 " | append: event.date | append: " " | append: year.year %}
+        {% assign year_label = year.year | append: "" %}
+        {% assign month_name = event.date | remove: year_label | strip %}
+        {% assign date_str = "1 " | append: month_name | append: " " | append: year.year %}
         <item>
-          <title>{{ event.date }} {{ year.year }}</title>
+          <title>{{ month_name }} {{ year.year }}</title>
           <link>{{ site.url | default: "/" | absolute_url }}{{ site.baseurl }}/#{{ year.year }}-{{ event.date | replace: ' ', '-' }}</link>
           <guid isPermaLink="false">{{ site.url | default: "/" | absolute_url }}{{ site.baseurl }}/#{{ year.year }}-{{ event.date | replace: ' ', '-' }}</guid>
           <pubDate>{{ date_str | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>

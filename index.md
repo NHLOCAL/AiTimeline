@@ -75,7 +75,7 @@ description: A comprehensive timeline of Artificial Intelligence milestones from
                     <ol class="source-list">
                         {% for source in info.sources %}
                         <li>
-                            <a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.title | escape }} <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+                            <a href="{{ source.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source.title | escape }}&nbsp;<span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
                             <div class="source-meta">{{ source.publisher | escape }} <span aria-hidden="true">·</span> <time datetime="{{ source.date | escape }}">{{ source.date | date: "%b %-d, %Y" }}</time></div>
                         </li>
                         {% endfor %}
