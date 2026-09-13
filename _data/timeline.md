@@ -377,33 +377,59 @@
   - Source: [Amazon makes it easier for developers and tech enthusiasts to explore Amazon Nova, its advanced Gen AI models](https://www.aboutamazon.com/news/innovation-at-amazon/amazon-nova-website-sdk) | Amazon | 2025-03-31
 
 ## April 2025
-- Meta releases **Llama 4** in three sizes with a context window of 10 million tokens and medium performance.
-- Google launches **Gemini 2.5 Flash**, with a dynamic reasoning mode that allows tuning the reasoning level or disabling it as needed.
+- Meta releases **Llama 4 Scout** and **Maverick**, multimodal mixture-of-experts models. Scout supports a 10-million-token context window; the larger **Behemoth** model is previewed while still in training.
+  - Source: [The Llama 4 herd: The beginning of a new era of natively multimodal AI innovation](https://ai.meta.com/blog/llama-4-multimodal-intelligence/) | Meta | 2025-04-05
+- Google releases **Gemini 2.5 Flash** in preview, with a reasoning mode that lets developers set a thinking budget or disable thinking.
+  - Source: [Developers can now start building with Gemini 2.5 Flash.](https://blog.google/products-and-platforms/products/gemini/gemini-2-5-flash-preview/) | Google | 2025-04-17
 - OpenAI releases **GPT-4.1** in three sizes, with a context window of 1 million tokens.
+  - Source: [Introducing GPT-4.1 in the API](https://openai.com/index/gpt-4-1/) | OpenAI | 2025-04-14
 - OpenAI introduces **o3 full** and **o4 mini**, highly advanced models for reasoning, math, and coding.
+  - Source: [Introducing OpenAI o3 and o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) | OpenAI | 2025-04-16
 - Midjourney launches **v7**, with higher image quality and more precise control over style.
-- A series of video model updates - **Veo 2.0** (Google), **Runway Gen-4**, **Vidu Q1**, and **Kling 2.0** – a leap forward in high-quality video generation, with improvements in response times, realism, and style.
+  - Source: [V7 Alpha](https://updates.midjourney.com/v7-alpha/) | Midjourney | 2025-04-04
+- Video-generation tools expand with **Veo 2** in Gemini and Whisk, **Vidu Q1**, and **Kling 2.0**, following the March launch of **Runway Gen-4**. The releases improve video realism, control, and consistency.
+  - Source: [Generate videos in Gemini and Whisk with Veo 2](https://blog.google/products-and-platforms/products/gemini/video-generation/) | Google | 2025-04-15
+  - Source: [Runway Gen-4: AI Video Generation with World Consistency](https://runway.com/research/introducing-runway-gen-4) | Runway | 2025-03-31
+  - Source: [Vidu Q1 Model Launches Globally Offering Unmatched Realistic VFX Capabilities](https://www.prnewswire.com/news-releases/vidu-q1-model-launches-globally-offering-unmatched-realistic-vfx-capabilities-from-generating-cinematic-transitions-to-high-fidelity-sound-effects-with-just-a-few-simple-inputs-302433278.html) | ShengShu Technology / PR Newswire | 2025-04-21
+  - Source: [Kling AI Advances to the 2.0 Era, Empowering Everyone to Tell Great Stories with AI](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-advances-20-era-empowering-everyone-tell-great-stories) | Kuaishou | 2025-04-15
 - Alibaba releases **Qwen 3** as open source, in various sizes, with very impressive capabilities for their size. (*special*)
+  - Source: [Qwen3: Think Deeper, Act Faster](https://qwenlm.github.io/blog/qwen3/) | Qwen Team | 2025-04-29
+
+- Microsoft launches the **Phi-4 reasoning** series as open source, small yet high-quality models that incorporate reasoning.
+  - Source: [One year of Phi: Small language models making big leaps in AI](https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/) | Microsoft | 2025-04-30
 
 ## May 2025
-- Microsoft launches the **Phi-4 reasoning** series as open source, small yet high-quality models that incorporate reasoning.
-- Suno releases **Suno 4.5**, fixing shimmer noise and improving audio decay stability in long tracks.
-- Anthropic releases **Claude 4 Opus** and **Claude Sonnet 4**: Opus 4 offers a Hybrid "Deep Thought" mode with enhanced long-term context and 7-hour autonomous operation; Sonnet 4 focuses on improved math and coding performance. (*special*)
-- Google releases **Veo 3**, a video generation model for synchronized 4K video with natural audio integration, and **Imagen 4**, an advanced image model with deeper contextual understanding and artistic style support. (*special*)
-- OpenAI releases **Codex**, an autonomous code agent in ChatGPT, powered by the o3 model, for writing code, debugging, testing, and creating GitHub Pull Requests.
+- Suno releases **Suno 4.5**, improving vocal expression, genre accuracy, prompt adherence, and audio quality.
+  - Source: [Introducing v4.5](https://suno.com/blog/introducing-v4-5) | Suno | 2025-05-01
+- Anthropic releases **Claude Opus 4** and **Claude Sonnet 4**, with improved coding and optional extended thinking with tool use. Rakuten reports that Opus 4 sustained autonomous work on a coding task for seven hours. (*special*)
+  - Source: [Introducing Claude 4](https://www.anthropic.com/news/claude-4) | Anthropic | 2025-05-22
+- Google releases **Veo 3**, a video-generation model with synchronized dialogue, sound effects, and ambient audio, alongside **Imagen 4**, an image model with improved detail and text rendering. (*special*)
+  - Source: [Fuel your creativity with new generative media models and tools](https://blog.google/innovation-and-ai/products/generative-media-models-io-2025/) | Google DeepMind | 2025-05-20
+- OpenAI releases a research preview of **Codex**, a cloud coding agent in ChatGPT powered by **codex-1**, a version of o3 optimized for software engineering. It writes code, fixes bugs, runs tests, and proposes GitHub pull requests.
+  - Source: [Introducing Codex](https://openai.com/index/introducing-codex/) | OpenAI | 2025-05-16
 - Google releases **Jules**, an asynchronous autonomous coding agent on Gemini 2.5 Pro, analyzing repositories and creating GitHub Pull Requests.
-- Google releases **Gemini 2.5 Pro** (Deep Think Mode) and **Gemini 2.5 Flash**, featuring improved reasoning, native audio support, extended context, and high-frequency task handling.
-- OpenAI updates **Operator** to use the **o3** model, achieving SOTA on OSWorld benchmarks and enhancing autonomous browser capabilities.
-- DeepSeek open-sources **R1-0528**, a code-and-inference model with near–o4-mini performance and moderate computational needs.
-- Google DeepMind launches **AlphaEvolve**, an autonomous code-optimizer using evolutionary strategies with LLMs, achieving SOTA on 75% of math problems and discovering enhanced algorithms 20% of the time. (*special*)
+  - Source: [Build with Jules, your asynchronous coding agent](https://blog.google/innovation-and-ai/models-and-research/google-labs/jules/) | Google | 2025-05-20
+- Google previews **Deep Think**, an enhanced reasoning mode for **Gemini 2.5 Pro**, with trusted testers. It also updates **Gemini 2.5 Flash** and previews native audio capabilities.
+  - Source: [Gemini 2.5: Our most intelligent models are getting even better](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-updates-io-2025/) | Google DeepMind | 2025-05-20
+- OpenAI updates **Operator** to use a version of **o3**, with additional training for browser tasks and safer computer use.
+  - Source: [Addendum to OpenAI o3 and o4-mini system card: OpenAI o3 Operator](https://openai.com/index/o3-o4-mini-system-card-addendum-operator-o3/) | OpenAI | 2025-05-23
+- DeepSeek releases **R1-0528** with improved reasoning and coding, fewer hallucinations, and support for function calling and JSON output.
+  - Source: [DeepSeek-R1-0528 Release](https://api-docs.deepseek.com/news/news250528/) | DeepSeek | 2025-05-28
+- Google DeepMind introduces **AlphaEvolve**, a coding agent combining Gemini models with evolutionary search. On a collection of over 50 mathematical problems, it matches the best-known solutions in about 75% of cases and improves them in about 20%. (*special*)
+  - Source: [AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) | Google DeepMind | 2025-05-14
 - Google releases **Gemini Diffusion**, an experimental text diffusion model achieving high-speed text generation with enhanced control and creativity via noise refinement. (*special*)
-- Google introduces **Gemma 3n**, an open-source generative AI model for on-device use, with an efficient architecture and multi-modal (audio, text, visual) capabilities.
+  - Source: [Gemini Diffusion is our new experimental research model.](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-diffusion/) | Google DeepMind | 2025-05-20
+- Google previews **Gemma 3n**, a model designed for on-device use with an efficient architecture and support for audio, text, images, and video.
+  - Source: [Announcing Gemma 3n preview: powerful, efficient, mobile-first AI](https://developers.googleblog.com/en/introducing-gemma-3n) | Google | 2025-05-20
 
 
 ## June 2025
-- Google releases **Gemini 2.5 Pro** (final production-ready version), which leads benchmarks across the board.
+- Google releases the stable, generally available version of **Gemini 2.5 Pro** for production applications.
+  - Source: [We’re expanding our Gemini 2.5 family of models](https://blog.google/products-and-platforms/products/gemini/gemini-2-5-model-family-expands/) | Google | 2025-06-17
 - ElevenLabs rolls out **Eleven v3 (alpha)** TTS with fine grained emotion control and support for 70+ languages.
-- OpenAI debuts **o3 pro**, an enhanced reasoning model offering extended context and real-time tool integrations.
+  - Source: [Introducing Eleven v3 (alpha)](https://elevenlabs.io/blog/eleven-v3) | ElevenLabs | 2025-06-03
+- OpenAI releases **o3-pro**, a version of o3 that uses more compute for improved reliability and can use tools such as web search, Python, and file analysis.
+  - Source: [Model Release Notes: June 10, 2025](https://help.openai.com/en/articles/9624314-model-release-notes) | OpenAI | 2025-06-10
 
 ## July 2025
 - xAI releases **Grok 4**, achieving a new SOTA of 15.9% on ARC-AGI v2 and 25.4% on Humanity’s Last Exam. (*special*)
